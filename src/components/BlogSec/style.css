@@ -1,0 +1,66 @@
+.blogSec .secHead {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.blogSec .secHead .secTitle {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.blogCard {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.blogCardTitle {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.blogCardHeader {
+  overflow: hidden;
+}
+.blogCardHeader img {
+  transition: all 0.25s ease;
+}
+.blogCard:hover .blogCardHeader img {
+  transform: scale(1.1);
+}
+
+.blogCardBtn {
+  color: #d41f14;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.blogCardBtn svg {
+  font-size: 25px;
+}
+
+.blogCardMeta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.blogMetaDetails svg {
+  color: #d41f14;
+}
+
+.blogMetaDetails {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 15px;
+}
+.blogMetaDetails span {
+  color: #707070;
+}

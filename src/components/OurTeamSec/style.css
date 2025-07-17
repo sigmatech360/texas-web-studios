@@ -1,0 +1,37 @@
+.ourTeamSec .secHead {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.ourTeamSec .secHead .secTitle {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.ourTeamCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.ourTeamCardImg {
+  overflow: hidden;
+  border-radius: 12px;
+}
+.ourTeamCardImg img {
+  transition: all 0.25s ease-out;
+}
+.ourTeamCardImg:hover img {
+  transform: scale(1.1);
+}
+
+
+.teamCardTitle {
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 3px;
+}
+
+.teamCardInfo p {
+  font-size: 16px;
+}

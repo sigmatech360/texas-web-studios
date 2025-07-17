@@ -1,0 +1,14 @@
+.bookCallSec {
+  background-color: #d41f14;
+}
+
+.bookCallContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bookCallTitle {
+  color: #fff;
+  font-weight: 700;
+  font-size: 50px;
+}

@@ -1,0 +1,23 @@
+.contentWithICon {
+  display: flex;
+  gap: 14px;
+  align-items: start;
+}
+
+.contentWithICon-icon {
+  flex: 0 0 70px;
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.contentWithICon-content p {
+  font-size: 15px;
+}
+
+.contentWIthIcon-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,15 @@
+.contactContent .secHead{
+    margin-bottom: 40px;
+}
+.contactContent .secHead .secTitle {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.contactContent .secHead p{
+    color: #fff;
+}
+
+.contactForm .theme-btn {
+    padding: 12px 40px;
+}

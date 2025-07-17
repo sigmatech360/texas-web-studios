@@ -1,0 +1,51 @@
+.testimonialSec .secTitle {
+  font-size: 50px;
+  font-weight: 700;
+}
+.testimonialBox {
+  background-color: #fff;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.testimonialMeta {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+.testimonialProfile {
+  background-color: #d41f14;
+  line-height: 1;
+  flex: 0 0 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Syne";
+  font-size: 35px;
+  border-radius: 5px;
+  color: #fff;
+}
+.testimonialName {
+  color: #d41f14;
+  font-size: 20px;
+}
+.testimonialDesignation {
+  font-size: 13px;
+  line-height: 1;
+}
+.testimonialDesc {
+  font-size: 14px;
+}
+
+.testimonialFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.testimonialIcon {
+  width: 40px;
+}

@@ -1,0 +1,26 @@
+.mainBanner {
+  background-image: url("../../assets//images/homeBanner.webp");
+  background-size: cover;
+  background-position: center;
+  min-height: 568px;
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+}
+
+.mainBannerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+  color: #fff;
+}
+
+.mainBannerContent h1 {
+  font-size: 54px;
+}
+
+.mainBannerContent p {
+  font-size: 16px;
+  color: #fff;
+}

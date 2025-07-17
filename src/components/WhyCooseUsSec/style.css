@@ -1,0 +1,65 @@
+.whyChooseImgContent img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.whyChooseImgContent .secTitle {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.whyChooseImgContent p {
+  font-size: 16px;
+}
+
+.whyChooseListItem {
+  display: flex;
+  background-color: #efefef;
+  padding: 16px;
+  border-radius: 12px;
+  gap: 12px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.whyChooseListItem img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  flex: 0 0 070px;
+}
+
+.whyChooseRight p {
+  font-size: 16px;
+}
+
+.whyChooseRight .whyChooseRightTitle {
+  font-size: 28px;
+  color: #d41f14;
+  font-weight: 600;
+}
+.whyChooseRight {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.whyChooseList {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.whyChooseListItemTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #d41f14;
+  margin-bottom: 5px;
+}
+
+.whyChooseListItemContent p {
+  font-size: 15px;
+  line-height: 1.3;
+}

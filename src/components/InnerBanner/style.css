@@ -1,0 +1,35 @@
+.innerBanner {
+  padding: 60px 0;
+  min-height: 550px;
+  /* background: #484848; */
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+}
+
+.innerBannerContent .breadcrumb {
+  margin: 45px 0 0;
+}
+
+.innerBannerContent h1 {
+  font-size: 69px;
+  margin-bottom: 5px;
+}
+.innerBannerContent p {
+  color: #fff;
+}
+
+.innerBannerContent .breadcrumb li {
+  color: #fff;
+  font-family: "Syne";
+  font-size: 20px;
+}
+.innerBannerContent .breadcrumb li a {
+  color: #fff;
+  text-decoration: none;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  color: #fff;
+}

@@ -1,0 +1,120 @@
+.footerSocialIcons {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  border-top: 1px solid #707070;
+}
+.footerSocialIcon {
+  text-align: center;
+  padding: 25px 16px;
+}
+.footerSocialIcon:not(:last-child) {
+  border-right: 1px solid #707070; /* You can customize the color */
+}
+.footerSocialIcon img {
+  max-width: 160px;
+  transition: filter 0.3s ease;
+}
+
+.footerSocialIcon:hover img {
+  filter: brightness(0) invert(1); /* Turns the image white */
+}
+
+/* Specific social media hover colors */
+.footerSocialFacebook:hover {
+  background-color: #3b5998; /* Facebook blue */
+}
+
+.footerSocialYoutube:hover {
+  background-color: #ff0000; /* YouTube red */
+}
+
+.footerSocialBehance:hover {
+  background-color: #1769ff; /* Behance blue */
+}
+
+.footerSocialdribble:hover {
+  background-color: #ea4c89; /* Dribbble pink */
+}
+
+.footerSocialTwitter:hover {
+  background-color: #1da1f2; /* Twitter blue */
+}
+
+.footerSocialLinkedin:hover {
+  background-color: #0077b5; /* LinkedIn blue */
+}
+
+.mainFooter {
+  padding: 40px 0;
+}
+
+.mainFooter .footerAbout .footerLogo {
+  margin-bottom: 20px;
+  display: block;
+}
+.mainFooter .footerAbout p {
+  font-size: 16px;
+  color: #fff;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-links ul li {
+  line-height: 1.8;
+} 
+.footer-links ul li a {
+  text-decoration: none;
+  color: #fcfbfb;
+  font-weight: 300;
+  position: relative;
+}
+
+.footer-links ul li a:hover {
+  color: #fff;
+  font-weight: 700;
+}
+
+.footer-links ul li a:hover:before {
+  width: 100%;
+}
+.footer-links ul li a:before {
+  content: "";
+  position: absolute;
+  left: 0%;
+  /* transform: translate(-50%); */
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: #d41f14;
+  transition: width 0.3s ease;
+}
+.footer-title {
+  font-size: 24px;
+  margin-bottom: 16px;
+  position: relative;
+  padding-bottom: 15px;
+  max-width: max-content;
+}
+.footer-title:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #d41f14;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+}
+
+.footerCopyright {
+  border-top: 1px solid #707070;
+  padding: 16px 0;
+}
+
+.footerCopyrightP {
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+}
