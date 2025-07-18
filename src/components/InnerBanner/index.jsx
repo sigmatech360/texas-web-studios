@@ -1,16 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import "./style.css"
+import "./style.css";
 
 const InnerBanner = (props) => {
   return (
-    <section className={`innerBanner`} style={{backgroundImage: `url(${props.bgImage})`}}>
+    <section
+      className={`innerBanner`}
+      style={{ backgroundImage: `url(${props.bgImage})` }}
+    >
       <div className="container">
-        <div className="row">
-          <div className="col-lg-6">
+        <div className="row align-items-center">
+          <div className={`${props.leftCol || "col-lg-6"}`}>
             <div className="innerBannerContent">
-              <h1>{props.title}</h1>
+              <h1 dangerouslySetInnerHTML={{ __html: props.title }} />
               <p>{props.description}</p>
 
               <nav aria-label="breadcrumb">
@@ -24,6 +27,17 @@ const InnerBanner = (props) => {
                 </ol>
               </nav>
             </div>
+          </div>
+          <div className={`${props.rightCol || "col-lg-6"}`}>
+            {props.bannerImg && (
+              <div className="innerBannerImg">
+                <img
+                  src={props.bannerImg}
+                  alt={props.title}
+                  className={`img-fluid`}
+                />
+              </div>
+            )}
           </div>
         </div>
       </div>

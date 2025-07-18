@@ -2,15 +2,15 @@ import React from 'react'
 import "./style.css"
 import { IoIosArrowRoundForward } from 'react-icons/io'
 
-const BookCallSec = () => {
+const BookCallSec = (props) => {
   return (
     <section className='bookCallSec sec-padding'>
         <div className="container">
             <div className="row">
                 <div className="col-md-12">
                     <div className="bookCallContent">
-                        <h3 className='bookCallTitle'>Let’s Discuss Your Business Goals.</h3>
-                        <button className='theme-btn theme-btn-white icon-btn'>Book A Call <IoIosArrowRoundForward /></button>
+                        <h3 className='bookCallTitle'>{props.title}</h3>
+                        <button className='theme-btn theme-btn-white icon-btn'>{props.btnText} <IoIosArrowRoundForward /></button>
                     </div>
                 </div>
             </div>

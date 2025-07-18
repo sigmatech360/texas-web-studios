@@ -25,9 +25,9 @@ const WhyCooseUsSec = (props) => {
             <div className="whyChooseRight">
               <p>{props.leftP}</p>
               <h5 className="whyChooseRightTitle">{props.leftSubTitle}</h5>
-              <button className="theme-btn">
-                {props.btnText || "Book A Services"}
-              </button>
+              {props.btnText && (
+                <button className="theme-btn">{props.btnText}</button>
+              )}
             </div>
             <div className="whyChooseList">
               {props.list.map((item, index) => (

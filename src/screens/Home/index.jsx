@@ -23,6 +23,7 @@ import securityAdvancementsIcon from "../../assets/images/securityAdvancementsIc
 import customerSupport247Icon from "../../assets/images/247CustomerSupportIcon.webp";
 import awardWinningWebDesignersIcon from "../../assets/images/award-WinningWebDesignersIcon.webp";
 
+import faqImg from "../../assets/images/faqImg.webp";
 
 import { IoIosArrowRoundForward } from "react-icons/io";
 import TestimonialSec from "../../components/TestimonialSec";
@@ -119,6 +120,29 @@ const beVisibleData = [
     id: 5,
     icon: awardWinningWebDesignersIcon,
     title: "Award-Winning Web Designers",
+  },
+];
+
+const testimonialData = [
+  {
+    title: "Can I Ask For Custom Pricing?",
+    description:
+      "Yes. We Understand That Every Business Has Different Needs, So We’re Happy To Create A Custom Quote Based On Your Goals, Timeline, And Required Services.",
+  },
+  {
+    title: "Do You Offer Ongoing Support After A Project Ends?",
+    description:
+      "Yes. We Offer Monthly Support Plans, Maintenance, Updates, And Optimization To Make Sure Your Website Or Campaign Stays Sharp And Effective.",
+  },
+  {
+    title: "Do You Provide Site Audits Before We Start The Process?",
+    description:
+      "Yes. We Begin With A Full Website Audit To Identify Gaps And Opportunities. You’ll Get The Report First, Then It’s Your Call To Move Forward Or Not.",
+  },
+  {
+    title: "How Involved Will I Be In The Design Process?",
+    description:
+      "We Believe In Close Collaboration, So We Include You At Every Key Step, From Planning And Wireframes To Final Design Approval. We Work With You To Create The Ideal Results.",
   },
 ];
 
@@ -267,7 +291,7 @@ const Home = () => {
       </section>
 
       <PackagesSec
-      className="bgPink"
+        className="bgPink"
         secTag="PRICING"
         title="Flexible Pricing Packages"
         description="Every Business Has Different Needs, So We Offer Custom Pricing
@@ -310,9 +334,14 @@ const Home = () => {
 
       <OurTeamSec />
 
-      <FAQSec />
+      <FAQSec
+        secTag="GET ANSWERS"
+        secTitle="Frequently Asked Questions"
+        testimonials={testimonialData}
+        image={faqImg}
+      />
 
-      <BookCallSec />
+      <BookCallSec title="Let’s Discuss Your Business Goals." btnText="Book A Call" />
 
       <ContactUsSec />
 

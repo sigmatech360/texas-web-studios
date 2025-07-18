@@ -27,8 +27,8 @@ const testimonialData = [
   },
 ];
 
-const FAQSec = () => {
-  const activeKeys = testimonialData.map((_, index) => index.toString());
+const FAQSec = (props) => {
+  const activeKeys = props.testimonials.map((_, index) => index.toString());
   return (
     <section className="faqSection sec-padding">
       <div className="container">
@@ -36,15 +36,15 @@ const FAQSec = () => {
           <div className="col-lg-6">
             <div className="faqContent">
               <div className="secHead">
-                <p className="sec-tag">GET ANSWERS</p>
-                <h3 className="secTitle">Frequently Asked Questions</h3>
+                <p className="sec-tag">{props.secTag}</p>
+                <h3 className="secTitle">{props.secTitle}</h3>
               </div>
               <div className="faqs-items">
                 <Accordion
                   activeKey={activeKeys}
                   // defaultActiveKey="0"
                 >
-                  {testimonialData.map((item, index) => (
+                  {props.testimonials.map((item, index) => (
                     <Accordion.Item key={index} eventKey={index.toString()}>
                       <Accordion.Header as="h4">{item.title}</Accordion.Header>
                       <Accordion.Body>{item.description}</Accordion.Body>
@@ -56,7 +56,7 @@ const FAQSec = () => {
           </div>
           <div className="col-lg-6">
             <div className="faqImgDiv">
-                <img src={faqImg} alt="FAQ's Image" className="img-fluid" />
+                <img src={props.image} alt="FAQ's Image" className="img-fluid" />
             </div>
           </div>
         </div>

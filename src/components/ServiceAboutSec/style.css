@@ -1,0 +1,14 @@
+.servicesAboutContent p {
+  font-size: 16px;
+}
+
+.servicesAboutContent .secTitle {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.packageCardList.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* max-width: 500px; */
+}
