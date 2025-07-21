@@ -15,7 +15,9 @@
 
 .innerBannerContent h1 {
   font-size: 60px;
-  margin-bottom: 5px;
+  line-height: 1.2  ;
+  margin-bottom: 10px;
+
 }
 .innerBannerContent p {
   color: #fff;
@@ -33,3 +35,47 @@
 .breadcrumb-item + .breadcrumb-item::before {
   color: #fff;
 }
+
+
+
+/* Large screens (desktops, tablets in landscape) */
+@media (max-width: 1399px) {
+  .innerBanner {
+    min-height: 500px;
+  }
+  .innerBannerContent h1{
+    font-size: 50px;
+  }
+}
+
+/* Medium screens (tablets in portrait) */
+@media (max-width: 1199px) {
+  .innerBanner {
+    min-height: 450px;
+  }
+}
+
+/* Small screens (phones in landscape) */
+@media (max-width: 991px) {
+  .innerBanner {
+    min-height: 400px;
+  }
+}
+
+/* Extra small screens (phones in portrait) */
+@media (max-width: 767px) {
+  .innerBanner {
+    min-height: 350px;
+  }
+  .innerBannerContent h1 br{
+    display: none;
+  }
+}
+
+/* Extremely small screens (e.g., some older phones) */
+@media (max-width: 575px) {
+  .innerBanner {
+    min-height: 300px;
+  }
+}
+

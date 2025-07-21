@@ -11,7 +11,7 @@ const PackagesCard = (props) => {
         <p className="packageName">{props.name}</p>
         <div className="packagePriceDiv">
           <h4 className="packagePrice">{props.price}</h4>
-          <p>Month</p>
+          {/* <p>Month</p> */}
         </div>
       </div>
       <div className="packageCardBody">

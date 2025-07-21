@@ -15,22 +15,23 @@ const TestimonialSec = (props) => {
     <section className={`testimonialSec sec-padding ${props.className}`}>
       <div className="container">
         <div className="row">
-          <div className="col-md-5">
+          <div className="col-lg-5">
             <div className="secHead">
               <p className="sec-tag">{props.secTag}</p>
               <h3 className="secTitle">{props.secTitle}</h3>
             </div>
           </div>
 
-          <div className="col-md-7">
+          <div className="col-lg-7">
             <Swiper
               modules={[Navigation]}
               spaceBetween={20}
-              slidesPerView={2}
+              slidesPerView={1}
                 loop={true}
               breakpoints={{
                 768: { slidesPerView: 2 },
-                1024: { slidesPerView: 1.8 },
+                992: { slidesPerView: 1.5 },
+                1200: { slidesPerView: 1.8 },
               }}
             >
               {props.testimonialData.map((item, index) => (

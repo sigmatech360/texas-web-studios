@@ -33,7 +33,7 @@ import mobDevWhyChooseIcon2 from "../../assets/images/mobDevWhyChooseIcon2.webp"
 import mobDevWhyChooseIcon3 from "../../assets/images/mobDevWhyChooseIcon3.webp";
 import mobDevWhyChooseIcon4 from "../../assets/images/mobDevWhyChooseIcon4.webp";
 
-const mobilePortfolio1 = [
+export const mobilePortfolio1 = [
   {
     image: portfolioImg2_1,
   },
@@ -59,7 +59,7 @@ const mobilePortfolio1 = [
     image: portfolioImg2_4,
   },
 ];
-const mobilePortfolio2 = [
+export const mobilePortfolio2 = [
   {
     image: portfolioImg1_1,
   },

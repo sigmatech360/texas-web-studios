@@ -15,6 +15,48 @@ import webDevWhyChooseIcon3 from "../../assets/images/webDevWhyChooseIcon3.webp"
 
 import customLayoutIcon from "../../assets/images/customLayoutIcon.webp";
 
+import expWebDesignIcon1 from "../../assets/images/expIcons/expWebDesignIcon1.webp";
+import expWebDesignIcon2 from "../../assets/images/expIcons/expWebDesignIcon2.webp";
+import expWebDesignIcon3 from "../../assets/images/expIcons/expWebDesignIcon3.webp";
+import expWebDesignIcon4 from "../../assets/images/expIcons/expWebDesignIcon4.webp";
+import expWebDesignIcon5 from "../../assets/images/expIcons/expWebDesignIcon5.webp";
+import expWebDesignIcon6 from "../../assets/images/expIcons/expWebDesignIcon6.webp";
+
+import expWebDevIcon1 from "../../assets/images/expIcons/expWebDevIcon1.webp";
+import expWebDevIcon2 from "../../assets/images/expIcons/expWebDevIcon2.webp";
+import expWebDevIcon3 from "../../assets/images/expIcons/expWebDevIcon3.webp";
+import expWebDevIcon4 from "../../assets/images/expIcons/expWebDevIcon4.webp";
+import expWebDevIcon5 from "../../assets/images/expIcons/expWebDevIcon5.webp";
+import expWebDevIcon6 from "../../assets/images/expIcons/expWebDevIcon6.webp";
+
+import expSupportMaintenanceIcon1 from "../../assets/images/expIcons/expSupportMaintenanceIcon1.webp";
+import expSupportMaintenanceIcon2 from "../../assets/images/expIcons/expSupportMaintenanceIcon2.webp";
+import expSupportMaintenanceIcon3 from "../../assets/images/expIcons/expSupportMaintenanceIcon3.webp";
+import expSupportMaintenanceIcon4 from "../../assets/images/expIcons/expSupportMaintenanceIcon4.webp";
+import expSupportMaintenanceIcon5 from "../../assets/images/expIcons/expSupportMaintenanceIcon5.webp";
+import expSupportMaintenanceIcon6 from "../../assets/images/expIcons/expSupportMaintenanceIcon6.webp";
+
+import expContentCreationIcon1 from "../../assets/images/expIcons/expContentCreationIcon1.webp";
+import expContentCreationIcon2 from "../../assets/images/expIcons/expContentCreationIcon2.webp";
+import expContentCreationIcon3 from "../../assets/images/expIcons/expContentCreationIcon3.webp";
+import expContentCreationIcon4 from "../../assets/images/expIcons/expContentCreationIcon4.webp";
+import expContentCreationIcon5 from "../../assets/images/expIcons/expContentCreationIcon5.webp";
+import expContentCreationIcon6 from "../../assets/images/expIcons/expContentCreationIcon6.webp";
+
+import expWebRevampIcon1 from "../../assets/images/expIcons/expWebRevampIcon1.webp";
+import expWebRevampIcon2 from "../../assets/images/expIcons/expWebRevampIcon2.webp";
+import expWebRevampIcon3 from "../../assets/images/expIcons/expWebRevampIcon3.webp";
+import expWebRevampIcon4 from "../../assets/images/expIcons/expWebRevampIcon4.webp";
+import expWebRevampIcon5 from "../../assets/images/expIcons/expWebRevampIcon5.webp";
+import expWebRevampIcon6 from "../../assets/images/expIcons/expWebRevampIcon6.webp";
+
+import expPostLaunchIcon1 from "../../assets/images/expIcons/expPostLaunchIcon1.webp";
+import expPostLaunchIcon2 from "../../assets/images/expIcons/expPostLaunchIcon2.webp";
+import expPostLaunchIcon3 from "../../assets/images/expIcons/expPostLaunchIcon3.webp";
+import expPostLaunchIcon4 from "../../assets/images/expIcons/expPostLaunchIcon4.webp";
+import expPostLaunchIcon5 from "../../assets/images/expIcons/expPostLaunchIcon5.webp";
+import expPostLaunchIcon6 from "../../assets/images/expIcons/expPostLaunchIcon6.webp";
+
 import LatestTechSec from "../../components/LatestTechSec";
 
 const experienceSecData = [
@@ -23,12 +65,12 @@ const experienceSecData = [
     key: "web-design",
     name: "Web Design",
     data: [
-      { name: "Custom Layout", icon: customLayoutIcon },
-      { name: "Intuitive Navigation", icon: customLayoutIcon },
-      { name: "Mobile Responsiveness", icon: customLayoutIcon },
-      { name: "Consistent Branding", icon: customLayoutIcon },
-      { name: "Engaging Visuals", icon: customLayoutIcon },
-      { name: "User Centered UX/UI Design", icon: customLayoutIcon },
+      { name: "Custom Layout", icon: expWebDesignIcon1 },
+      { name: "Intuitive Navigation", icon: expWebDesignIcon2 },
+      { name: "Mobile Responsiveness", icon: expWebDesignIcon3 },
+      { name: "Consistent Branding", icon: expWebDesignIcon4 },
+      { name: "Engaging Visuals", icon: expWebDesignIcon5 },
+      { name: "User Centered UX/UI Design", icon: expWebDesignIcon6 },
     ],
   },
   {
@@ -36,12 +78,12 @@ const experienceSecData = [
     key: "website-dev",
     name: "Website Development",
     data: [
-      { name: "Clean & Scalable Code", icon: customLayoutIcon },
-      { name: "Fast Loading Speed", icon: customLayoutIcon },
-      { name: "SEO Optimization", icon: customLayoutIcon },
-      { name: "Secure Architecture", icon: customLayoutIcon },
-      { name: "CMS Integration", icon: customLayoutIcon },
-      { name: "Cross Browser Compatibility", icon: customLayoutIcon },
+      { name: "Clean & Scalable Code", icon: expWebDevIcon1 },
+      { name: "Fast Loading Speed", icon: expWebDevIcon2 },
+      { name: "SEO Optimization", icon: expWebDevIcon3 },
+      { name: "Secure Architecture", icon: expWebDevIcon4 },
+      { name: "CMS Integration", icon: expWebDevIcon5 },
+      { name: "Cross Browser Compatibility", icon: expWebDevIcon6 },
     ],
   },
   {
@@ -49,12 +91,12 @@ const experienceSecData = [
     key: "support-maintenance",
     name: " Support & Maintenance",
     data: [
-      { name: "Regular Security Updates", icon: customLayoutIcon },
-      { name: "Performace Monitering", icon: customLayoutIcon },
-      { name: "Bug Fixes & Troubleshooting", icon: customLayoutIcon },
-      { name: "Content & Plugin Updates", icon: customLayoutIcon },
-      { name: "Backup & Recovery Solution", icon: customLayoutIcon },
-      { name: "24/7 Technocal Support", icon: customLayoutIcon },
+      { name: "Regular Security Updates", icon: expSupportMaintenanceIcon1 },
+      { name: "Performace Monitering", icon: expSupportMaintenanceIcon2 },
+      { name: "Bug Fixes & Troubleshooting", icon: expSupportMaintenanceIcon3 },
+      { name: "Content & Plugin Updates", icon: expSupportMaintenanceIcon4 },
+      { name: "Backup & Recovery Solution", icon: expSupportMaintenanceIcon5 },
+      { name: "24/7 Technocal Support", icon: expSupportMaintenanceIcon6 },
     ],
   },
   {
@@ -62,12 +104,12 @@ const experienceSecData = [
     key: "content-creation",
     name: "Content Creation",
     data: [
-      { name: "SEO-Optimized Copy", icon: customLayoutIcon },
-      { name: "Brand Voice Consistency", icon: customLayoutIcon },
-      { name: "Clear Calls-To-Action", icon: customLayoutIcon },
-      { name: "Engaging  Headline & Messaging", icon: customLayoutIcon },
-      { name: "Website Content Structuring", icon: customLayoutIcon },
-      { name: "Keyword-Integrated Blog Writing", icon: customLayoutIcon },
+      { name: "SEO-Optimized Copy", icon: expContentCreationIcon1 },
+      { name: "Brand Voice Consistency", icon: expContentCreationIcon2 },
+      { name: "Clear Calls-To-Action", icon: expContentCreationIcon3 },
+      { name: "Engaging  Headline & Messaging", icon: expContentCreationIcon4 },
+      { name: "Website Content Structuring", icon: expContentCreationIcon5 },
+      { name: "Keyword-Integrated Blog Writing", icon: expContentCreationIcon6 },
     ],
   },
   {
@@ -75,12 +117,12 @@ const experienceSecData = [
     key: "website-revamp",
     name: "Website Revamp",
     data: [
-      { name: "Modernized UI/UX Design", icon: customLayoutIcon },
-      { name: "Mobile-First & Responsive Layout", icon: customLayoutIcon },
-      { name: "Improved Site Speed & Performace", icon: customLayoutIcon },
-      { name: "SEO Re-Optimization", icon: customLayoutIcon },
-      { name: "Content Restructuring & Updates", icon: customLayoutIcon },
-      { name: "Integration Of Latest Technologies", icon: customLayoutIcon },
+      { name: "Modernized UI/UX Design", icon: expWebRevampIcon1 },
+      { name: "Mobile-First & Responsive Layout", icon: expWebRevampIcon2 },
+      { name: "Improved Site Speed & Performace", icon: expWebRevampIcon3 },
+      { name: "SEO Re-Optimization", icon: expWebRevampIcon4 },
+      { name: "Content Restructuring & Updates", icon: expWebRevampIcon5 },
+      { name: "Integration Of Latest Technologies", icon: expWebRevampIcon6 },
     ],
   },
   {
@@ -88,12 +130,12 @@ const experienceSecData = [
     key: "post-launch",
     name: "Post-Launch Support",
     data: [
-      { name: "Performace Monitering", icon: customLayoutIcon },
-      { name: "Analysis   Setup & Reporting", icon: customLayoutIcon },
-      { name: "Client Training & Documentation", icon: customLayoutIcon },
-      { name: "Minor Tweaks & Adjustments", icon: customLayoutIcon },
-      { name: "Bug Fixes & Patch Updates", icon: customLayoutIcon },
-      { name: "Feedback-Based Iteration", icon: customLayoutIcon },
+      { name: "Performace Monitering", icon: expPostLaunchIcon1 },
+      { name: "Analysis   Setup & Reporting", icon: expPostLaunchIcon2 },
+      { name: "Client Training & Documentation", icon: expPostLaunchIcon3 },
+      { name: "Minor Tweaks & Adjustments", icon: expPostLaunchIcon4 },
+      { name: "Bug Fixes & Patch Updates", icon: expPostLaunchIcon5 },
+      { name: "Feedback-Based Iteration", icon: expPostLaunchIcon6 },
     ],
   },
 ];

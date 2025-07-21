@@ -5,17 +5,88 @@ import cmsDevBanner from "../../assets/images/cmsDevBanner.webp";
 import LatestTechSec from "../../components/LatestTechSec";
 
 import ServiceAboutSec from "../../components/ServiceAboutSec";
-import smmServiceAboutImg from "../../assets/images/smmServiceAboutImg.webp";
+import cmsDevServiceAboutImg from "../../assets/images/cmsDevServiceAboutImg.webp";
 import PackagesSec from "../../components/PackagesSec";
 import TestimonialSec from "../../components/TestimonialSec";
 import BlogSec from "../../components/BlogSec";
 
-import customDevWhyChooseImage from "../../assets/images/customDevWhyChooseImage.webp";
-import customDevWhyChooseIcon1 from "../../assets/images/customDevWhyChooseIcon1.webp";
-import customDevWhyChooseIcon2 from "../../assets/images/customDevWhyChooseIcon2.webp";
-import customDevWhyChooseIcon3 from "../../assets/images/customDevWhyChooseIcon3.webp";
-import customDevWhyChooseIcon4 from "../../assets/images/customDevWhyChooseIcon4.webp";
+import cmsDevWhyChooseImage from "../../assets/images/cmsDevWhyChooseImage.webp";
+import cmsDevWhyChooseIcon1 from "../../assets/images/cmsDevWhyChooseIcon1.webp";
+import cmsDevWhyChooseIcon2 from "../../assets/images/cmsDevWhyChooseIcon2.webp";
+import cmsDevWhyChooseIcon3 from "../../assets/images/cmsDevWhyChooseIcon3.webp";
+// import cmsDevWhyChooseIcon4 from "../../assets/images/cmsDevWhyChooseIcon4.webp";
 import WhyCooseUsSec from "../../components/WhyCooseUsSec";
+import OurPortfolioSec from "../../components/OurPortfolioSec";
+
+import portfolioImg1_1 from "../../assets/images/cmsPortfolio/cmsPortfolioImg1-1.webp";
+import portfolioImg1_2 from "../../assets/images/cmsPortfolio/cmsPortfolioImg1-2.webp";
+import portfolioImg1_3 from "../../assets/images/cmsPortfolio/cmsPortfolioImg1-3.webp";
+import portfolioImg1_4 from "../../assets/images/cmsPortfolio/cmsPortfolioImg1-4.webp";
+import portfolioImg1_5 from "../../assets/images/cmsPortfolio/cmsPortfolioImg1-5.webp";
+
+import portfolioImg2_1 from "../../assets/images/cmsPortfolio/cmsPortfolioImg2-1.webp";
+import portfolioImg2_2 from "../../assets/images/cmsPortfolio/cmsPortfolioImg2-2.webp";
+import portfolioImg2_3 from "../../assets/images/cmsPortfolio/cmsPortfolioImg2-3.webp";
+import portfolioImg2_4 from "../../assets/images/cmsPortfolio/cmsPortfolioImg2-4.webp";
+
+export const cmsDevPortfolio1 = [
+  {
+    image: portfolioImg2_1,
+  },
+  {
+    image: portfolioImg2_2,
+  },
+  {
+    image: portfolioImg2_3,
+  },
+  {
+    image: portfolioImg2_4,
+  },
+  {
+    image: portfolioImg2_1,
+  },
+  {
+    image: portfolioImg2_2,
+  },
+  {
+    image: portfolioImg2_3,
+  },
+  {
+    image: portfolioImg2_4,
+  },
+];
+export const cmsDevPortfolio2 = [
+  {
+    image: portfolioImg1_1,
+  },
+  {
+    image: portfolioImg1_2,
+  },
+  {
+    image: portfolioImg1_3,
+  },
+  {
+    image: portfolioImg1_4,
+  },
+  {
+    image: portfolioImg1_5,
+  },
+  {
+    image: portfolioImg1_1,
+  },
+  {
+    image: portfolioImg1_2,
+  },
+  {
+    image: portfolioImg1_3,
+  },
+  {
+    image: portfolioImg1_4,
+  },
+  {
+    image: portfolioImg1_5,
+  },
+];
 
 const CMSDevelopment = () => {
   return (
@@ -68,38 +139,48 @@ const CMSDevelopment = () => {
           "Built-In SEO Tools",
           "No-Code Or Low-Code Development",
         ]}
-        image={smmServiceAboutImg}
+        image={cmsDevServiceAboutImg}
+      />
+
+
+      <OurPortfolioSec
+        className="bgBlack"
+        secTag="PORTFOLIO"
+        secTitle="See Our Projects"
+        ourPortfolio1={cmsDevPortfolio1}
+        ourPortfolio2={cmsDevPortfolio2}
+        btnText="View All Projects"
       />
 
       <WhyCooseUsSec
         secTag="WHY CHOOSE US"
         secTitle="How CMS Web Development Can Help You"
         secDescription="We Deliver End-To-End Custom CMS Development Services Catering To Your Business Needs. At Texas Web Studio, Experience Top-Tier Custom Ecommerce Website Development Services Where Innovation Meets Simplicity For Powerful Results. Our Team Brings Proven Expertise To Deliver Secure, High-Performance, And Cost-Effective Web Solutions, Built For Startups, Growing Brands, And Enterprise Businesses Alike."
-        image={customDevWhyChooseImage}
+        image={cmsDevWhyChooseImage}
         // leftP=""
         leftSubTitle="Dynamic CMS Solutions Built For Flexibility, Speed, And Control"
         btnText="Get A Free CMS Strategy Call"
         list={[
           {
-            image: customDevWhyChooseIcon1,
+            image: cmsDevWhyChooseIcon1,
             title: "No-Code & Low-Code Solutions",
             description:
               "Easily Manage And Update Your Website Without Touching Code.",
           },
           {
-            image: customDevWhyChooseIcon2,
+            image: cmsDevWhyChooseIcon2,
             title: "Scalable Architecture",
             description:
               "Built To Grow With Your Business, From Single Sites To Complex Multisite Setups.",
           },
           {
-            image: customDevWhyChooseIcon3,
+            image: cmsDevWhyChooseIcon3,
             title: "SEO & Performance Optimized",
             description:
               "Designed For Speed, Visibility, And High Search Rankings From Day One With Built-In SEO.",
           },
           // {
-          //   image: customDevWhyChooseIcon4,
+          //   image: cmsDevWhyChooseIcon4,
           //   title: "Performance Optimization",
           //   description:
           //     "We Optimize Your Website’s Speed, Structure, And Code To Ensure Faster Loading Times, Better User Experience, And Improved Search Engine Performance.",

@@ -36,7 +36,7 @@ const BlogSec = () => {
             </div>
           </div>
           {blogsData.map((item, index) => (
-            <div className="col-lg-4" key={index}>
+            <div className="col-lg-4 col-md-6 mb-lg-0 mb-4" key={index}>
               <BlogCard
                 image={item.image}
                 title={item.title}

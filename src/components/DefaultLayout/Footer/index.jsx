@@ -70,7 +70,7 @@ const Footer = () => {
       <section className="mainFooter bgBlack">
         <div className="container">
           <div className="row">
-            <div className="col-lg-4">
+            <div className="col-lg-4 mb-lg-0 mb-4">
               <div className="footerAbout">
                 <Link to={"/"} className="footerLogo">
                   <img src={logo} alt="Texas Logo" />
@@ -83,37 +83,37 @@ const Footer = () => {
             </div>
             <div className="col-lg-8">
               <div className="row">
-                <div className="col-lg-3">
+                <div className="col-lg-3 col-md-3 mb-md-0 mb-4">
                   <div className="footer-links">
                     <h6 className="footer-title">Quick Links</h6>
                     <ul className="footer-links">
                       <li>
-                        <Link to={"/"}>About Us</Link>
+                        <Link to={"/about"}>About Us</Link>
                       </li>
                       <li>
-                        <Link to={"/"}>Services</Link>
+                        <Link to={"/web-development"}>Services</Link>
                       </li>
                       <li>
                         <Link to={"/"}>Cases</Link>
                       </li>
                       <li>
-                        <Link to={"/"}>Pricing</Link>
+                        <Link to={"/pricing"}>Pricing</Link>
                       </li>
                       <li>
-                        <Link to={"/"}>Contact</Link>
+                        <Link to={"/contact"}>Contact</Link>
                       </li>
                     </ul>
                   </div>
                 </div>
-                <div className="col-lg-3">
+                <div className="col-lg-3 col-md-3 mb-md-0 mb-4">
                   <div className="footer-links">
                     <h6 className="footer-title">Useful Links</h6>
                     <ul className="footer-links">
                       <li>
-                        <Link to={"/"}>Privacy Policy</Link>
+                        <Link to={"/privacy-policy"}>Privacy Policy</Link>
                       </li>
                       <li>
-                        <Link to={"/"}>Terms & Conditions</Link>
+                        <Link to={"/terms-and-condition"}>Terms & Conditions</Link>
                       </li>
                       <li>
                         <Link to={"/"}>Disclaimer</Link>
@@ -127,7 +127,7 @@ const Footer = () => {
                     </ul>
                   </div>
                 </div>
-                <div className="col-lg-6">
+                <div className="col-lg-6 col-md-6 mb-md-0">
                   <div className="footer-links">
                     <h6 className="footer-title">Work Hours</h6>
                     <ul className="footer-links">

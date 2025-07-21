@@ -23,6 +23,7 @@ const LogoDesign = () => {
   return (
     <DefaultLayout>
       <InnerBanner
+        leftCol="col-xxl-6 col-lg-7"
         bgImage={logoDesignBanenr}
         title="Iconic Logo Designs For Iconic Brands"
         description="Your Brand’s First Impression Is Your Logo. And We Ensure That You Get It Right! With Iconic Logo Designs That Speak Your Stories For You, We Believe In Creating Identities With Our Custom Logo Designs In California."
@@ -51,9 +52,9 @@ const LogoDesign = () => {
 
       <ServiceAboutSec
         className="bgPink"
-        rowClass="flex-row-reverse"
-        leftCol="col-lg-7"
-        rightCol="col-lg-5"
+        // rowClass="flex-row-reverse"
+        leftCol="col-lg-7 order-2"
+        rightCol="col-lg-5 order-1"
         // secTagClass="blackColor"
         secTag="LOGO DESIGN"
         secTitle={`Logo Design Backed By Skill And The Right Tools`}

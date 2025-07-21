@@ -57,6 +57,21 @@
   font-size: 12px;
 }
 
+@media (max-width: 1199px) {
+  .mainNavBar .navbar-nav .nav-link.contact-navLink {
+    margin-left: 0px;
+  }
+  .mainNavBar .navbar-nav {
+    gap: 4px;
+  }
+}
+@media (max-width: 991px) {
+  .mainNavBar .navbar-nav{
+    align-items: start;
+    padding-top: 20px;
+  }
+}
+
 /* Desktop hover submenu */
 @media (min-width: 992px) {
   .nav-subdropdown {

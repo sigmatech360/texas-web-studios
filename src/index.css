@@ -599,7 +599,7 @@ textarea.form-control {
   font-weight: 700;
   margin-bottom: 12px;
 }
-.latestTech .secHead p{
+.latestTech .secHead p {
   margin-bottom: 16px;
 }
 .experienceSec .secHead {
@@ -744,3 +744,111 @@ textarea.form-control {
   font-family: Poppins, sans-serif;
 }
 /* Privacy Policy And Terms And Condition */
+
+@media (max-width: 1399px) {
+  .homeAboutContent .secTitle {
+    font-size: 45px;
+  }
+  .homeMissionContentLeft .secTitle {
+    font-size: 45px;
+  }
+
+  .beVisibleSec .secHead .secTitle {
+    font-size: 50px;
+  }
+  .beVisibleCOntent h3 {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .contactUsPageContent .secTitle {
+    font-size: 33px;
+  }
+  .categoriesList h4 {
+    font-size: 20px;
+  }
+  .latestTech .secHead .secTitle {
+    font-size: 36px;
+  }
+  .homeAboutContent .secTitle {
+    font-size: 40px;
+  }
+  .homeMissionContentLeft .secTitle {
+    font-size: 39px;
+  }
+  .beVisibleIconData-title {
+    font-size: 16px;
+  }
+  .logoSinglePortfolio .secHead .secTitle {
+    font-size: 40px;
+  }
+}
+@media (max-width: 991px) {
+  .sec-margin {
+    margin: 40px 0;
+  }
+  .sec-padding {
+    padding: 40px 0;
+  }
+  .homeMissionContent {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+  }
+  .homeMissionContentLeft .secTitle {
+    font-size: 35px;
+  }
+  .beVisibleSec .secHead .secTitle {
+    font-size: 45px;
+  }
+  .beVisibleCOntent h3 {
+    font-size: 40px;
+  }
+  .beVisibleIconsData {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .contactUsPageContent {
+    margin-bottom: 30px;
+  }
+  .rightP {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .homeMissionContentLeft .secTitle {
+    font-size: 28px;
+  }
+  .beVisibleSec .secHead .secTitle {
+    font-size: 35px;
+  }
+  .beVisibleCOntent h3 {
+    font-size: 30px;
+  }
+  .beVisible-numberBoxBg h3 {
+    font-size: 150px;
+  }
+  .latestTech .secHead .secTitle {
+    font-size: 35px;
+  }
+}
+@media (max-width: 480px) {
+  .beVisibleSec .secHead .secTitle {
+    font-size: 30px;
+  }
+  .latestTech .secHead .secTitle {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 390px) {
+  .homeAboutContent .secTitle {
+    font-size: 30px;
+  }
+}

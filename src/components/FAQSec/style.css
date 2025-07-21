@@ -2,16 +2,14 @@
   background-color: #ffe2e1;
 }
 
-
 .faqContent .secHead {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .faqContent .secHead .secTitle {
-    font-size: 50px;
-    font-weight: 700;
+  font-size: 50px;
+  font-weight: 700;
 }
-
 
 .faqs-items .accordion-button {
   background-color: #fff;
@@ -38,8 +36,8 @@
   border-radius: 12px;
 } */
 
-.accordion-item .accordion-header .accordion-button.collapsed{
-    padding-bottom: 12px;
+.accordion-item .accordion-header .accordion-button.collapsed {
+  padding-bottom: 12px;
 }
 
 .faqs-items .accordion-button:not(.collapsed) {
@@ -87,4 +85,55 @@
   background-image: url("../../assets/images/minus-icon.webp") !important;
   transform: rotate(0deg);
   filter: unset;
+}
+
+/* Large screens (desktops, tablets in landscape) */
+@media (max-width: 1399px) {
+  .faqContent .secHead .secTitle {
+    font-size: 45px;
+  }
+}
+@media (max-width: 1199px) {
+  .faqs-items .accordion-button {
+    font-size: 17px;
+  }
+  .faqContent .secHead .secTitle {
+    font-size: 35px;
+    line-height: 1.2;
+  }
+  .faqContent .secHead{
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .faqContent .secHead {
+    text-align: center;
+  }
+
+  .faqSection .row {
+    flex-direction: column-reverse;
+  }
+
+  .faqImgDiv {
+    max-width: 430px;
+    margin: 0 auto 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .faqContent .secHead .secTitle {
+    font-size: 35px;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 430px) {
+  .faqs-items .accordion-button::after {
+    width: 15px;
+    height: 15px;
+  }
+  .faqs-items .accordion-body {
+    padding-left: 42px;
+  }
 }

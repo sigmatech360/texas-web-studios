@@ -24,3 +24,35 @@
   font-size: 16px;
   color: #fff;
 }
+
+/* Large screens (desktops, tablets in landscape) */
+@media (max-width: 1399px) {
+  .mainBannerContent h1 {
+    font-size: 47px;
+  }
+}
+@media (max-width: 1199px) {
+  .mainBanner {
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 991px) {
+  .mainBanner {
+    min-height: 413px;
+  }
+}
+@media (max-width: 767px) {
+  .mainBannerContent h1 {
+    font-size: 40px;
+  }
+  .mainBanner {
+    min-height: 410px;
+  }
+}
+
+@media (max-width: 390px) {
+  .mainBannerContent h1 {
+    font-size: 32px;
+  }
+}

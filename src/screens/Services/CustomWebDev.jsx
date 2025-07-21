@@ -30,7 +30,7 @@ import portfolioImg2_2 from "../../assets/images/customPortfolio/customPortfolio
 import portfolioImg2_3 from "../../assets/images/customPortfolio/customPortfolioImg2-3.webp";
 import portfolioImg2_4 from "../../assets/images/customPortfolio/customPortfolioImg2-4.webp";
 
-const customDevPortfolio1 = [
+export const customDevPortfolio1 = [
   {
     image: portfolioImg2_1,
   },
@@ -56,7 +56,7 @@ const customDevPortfolio1 = [
     image: portfolioImg2_4,
   },
 ];
-const customDevPortfolio2 = [
+export const customDevPortfolio2 = [
   {
     image: portfolioImg1_1,
   },

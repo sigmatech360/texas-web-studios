@@ -12,3 +12,27 @@
   grid-template-columns: 1fr 1fr;
   /* max-width: 500px; */
 }
+
+@media (max-width: 1199px) {
+  .servicesAboutContent .secTitle {
+    font-size: 40px;
+  }
+}
+@media (max-width: 991px) {
+  .servicesAboutImg {
+    max-width: 480px;
+    margin: 0 auto 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .servicesAboutContent .secTitle {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 430px) {
+  .packageCardList.grid {
+    grid-template-columns: 1fr;
+  }
+}

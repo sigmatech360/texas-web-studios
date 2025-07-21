@@ -64,3 +64,9 @@
 .blogMetaDetails span {
   color: #707070;
 }
+
+@media (max-width: 991px) {
+  .blogSec .secHead .secTitle {
+    font-size: 40px;
+  }
+}

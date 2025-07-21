@@ -12,3 +12,28 @@
   font-weight: 700;
   font-size: 50px;
 }
+
+/* Large screens (desktops, tablets in landscape) */
+@media (max-width: 1399px) {
+  .bookCallTitle {
+    font-size: 45px;
+  }
+}
+@media (max-width: 991px) {
+  .bookCallTitle {
+    font-size: 35px;
+    line-height: 1.2;
+  }
+  .bookCallContent{
+    gap: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .bookCallContent{
+    flex-direction: column;
+  }
+  .bookCallTitle{
+    text-align: center;
+  }
+}

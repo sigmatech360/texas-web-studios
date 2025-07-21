@@ -13,6 +13,7 @@ import smmWhyChooseImage from "../../assets/images/smmWhyChooseImage.webp";
 import customDevWhyChooseIcon1 from "../../assets/images/customDevWhyChooseIcon1.webp";
 import customDevWhyChooseIcon2 from "../../assets/images/customDevWhyChooseIcon2.webp";
 import customDevWhyChooseIcon3 from "../../assets/images/customDevWhyChooseIcon3.webp";
+
 import FAQSec from "../../components/FAQSec";
 // import customDevWhyChooseIcon4 from "../../assets/images/customDevWhyChooseIcon4.webp";
 
@@ -41,12 +42,14 @@ const testimonialData = [
     description:
       "We Focus On Full-Funnel Strategy, ROI-Driven Automation, And Creative That Actually Converts, Not Just Likes And Follows.",
   },
-];
+]; 
 
 const SMM = () => {
   return (
     <DefaultLayout>
       <InnerBanner
+        leftCol="col-lg-7"
+        // rightCol="col-lg-6"
         bgImage={smmBanner}
         title={`Social <br/> Media Marketing`}
         description="Build Buzz, Grow Engagement, And Turn Followers Into Loyal Customers Through Strategic And Creative Social Media Marketing In Texas."
@@ -55,8 +58,8 @@ const SMM = () => {
 
       <LatestTechSec
         // className="latestTechLogoSec"
-        leftCol="col-lg-5"
-        centerCol="col-lg-7"
+        leftCol="col-xxl-5 col-lg-6"
+        centerCol="col-xxl-7 col-lg-6"
         rightCol="col-lg-3"
         secTitle="Social Media Marketing That Sparks Conversations"
         description="In Today’s Digital-First World, Having A Strong Presence On Social Platforms Is Not Optional; Rather Essential. The Approach Of Our Social Media Marketing Agency In Texas Is Rooted In Creativity, Data, And Strategy To Help Brands Like Yours Connect With The Right Audience, At The Right Time, On The Right Platform."
@@ -69,10 +72,18 @@ const SMM = () => {
         ]}
         categoryTitle2="WHAT YOU GET WITH US"
         solutionList2={[
-          { name: "Advanced Campaign Execution Built On Social Media Marketing Tools And Platforms." },
-          { name: "Keyword-Optimized Content Creation To Support Social Media Advertising Campaigns." },
-          { name: "Integration With Tools To Deliver Top-Tier Social Media Marketing Services." },
-          { name: "ROI-Focused Automation That Sets Us Apart From Typical Social Media Management Companies." },
+          {
+            name: "Advanced Campaign Execution Built On Social Media Marketing Tools And Platforms.",
+          },
+          {
+            name: "Keyword-Optimized Content Creation To Support Social Media Advertising Campaigns.",
+          },
+          {
+            name: "Integration With Tools To Deliver Top-Tier Social Media Marketing Services.",
+          },
+          {
+            name: "ROI-Focused Automation That Sets Us Apart From Typical Social Media Management Companies.",
+          },
         ]}
         btnText="Check Out Our Full Tech Stack"
         // rightP=""
@@ -81,9 +92,9 @@ const SMM = () => {
 
       <ServiceAboutSec
         className="bgPink"
-        rowClass="flex-row-reverse"
-        leftCol="col-lg-7"
-        rightCol="col-lg-5"
+        // rowClass="flex-row-reverse flex-lg-row-reverse"
+        leftCol="col-lg-7 order-2"
+        rightCol="col-lg-5 order-1"
         // secTagClass="blackColor"
         // secTag="CUSTOM WEB DEVELOPMENT"
         secTitle={`Get Visible On <br/> The Right Platform`}

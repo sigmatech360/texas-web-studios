@@ -61,3 +61,49 @@
   font-family: "Syne";
   font-size: 18px;
 }
+
+/* Large screens (desktops, tablets in landscape) */
+@media (max-width: 1399px) {
+  .homeOurServicesHead .secTitle {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .ourServiceBoxContent img {
+    margin-bottom: 0;
+    max-width: 60px;
+  }
+  .ourServiceBoxContent p {
+    font-size: 14px;
+  }
+  .ourServiceBoxContentTitle {
+    font-size: 25px;
+  }
+  .ourServiceBoxContent .link {
+    font-size: 16px;
+  }
+  .ourServiceBoxContent {
+    gap: 8px;
+  }
+}
+
+@media (max-width: 991px) {
+  .ourServiceBoxContent {
+    gap: 18px;
+  }
+  .homeOurServicesHead {
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .homeOurServicesHead .secTitle {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .homeOurServicesHead .secTitle {
+    font-size: 30px;
+  }
+}

@@ -22,6 +22,9 @@ import PortfolioSliders from "../../components/PortfolioSliders";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import TestimonialSec from "../../components/TestimonialSec";
 import PackagesSec from "../../components/PackagesSec";
+import { cmsDevPortfolio1, cmsDevPortfolio2 } from "../Services/CMSDevelopment";
+import { customDevPortfolio1, customDevPortfolio2 } from "../Services/CustomWebDev";
+import { mobilePortfolio1, mobilePortfolio2 } from "../Services/MobileAppDev";
 
 const allPortfolio1 = [
   {
@@ -128,7 +131,31 @@ const Portfolio = () => {
               />
             )}
           </Tab>
-          <Tab eventKey="webDesign-portfolio" title="Web Design">
+          <Tab eventKey="cmsDev-portfolio" title="CMS Development">
+            {key === "cmsDev-portfolio" && (
+              <PortfolioSliders
+                portfolio1={cmsDevPortfolio1}
+                portfolio2={cmsDevPortfolio2}
+              />
+            )}
+          </Tab>
+          <Tab eventKey="customDev-portfolio" title="Custom Development">
+            {key === "customDev-portfolio" && (
+              <PortfolioSliders
+                portfolio1={customDevPortfolio1}
+                portfolio2={customDevPortfolio2}
+              />
+            )}
+          </Tab>
+          <Tab eventKey="mobileAppDev-portfolio" title="Mobile App Development">
+            {key === "mobileAppDev-portfolio" && (
+              <PortfolioSliders
+                portfolio1={mobilePortfolio1}
+                portfolio2={mobilePortfolio2}
+              />
+            )}
+          </Tab>
+          {/* <Tab eventKey="webDesign-portfolio" title="Web Design">
             {key === "webDesign-portfolio" && (
               <PortfolioSliders
                 portfolio1={allPortfolio1}
@@ -167,7 +194,7 @@ const Portfolio = () => {
                 portfolio2={allPortfolio2}
               />
             )}
-          </Tab>
+          </Tab> */}
         </Tabs>
 
         <div className="text-center mt-5">

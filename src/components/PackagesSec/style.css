@@ -56,3 +56,15 @@
 .packagesSec.bgBlack .packagePriceDiv p {
   color: #fff;
 }
+
+@media (max-width: 1199px) {
+  .packagesSec .secHead .secTitle {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 767px) {
+  .packagesSec .secHead .secTitle {
+    font-size: 35px;
+  }
+}

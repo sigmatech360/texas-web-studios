@@ -7,7 +7,7 @@ const MainBanner = () => {
     <section className="mainBanner">
       <div className="container">
         <div className="row">
-          <div className="col-lg-6">
+          <div className="col-xl-6 col-lg-8">
             <div className="mainBannerContent">
               <h1>
                 Become A Digital Leader In Your Industry With Texas Web Studios

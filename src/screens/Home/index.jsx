@@ -155,7 +155,7 @@ const Home = () => {
       <section className="homeAbout sec-margin">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6">
+            <div className="col-lg-6 mb-lg-0 mb-4">
               <div className="homeAboutContent">
                 <h3 className="secTitle">
                   Growth Strategies That Leave A Lasting Impact
@@ -215,7 +215,7 @@ const Home = () => {
 
       <section className="homeOurServicesSec sec-padding bgBlack">
         <div className="container">
-          <div className="row">
+          <div className="row justify-content-center">
             <div className="col-lg-12">
               <div className="homeOurServicesHead">
                 <p className="sec-tag">OUR SERVICES</p>
@@ -231,7 +231,7 @@ const Home = () => {
               </div>
             </div>
             {ourServicesData.map((item, index) => (
-              <div className="col-lg-4" key={index}>
+              <div className="col-lg-4 col-md-6 mb-lg-0 mb-4" key={index}>
                 <OurServiceBox
                   image={item.image}
                   icon={item.icon}
@@ -256,7 +256,7 @@ const Home = () => {
                 </h3>
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6 mb-lg-0 mb-4">
               <div className="beVisible-numberBox">
                 <div className="beVisible-numberBoxBg">
                   <h3>10+</h3>

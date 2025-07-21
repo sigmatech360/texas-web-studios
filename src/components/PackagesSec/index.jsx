@@ -30,7 +30,7 @@ const PackagesSec = (props) => {
           <Tab eventKey="all-packages" title="ALL">
             <div className="row justify-content-center">
               {allPackagesData.map((item, index) => (
-                <div className="col-lg-4" key={index}>
+                <div className="col-lg-4 col-md-6" key={index}>
                   <PackagesCard
                     name={item.name}
                     price={item.price}

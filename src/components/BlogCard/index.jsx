@@ -19,7 +19,7 @@ const BlogCard = (props) => {
           </div>
           <div className="blogMetaDetails">
             <HiOutlineUserCircle />
-            <span>0 Comments</span>
+            <span>Admin</span>
           </div>
           <div className="blogMetaDetails"></div>
         </div>

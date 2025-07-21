@@ -1,5 +1,5 @@
 .packageCard {
-  background-color: #fff;
+  background-color: #efefef;
   /* box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px; */
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -71,4 +71,54 @@
 .packageCardBody .theme-btn {
   margin: 17px auto 0;
   display: block;
+}
+
+.packageCard .packageCardList {
+  height: 220px;
+  overflow: auto;
+}
+/* Applies to WebKit browsers (Chrome, Safari, Edge) */
+.packageCard .packageCardList::-webkit-scrollbar {
+  width: 5px;
+  height: 12px;
+}
+
+.packageCard .packageCardList::-webkit-scrollbar-track {
+  /* background: #f0f0f0; */
+  border-radius: 10px;
+}
+
+.packageCard .packageCardList::-webkit-scrollbar-thumb {
+  background-color: #d41f14;
+  border-radius: 10px;
+  /* border: 3px solid #f0f0f0; */
+}
+
+.packageCard .packageCardList::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+@media (max-width: 1199px) {
+  .packagePrice {
+    font-size: 40px;
+  }
+  .packageName {
+    font-size: 13px;
+  }
+  .packageCardBody {
+    padding: 16px;
+  }
+  .packagePriceDiv {
+    gap: 8px;
+  }
+  .packageCardList li {
+    padding-left: 22px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .packageCard {
+    max-width: 360px;
+    margin: 0 auto 25px;
+  }
 }
