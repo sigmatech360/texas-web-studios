@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css"
+import "./style.css";
 
 import ourTeamImg1 from "../../assets/images/ourTeamImg1.webp";
 import ourTeamImg2 from "../../assets/images/ourTeamImg2.webp";
@@ -34,11 +34,18 @@ const OurTeamSec = () => {
           <div className="col-md-12">
             <div className="secHead">
               <p className="sec-tag">EXPERTS</p>
-              <h3 className="secTitle">Our Team</h3>
+              <h3 className="secTitle" data-aos="fade-up" data-aos-delay="200">
+                Our Team
+              </h3>
             </div>
           </div>
           {ourTeamData.map((item, index) => (
-            <div className="col-lg-4" key={index}>
+            <div
+              className="col-lg-4"
+              key={index}
+              data-aos="fade-up"
+              data-aos-delay={index * 200}
+            >
               <div className="ourTeamCard">
                 <div className="ourTeamCardImg">
                   <img src={item.image} alt={item.name} className="img-fluid" />

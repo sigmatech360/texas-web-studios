@@ -116,6 +116,7 @@ p {
 }
 .sec-padding {
   padding: 60px 0;
+  overflow: hidden;
 }
 .sec-tag {
   color: #d41f14 !important;
@@ -486,7 +487,12 @@ textarea.form-control {
 
 .ourPortfolio .secHead .secTitle {
   font-size: 50px;
+  margin-bottom: 10px;
   font-weight: 700;
+}
+
+.ourPortfolio .packagesTabs {
+  padding: 0 20px;
 }
 
 .swiper-wrapper {
@@ -744,7 +750,10 @@ textarea.form-control {
   font-family: Poppins, sans-serif;
 }
 /* Privacy Policy And Terms And Condition */
-
+.loader-div img {
+  width: 100px;
+  height: 100px;
+}
 @media (max-width: 1399px) {
   .homeAboutContent .secTitle {
     font-size: 45px;
@@ -759,9 +768,30 @@ textarea.form-control {
   .beVisibleCOntent h3 {
     font-size: 45px;
   }
+  .getToKnowContent .secTitle {
+    font-size: 40px;
+  }
+  .getToKnowExpDivHead {
+    align-items: center;
+  }
+  .getKnowExptText::after {
+    height: 80%;
+  }
+  .ourServicesListTitle {
+    font-size: 24px;
+  }
+  .ourServicesContent .secTitle {
+    font-size: 43px;
+  }
+  .ourServicesList {
+    height: 650px;
+  }
 }
 
 @media (max-width: 1199px) {
+  .experienceSec .secHead .secTitle {
+    font-size: 40px;
+  }
   .contactUsPageContent .secTitle {
     font-size: 33px;
   }
@@ -783,8 +813,42 @@ textarea.form-control {
   .logoSinglePortfolio .secHead .secTitle {
     font-size: 40px;
   }
+  .getFoundSeoContent .secTitle {
+    font-size: 35px;
+  }
+  .ourPortfolio .secHead .secTitle {
+    font-size: 40px;
+  }
+  .designForImpack .secHead .secTitle {
+    font-size: 40px;
+  }
+  .getToKnowContent .secTitle {
+    font-size: 30px;
+  }
+  .getToKnowContent .secSubTitle {
+    font-size: 20px;
+  }
+  .expTagHead {
+    font-size: 35px;
+  }
+  .getKnowExptText::after {
+    height: 50%;
+  }
+  .ourServicesList {
+    height: 700px;
+  }
+  .ourServicesContent .secTitle {
+    font-size: 35px;
+  }
+  .ourServicesContent .secSubTitle {
+    font-size: 22px;
+  }
 }
 @media (max-width: 991px) {
+  .getFoundSeoImg {
+    max-width: 480px;
+    margin: 0 auto 30px;
+  }
   .sec-margin {
     margin: 40px 0;
   }
@@ -819,9 +883,35 @@ textarea.form-control {
   .rightP {
     margin-top: 20px;
   }
+  .latestTech .secHead .theme-btn {
+    margin-bottom: 20px;
+  }
+
+  .ourPortfolio .secHead .secTitle {
+    font-size: 40px;
+  }
+  .getKnowExptText::after {
+    content: unset;
+  }
+  .ourServicesList {
+    height: 417px;
+  }
+  .ourServicesContent {
+    margin-bottom: 30px;
+  }
+  .getToKnowImg1 {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .getToKnowContent {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 767px) {
+  .logoSinglePortfolio .secHead .secTitle {
+    font-size: 30px;
+  }
   .homeMissionContentLeft .secTitle {
     font-size: 28px;
   }
@@ -837,6 +927,21 @@ textarea.form-control {
   .latestTech .secHead .secTitle {
     font-size: 35px;
   }
+  .experienceSec .secHead .secTitle {
+    font-size: 32px;
+  }
+  .ourPortfolio .secHead {
+    margin-bottom: 30px;
+  }
+  .designForImpack .secHead .secTitle {
+    font-size: 32px;
+  }
+  .ourServicesList {
+    height: 464px;
+  }
+  .subscribeNow .secHead .secTitle {
+    font-size: 33px;
+  }
 }
 @media (max-width: 480px) {
   .beVisibleSec .secHead .secTitle {
@@ -845,8 +950,37 @@ textarea.form-control {
   .latestTech .secHead .secTitle {
     font-size: 30px;
   }
+  .ourPortfolio .secHead .secTitle {
+    font-size: 30px;
+  }
+  .getFoundSeoContent .secTitle {
+    font-size: 28px;
+  }
 }
 
+@media (max-width: 430px) {
+  .logoSinglePortfolio .secHead .secTitle {
+    font-size: 25px;
+  }
+  .getToKnowImg2 {
+    max-width: 160px;
+  }
+  .tenPlusExpTitle {
+    padding: 15px 20px;
+    font-size: 35px;
+  }
+  .beVisibleIconsData {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .expTagHead {
+    font-size: 26px;
+  }
+  .getToKnowContent .secTitle {
+    font-size: 26px;
+  }
+}
 @media (max-width: 390px) {
   .homeAboutContent .secTitle {
     font-size: 30px;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import DefaultLayout from "../../components/DefaultLayout";
 import InnerBanner from "../../components/InnerBanner";
 
@@ -13,6 +13,8 @@ import blogPageImg4 from "../../assets/images/blogPageImg4.webp";
 import blogPageImg5 from "../../assets/images/blogPageImg5.webp";
 
 import BlogCard from "../../components/BlogCard";
+import axios from "axios";
+import Loader from "../../components/Loader";
 
 const blogsData = [
   {
@@ -73,7 +75,30 @@ const blogCategorries = [
   },
 ];
 
+const wpBaseUrl = import.meta.env.VITE_WP_BASE_URL;
+
 const Blog = () => {
+  const [loading, setLoading] = useState(true);
+  const [blogs, setBlogs] = useState([]);
+
+  console.log("blogs", blogs);
+
+  useEffect(() => {
+    const fetchLatestBlogs = async () => {
+      try {
+        setLoading(true);
+        const response = await axios.get(`${wpBaseUrl}/posts?_embed`);
+        setBlogs(response.data);
+      } catch (error) {
+        console.error("Failed to fetch blogs:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchLatestBlogs();
+  }, []);
+
   return (
     <DefaultLayout>
       <InnerBanner
@@ -85,16 +110,29 @@ const Blog = () => {
       <section className="blogPageSec sec-padding">
         <div className="container">
           <div className="row">
-            <div className="col-lg-9">
-              <div className="row">
-                {blogsData.map((item, index) => (
-                  <div className="col-lg-6 mb-4" key={index}>
-                    <BlogCard image={item.image} title={item.title} />
-                  </div>
-                ))}
-              </div>
+            <div className="col-lg-9 order-lg-1 order-2">
+              {loading ? (
+                <>
+                  <Loader />
+                </>
+              ) : (
+                <div className="row">
+                  {blogs.map((item, index) => (
+                    <div className="col-md-6 mb-4" key={index}>
+                      <BlogCard
+                        image={
+                          item._embedded?.["wp:featuredmedia"]?.[0]?.source_url
+                        }
+                        title={item.title.rendered}
+                        author={item._embedded?.author?.[0]?.name || "admin"}
+                        slug={item.slug}
+                      />
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 order-lg-2 order-1 mb-lg-0 mb-4">
               <div className="categoriesList">
                 <h4>SOLUTIONS</h4>
                 <ul className="packageCardList">
@@ -102,7 +140,9 @@ const Blog = () => {
                     <li key={listIndex}>{item.name}</li>
                   ))}
                 </ul>
-                <button className="theme-btn icon-btn">Get Started <IoIosArrowRoundForward /></button>
+                <button className="theme-btn icon-btn">
+                  Get Started <IoIosArrowRoundForward />
+                </button>
               </div>
             </div>
           </div>

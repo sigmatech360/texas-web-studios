@@ -13,10 +13,20 @@ const InnerBanner = (props) => {
         <div className="row align-items-center">
           <div className={`${props.leftCol || "col-lg-6"}`}>
             <div className="innerBannerContent">
-              <h1 dangerouslySetInnerHTML={{ __html: props.title }} />
-              <p>{props.description}</p>
+              <h1
+                dangerouslySetInnerHTML={{ __html: props.title }}
+                data-aos="fade-right"
+                data-aos-delay="200"
+              />
+              <p data-aos="fade-right" data-aos-delay="400">
+                {props.description}
+              </p>
 
-              <nav aria-label="breadcrumb">
+              <nav
+                aria-label="breadcrumb"
+                data-aos="fade-right"
+                data-aos-delay="500"
+              >
                 <ol className="breadcrumb">
                   <li className="breadcrumb-item">
                     <Link to={"/"}>Home</Link>
@@ -30,7 +40,11 @@ const InnerBanner = (props) => {
           </div>
           <div className={`${props.rightCol || "col-lg-6"}`}>
             {props.bannerImg && (
-              <div className="innerBannerImg">
+              <div
+                className="innerBannerImg"
+                data-aos="fade-left"
+                data-aos-delay="300"
+              >
                 <img
                   src={props.bannerImg}
                   alt={props.title}

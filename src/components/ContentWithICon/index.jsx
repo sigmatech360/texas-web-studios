@@ -2,8 +2,9 @@ import React from "react";
 import "./style.css"
 
 const ContentWithICon = (props) => {
+  const delay = props.index * 200;
   return (
-    <div className="contentWithICon">
+    <div className="contentWithICon" data-aos="fade-up" data-aos-delay={delay}>
       <img
         src={props.icon}
         alt={props.title}

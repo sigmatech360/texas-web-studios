@@ -20,6 +20,7 @@ import SEO from "../screens/Services/SEO";
 import CustomWebDev from "../screens/Services/CustomWebDev";
 import LogoDesign from "../screens/Services/LogoDesign";
 import MobileAppDev from "../screens/Services/MobileAppDev";
+import BlogDetail from "../screens/Blog/BlogDetail";
 
 const AppRouter = () => {
   return (
@@ -29,10 +30,13 @@ const AppRouter = () => {
         <Route path="/about" element={<About />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-and-condition" element={<TermsAndCondition />} />
+
+        {/* Blogs */}
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<BlogDetail />} />
 
         {/* Services Pages */}
         <Route path="/logo-design" element={<LogoDesign />} />

@@ -18,7 +18,7 @@ const TestimonialSec = (props) => {
           <div className="col-lg-5">
             <div className="secHead">
               <p className="sec-tag">{props.secTag}</p>
-              <h3 className="secTitle">{props.secTitle}</h3>
+              <h3 className="secTitle" data-aos="fade-right" data-aos-delay="200">{props.secTitle}</h3>
             </div>
           </div>
 

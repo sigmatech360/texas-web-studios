@@ -13,9 +13,14 @@
   /* max-width: 500px; */
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1399px) {
   .servicesAboutContent .secTitle {
     font-size: 40px;
+  }
+}
+@media (max-width: 1199px) {
+  .servicesAboutContent .secTitle br {
+    display: none;
   }
 }
 @media (max-width: 991px) {
@@ -27,12 +32,15 @@
 
 @media (max-width: 767px) {
   .servicesAboutContent .secTitle {
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 
 @media (max-width: 430px) {
   .packageCardList.grid {
     grid-template-columns: 1fr;
+  }
+  .servicesAboutContent .secTitle {
+    font-size: 30px;
   }
 }

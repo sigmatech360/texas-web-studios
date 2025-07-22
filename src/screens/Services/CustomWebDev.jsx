@@ -93,8 +93,8 @@ const CustomWebDev = () => {
   return (
     <DefaultLayout>
       <InnerBanner
-        leftCol="col-lg-8"
-        rightCol="col-lg-4"
+        leftCol="col-xl-8 col-lg-9"
+        rightCol="col-xl-4"
         bgImage={customWebDevBanner}
         title="Custom Web Development With Detailed Processes"
         description="At Texas Web Studios, Our Team Works On Custom Web Development Services In Texas That Reflect Your Business Structure, Customer Journey, And Goals. We Combine Custom Design With Well-Researched And Planned Marketing Strategies To Ensure Your Site Works Exactly How You Need It To With A Consistent Flow Of Traffic, Leads, And Conversions."
@@ -103,9 +103,9 @@ const CustomWebDev = () => {
 
       <LatestTechSec
         // className="latestTechLogoSec"
-        leftCol="col-lg-5"
-        centerCol="col-lg-4"
-        rightCol="col-lg-3"
+        leftCol="col-xl-5 col-lg-4"
+        centerCol="col-xl-3 col-lg-4"
+        rightCol="col-xl-3 col-lg-4"
         secTitle="Websites Built To Match Every Purpose"
         description="Texas Web Studios Specializes In Custom Frontend And Backend Web Development, Where Your Business Has The Space To Be Fully Imaginative."
         categoryTitle="SOLUTIONS"
@@ -127,8 +127,8 @@ const CustomWebDev = () => {
       <ServiceAboutSec
         className="bgPink"
         // rowClass="flex-row-reverse"
-        leftCol="col-lg-7"
-        rightCol="col-lg-5"
+        leftCol="col-lg-7 order-lg-1 order-2"
+        rightCol="col-lg-5 order-lg-2 order-1"
         // secTagClass="blackColor"
         secTag="CUSTOM WEB DEVELOPMENT"
         secTitle={`Why We Call It </br> <span class="redColor">Custom Web Development</span>`}

@@ -1,10 +1,12 @@
-import React from "react";
-import "./style.css"
+import React, { useEffect, useState } from "react";
+import "./style.css";
 
 import blogImg1 from "../../assets/images/blogImg1.webp";
 import blogImg2 from "../../assets/images/blogImg2.webp";
 import blogImg3 from "../../assets/images/blogImg3.webp";
 import BlogCard from "../BlogCard";
+import axios from "axios";
+import Loader from "../Loader";
 
 const blogsData = [
   {
@@ -24,7 +26,64 @@ const blogsData = [
   },
 ];
 
-const BlogSec = () => {
+const wpBaseUrl = import.meta.env.VITE_WP_BASE_URL;
+
+const BlogSec = ({ secTitle, categorySlug }) => {
+  const [loading, setLoading] = useState(true);
+  const [blogs, setBlogs] = useState([]);
+
+  useEffect(() => {
+    const fetchLatestBlogs = async () => {
+      try {
+        setLoading(true);
+        const response = await axios.get(`${wpBaseUrl}/posts?_embed`);
+        setBlogs(response.data);
+      } catch (error) {
+        console.error("Failed to fetch blogs:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchLatestBlogs();
+  }, []);
+
+  // const [categoryId, setCategoryId] = useState(null);
+  // useEffect(() => {
+  //   const fetchCategoryIdAndPosts = async () => {
+  //     try {
+  //       setLoading(true);
+
+  //       // Step 1: Get category ID from slug
+  //       const categoryRes = await axios.get(
+  //         `${wpBaseUrl}/categories?slug=${categorySlug}`
+  //       );
+  //       const category = categoryRes.data[0];
+
+  //       if (!category) {
+  //         console.warn("Category not found");
+  //         setBlogs([]);
+  //         return;
+  //       }
+
+  //       setCategoryId(category.id);
+
+  //       // Step 2: Fetch posts using category ID
+  //       const postsRes = await axios.get(
+  //         `${wpBaseUrl}/posts?_embed&categories=${category.id}`
+  //       );
+  //       setBlogs(postsRes.data);
+  //     } catch (error) {
+  //       console.error("Failed to fetch category blogs:", error);
+  //       setBlogs([]);
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
+
+  //   fetchCategoryIdAndPosts();
+  // }, [categorySlug]);
+
   return (
     <section className="blogSec sec-padding">
       <div className="container">
@@ -32,17 +91,33 @@ const BlogSec = () => {
           <div className="col-md-12">
             <div className="secHead">
               <p className="sec-tag">NEWS FEED</p>
-              <h3 className="secTitle">News & Article</h3>
+              <h3 className="secTitle" data-aos="fade-up" data-aos-delay="200">
+                {secTitle || "News & Article"}
+              </h3>
             </div>
           </div>
-          {blogsData.map((item, index) => (
-            <div className="col-lg-4 col-md-6 mb-lg-0 mb-4" key={index}>
-              <BlogCard
-                image={item.image}
-                title={item.title}
-              />
+          {loading ? (
+            <div className="text-center">
+              <Loader />
             </div>
-          ))}
+          ) : (
+            blogs.slice(0, 3).map((item, index) => (
+              <div
+                className="col-lg-4 col-md-6 mb-lg-0 mb-4"
+                key={index}
+                data-aos="fade-up"
+                data-aos-delay={index * 200}
+              >
+                {/* <BlogCard image={item.image} title={item.title} /> */}
+                <BlogCard
+                  image={item._embedded?.["wp:featuredmedia"]?.[0]?.source_url}
+                  title={item.title.rendered}
+                  author={item._embedded?.author?.[0]?.name || "admin"}
+                  slug={item.slug}
+                />
+              </div>
+            ))
+          )}
         </div>
       </div>
     </section>

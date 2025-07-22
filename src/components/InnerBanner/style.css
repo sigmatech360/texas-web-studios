@@ -7,6 +7,7 @@
   color: #fff;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 
 .innerBannerContent .breadcrumb {
@@ -15,9 +16,8 @@
 
 .innerBannerContent h1 {
   font-size: 60px;
-  line-height: 1.2  ;
+  line-height: 1.2;
   margin-bottom: 10px;
-
 }
 .innerBannerContent p {
   color: #fff;
@@ -36,14 +36,12 @@
   color: #fff;
 }
 
-
-
 /* Large screens (desktops, tablets in landscape) */
 @media (max-width: 1399px) {
   .innerBanner {
     min-height: 500px;
   }
-  .innerBannerContent h1{
+  .innerBannerContent h1 {
     font-size: 50px;
   }
 }
@@ -60,6 +58,10 @@
   .innerBanner {
     min-height: 400px;
   }
+  .innerBannerImg {
+    max-width: 480px;
+    margin: 0 auto;
+  }
 }
 
 /* Extra small screens (phones in portrait) */
@@ -67,7 +69,7 @@
   .innerBanner {
     min-height: 350px;
   }
-  .innerBannerContent h1 br{
+  .innerBannerContent h1 br {
     display: none;
   }
 }
@@ -79,3 +81,9 @@
   }
 }
 
+@media (max-width: 480px) {
+  .innerBannerContent h1 {
+    font-size: 40px;
+    line-height: 1;
+  }
+}

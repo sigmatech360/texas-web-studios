@@ -21,7 +21,6 @@ import seoWhyChooseIcon3 from "../../assets/images/seoWhyChooseIcon3.webp";
 import seoWhyChooseIcon4 from "../../assets/images/seoWhyChooseIcon4.webp";
 import WhyCooseUsSec from "../../components/WhyCooseUsSec";
 
-
 import BlogSec from "../../components/BlogSec";
 import TestimonialSec from "../../components/TestimonialSec";
 import PackagesSec from "../../components/PackagesSec";
@@ -66,9 +65,9 @@ const SEO = () => {
       />
       <LatestTechSec
         // className="latestTechLogoSec"
-        leftCol="col-lg-5"
-        centerCol="col-lg-4"
-        rightCol="col-lg-3"
+        leftCol="col-xl-5 col-lg-6"
+        centerCol="col-xl-4 col-lg-6 mb-lg-4 mb-0"
+        rightCol="col-xl-3"
         secTitle="The SEO Tools That Get You Seen."
         description="For Accurate Search Engine Optimisation Marketing In Texas, We Integrate Effective SEO Tools With Our Strategy To Achieve Our Goals."
         categoryTitle="SOLUTIONS"
@@ -87,8 +86,8 @@ const SEO = () => {
       <ServiceAboutSec
         className="bgPink"
         // rowClass="flex-row-reverse"
-        leftCol="col-lg-7"
-        rightCol="col-lg-5"
+        leftCol="col-xl-7 col-lg-6 order-lg-1 order-2"
+        rightCol="col-xl-5 col-lg-6 order-lg-2 order-1"
         // secTagClass="blackColor"
         secTag="SEARCH ENGINE OPTIMIZATION"
         secTitle={`We Crack The Algorithm Demands For Lasting Results!`}
@@ -187,7 +186,6 @@ const SEO = () => {
           },
         ]}
       />
-
 
       <PackagesSec
         className="bgPink"

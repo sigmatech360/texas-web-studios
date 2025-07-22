@@ -39,7 +39,6 @@ import onTimeDeliveryIcon from "../../assets/images/onTimeDeliveryIcon.webp";
 import customerSupport247Icon from "../../assets/images/247CustomerSupportIcon.webp";
 import awardWinningWebDesignersIcon from "../../assets/images/award-WinningWebDesignersIcon.webp";
 
-
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { Link } from "react-router-dom";
 import PortfolioSliders from "../../components/PortfolioSliders";
@@ -206,7 +205,11 @@ const About = () => {
           <div className="row">
             <div className="col-lg-6">
               <div className="getToKnowImgContent">
-                <div className="getToKnowImg1">
+                <div
+                  className="getToKnowImg1"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
                   <img
                     src={getToKnowImg1}
                     alt="10+ Experience"
@@ -215,10 +218,18 @@ const About = () => {
                 </div>
                 <div className="getToKnowExpDiv">
                   <div className="getToKnowExpDivHead">
-                    <div className="tenPlusExp">
+                    <div
+                      className="tenPlusExp"
+                      data-aos="fade-up"
+                      data-aos-delay="400"
+                    >
                       <h4 className="tenPlusExpTitle">10+</h4>
                     </div>
-                    <div className="getToKnowImg2">
+                    <div
+                      className="getToKnowImg2"
+                      data-aos="fade-up"
+                      data-aos-delay="600"
+                    >
                       <img
                         src={getToKnowImg2}
                         alt="10+ Experience"
@@ -227,11 +238,15 @@ const About = () => {
                     </div>
                   </div>
                   <div className="getKnowExptText">
-                    <h4 className="expTagHead">
+                    <h4
+                      className="expTagHead"
+                      data-aos="fade-up"
+                      data-aos-delay="700"
+                    >
                       <span className="expTagHeadNum">10+</span> Years Of
                       Experience
                     </h4>
-                    <p>
+                    <p data-aos="fade-up" data-aos-delay="800">
                       We Are Dedicated To Providing Outstanding Digital And
                       Design Services That Deliver Both Functionality And
                       Aesthetic Appeal, Ensuring Your Brand Stands Out And
@@ -245,10 +260,14 @@ const About = () => {
               <div className="getToKnowContent">
                 <div className="secHead">
                   <p className="sec-tag">GET TO KNOW US</p>
-                  <h3 className="secTitle">
+                  <h3
+                    className="secTitle"
+                    data-aos="fade-left"
+                    data-aos-delay="200"
+                  >
                     We Provide Innovative Design & Development Solutions
                   </h3>
-                  <p>
+                  <p data-aos="fade-left" data-aos-delay="400">
                     We Build Scalable Digital Products And Intelligent Marketing
                     Solutions Using The Latest Technologies To Keep Your
                     Business Ahead Of The Competition. Backed By A Powerful Tech
@@ -256,7 +275,11 @@ const About = () => {
                     Reflect Your Brand’s Style, And Move At The Speed Of Your
                     Growth.
                   </p>
-                  <h4 className="secSubTitle">
+                  <h4
+                    className="secSubTitle"
+                    data-aos="fade-left"
+                    data-aos-delay="600"
+                  >
                     Your Partner In Digital Excellence
                   </h4>
                   <ListItem
@@ -274,7 +297,12 @@ const About = () => {
             <div className="col-md-12">
               <div className="beVisibleIconsData">
                 {beVisibleData.map((item, index) => (
-                  <div className="beVisibleIconData" key={index}>
+                  <div
+                    className="beVisibleIconData"
+                    key={index}
+                    data-aos="fade-up"
+                    data-aos-delay={index * 200}
+                  >
                     <img src={item.icon} alt={item.title} />
                     <h4 className="beVisibleIconData-title">{item.title}</h4>
                   </div>
@@ -291,37 +319,49 @@ const About = () => {
             <div className="col-lg-6">
               <div className="ourServicesContent">
                 <p className="sec-tag">OUR SERVICES</p>
-                <h3 className="secTitle">
+                <h3
+                  className="secTitle"
+                  data-aos="fade-right"
+                  data-aos-delay="200"
+                >
                   Everything Your Brand Needs To Grow
                 </h3>
-                <p>
+                <p data-aos="fade-right" data-aos-delay="300">
                   Our Unwavering Commitment To Innovation And Customer
                   Satisfaction Drives Us To Deliver Transformative Services That
                   Effectively Address The Ever-Evolving Demands Of Businesses In
                   The Digital World, Ensuring Exceptional Results And Driving
                   Impactful Transformations.
                 </p>
-                <p>
+                <p data-aos="fade-right" data-aos-delay="400">
                   We Begin With A Thorough Client Consultation, Crafting A
                   Strategic Roadmap That Defines Clear Goals, Timelines, And
                   Expectations, Laying The Foundation For A Smooth, Focused, And
                   Results-Driven Execution Process.
                 </p>
-                <p>
+                <p data-aos="fade-right" data-aos-delay="500">
                   With Insights In Hand, We Move Into The Implementation
                   Process, Through Targeted Strategies, Coordination, And A
                   Commitment To Ensuring Every Objective Is Met With Precision
                   And Quality.
                 </p>
-                <p>
+                <p data-aos="fade-right" data-aos-delay="600">
                   From Start To Finish, We Rely On Data-Driven Strategies To
                   Monitor Performance, Adapt Quickly, And Refine Our Approach So
                   Your Brand Gets The Best Results.
                 </p>
-                <h5 className="secSubTitle">
+                <h5
+                  className="secSubTitle"
+                  data-aos="fade-right"
+                  data-aos-delay="700"
+                >
                   We’re Committed To Providing You The Best Digital Service!
                 </h5>
-                <button className="theme-btn icon-btn">
+                <button
+                  className="theme-btn icon-btn"
+                  data-aos="fade-right"
+                  data-aos-delay="800"
+                >
                   Book A Call <IoIosArrowRoundForward />
                 </button>
               </div>
@@ -329,7 +369,12 @@ const About = () => {
             <div className="col-lg-6">
               <div className="ourServicesList">
                 {ourServicesData.map((item, index) => (
-                  <div className="ourServicesListItem" key={index}>
+                  <div
+                    className="ourServicesListItem"
+                    key={index}
+                    data-aos="fade-up"
+                    data-aos-delay={index * 200}
+                  >
                     <div>
                       <h4 className="ourServicesListTitle">{item.title}</h4>
                       <p>{item.description}</p>

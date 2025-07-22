@@ -91,3 +91,9 @@
     margin-bottom: 30px;
   }
 }
+
+@media (max-width: 767px) {
+  .whyChooseImgContent .secTitle {
+    font-size: 28px;
+  }
+}

@@ -22,13 +22,24 @@ const WhyCooseUsSec = (props) => {
             </div>
           </div>
           <div className="col-lg-6">
-            <div className="whyChooseRight">
+            {/* <div className="whyChooseRight">
               <p>{props.leftP}</p>
               <h5 className="whyChooseRightTitle">{props.leftSubTitle}</h5>
               {props.btnText && (
                 <button className="theme-btn">{props.btnText}</button>
               )}
-            </div>
+            </div> */}
+            {(props.leftP || props.leftSubTitle || props.btnText) && (
+              <div className="whyChooseRight">
+                {props.leftP && <p>{props.leftP}</p>}
+                {props.leftSubTitle && (
+                  <h5 className="whyChooseRightTitle">{props.leftSubTitle}</h5>
+                )}
+                {props.btnText && (
+                  <button className="theme-btn">{props.btnText}</button>
+                )}
+              </div>
+            )}
             <div className="whyChooseList">
               {props.list.map((item, index) => (
                 <div className="whyChooseListItem" key={index}>

@@ -4,8 +4,7 @@ import Tabs from "react-bootstrap/Tabs";
 import { allPackagesData } from "../../data";
 import PackagesCard from "../PackagesCard";
 
-
-import "./style.css"
+import "./style.css";
 
 const PackagesSec = (props) => {
   const [key, setKey] = useState("all-packages");
@@ -16,8 +15,12 @@ const PackagesSec = (props) => {
           <div className="col-md-12">
             <div className="secHead">
               <p className="sec-tag">{props.secTag}</p>
-              <h3 className="secTitle">{props.title}</h3>
-              <p>{props.description}</p>
+              <h3 className="secTitle" data-aos="fade-up" data-aos-delay="200">
+                {props.title}
+              </h3>
+              <p data-aos="fade-up" data-aos-delay="400">
+                {props.description}
+              </p>
             </div>
           </div>
         </div>
@@ -26,11 +29,18 @@ const PackagesSec = (props) => {
           activeKey={key}
           onSelect={(k) => setKey(k)}
           className="mb-3 packagesTabs"
+          data-aos="fade-up"
+          data-aos-delay="600"
         >
           <Tab eventKey="all-packages" title="ALL">
             <div className="row justify-content-center">
               {allPackagesData.map((item, index) => (
-                <div className="col-lg-4 col-md-6" key={index}>
+                <div
+                  className="col-lg-4 col-md-6"
+                  key={index}
+                  data-aos="fade-up"
+                  data-aos-delay={index * 200}
+                >
                   <PackagesCard
                     name={item.name}
                     price={item.price}

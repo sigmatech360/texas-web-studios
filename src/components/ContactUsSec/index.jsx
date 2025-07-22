@@ -10,8 +10,14 @@ const ContactUsSec = () => {
             <div className="contactContent">
               <div className="secHead">
                 <p className="sec-tag">CONTACT US</p>
-                <h3 className="secTitle">Drop Us A Line.</h3>
-                <p>
+                <h3
+                  className="secTitle"
+                  data-aos="fade-right"
+                  data-aos-delay="200"
+                >
+                  Drop Us A Line.
+                </h3>
+                <p data-aos="fade-right" data-aos-delay="400">
                   Lorem Ipsum Is Simply Dummy Text Of The Printing And
                   Typesetting Industry. Lorem Ipsum Has Been The Industry.
                 </p>

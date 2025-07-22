@@ -33,6 +33,7 @@ import BookCallSec from "../../components/BookCallSec";
 import ContactUsSec from "../../components/ContactUsSec";
 import BlogSec from "../../components/BlogSec";
 import PackagesSec from "../../components/PackagesSec";
+import FormModal from "../../components/FormModal";
 
 const homeAboutListData = [
   {
@@ -148,19 +149,24 @@ const testimonialData = [
 
 const Home = () => {
   const [key, setKey] = useState("all-packages");
+  const [showModal, setShowModal] = useState(false);
   return (
     <DefaultLayout>
-      <MainBanner />
+      <MainBanner onOpenModal={() => setShowModal(true)} />
 
       <section className="homeAbout sec-margin">
         <div className="container">
           <div className="row">
             <div className="col-lg-6 mb-lg-0 mb-4">
               <div className="homeAboutContent">
-                <h3 className="secTitle">
+                <h3
+                  className="secTitle"
+                  data-aos="fade-right"
+                  data-aos-delay="200"
+                >
                   Growth Strategies That Leave A Lasting Impact
                 </h3>
-                <p>
+                <p data-aos="fade-right" data-aos-delay="400">
                   With Years Of Experience, We Have Learnt That Every Business
                   Runs Differently, And That’s Precisely How We Strategize. From
                   Full-Stack Development To Custom Digital Marketing Solutions,
@@ -181,6 +187,7 @@ const Home = () => {
                 {homeAboutListData.map((item, index) => (
                   <ContentWithICon
                     key={index}
+                    index={index}
                     icon={item.icon}
                     title={item.title}
                     description={item.description}
@@ -199,12 +206,20 @@ const Home = () => {
               <div className="homeMissionContent">
                 <div className="homeMissionContentLeft">
                   <p className="sec-tag">MISSION</p>
-                  <h3 className="secTitle">
+                  <h3
+                    className="secTitle"
+                    data-aos="fade-right"
+                    data-aos-delay="200"
+                  >
                     Building Unique Brand Identities That Help Texas Businesses
                     Grow, Compete, And Lead Online.
                   </h3>
                 </div>
-                <button className="theme-btn icon-btn">
+                <button
+                  className="theme-btn icon-btn"
+                  data-aos="fade-left"
+                  data-aos-delay="400"
+                >
                   About Us <IoIosArrowRoundForward />
                 </button>
               </div>
@@ -219,10 +234,14 @@ const Home = () => {
             <div className="col-lg-12">
               <div className="homeOurServicesHead">
                 <p className="sec-tag">OUR SERVICES</p>
-                <h3 className="secTitle">
+                <h3
+                  className="secTitle"
+                  data-aos="fade-right"
+                  data-aos-delay="200"
+                >
                   Revamp Your Brand <br /> With Smart Digital Solutions
                 </h3>
-                <p>
+                <p data-aos="fade-right" data-aos-delay="400">
                   We Offer A Full Suite Of Digital Solutions, Tailored To Your
                   Business Needs. From Custom Web Development To Digital
                   Marketing In Texas, Our Services Are Built To Deliver Results,
@@ -231,7 +250,12 @@ const Home = () => {
               </div>
             </div>
             {ourServicesData.map((item, index) => (
-              <div className="col-lg-4 col-md-6 mb-lg-0 mb-4" key={index}>
+              <div
+                className="col-lg-4 col-md-6 mb-lg-0 mb-4"
+                key={index}
+                data-aos="fade-up"
+                data-aos-delay={index * 200}
+              >
                 <OurServiceBox
                   image={item.image}
                   icon={item.icon}
@@ -251,13 +275,21 @@ const Home = () => {
             <div className="col-md-12">
               <div className="secHead">
                 <p className="sec-tag">BE VISIBLE</p>
-                <h3 className="secTitle">
+                <h3
+                  className="secTitle"
+                  data-aos="fade-right"
+                  data-aos-delay="200"
+                >
                   Why Texas Web Studios Is The Standard!
                 </h3>
               </div>
             </div>
             <div className="col-lg-6 mb-lg-0 mb-4">
-              <div className="beVisible-numberBox">
+              <div
+                className="beVisible-numberBox"
+                data-aos="fade-right"
+                data-aos-delay="400"
+              >
                 <div className="beVisible-numberBoxBg">
                   <h3>10+</h3>
                 </div>
@@ -265,10 +297,14 @@ const Home = () => {
             </div>
             <div className="col-lg-6">
               <div className="beVisibleCOntent">
-                <h3 className="secSubTitle">
+                <h3
+                  className="secSubTitle"
+                  data-aos="fade-left"
+                  data-aos-delay="600"
+                >
                   Experience That Delivers Results.
                 </h3>
-                <p>
+                <p data-aos="fade-left" data-aos-delay="800">
                   Backed By Years Of Industry Experience, We’ve Earned The Trust
                   Of Large And Small Businesses Across Texas. We Create Simple
                   And Practical Online Marketing Solutions That Help Our Clients
@@ -279,7 +315,12 @@ const Home = () => {
             <div className="col-md-12">
               <div className="beVisibleIconsData">
                 {beVisibleData.map((item, index) => (
-                  <div className="beVisibleIconData" key={index}>
+                  <div
+                    className="beVisibleIconData"
+                    key={index}
+                    data-aos="fade-up"
+                    data-aos-delay={index * 200}
+                  >
                     <img src={item.icon} alt={item.title} />
                     <h4 className="beVisibleIconData-title">{item.title}</h4>
                   </div>
@@ -333,19 +374,20 @@ const Home = () => {
       />
 
       <OurTeamSec />
-
       <FAQSec
         secTag="GET ANSWERS"
         secTitle="Frequently Asked Questions"
         testimonials={testimonialData}
         image={faqImg}
       />
-
-      <BookCallSec title="Let’s Discuss Your Business Goals." btnText="Book A Call" />
-
+      <BookCallSec
+        title="Let’s Discuss Your Business Goals."
+        btnText="Book A Call"
+      />
       <ContactUsSec />
 
       <BlogSec />
+      <FormModal show={showModal} handleClose={() => setShowModal(false)} />
     </DefaultLayout>
   );
 };

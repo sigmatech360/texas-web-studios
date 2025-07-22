@@ -85,9 +85,9 @@ const DigitalMediaMarketing = () => {
 
       <ServiceAboutSec
         className="bgPink"
-        rowClass="flex-row-reverse"
-        leftCol="col-lg-6"
-        rightCol="col-lg-6"
+        // rowClass="flex-row-reverse"
+        leftCol="col-lg-6 order-2"
+        rightCol="col-lg-6 order-1"
         // secTagClass="blackColor"
         // secTag="CUSTOM WEB DEVELOPMENT"
         secTitle={`Reach More Customers Through Effective Marketing`}

@@ -9,7 +9,9 @@ const BlogCard = (props) => {
   return (
     <div className="blogCard">
       <div className="blogCardHeader">
-        <img src={props.image} alt={props.title} className="img-fluid" />
+        <Link to={`/blog/${props.slug}`}>
+          <img src={props.image} alt={props.title} className="img-fluid" />
+        </Link>
       </div>
       <div className="blogCardBody">
         <div className="blogCardMeta">
@@ -19,13 +21,15 @@ const BlogCard = (props) => {
           </div>
           <div className="blogMetaDetails">
             <HiOutlineUserCircle />
-            <span>Admin</span>
+            <span>{props.author || "admin"}</span>
           </div>
           <div className="blogMetaDetails"></div>
         </div>
         <div className="blogCardContent">
-          <h6 className="blogCardTitle">{props.title}</h6>
-          <Link to={""} className="blogCardBtn">
+          <Link to={`/blog/${props.slug}`}>
+            <h6 className="blogCardTitle">{props.title}</h6>
+          </Link>
+          <Link to={`/blog/${props.slug}`} className="blogCardBtn">
             Read More <IoIosArrowRoundForward />
           </Link>
         </div>

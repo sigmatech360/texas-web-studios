@@ -96,8 +96,8 @@ const MobileAppDev = () => {
   return (
     <DefaultLayout>
       <InnerBanner
-        leftCol="col-lg-7"
-        rightCol="col-lg-5"
+        leftCol="col-lg-7 order-lg-1 order-2"
+        rightCol="col-lg-5 order-lg-2 order-1"
         bgImage={mobileAppDevBanner}
         title="Mobile Applications That Boost Your Success"
         description="At Texas Web Studios, We Create Fast, User-Friendly Apps For You That Fit Your Goals, Platform, And Audience. Our Mobile App Development Services For Texas Are Designed For Real Results And Easy Use."
@@ -121,8 +121,8 @@ const MobileAppDev = () => {
       />
       <ServiceAboutSec
         className="bgPink"
-        leftCol="col-lg-7"
-        rightCol="col-lg-5"
+        leftCol="col-lg-7 order-lg-1 order-2"
+        rightCol="col-lg-5 order-lg-2 order-1"
         secTagClass="blackColor"
         secTag="MOBILE APP DEVELOPMENT"
         secTitle={`<span class="redColor">Custom Mobile App Development In Texas</span> To Keep You Connected.`}

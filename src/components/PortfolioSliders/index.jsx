@@ -10,7 +10,7 @@ const PortfolioSliders = (props) => {
       <div className="ourPortfolioSLiders">
         <Swiper
           slidesPerView={1}
-          spaceBetween={20}
+          spaceBetween={10}
           centeredSlides={true}
           loop={true}
           speed={5000}
@@ -23,10 +23,10 @@ const PortfolioSliders = (props) => {
           freeModeMomentum={false}
           modules={[Autoplay]}
           breakpoints={{
-            // 320: { slidesPerView: 1.2 },
-            576: { slidesPerView: 2 },
-            768: { slidesPerView: 3 },
-            992: { slidesPerView: 3.5 },
+            320: { slidesPerView: 1.5 },
+            481: { slidesPerView: 2 },
+            768: { slidesPerView: 3, spaceBetween: 20 },
+            992: { slidesPerView: 3.5, spaceBetween: 20 },
           }}
         >
           {props.portfolio1.map((item, idx) => (
@@ -41,7 +41,7 @@ const PortfolioSliders = (props) => {
       <div className="ourPortfolioSLiders">
         <Swiper
           slidesPerView={1}
-          spaceBetween={20}
+          spaceBetween={10}
           centeredSlides={true}
           loop={true}
           speed={5000}
@@ -55,10 +55,10 @@ const PortfolioSliders = (props) => {
           freeModeMomentum={false}
           modules={[Autoplay]}
           breakpoints={{
-            // 320: { slidesPerView: 1.2 },
-            576: { slidesPerView: 2 },
-            768: { slidesPerView: 3 },
-            992: { slidesPerView: 3.5 },
+            320: { slidesPerView: 1.5 },
+            481: { slidesPerView: 2 },
+            768: { slidesPerView: 3, spaceBetween: 20 },
+            992: { slidesPerView: 3.5, spaceBetween: 20 },
           }}
           className="portfolioSwiperToRight"
         >

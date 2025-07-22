@@ -123,9 +123,9 @@ const CMSDevelopment = () => {
 
       <ServiceAboutSec
         className="bgPink"
-        rowClass="flex-row-reverse"
-        leftCol="col-lg-7"
-        rightCol="col-lg-5"
+        // rowClass="flex-row-reverse"
+        leftCol="col-xl-7 col-lg-8 order-2"
+        rightCol="col-xl-5 col-lg-4 order-1"
         // secTagClass="blackColor"
         secTag="CMS DEVELOPMENT AGENCY"
         secTitle={`CMS-Powered Solutions That Are Fast, Dependable, And Scalable.`}
