@@ -22,9 +22,12 @@ import LogoDesign from "../screens/Services/LogoDesign";
 import MobileAppDev from "../screens/Services/MobileAppDev";
 import BlogDetail from "../screens/Blog/BlogDetail";
 
+import ScrollToTop from "../components/ScrollToTop";
+
 const AppRouter = () => {
   return (
     <Router basename="/texas-web-studios">
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

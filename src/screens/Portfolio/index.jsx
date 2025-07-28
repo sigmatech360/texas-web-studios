@@ -18,13 +18,32 @@ import allPortfolioImg2_2 from "../../assets/images/allPortfolioImg2_2.webp";
 import allPortfolioImg2_3 from "../../assets/images/allPortfolioImg2_3.webp";
 import allPortfolioImg2_4 from "../../assets/images/allPortfolioImg2_4.webp";
 
+// Logo portfolio
+import logoPortfolioImg1_1 from "../../assets/images/logoPortfolio/logoPortfolioImg1_1.gif";
+import logoPortfolioImg1_2 from "../../assets/images/logoPortfolio/logoPortfolioImg1_2.webp";
+import logoPortfolioImg1_3 from "../../assets/images/logoPortfolio/logoPortfolioImg1_3.webp";
+import logoPortfolioImg1_4 from "../../assets/images/logoPortfolio/logoPortfolioImg1_4.webp";
+import logoPortfolioImg1_5 from "../../assets/images/logoPortfolio/logoPortfolioImg1_5.webp";
+import logoPortfolioImg1_6 from "../../assets/images/logoPortfolio/logoPortfolioImg1_6.webp";
+
+import logoPortfolioImg2_1 from "../../assets/images/logoPortfolio/logoPortfolioImg2_1.gif";
+import logoPortfolioImg2_2 from "../../assets/images/logoPortfolio/logoPortfolioImg2_2.webp";
+import logoPortfolioImg2_3 from "../../assets/images/logoPortfolio/logoPortfolioImg2_3.gif";
+import logoPortfolioImg2_4 from "../../assets/images/logoPortfolio/logoPortfolioImg2_4.webp";
+import logoPortfolioImg2_5 from "../../assets/images/logoPortfolio/logoPortfolioImg2_5.webp";
+import logoPortfolioImg2_6 from "../../assets/images/logoPortfolio/logoPortfolioImg2_6.webp";
+
 import PortfolioSliders from "../../components/PortfolioSliders";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import TestimonialSec from "../../components/TestimonialSec";
 import PackagesSec from "../../components/PackagesSec";
 import { cmsDevPortfolio1, cmsDevPortfolio2 } from "../Services/CMSDevelopment";
-import { customDevPortfolio1, customDevPortfolio2 } from "../Services/CustomWebDev";
+import {
+  customDevPortfolio1,
+  customDevPortfolio2,
+} from "../Services/CustomWebDev";
 import { mobilePortfolio1, mobilePortfolio2 } from "../Services/MobileAppDev";
+import { Link } from "react-router-dom";
 
 const allPortfolio1 = [
   {
@@ -85,6 +104,30 @@ const allPortfolio2 = [
   },
 ];
 
+const logoPortfolio1 = [
+  { image: logoPortfolioImg1_1 },
+  { image: logoPortfolioImg1_2 },
+  { image: logoPortfolioImg1_3 },
+  { image: logoPortfolioImg1_4 },
+  { image: logoPortfolioImg1_5 },
+  { image: logoPortfolioImg1_6 },
+  // repeat
+  { image: logoPortfolioImg1_1 },
+  { image: logoPortfolioImg1_2 },
+];
+
+const logoPortfolio2 = [
+  { image: logoPortfolioImg2_1 },
+  { image: logoPortfolioImg2_2 },
+  { image: logoPortfolioImg2_3 },
+  { image: logoPortfolioImg2_4 },
+  { image: logoPortfolioImg2_5 },
+  { image: logoPortfolioImg2_6 },
+  // repeat
+  { image: logoPortfolioImg2_1 },
+  { image: logoPortfolioImg2_2 },
+];
+
 const Portfolio = () => {
   const [key, setKey] = useState("all-portfolio");
   return (
@@ -102,10 +145,14 @@ const Portfolio = () => {
             <div className="col-md-12">
               <div className="secHead">
                 <p className="sec-tag">PROJECTS</p>
-                <h3 className="secTitle">
+                <h2
+                  className="secTitle"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
                   Your Partner For Software Innovation
-                </h3>
-                <p>
+                </h2>
+                <p data-aos="fade-up" data-aos-delay="400">
                   Lorem Ipsum Is Simply Dummy Text Of The Printing And
                   Typesetting Industry. Lorem Ipsum Has Been The Industry's
                   Standard Dummy Text Ever Since The 1500S, When An Unknown
@@ -144,6 +191,14 @@ const Portfolio = () => {
               <PortfolioSliders
                 portfolio1={customDevPortfolio1}
                 portfolio2={customDevPortfolio2}
+              />
+            )}
+          </Tab>
+          <Tab eventKey="logoDesign-portfolio" title="Logo">
+            {key === "logoDesign-portfolio" && (
+              <PortfolioSliders
+                portfolio1={logoPortfolio1}
+                portfolio2={logoPortfolio2}
               />
             )}
           </Tab>
@@ -197,11 +252,11 @@ const Portfolio = () => {
           </Tab> */}
         </Tabs>
 
-        <div className="text-center mt-5">
+        {/* <div className="text-center mt-5">
           <button className="theme-btn icon-btn">
             View All Projects <IoIosArrowRoundForward />
           </button>
-        </div>
+        </div> */}
       </section>
 
       <TestimonialSec
@@ -252,17 +307,28 @@ const Portfolio = () => {
             <div className="col-md-12">
               <div className="secHead">
                 <p className="sec-tag">DESIGN FOR IMPACT:</p>
-                <h3 className="secTitle">
+                <h3
+                  className="secTitle"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
                   Elevate Your Brand Identity With Us!
                 </h3>
-                <p>
+                <p data-aos="fade-up" data-aos-delay="400">
                   Don't Hesitate To Reach Out! Logo Design Valley Encourages
                   Discussions About New Projects, Specific Questions You May
                   Have, Or Even Feedback On How We Can Improve Our Services. We
                   Believe In Open Communication That Fosters A Successful And
                   Rewarding Design Experience.
                 </p>
-                <button className="theme-btn">Let's Discuss</button>
+                <Link
+                  to={"/contact"}
+                  className="theme-btn"
+                  data-aos="fade-up"
+                  data-aos-delay="600"
+                >
+                  Let's Discuss
+                </Link>
               </div>
             </div>
           </div>

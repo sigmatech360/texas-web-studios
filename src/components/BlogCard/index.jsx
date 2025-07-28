@@ -10,7 +10,13 @@ const BlogCard = (props) => {
     <div className="blogCard">
       <div className="blogCardHeader">
         <Link to={`/blog/${props.slug}`}>
-          <img src={props.image} alt={props.title} className="img-fluid" />
+          <img
+            src={props.image}
+            alt={props.title}
+            width={"471"}
+            height={"265"}
+            className="img-fluid"
+          />
         </Link>
       </div>
       <div className="blogCardBody">
@@ -27,7 +33,7 @@ const BlogCard = (props) => {
         </div>
         <div className="blogCardContent">
           <Link to={`/blog/${props.slug}`}>
-            <h6 className="blogCardTitle">{props.title}</h6>
+            <h4 className="blogCardTitle">{props.title}</h4>
           </Link>
           <Link to={`/blog/${props.slug}`} className="blogCardBtn">
             Read More <IoIosArrowRoundForward />

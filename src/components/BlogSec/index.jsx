@@ -5,8 +5,8 @@ import blogImg1 from "../../assets/images/blogImg1.webp";
 import blogImg2 from "../../assets/images/blogImg2.webp";
 import blogImg3 from "../../assets/images/blogImg3.webp";
 import BlogCard from "../BlogCard";
-import axios from "axios";
 import Loader from "../Loader";
+import { useBlogs } from "../../context/BlogContext";
 
 const blogsData = [
   {
@@ -29,24 +29,24 @@ const blogsData = [
 const wpBaseUrl = import.meta.env.VITE_WP_BASE_URL;
 
 const BlogSec = ({ secTitle, categorySlug }) => {
-  const [loading, setLoading] = useState(true);
-  const [blogs, setBlogs] = useState([]);
+  // const [loading, setLoading] = useState(true);
+  // const [blogs, setBlogs] = useState([]);
 
-  useEffect(() => {
-    const fetchLatestBlogs = async () => {
-      try {
-        setLoading(true);
-        const response = await axios.get(`${wpBaseUrl}/posts?_embed`);
-        setBlogs(response.data);
-      } catch (error) {
-        console.error("Failed to fetch blogs:", error);
-      } finally {
-        setLoading(false);
-      }
-    };
+  // useEffect(() => {
+  //   const fetchLatestBlogs = async () => {
+  //     try {
+  //       setLoading(true);
+  //       const response = await axios.get(`${wpBaseUrl}/posts?_embed`);
+  //       setBlogs(response.data);
+  //     } catch (error) {
+  //       console.error("Failed to fetch blogs:", error);
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
 
-    fetchLatestBlogs();
-  }, []);
+  //   fetchLatestBlogs();
+  // }, []);
 
   // const [categoryId, setCategoryId] = useState(null);
   // useEffect(() => {
@@ -59,6 +59,8 @@ const BlogSec = ({ secTitle, categorySlug }) => {
   //         `${wpBaseUrl}/categories?slug=${categorySlug}`
   //       );
   //       const category = categoryRes.data[0];
+
+  //       console.log("categoryRes", categoryRes);
 
   //       if (!category) {
   //         console.warn("Category not found");
@@ -83,6 +85,17 @@ const BlogSec = ({ secTitle, categorySlug }) => {
 
   //   fetchCategoryIdAndPosts();
   // }, [categorySlug]);
+
+  const { blogs, loading, setCategorySlug } = useBlogs();
+
+  // When categorySlug changes, we set it in context
+  useEffect(() => {
+    if (categorySlug) {
+      setCategorySlug(categorySlug); // Update the category in context
+    } else {
+      setCategorySlug(null); // If no categorySlug, fetch all blogs
+    }
+  }, [categorySlug, setCategorySlug]);
 
   return (
     <section className="blogSec sec-padding">

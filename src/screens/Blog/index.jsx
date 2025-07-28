@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { toast } from "react-toastify";
 import DefaultLayout from "../../components/DefaultLayout";
 import InnerBanner from "../../components/InnerBanner";
 
@@ -13,8 +14,9 @@ import blogPageImg4 from "../../assets/images/blogPageImg4.webp";
 import blogPageImg5 from "../../assets/images/blogPageImg5.webp";
 
 import BlogCard from "../../components/BlogCard";
-import axios from "axios";
 import Loader from "../../components/Loader";
+import { useModal } from "../../context/ModalContext";
+import { useBlogs } from "../../context/BlogContext";
 
 const blogsData = [
   {
@@ -76,28 +78,70 @@ const blogCategorries = [
 ];
 
 const wpBaseUrl = import.meta.env.VITE_WP_BASE_URL;
+const apiUrl = import.meta.env.VITE_API_BASE_URL;
 
 const Blog = () => {
-  const [loading, setLoading] = useState(true);
-  const [blogs, setBlogs] = useState([]);
+  const { setShowModal } = useModal();
+  const [email, setEmail] = useState("");
 
-  console.log("blogs", blogs);
 
-  useEffect(() => {
-    const fetchLatestBlogs = async () => {
-      try {
-        setLoading(true);
-        const response = await axios.get(`${wpBaseUrl}/posts?_embed`);
-        setBlogs(response.data);
-      } catch (error) {
-        console.error("Failed to fetch blogs:", error);
-      } finally {
-        setLoading(false);
+  const [formLoading, setFormLoading] = useState(true);
+
+
+  const { blogs, loading } = useBlogs();
+
+  // const [blogs, setBlogs] = useState([]);
+  // useEffect(() => {
+  //   const fetchLatestBlogs = async () => {
+  //     try {
+  //       setLoading(true);
+  //       const response = await axios.get(`${wpBaseUrl}/posts?_embed`);
+  //       setBlogs(response.data);
+  //     } catch (error) {
+  //       console.error("Failed to fetch blogs:", error);
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
+
+  //   fetchLatestBlogs();
+  // }, []);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setFormLoading(true);
+
+    try {
+      const response = await fetch(`${apiUrl}/newsletter-subscription`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      const result = await response.json();
+      // console.log(result);
+
+      if (result.status) {
+        toast.success("Email Submitted Successfully");
+        // toast.success(result.message);
+        setEmail("");
+      } else {
+        const messages = result.message;
+        Object.keys(messages).forEach((field) => {
+          messages[field].forEach((msg) => {
+            toast.error(msg);
+          });
+        });
       }
-    };
-
-    fetchLatestBlogs();
-  }, []);
+    } catch (error) {
+      console.log(`Error submitting email:`, error);
+      toast.error("Submission failed. Please try again.");
+    } finally {
+      setFormLoading(false);
+    }
+  };
 
   return (
     <DefaultLayout>
@@ -107,6 +151,7 @@ const Blog = () => {
         description="Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Mi Eget Mauris Pharetra Et Ultrices."
         pageName="Blogs"
       />
+
       <section className="blogPageSec sec-padding">
         <div className="container">
           <div className="row">
@@ -140,7 +185,10 @@ const Blog = () => {
                     <li key={listIndex}>{item.name}</li>
                   ))}
                 </ul>
-                <button className="theme-btn icon-btn">
+                <button
+                  className="theme-btn icon-btn"
+                  onClick={() => setShowModal(true)}
+                >
                   Get Started <IoIosArrowRoundForward />
                 </button>
               </div>
@@ -154,17 +202,45 @@ const Blog = () => {
           <div className="row">
             <div className="col-md-12">
               <div className="secHead">
-                <p className="sec-tag-sm">
+                <p
+                  className="sec-tag-sm"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
                   Visit Our Blog! Follow The Developments In The Technology &
                   Entrepreneur World
                 </p>
-                <h3 className="secTitle">
+                <h3
+                  className="secTitle"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
                   Subscribe To Our Newsletter Free And Stay Updated On The
                   Latest Developments!
                 </h3>
-                <button className="theme-btn icon-btn">
-                  Subscribed Now <IoIosArrowRoundForward />
-                </button>
+                <div className="news-latterForm">
+                  <form onSubmit={handleSubmit}>
+                    <input
+                      data-aos="fade-up"
+                      data-aos-delay="600"
+                      type="text"
+                      className="form-control mb-4"
+                      placeholder="Newsletter"
+                      name="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      required
+                    />
+                    <button
+                      type="submit"
+                      className="theme-btn icon-btn"
+                      data-aos="fade-up"
+                      data-aos-delay="600"
+                    >
+                      Subscribe Now <IoIosArrowRoundForward />
+                    </button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>

@@ -13,6 +13,7 @@
 .footerSocialIcon img {
   max-width: 160px;
   transition: filter 0.3s ease;
+  object-fit: contain;
 }
 
 .footerSocialIcon:hover img {

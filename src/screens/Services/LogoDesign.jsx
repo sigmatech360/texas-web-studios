@@ -47,6 +47,7 @@ const LogoDesign = () => {
           { name: "Abstract Logos" },
         ]}
         btnText="Explore Our Designs"
+        targetSecId="singleLogoPortfolio"
         rightP="Our Logo Design Services In Texas Are Made To Match Your Business Identity, Industry Tone, And Customer Appeal. Whether You Prefer Bold Icons Or Clean Text-Based Branding, Our Team Helps You Choose A Logo Style That Communicates Your Message Clearly And Leaves A Lasting Impression. Each Logo Is Unique, Scalable, And Built To Perform Across Digital And Print Platforms."
       />
 
@@ -62,18 +63,26 @@ const LogoDesign = () => {
         image={logoServiceAboutImg}
       />
 
-      <section className="logoSinglePortfolio sec-padding">
+      <section className="logoSinglePortfolio sec-padding" id="singleLogoPortfolio">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
               <div className="secHead">
                 <p className="sec-tag">PORTFOLIO</p>
-                <h3 className="secTitle">
+                <h3
+                  className="secTitle"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
                   An Art Gallery Of Our Business Logo Designs That Manifested
                   Success
                 </h3>
               </div>
-              <div className="logoSinglePortfolioImg">
+              <div
+                className="logoSinglePortfolioImg"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
                 <img
                   src={logoSinglePotfolioImg}
                   alt="An Art Gallery Of Our Business Logo Designs That Manifested

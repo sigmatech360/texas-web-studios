@@ -14,7 +14,7 @@ const FormModal = ({ show, handleClose }) => {
     username: "",
     email: "",
     phone: "",
-    service_1: "",
+    service: "",
     data_message: "",
   });
   const apiUrl = import.meta.env.VITE_API_BASE_URL;
@@ -47,7 +47,7 @@ const FormModal = ({ show, handleClose }) => {
           username: "",
           email: "",
           phone: "",
-          service_1: "",
+          service: "",
           data_message: "",
         });
         handleClose();
@@ -145,10 +145,10 @@ const FormModal = ({ show, handleClose }) => {
                 />
               </Form.Group> */}
 
-              <Form.Group controlId="service_1">
+              <Form.Group controlId="service">
                 <Form.Select
-                  name="service_1"
-                  value={formData.service_1}
+                  name="service"
+                  value={formData.service}
                   onChange={handleChange}
                   className="form-control"
                   required

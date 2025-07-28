@@ -14,24 +14,44 @@ const ServiceAboutSec = (props) => {
               <h3
                 className="secTitle"
                 dangerouslySetInnerHTML={{ __html: props.secTitle }}
+                data-aos="fade-up"
+                data-aos-delay="200"
               />
-              <p>{props.description}</p>
+              <p data-aos="fade-up" data-aos-delay="400">
+                {props.description}
+              </p>
               {props.list && (
                 <ul className={`packageCardList ${props.listClass}`}>
                   {props.list.map((item, listIndex) => (
-                    <li key={listIndex}>{item}</li>
+                    <li
+                      key={listIndex}
+                      data-aos="fade-up"
+                      data-aos-delay={listIndex * 100}
+                    >
+                      {item}
+                    </li>
                   ))}
                 </ul>
               )}
-              {props.description2 && <p className="mt-3">{props.description2}</p>}
+              {props.description2 && (
+                <p className="mt-3" data-aos="fade-up" data-aos-delay="400">
+                  {props.description2}
+                </p>
+              )}
             </div>
           </div>
           <div className={props.rightCol || "col-lg-6"}>
-            <div className="servicesAboutImg">
+            <div
+              className="servicesAboutImg"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
               <img
                 src={props.image}
                 alt={props.secTitle}
                 className="img-fluid"
+                width={"526"}
+                height={"335"}
               />
             </div>
           </div>

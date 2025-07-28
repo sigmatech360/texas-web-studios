@@ -109,7 +109,10 @@ const experienceSecData = [
       { name: "Clear Calls-To-Action", icon: expContentCreationIcon3 },
       { name: "Engaging  Headline & Messaging", icon: expContentCreationIcon4 },
       { name: "Website Content Structuring", icon: expContentCreationIcon5 },
-      { name: "Keyword-Integrated Blog Writing", icon: expContentCreationIcon6 },
+      {
+        name: "Keyword-Integrated Blog Writing",
+        icon: expContentCreationIcon6,
+      },
     ],
   },
   {
@@ -173,12 +176,20 @@ const WebDevelopment = () => {
             <div className="col-md-12">
               <div className="secHead">
                 <p className="sec-tag">EXPERIENCE LIKE NO OTHER</p>
-                <h3 className="secTitle">
+                <h3
+                  className="secTitle"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
                   We Build Websites That Help You Grow Your Business
                 </h3>
               </div>
             </div>
-            <div className="col-md-12">
+            <div
+              className="col-md-12"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
               <Tabs
                 id="controlled-tab-example"
                 activeKey={key}
@@ -189,9 +200,16 @@ const WebDevelopment = () => {
                   <Tab eventKey={item.key} title={item.name} key={index}>
                     <div className="experienceSecCards">
                       {item.data.map((dataItem, data_i) => (
-                        <div className="experienceSecCardItem" key={data_i}>
+                        <div
+                          className="experienceSecCardItem"
+                          key={data_i}
+                          data-aos="fade-up"
+                          data-aos-delay={data_i * 200}
+                        >
                           <img src={dataItem.icon} alt={dataItem.name} />
-                          <h4 className="experienceCardItemTitle">{dataItem.name}</h4>
+                          <h4 className="experienceCardItemTitle">
+                            {dataItem.name}
+                          </h4>
                         </div>
                       ))}
                     </div>

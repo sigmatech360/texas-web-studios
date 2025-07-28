@@ -22,31 +22,58 @@ const Footer = () => {
           aria-label="Facebook"
           rel="noopener noreferrer"
         >
-          <img src={facebookAndIcon} alt="Facebook" />
+          <img
+            src={facebookAndIcon}
+            alt="Facebook"
+            width="160"
+            height="27"
+            loading="lazy"
+          />
         </a>
         <a
           href=""
           className="footerSocialIcon footerSocialYoutube"
+          target="_blank"
           aria-label="Youtube"
           rel="noopener noreferrer"
         >
-          <img src={youtubeAndIcon} alt="Youtube" />
+          <img
+            src={youtubeAndIcon}
+            alt="Youtube"
+            width="160"
+            height="27"
+            loading="lazy"
+          />
         </a>
         <a
           href=""
           className="footerSocialIcon footerSocialBehance"
+          target="_blank"
           aria-label="Behance"
           rel="noopener noreferrer"
         >
-          <img src={behanceAndIcon} alt="Behance" />
+          <img
+            src={behanceAndIcon}
+            alt="Behance"
+            width="160"
+            height="27"
+            loading="lazy"
+          />
         </a>
         <a
           href=""
           className="footerSocialIcon footerSocialdribble"
+          target="_blank"
           aria-label="dribble"
           rel="noopener noreferrer"
         >
-          <img src={dribbleAndIcon} alt="dribble" />
+          <img
+            src={dribbleAndIcon}
+            alt="dribble"
+            width="160"
+            height="27"
+            loading="lazy"
+          />
         </a>
         <a
           href="https://x.com/texaswebstudios"
@@ -55,7 +82,13 @@ const Footer = () => {
           aria-label="Twitter"
           rel="noopener noreferrer"
         >
-          <img src={twitterAndIcon} alt="Twitter" />
+          <img
+            src={twitterAndIcon}
+            alt="Twitter"
+            width="160"
+            height="27"
+            loading="lazy"
+          />
         </a>
         <a
           href="https://www.linkedin.com/company/texas-webs-tudios/"
@@ -85,19 +118,22 @@ const Footer = () => {
               <div className="row">
                 <div className="col-lg-3 col-md-3 mb-md-0 mb-4">
                   <div className="footer-links">
-                    <h6 className="footer-title">Quick Links</h6>
+                    <h4 className="footer-title">Quick Links</h4>
                     <ul className="footer-links">
+                      <li>
+                        <Link to={"/about"}>Home</Link>
+                      </li>
                       <li>
                         <Link to={"/about"}>About Us</Link>
                       </li>
                       <li>
-                        <Link to={"/web-development"}>Services</Link>
-                      </li>
-                      <li>
-                        <Link to={"/"}>Cases</Link>
-                      </li>
-                      <li>
                         <Link to={"/pricing"}>Pricing</Link>
+                      </li>
+                      <li>
+                        <Link to={"/portfolio"}>Portfolio</Link>
+                      </li>
+                      <li>
+                        <Link to={"/blog"}>Blogs</Link>
                       </li>
                       <li>
                         <Link to={"/contact"}>Contact</Link>
@@ -107,13 +143,15 @@ const Footer = () => {
                 </div>
                 <div className="col-lg-3 col-md-3 mb-md-0 mb-4">
                   <div className="footer-links">
-                    <h6 className="footer-title">Useful Links</h6>
+                    <h4 className="footer-title">Useful Links</h4>
                     <ul className="footer-links">
                       <li>
                         <Link to={"/privacy-policy"}>Privacy Policy</Link>
                       </li>
                       <li>
-                        <Link to={"/terms-and-condition"}>Terms & Conditions</Link>
+                        <Link to={"/terms-and-condition"}>
+                          Terms & Conditions
+                        </Link>
                       </li>
                       <li>
                         <Link to={"/"}>Disclaimer</Link>
@@ -129,7 +167,7 @@ const Footer = () => {
                 </div>
                 <div className="col-lg-6 col-md-6 mb-md-0">
                   <div className="footer-links">
-                    <h6 className="footer-title">Work Hours</h6>
+                    <h4 className="footer-title">Work Hours</h4>
                     <ul className="footer-links">
                       <li>8 AM - 5 PM , Monday - Saturday</li>
                       <li>8 AM - 5 PM , Monday - Saturday</li>
@@ -146,7 +184,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-md-12">
               <p className="footerCopyrightP">
-                Copyright © 2024. All Rights Reserved
+                Copyright © {new Date().getFullYear()}. All Rights Reserved
               </p>
             </div>
           </div>

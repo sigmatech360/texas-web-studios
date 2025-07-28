@@ -120,6 +120,7 @@ const CustomWebDev = () => {
           { name: "Magazines Or News Websites" },
         ]}
         btnText="See All Integrations"
+        targetSecId="portfolioSecId"
         rightP="Different Websites Serve Different Goals, And We’ve Built Them All. From E-Commerce Stores To Booking Systems And Personal Portfolios, We Understand What Each Type Of Site Needs To Succeed."
         rightP2="Our Experience With Both Custom Web Design And Development In Texas Means We Can Understand Each Type Of Business And Needs; Our Websites Are Built To Fit Your Business Model, Audience, And Vision, Without Relying On Templates Or Shortcuts."
       />

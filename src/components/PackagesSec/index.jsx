@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
-import { allPackagesData } from "../../data";
+import { allPackagesData, customAppsPackagesData, eCommercePackagesData, illustrationPackagesData, informativeWebPackagesData, logoPackagesData, seoPackagesData, smmPackagesData, webPortalPackagesData } from "../../data";
 import PackagesCard from "../PackagesCard";
 
 import "./style.css";
 
 const PackagesSec = (props) => {
-  const [key, setKey] = useState("all-packages");
+  const [key, setKey] = useState("logo-packages");
   return (
     <section className={`packagesSec sec-padding ${props.className}`}>
       <div className="container">
@@ -32,7 +32,7 @@ const PackagesSec = (props) => {
           data-aos="fade-up"
           data-aos-delay="600"
         >
-          <Tab eventKey="all-packages" title="ALL">
+          {/* <Tab eventKey="all-packages" title="ALL">
             <div className="row justify-content-center">
               {allPackagesData.map((item, index) => (
                 <div
@@ -49,10 +49,10 @@ const PackagesSec = (props) => {
                 </div>
               ))}
             </div>
-          </Tab>
+          </Tab> */}
           <Tab eventKey="logo-packages" title="LOGO">
             <div className="row justify-content-center">
-              {allPackagesData.map((item, index) => (
+              {logoPackagesData.map((item, index) => (
                 <div className="col-lg-4" key={index}>
                   <PackagesCard
                     name={item.name}
@@ -65,7 +65,7 @@ const PackagesSec = (props) => {
           </Tab>
           <Tab eventKey="illustration-packages" title="ILLUSTRATION">
             <div className="row justify-content-center">
-              {allPackagesData.map((item, index) => (
+              {illustrationPackagesData.map((item, index) => (
                 <div className="col-lg-4" key={index}>
                   <PackagesCard
                     name={item.name}
@@ -78,7 +78,7 @@ const PackagesSec = (props) => {
           </Tab>
           <Tab eventKey="informative-websites" title="INFORMATIVE WEBSITES">
             <div className="row justify-content-center">
-              {allPackagesData.map((item, index) => (
+              {informativeWebPackagesData.map((item, index) => (
                 <div className="col-lg-4" key={index}>
                   <PackagesCard
                     name={item.name}
@@ -91,7 +91,7 @@ const PackagesSec = (props) => {
           </Tab>
           <Tab eventKey="eCommerce-website" title="E-COMMERCE WEBSITE">
             <div className="row justify-content-center">
-              {allPackagesData.map((item, index) => (
+              {eCommercePackagesData.map((item, index) => (
                 <div className="col-lg-4" key={index}>
                   <PackagesCard
                     name={item.name}
@@ -104,7 +104,7 @@ const PackagesSec = (props) => {
           </Tab>
           <Tab eventKey="custom-applications" title="CUSTOM APPLICATIONS">
             <div className="row justify-content-center">
-              {allPackagesData.map((item, index) => (
+              {customAppsPackagesData.map((item, index) => (
                 <div className="col-lg-4" key={index}>
                   <PackagesCard
                     name={item.name}
@@ -117,7 +117,7 @@ const PackagesSec = (props) => {
           </Tab>
           <Tab eventKey="web-portal" title="WEB PORTAL">
             <div className="row justify-content-center">
-              {allPackagesData.map((item, index) => (
+              {webPortalPackagesData.map((item, index) => (
                 <div className="col-lg-4" key={index}>
                   <PackagesCard
                     name={item.name}
@@ -130,7 +130,7 @@ const PackagesSec = (props) => {
           </Tab>
           <Tab eventKey="seo-packages" title="SEO">
             <div className="row justify-content-center">
-              {allPackagesData.map((item, index) => (
+              {seoPackagesData.map((item, index) => (
                 <div className="col-lg-4" key={index}>
                   <PackagesCard
                     name={item.name}
@@ -143,7 +143,7 @@ const PackagesSec = (props) => {
           </Tab>
           <Tab eventKey="social-media" title="SOCIAL MEDIA">
             <div className="row justify-content-center">
-              {allPackagesData.map((item, index) => (
+              {smmPackagesData.map((item, index) => (
                 <div className="col-lg-4" key={index}>
                   <PackagesCard
                     name={item.name}

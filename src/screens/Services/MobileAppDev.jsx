@@ -117,6 +117,7 @@ const MobileAppDev = () => {
           { name: "Cross-Platform Apps" },
         ]}
         btnText="See All Integrations"
+        targetSecId="portfolioSecId"
         rightP="From Native To Cross-Platform Apps, We Use Trusted Tools And Strategies To Deliver Smooth Experiences. Whether You’re Launching A New Idea Or Improving An Existing One, We’ve Got The Stack And The Skills To Get It Done."
       />
       <ServiceAboutSec

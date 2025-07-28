@@ -9,6 +9,8 @@ import pricingSuccessImg1 from "../../assets/images/pricingSuccessImg1.webp";
 import pricingSuccessImg2 from "../../assets/images/pricingSuccessImg2.webp";
 
 import PackagesSec from "../../components/PackagesSec";
+import { useModal } from "../../context/ModalContext";
+import { Link } from "react-router-dom";
 
 const secureProcessData = [
   {
@@ -32,6 +34,7 @@ const secureProcessData = [
 ];
 
 const Pricing = () => {
+  const { setShowModal } = useModal();
   return (
     <DefaultLayout>
       <InnerBanner
@@ -54,8 +57,14 @@ const Pricing = () => {
             <div className="col-lg-6">
               <div className="secureProcessContent">
                 <p className="sec-tag">SECURE PROCESS</p>
-                <h3 className="secTitle">Easy To Order, Easy To Pay</h3>
-                <p>
+                <h3
+                  className="secTitle"
+                  data-aos="fade-right"
+                  data-aos-delay="200"
+                >
+                  Easy To Order, Easy To Pay
+                </h3>
+                <p data-aos="fade-right" data-aos-delay="400">
                   One Website, One Fixed Price, No Hidden Fees. All Service
                   Details Are Included In One Attractive Price, And Certain
                   Bonuses
@@ -63,7 +72,12 @@ const Pricing = () => {
               </div>
               <div className="secureProcessList">
                 {secureProcessData.map((item, index) => (
-                  <div className="secureProcessListItem" key={index}>
+                  <div
+                    className="secureProcessListItem"
+                    key={index}
+                    data-aos="fade-right"
+                    data-aos-delay={index * 200}
+                  >
                     <h5>{item.title}</h5>
                     <p>{item.description}</p>
                   </div>
@@ -71,14 +85,22 @@ const Pricing = () => {
               </div>
             </div>
             <div className="col-lg-6">
-                <div className="secureProcessImages">
-                    <div>
-                        <img src={pricingSuccessImg1}  className="img-fluid" alt="Img 1" />
-                    </div>
-                    <div>
-                        <img src={pricingSuccessImg2} className="img-fluid"  alt="Img 1" />
-                    </div>
+              <div className="secureProcessImages">
+                <div data-aos="fade-left" data-aos-delay="200">
+                  <img
+                    src={pricingSuccessImg1}
+                    className="img-fluid"
+                    alt="Img 1"
+                  />
                 </div>
+                <div data-aos="fade-left" data-aos-delay="400">
+                  <img
+                    src={pricingSuccessImg2}
+                    className="img-fluid"
+                    alt="Img 1"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -89,8 +111,14 @@ const Pricing = () => {
           <div className="row">
             <div className="col-md-12">
               <div className="getStartProjecContent">
-                <h3 className="secTitle">Get Your Project Started Today</h3>
-                <p>
+                <h3
+                  className="secTitle"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  Get Your Project Started Today
+                </h3>
+                <p data-aos="fade-up" data-aos-delay="400">
                   At Our Company, We Value Clear Communication Throughout The
                   Design Process. We Encourage You To Talk To Us – Whether You
                   Have A New Project, Questions About Our Logo Pricing, Or Want
@@ -100,7 +128,7 @@ const Pricing = () => {
                   Countless Options. But What If You Want A High-Quality And
                   Professional Logo Maker, Without Breaking The Bank?
                 </p>
-                <p>
+                <p data-aos="fade-up" data-aos-delay="500">
                   That's Where We Come In! We Offer A Range Of Transparent Logo
                   Pricing Packages To Fit Any Startup Or Established Business.
                   Unlike A Free Logo Maker, Business Logo Creator, Or A Website
@@ -108,9 +136,17 @@ const Pricing = () => {
                   Attention And Creating A Unique Logo That Perfectly Represents
                   Your Brand.
                 </p>
-                <div className="d-flex justify-content-center flex-wrap gap-3 mt-5">
-                  <button className="theme-btn">Get Started Now</button>
-                  <button className="theme-btn">View Portfolio</button>
+                <div
+                  className="d-flex justify-content-center flex-wrap gap-3 mt-5"
+                  data-aos="fade-up"
+                  data-aos-delay="700"
+                >
+                  <Link to="/contact" className="theme-btn">
+                    Get Started Now
+                  </Link>
+                  <Link to={"/portfolio"} className="theme-btn">
+                    View Portfolio
+                  </Link>
                 </div>
               </div>
             </div>
@@ -121,21 +157,38 @@ const Pricing = () => {
       <section className="letsWorkTogether">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6">
+            <div className="col-lg-6 order-lg-1 order-2">
               <div className="secHead">
-                <h3 className="secTitle">Let’s Work Together.</h3>
-                <p>
+                <h3
+                  className="secTitle"
+                  data-aos="fade-right"
+                  data-aos-delay="200"
+                >
+                  Let’s Work Together.
+                </h3>
+                <p data-aos="fade-right" data-aos-delay="400">
                   At Our Company, We Value Communication And Understand The
                   Importance Of Open Dialogue Between Our Team And Our Clients.
                   That's Why We Encourage You To Talk To Us – Whether It's To
                   Discuss A New Project, Ask A Question, Or Provide Feedback On
                   Our Services.
                 </p>
-                <button className="theme-btn">Get Started Now</button>
+                <button
+                  className="theme-btn"
+                  data-aos="fade-right"
+                  data-aos-delay="600"
+                  onClick={() => setShowModal(true)}
+                >
+                  Get Started Now
+                </button>
               </div>
             </div>
-            <div className="col-lg-6">
-              <div className="letsWorkTogetherImgDiv">
+            <div className="col-lg-6 order-lg-2 order-1">
+              <div
+                className="letsWorkTogetherImgDiv"
+                data-aos="fade-left"
+                data-aos-delay="300"
+              >
                 <img
                   src={pricingLetsWorkTogether}
                   className="img-fluid"

@@ -3,6 +3,7 @@ import DefaultLayout from "../../components/DefaultLayout";
 import InnerBanner from "../../components/InnerBanner";
 
 import termsAndConditionBanner from "../../assets/images/termsAndConditionBanner.webp";
+import ObfuscatedEmail from "../../components/ObfuscatedEmail";
 
 const TermsAndCondition = () => {
   return (
@@ -361,6 +362,17 @@ const TermsAndCondition = () => {
                   To Our Valued Clients.
                 </p>
 
+                <h3>Record Maintenance</h3>
+                <p>
+                  At Texas Web Studios, We Place Great Importance On Record
+                  Maintenance. We Keep Detailed Records Of All Finalized Designs
+                  To Ensure That You Will Be Promptly Provided With The Exact
+                  File You Need In Case Of Misplaced Orders. Our Commitment To
+                  Maintaining Accurate And Organized Records Is Part Of Our
+                  Dedication To Delivering A Seamless And Efficient Experience
+                  To Our Valued Clients.
+                </p>
+
                 <h3>Customer Support</h3>
                 <p>
                   Our Customer Support Team Is Available 24/7 To Address All
@@ -369,6 +381,24 @@ const TermsAndCondition = () => {
                   Inquiries, No Matter The Time Or Day. Your Satisfaction Is Our
                   Top Priority, And We Are Here To Assist You Every Step Of The
                   Way.
+                </p>
+
+                <h3>Communication Policy</h3>
+                <p>
+                  For Effective Communication, We Urge You To Exclusively Use
+                  The Following Contact Details: Support@Texaswebstudios.Com And
+                  The Official Numbers Provided On Our Website. We Take No
+                  Responsibility For Any Communication Via Other Platforms Or
+                  Unauthorized Contact Details Not Provided. We Highly Recommend
+                  Utilizing Our Official Communication Channels To Ensure The
+                  Accuracy And Security Of Your Interactions With Us.
+                </p>
+                <p>
+                  We Value The Trust You Place In Us And Take Full
+                  Responsibility For All Information Provided Through Our
+                  Official Domains. Your Privacy And Data Security Are Of Utmost
+                  Importance, And We Maintain Strict Measures To Safeguard The
+                  Confidentiality Of Your Information.
                 </p>
 
                 <h3>
@@ -475,13 +505,8 @@ const TermsAndCondition = () => {
                     team.
                   </li>
                   <li>
-                    <a
-                      href="mailto:support@texaswebstudios.com"
-                      className="text-decoration-none redColor"
-                    >
-                      support@texaswebstudios.com
-                    </a>{" "}
-                    – Contact us via email for prompt assistance.
+                    <ObfuscatedEmail className="terms-condition-email" /> –
+                    Contact us via email for prompt assistance.
                   </li>
                   <li>
                     <a
@@ -503,7 +528,7 @@ const TermsAndCondition = () => {
                   Effective And Secure Communication.
                 </p>
 
-                <h3>Bill Of Rights</h3>
+                <h2>Bill Of Rights</h2>
                 <h3>No Obligation</h3>
 
                 <p>

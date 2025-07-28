@@ -3,6 +3,7 @@ import DefaultLayout from "../../components/DefaultLayout";
 import InnerBanner from "../../components/InnerBanner";
 
 import privacyPolicyBanner from "../../assets/images/privacyPolicyBanner.webp";
+import ObfuscatedEmail from "../../components/ObfuscatedEmail";
 
 const PrivacyPolicy = () => {
   return (
@@ -57,13 +58,8 @@ const PrivacyPolicy = () => {
                   Promotional Communications, You Can Opt Out By Following The
                   Instructions Provided In Each Communication. Alternatively,
                   You Can Contact Us Via Email At{" "}
-                  <a
-                    href="mailto:support@texaswebstudios.com"
-                    className="text-decoration-none redColor"
-                  >
-                    Support@Texaswebstudios.Com
-                  </a>{" "}
-                  Or Call Us At{" "}
+                  <ObfuscatedEmail className="terms-condition-email" /> Or Call
+                  Us At{" "}
                   <a
                     href="tel:+18325484589"
                     className="text-decoration-none redColor"
@@ -151,13 +147,7 @@ const PrivacyPolicy = () => {
                     +1 832 548 4589
                   </a>{" "}
                   or{" "}
-                  <a
-                    href="mailto:support@texaswebstudios.com"
-                    className="redColor text-decoration-none"
-                  >
-                    support@texaswebstudios.com
-                  </a>
-                  .
+                  <ObfuscatedEmail className="terms-condition-email" />
                 </p>
               </div>
             </div>

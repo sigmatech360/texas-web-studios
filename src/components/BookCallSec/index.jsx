@@ -1,8 +1,10 @@
 import React from "react";
 import "./style.css";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { useModal } from "../../context/ModalContext";
 
 const BookCallSec = (props) => {
+  const { setShowModal } = useModal();
   return (
     <section className="bookCallSec sec-padding">
       <div className="container">
@@ -20,6 +22,7 @@ const BookCallSec = (props) => {
                 className="theme-btn theme-btn-white icon-btn"
                 data-aos="fade-left"
                 data-aos-delay="400"
+                onClick={() => setShowModal(true)}
               >
                 {props.btnText} <IoIosArrowRoundForward />
               </button>

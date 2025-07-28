@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
+
 // Components
 import DefaultLayout from "../../components/DefaultLayout";
 import MainBanner from "../../components/MainBanner";
@@ -13,9 +17,25 @@ import userExperienceIcon from "../../assets/images/userExperienceIcon.webp";
 import eCommerceIcon from "../../assets/images/eCommerceIcon.webp";
 import growthStratergyIcon from "../../assets/images/growthStratergyIcon.webp";
 
+// services icon
+import mobileAppDevIcon from "../../assets/images/ourServicesIcon/ourServiceMobileIcon.webp";
+import logoDesignIcon from "../../assets/images/ourServicesIcon/ourServiceLogoIcon.webp";
+import webDesignIcon from "../../assets/images/ourServicesIcon/ourServiceWebIcon.webp";
+
+import ourServiceSEOIcon from "../../assets/images/ourServicesIcon/ourServiceSEOIcon.webp";
+import ourServiceCMSIcon from "../../assets/images/ourServicesIcon/ourServiceCMSIcon.webp";
+import ourServiceDigitalMarketingIcon from "../../assets/images/ourServicesIcon/ourServiceDigitalMarketingIcon.webp";
+import ourServiceSMMIcon from "../../assets/images/ourServicesIcon/ourServiceSMMIcon.webp";
+import ourServiceCustomIcon from "../../assets/images/ourServicesIcon/ourServiceCustomIcon.webp";
+
 import homeOurServives1 from "../../assets/images/homeOurServives1.webp";
 import homeOurServives2 from "../../assets/images/homeOurServives2.webp";
 import homeOurServives3 from "../../assets/images/homeOurServives3.webp";
+import homeOurServives4 from "../../assets/images/homeOurServives4.webp";
+import homeOurServives5 from "../../assets/images/homeOurServives5.webp";
+import homeOurServives6 from "../../assets/images/homeOurServives6.webp";
+import homeOurServives7 from "../../assets/images/homeOurServives7.webp";
+import homeOurServives8 from "../../assets/images/homeOurServives8.webp";
 
 import customBrandingSolutionsIcon from "../../assets/images/customBrandingSolutionsIcon.webp";
 import designatedProjectManagersIcon from "../../assets/images/designatedProjectManagersIcon.webp";
@@ -33,7 +53,6 @@ import BookCallSec from "../../components/BookCallSec";
 import ContactUsSec from "../../components/ContactUsSec";
 import BlogSec from "../../components/BlogSec";
 import PackagesSec from "../../components/PackagesSec";
-import FormModal from "../../components/FormModal";
 
 const homeAboutListData = [
   {
@@ -70,29 +89,74 @@ const ourServicesData = [
   {
     id: 1,
     image: homeOurServives1,
-    icon: eCommerceIcon,
+    icon: webDesignIcon,
     title: "Website Design",
     description:
       "We Craft Responsive, Functional, And Converting Websites That Look Stunning And Guide Visitors To Take Action, Built For Performance On Every Device.",
-    link: "",
+    link: "/web-development",
   },
   {
     id: 2,
     image: homeOurServives2,
-    icon: eCommerceIcon,
+    icon: logoDesignIcon,
     title: "Logo Design",
     description:
       "Your Brand Starts With A Logo Design. We Create Bold, Memorable Logos That Capture Your Identity And Work Across All Your Digital Touchpoints.",
-    link: "",
+    link: "/logo-design",
   },
   {
     id: 3,
     image: homeOurServives3,
-    icon: eCommerceIcon,
+    icon: mobileAppDevIcon,
     title: "App Development",
     description:
       "We Build User-Friendly And Functional Mobile Apps That Keep Your Customers Engaged. Our Apps Are Designed For Performance Across Ios And Android Platforms.",
-    link: "",
+    link: "/mobile-app-development",
+  },
+  {
+    id: 4,
+    image: homeOurServives4,
+    icon: ourServiceSEOIcon,
+    title: "Search Engine Optimization",
+    description:
+      "We Ensure Your Business Gets Found. Our SEO Services In Texas Improve Rankings, Increase Visibility, And Drive High-Quality Traffic That's Ready To Convert.",
+    link: "/search-engine-optimization",
+  },
+  {
+    id: 5,
+    image: homeOurServives5,
+    icon: ourServiceCMSIcon,
+    title: "CMS Development",
+    description:
+      "Get A Custom Content Management System That Puts You in Control. Our Website Development Company Provides Easy-To-Manage, Secure, Custom-Built CMS Solutions For Your Workflow.",
+    link: "/cms-development",
+  },
+  {
+    id: 6,
+    image: homeOurServives6,
+    icon: ourServiceDigitalMarketingIcon,
+    title: "Digital Marketing",
+    description:
+      "We Design Full-Funnel Strategies That Drive Traffic, Capture Leads, And Turn Browsers Into Buyers. Our Digital Marketing Services Are Made To Boost Your Business In The Right Places, At The Right Time.",
+    link: "/mobile-app-development",
+  },
+  {
+    id: 7,
+    image: homeOurServives7,
+    icon: ourServiceSMMIcon,
+    title: "Social Media Marketing",
+    description:
+      "Grow Your Presence Across Every Major Platform With Content That Makes You Stop Scrolling. We Work On Smart Targeting And Strategic Campaigns To Drive Real Engagement.",
+    link: "/digital-media-marketing",
+  },
+  {
+    id: 8,
+    image: homeOurServives8,
+    icon: ourServiceCustomIcon,
+    title: "Custom Web Development",
+    description:
+      "From Complex Systems To Custom Features, We Provide Custom Web Development Services That Do More, Load Faster, And Grow With Your Business.",
+    link: "/custom-web-development",
   },
 ];
 
@@ -149,10 +213,9 @@ const testimonialData = [
 
 const Home = () => {
   const [key, setKey] = useState("all-packages");
-  const [showModal, setShowModal] = useState(false);
   return (
     <DefaultLayout>
-      <MainBanner onOpenModal={() => setShowModal(true)} />
+      <MainBanner />
 
       <section className="homeAbout sec-margin">
         <div className="container">
@@ -215,13 +278,14 @@ const Home = () => {
                     Grow, Compete, And Lead Online.
                   </h3>
                 </div>
-                <button
+                <Link
+                  to={"/about"}
                   className="theme-btn icon-btn"
                   data-aos="fade-left"
                   data-aos-delay="400"
                 >
                   About Us <IoIosArrowRoundForward />
-                </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -249,9 +313,43 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            {ourServicesData.map((item, index) => (
+            <div className="homeServicesSlider">
+              <Swiper
+                slidesPerView={1}
+                spaceBetween={10}
+                // centeredSlides={true}
+                loop={true}
+                speed={5000}
+                autoplay={{
+                  delay: 1,
+                  disableOnInteraction: false,
+                }}
+                freeMode={true}
+                freeModeMomentum={false}
+                modules={[Autoplay]}
+                breakpoints={{
+                  320: { slidesPerView: 1 },
+                  481: { slidesPerView: 1 },
+                  768: { slidesPerView: 2, spaceBetween: 20 },
+                  992: { slidesPerView: 3, spaceBetween: 20 },
+                }}
+              >
+                {ourServicesData.map((item, index) => (
+                  <SwiperSlide key={index}>
+                    <OurServiceBox
+                      image={item.image}
+                      icon={item.icon}
+                      title={item.title}
+                      description={item.description}
+                      link={item.link}
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+            {/* {ourServicesData.map((item, index) => (
               <div
-                className="col-lg-4 col-md-6 mb-lg-0 mb-4"
+                className="col-lg-4 col-md-6 mb-4"
                 key={index}
                 data-aos="fade-up"
                 data-aos-delay={index * 200}
@@ -264,7 +362,7 @@ const Home = () => {
                   link={item.link}
                 />
               </div>
-            ))}
+            ))} */}
           </div>
         </div>
       </section>
@@ -387,7 +485,6 @@ const Home = () => {
       <ContactUsSec />
 
       <BlogSec />
-      <FormModal show={showModal} handleClose={() => setShowModal(false)} />
     </DefaultLayout>
   );
 };

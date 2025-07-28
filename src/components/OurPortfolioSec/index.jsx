@@ -1,10 +1,11 @@
 import React from "react";
 import PortfolioSliders from "../PortfolioSliders";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const OurPortfolioSec = (props) => {
   return (
-    <section className={`ourPortfolio sec-padding ${props.className}`}>
+    <section className={`ourPortfolio sec-padding ${props.className}`} id={"portfolioSecId"}>
       <div className="container">
         <div className="row">
           <div className="col-md-12">
@@ -20,9 +21,9 @@ const OurPortfolioSec = (props) => {
         portfolio2={props.ourPortfolio2}
       />
       <div className="text-center mt-5">
-        <button className="theme-btn icon-btn" data-aos="fade-up" data-aos-delay="300">
+        <Link to="/portfolio" className="theme-btn icon-btn" data-aos="fade-up" data-aos-delay="300">
           {props.btnText || "View All Projects"} <IoIosArrowRoundForward />
-        </button>
+        </Link>
       </div>
     </section>
   );

@@ -47,7 +47,7 @@
 }
 .ourServiceBoxContent img {
   margin-bottom: 16px;
-  max-width: 100px;
+  /* max-width: 100px; */
 }
 .ourServiceBoxContent p {
   color: #fff;
@@ -58,8 +58,18 @@
 .ourServiceBoxContent .link {
   color: #fff;
   text-decoration: none;
-  font-family: "Syne";
+  font-family: "Syne", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px;
+}
+
+.ourServiceBoxContentIcon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  object-position: center;
+  background-color: #d41f14;
+  padding: 10px;
+  border-radius: 12px;
 }
 
 /* Large screens (desktops, tablets in landscape) */
@@ -72,7 +82,7 @@
 @media (max-width: 1199px) {
   .ourServiceBoxContent img {
     margin-bottom: 0;
-    max-width: 60px;
+    /* max-width: 60px; */
   }
   .ourServiceBoxContent p {
     font-size: 14px;

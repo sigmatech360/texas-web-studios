@@ -12,6 +12,10 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  transition: all .25s ease;
+}
+.blogCard:hover{
+  transform: translate(0, -10px);
 }
 
 .blogCardTitle {
@@ -19,6 +23,7 @@
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 10px;
+  min-height: 21px;
 }
 .blogCardContent a {
   text-decoration: none;
@@ -27,9 +32,13 @@
 
 .blogCardHeader {
   overflow: hidden;
+  height: 265px;
 }
 .blogCardHeader img {
   transition: all 0.25s ease;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
 }
 .blogCard:hover .blogCardHeader img {
   transform: scale(1.1);
@@ -57,6 +66,9 @@
 
 .blogMetaDetails svg {
   color: #d41f14;
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
 }
 
 .blogMetaDetails {

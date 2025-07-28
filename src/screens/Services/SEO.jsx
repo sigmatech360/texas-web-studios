@@ -99,7 +99,11 @@ const SEO = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-5">
-              <div className="getFoundSeoImg">
+              <div
+                className="getFoundSeoImg"
+                data-aos="fade-right"
+                data-aos-delay="200"
+              >
                 <img
                   src={getFoundImg}
                   alt="Get Found By The Right Audience Across Every Search Engine"
@@ -109,10 +113,14 @@ const SEO = () => {
             </div>
             <div className="col-lg-7">
               <div className="getFoundSeoContent">
-                <h3 className="secTitle">
+                <h3
+                  className="secTitle"
+                  data-aos="fade-left"
+                  data-aos-delay="200"
+                >
                   Get Found By The Right Audience Across Every Search Engine
                 </h3>
-                <p>
+                <p data-aos="fade-left" data-aos-delay="400">
                   Getting Found Online Isn’t Luck; It’s A Strategy That Requires
                   Critical Thinking And Consistent Efforts. At Texas Web
                   Studios, We Optimize Every Part Of Your Website To Help You
@@ -127,7 +135,13 @@ const SEO = () => {
                     "Technical Site Audits And On-Page Improvements.",
                     "Ongoing Performance Tracking And Adjustments.",
                   ].map((item, listIndex) => (
-                    <li key={listIndex}>{item}</li>
+                    <li
+                      key={listIndex}
+                      data-aos="fade-left"
+                      data-aos-delay={listIndex * 150}
+                    >
+                      {item}
+                    </li>
                   ))}
                 </ul>
               </div>
@@ -141,7 +155,12 @@ const SEO = () => {
           <div className="col-md-12">
             <div className="beVisibleIconsData">
               {beVisibleData.map((item, index) => (
-                <div className="beVisibleIconData" key={index}>
+                <div
+                  className="beVisibleIconData"
+                  key={index}
+                  data-aos="fade-up"
+                  data-aos-delay={index * 200}
+                >
                   <img src={item.icon} alt={item.title} />
                   <h4 className="beVisibleIconData-title">{item.title}</h4>
                 </div>

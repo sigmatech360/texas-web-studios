@@ -58,7 +58,8 @@
 }
 
 body {
-  font-family: "Poppins";
+  font-family: "Poppins", Arial, sans-serif;
+  font-size-adjust: 0.5; /* Adjust this experimentally */
 }
 
 .bgBlack {
@@ -96,8 +97,20 @@ body {
 }
 .icon-btn svg {
   font-size: 25px;
+  height: 25px;
+  width: 30px;
+  line-height: 1;
 }
 
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: "Syne", "Helvetica Neue", Arial, sans-serif;
+} */
 h1,
 h2,
 h3,
@@ -111,6 +124,25 @@ p {
   margin-bottom: 0;
   color: #707070;
 }
+.at::before {
+  content: "@";
+}
+.dot::before {
+  content: ".";
+}
+.ObfuscatedEmail {
+  cursor: pointer;
+}
+
+.btn-loading {
+  opacity: 0.3;
+  pointer-events: none; /* Optional: to prevent interactions while loading */
+}
+.btn-loaded {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .sec-margin {
   margin: 60px 0;
 }
@@ -120,7 +152,7 @@ p {
 }
 .sec-tag {
   color: #d41f14 !important;
-  font-family: "Syne";
+  font-family: "Syne", "Helvetica Neue", Arial, sans-serif;
   /* font-size: 30px !important; */
   font-size: 22px !important;
   margin-bottom: 10px;
@@ -272,6 +304,7 @@ textarea.form-control {
 
 .letsWorkTogether {
   padding-top: 60px;
+  overflow: hidden;
 }
 
 .letsWorkTogether .secHead {
@@ -295,22 +328,23 @@ textarea.form-control {
 }
 
 .secureProcessContent .secTitle {
-  font-size: 53px;
+  font-size: 60px;
   font-weight: 700;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 }
 .secureProcessContent p {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .secureProcessListItem {
   border-left: 3px solid #d41f14;
-  padding: 0 20px;
+  padding: 7px 20px;
 }
 
 .secureProcessListItem h5 {
-  font-size: 20px;
+  font-size: 23px;
   font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .secureProcessListItem p {
@@ -321,7 +355,7 @@ textarea.form-control {
 .secureProcessList {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 20px;
 }
 .secureProcessImages {
   display: flex;
@@ -350,6 +384,10 @@ textarea.form-control {
   /* margin-left: 6px; */
   border-radius: 6px;
   margin-top: 15px;
+}
+.getToKnowImg1 img {
+  aspect-ratio: 14 / 13;
+  object-fit: cover;
 }
 
 .getToKnowExpDiv {
@@ -456,7 +494,8 @@ textarea.form-control {
 }
 
 .ourServicesListItem .ourServicesListIcon {
-  max-width: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 /* Applies to WebKit browsers (Chrome, Safari, Edge) */
@@ -509,14 +548,16 @@ textarea.form-control {
 } */
 
 .portfolioSwiperToRight {
-  direction: ltr;
-  transform: scaleX(-1);
+  direction: rtl;
+  transform: scaleX(1);
 }
 
 .portfolioSwiperToRight .swiper-slide {
-  transform: scaleX(-1);
+  /* transform: scaleX(-1); */
 }
-
+.ourPortfolioItem img {
+  border-radius: 12px;
+}
 .designForImpack .secHead {
   text-align: center;
   max-width: 1160px;
@@ -595,7 +636,8 @@ textarea.form-control {
   gap: 16px;
 }
 
-.categoriesList h4 {
+.categoriesList h4,
+.categoriesList .categoriesListTitle {
   color: #d41f14;
   font-weight: 600;
   font-size: 25px;
@@ -604,6 +646,7 @@ textarea.form-control {
   font-size: 43px;
   font-weight: 700;
   margin-bottom: 12px;
+  min-height: 72px;
 }
 .latestTech .secHead p {
   margin-bottom: 16px;
@@ -706,12 +749,13 @@ textarea.form-control {
   font-weight: 600;
   font-size: 35px;
   color: #191919;
-  margin-bottom: 10px !important;
+  margin-bottom: 16px !important;
 }
 
 .privacy-policy-content h3,
 .privacy-policy-content h4 {
   margin-bottom: 10px !important;
+  font-weight: 600;
 }
 .privacy-policy-content h4 {
   color: #707070;
@@ -719,6 +763,12 @@ textarea.form-control {
 
 .privacy-policy-content p a,
 .privacy-policy-content p .terms-condition-email {
+  color: #d41f14;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.terms-condition-email {
   color: #d41f14;
   text-decoration: none;
   font-size: 16px;
@@ -754,6 +804,10 @@ textarea.form-control {
   width: 100px;
   height: 100px;
 }
+.news-latterForm {
+  max-width: 768px;
+  margin: 0 auto;
+}
 @media (max-width: 1399px) {
   .homeAboutContent .secTitle {
     font-size: 45px;
@@ -786,6 +840,13 @@ textarea.form-control {
   .ourServicesList {
     height: 650px;
   }
+  .secureProcessContent .secTitle {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  .secureProcessListItem {
+    padding: 3px 20px;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -795,7 +856,8 @@ textarea.form-control {
   .contactUsPageContent .secTitle {
     font-size: 33px;
   }
-  .categoriesList h4 {
+  .categoriesList h4,
+  .categoriesList .categoriesListTitle {
     font-size: 20px;
   }
   .latestTech .secHead .secTitle {
@@ -842,6 +904,19 @@ textarea.form-control {
   }
   .ourServicesContent .secSubTitle {
     font-size: 22px;
+  }
+  .secureProcessContent .secTitle {
+    font-size: 40px;
+  }
+  .secureProcessContent p {
+    margin-bottom: 16px;
+  }
+  .secureProcessListItem h5 {
+    font-size: 20px;
+    margin-bottom: 3px;
+  }
+  .secureProcessList {
+    gap: 16px;
   }
 }
 @media (max-width: 991px) {

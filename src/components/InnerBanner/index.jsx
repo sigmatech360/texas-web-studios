@@ -7,25 +7,46 @@ const InnerBanner = (props) => {
   return (
     <section
       className={`innerBanner`}
-      style={{ backgroundImage: `url(${props.bgImage})` }}
+      // style={{ backgroundImage: `url(${props.bgImage})` }}
     >
+      {/* <img
+        src={props.bgImage}
+        alt={props.title}
+        className="inner-banner-sec-bgImg"
+        fetchPriority="hight"
+        width="1920"
+        height="600"
+        decoding="async"
+      /> */}
+      {/* Background Image with aspect ratio */}
+      <div
+        className="inner-banner-sec-bgImg"
+        style={{
+          backgroundImage: `url(${props.bgImage})`,
+        }}
+        role="img"
+        aria-label={props.title}
+      ></div>
       <div className="container">
         <div className="row align-items-center">
           <div className={`${props.leftCol || "col-lg-6"}`}>
             <div className="innerBannerContent">
               <h1
                 dangerouslySetInnerHTML={{ __html: props.title }}
-                data-aos="fade-right"
-                data-aos-delay="200"
+                // data-aos="fade-right"
+                // data-aos-delay="200"
               />
-              <p data-aos="fade-right" data-aos-delay="400">
+              <p
+              // data-aos="fade-right"
+              // data-aos-delay="400"
+              >
                 {props.description}
               </p>
 
               <nav
                 aria-label="breadcrumb"
-                data-aos="fade-right"
-                data-aos-delay="500"
+                // data-aos="fade-right"
+                // data-aos-delay="500"
               >
                 <ol className="breadcrumb">
                   <li className="breadcrumb-item">
@@ -42,13 +63,17 @@ const InnerBanner = (props) => {
             {props.bannerImg && (
               <div
                 className="innerBannerImg"
-                data-aos="fade-left"
-                data-aos-delay="300"
+                // data-aos="fade-left"
+                // data-aos-delay="300"
               >
                 <img
                   src={props.bannerImg}
                   alt={props.title}
                   className={`img-fluid`}
+                  width={"526"}
+                  height={"553"}
+                  fetchPriority="high"
+                  decoding="async"
                 />
               </div>
             )}
