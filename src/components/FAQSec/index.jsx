@@ -21,9 +21,9 @@ const testimonialData = [
       "Yes. We Begin With A Full Website Audit To Identify Gaps And Opportunities. You’ll Get The Report First, Then It’s Your Call To Move Forward Or Not.",
   },
   {
-    title: "How Involved Will I Be In The Design Process?",
+    title: "How Involved Will I Be in The Design Process?",
     description:
-      "We Believe In Close Collaboration, So We Include You At Every Key Step, From Planning And Wireframes To Final Design Approval. We Work With You To Create The Ideal Results.",
+      "We Believe in Close Collaboration, So We Include You At Every Key Step, From Planning And Wireframes To Final Design Approval. We Work With You To Create The Ideal Results.",
   },
 ];
 
@@ -50,6 +50,7 @@ const FAQSec = (props) => {
                   activeKey={activeKeys}
                   // defaultActiveKey="0"
                 >
+                  {/* Mistakenly used props.testimonials */}
                   {props.testimonials.map((item, index) => (
                     <Accordion.Item
                       key={index}

@@ -53,6 +53,7 @@ import BookCallSec from "../../components/BookCallSec";
 import ContactUsSec from "../../components/ContactUsSec";
 import BlogSec from "../../components/BlogSec";
 import PackagesSec from "../../components/PackagesSec";
+import ReactHelmet from "../../components/ReactHelmet";
 
 const homeAboutListData = [
   {
@@ -119,7 +120,7 @@ const ourServicesData = [
     icon: ourServiceSEOIcon,
     title: "Search Engine Optimization",
     description:
-      "We Ensure Your Business Gets Found. Our SEO Services In Texas Improve Rankings, Increase Visibility, And Drive High-Quality Traffic That's Ready To Convert.",
+      "We Ensure Your Business Gets Found. Our SEO Services in Texas Improve Rankings, Increase Visibility, And Drive High-Quality Traffic That's Ready To Convert.",
     link: "/search-engine-optimization",
   },
   {
@@ -137,7 +138,7 @@ const ourServicesData = [
     icon: ourServiceDigitalMarketingIcon,
     title: "Digital Marketing",
     description:
-      "We Design Full-Funnel Strategies That Drive Traffic, Capture Leads, And Turn Browsers Into Buyers. Our Digital Marketing Services Are Made To Boost Your Business In The Right Places, At The Right Time.",
+      "We Design Full-Funnel Strategies That Drive Traffic, Capture Leads, And Turn Browsers Into Buyers. Our Digital Marketing Services Are Made To Boost Your Business in The Right Places, At The Right Time.",
     link: "/mobile-app-development",
   },
   {
@@ -205,149 +206,159 @@ const testimonialData = [
       "Yes. We Begin With A Full Website Audit To Identify Gaps And Opportunities. You’ll Get The Report First, Then It’s Your Call To Move Forward Or Not.",
   },
   {
-    title: "How Involved Will I Be In The Design Process?",
+    title: "How Involved Will I Be in The Design Process?",
     description:
-      "We Believe In Close Collaboration, So We Include You At Every Key Step, From Planning And Wireframes To Final Design Approval. We Work With You To Create The Ideal Results.",
+      "We Believe in Close Collaboration, So We Include You At Every Key Step, From Planning And Wireframes To Final Design Approval. We Work With You To Create The Ideal Results.",
   },
 ];
+
+const webUrl = import.meta.env.VITE_WEB_URL;
 
 const Home = () => {
   const [key, setKey] = useState("all-packages");
   return (
-    <DefaultLayout>
-      <MainBanner />
+    <>
+      <ReactHelmet
+        // title=""
+        // description=""
+        // keywords=""
+        url={`${webUrl}/`}
+      />
+      <DefaultLayout>
+        <MainBanner />
 
-      <section className="homeAbout sec-margin">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6 mb-lg-0 mb-4">
-              <div className="homeAboutContent">
-                <h3
-                  className="secTitle"
-                  data-aos="fade-right"
-                  data-aos-delay="200"
-                >
-                  Growth Strategies That Leave A Lasting Impact
-                </h3>
-                <p data-aos="fade-right" data-aos-delay="400">
-                  With Years Of Experience, We Have Learnt That Every Business
-                  Runs Differently, And That’s Precisely How We Strategize. From
-                  Full-Stack Development To Custom Digital Marketing Solutions,
-                  Our Branding And{" "}
-                  <span className="redColor">
-                    Website Development Company In Texas
-                  </span>{" "}
-                  Creates Solutions That Fit Your Goals, Your Market, And The
-                  Way You Operate. Whatever Your Requirements, We Will Meet
-                  Them. Whether You Need A Custom Site, A Smarter Sales Funnel,
-                  Or IT Management That Just Works, We Bring Everything Together
-                  To Help Businesses Grow With Clarity, Speed, And Confidence.
-                </p>
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="homeAboutList">
-                {homeAboutListData.map((item, index) => (
-                  <ContentWithICon
-                    key={index}
-                    index={index}
-                    icon={item.icon}
-                    title={item.title}
-                    description={item.description}
-                  />
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="homeMissionSec sec-padding">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <div className="homeMissionContent">
-                <div className="homeMissionContentLeft">
-                  <p className="sec-tag">MISSION</p>
+        <section className="homeAbout sec-margin">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-6 mb-lg-0 mb-4">
+                <div className="homeAboutContent">
                   <h3
                     className="secTitle"
                     data-aos="fade-right"
                     data-aos-delay="200"
                   >
-                    Building Unique Brand Identities That Help Texas Businesses
-                    Grow, Compete, And Lead Online.
+                    Growth Strategies That Leave A Lasting Impact
                   </h3>
+                  <p data-aos="fade-right" data-aos-delay="400">
+                    With Years Of Experience, We Have Learnt That Every Business
+                    Runs Differently, And That’s Precisely How We Strategize.
+                    From Full-Stack Development To Custom Digital Marketing
+                    Solutions, Our Branding And{" "}
+                    <span className="redColor">
+                      Website Development Company in Texas
+                    </span>{" "}
+                    Creates Solutions That Fit Your Goals, Your Market, And The
+                    Way You Operate. Whatever Your Requirements, We Will Meet
+                    Them. Whether You Need A Custom Site, A Smarter Sales
+                    Funnel, Or IT Management That Just Works, We Bring
+                    Everything Together To Help Businesses Grow With Clarity,
+                    Speed, And Confidence.
+                  </p>
                 </div>
-                <Link
-                  to={"/about"}
-                  className="theme-btn icon-btn"
-                  data-aos="fade-left"
-                  data-aos-delay="400"
-                >
-                  About Us <IoIosArrowRoundForward />
-                </Link>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="homeOurServicesSec sec-padding bgBlack">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-12">
-              <div className="homeOurServicesHead">
-                <p className="sec-tag">OUR SERVICES</p>
-                <h3
-                  className="secTitle"
-                  data-aos="fade-right"
-                  data-aos-delay="200"
-                >
-                  Revamp Your Brand <br /> With Smart Digital Solutions
-                </h3>
-                <p data-aos="fade-right" data-aos-delay="400">
-                  We Offer A Full Suite Of Digital Solutions, Tailored To Your
-                  Business Needs. From Custom Web Development To Digital
-                  Marketing In Texas, Our Services Are Built To Deliver Results,
-                  Drive Growth, And Help You Stand Out Online.
-                </p>
-              </div>
-            </div>
-            <div className="homeServicesSlider">
-              <Swiper
-                slidesPerView={1}
-                spaceBetween={10}
-                // centeredSlides={true}
-                loop={true}
-                speed={5000}
-                autoplay={{
-                  delay: 1,
-                  disableOnInteraction: false,
-                }}
-                freeMode={true}
-                freeModeMomentum={false}
-                modules={[Autoplay]}
-                breakpoints={{
-                  320: { slidesPerView: 1 },
-                  481: { slidesPerView: 1 },
-                  768: { slidesPerView: 2, spaceBetween: 20 },
-                  992: { slidesPerView: 3, spaceBetween: 20 },
-                }}
-              >
-                {ourServicesData.map((item, index) => (
-                  <SwiperSlide key={index}>
-                    <OurServiceBox
-                      image={item.image}
+              <div className="col-lg-6">
+                <div className="homeAboutList">
+                  {homeAboutListData.map((item, index) => (
+                    <ContentWithICon
+                      key={index}
+                      index={index}
                       icon={item.icon}
                       title={item.title}
                       description={item.description}
-                      link={item.link}
                     />
-                  </SwiperSlide>
-                ))}
-              </Swiper>
+                  ))}
+                </div>
+              </div>
             </div>
-            {/* {ourServicesData.map((item, index) => (
+          </div>
+        </section>
+
+        <section className="homeMissionSec sec-padding">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <div className="homeMissionContent">
+                  <div className="homeMissionContentLeft">
+                    <p className="sec-tag">MISSION</p>
+                    <h3
+                      className="secTitle"
+                      data-aos="fade-right"
+                      data-aos-delay="200"
+                    >
+                      Building Unique Brand Identities That Help Texas
+                      Businesses Grow, Compete, And Lead Online.
+                    </h3>
+                  </div>
+                  <Link
+                    to={"/about"}
+                    className="theme-btn icon-btn"
+                    data-aos="fade-left"
+                    data-aos-delay="400"
+                  >
+                    About Us <IoIosArrowRoundForward />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="homeOurServicesSec sec-padding bgBlack">
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-lg-12">
+                <div className="homeOurServicesHead">
+                  <p className="sec-tag">OUR SERVICES</p>
+                  <h3
+                    className="secTitle"
+                    data-aos="fade-right"
+                    data-aos-delay="200"
+                  >
+                    Revamp Your Brand <br /> With Smart Digital Solutions
+                  </h3>
+                  <p data-aos="fade-right" data-aos-delay="400">
+                    We Offer A Full Suite Of Digital Solutions, Tailored To Your
+                    Business Needs. From Custom Web Development To Digital
+                    Marketing in Texas, Our Services Are Built To Deliver
+                    Results, Drive Growth, And Help You Stand Out Online.
+                  </p>
+                </div>
+              </div>
+              <div className="homeServicesSlider">
+                <Swiper
+                  slidesPerView={1}
+                  spaceBetween={10}
+                  // centeredSlides={true}
+                  loop={true}
+                  speed={5000}
+                  autoplay={{
+                    delay: 1,
+                    disableOnInteraction: false,
+                  }}
+                  freeMode={true}
+                  freeModeMomentum={false}
+                  modules={[Autoplay]}
+                  breakpoints={{
+                    320: { slidesPerView: 1 },
+                    481: { slidesPerView: 1 },
+                    768: { slidesPerView: 2, spaceBetween: 20 },
+                    992: { slidesPerView: 3, spaceBetween: 20 },
+                  }}
+                >
+                  {ourServicesData.map((item, index) => (
+                    <SwiperSlide key={index}>
+                      <OurServiceBox
+                        image={item.image}
+                        icon={item.icon}
+                        title={item.title}
+                        description={item.description}
+                        link={item.link}
+                      />
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+              </div>
+              {/* {ourServicesData.map((item, index) => (
               <div
                 className="col-lg-4 col-md-6 mb-4"
                 key={index}
@@ -363,129 +374,130 @@ const Home = () => {
                 />
               </div>
             ))} */}
-          </div>
-        </div>
-      </section>
-
-      <section className="beVisibleSec sec-padding">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-md-12">
-              <div className="secHead">
-                <p className="sec-tag">BE VISIBLE</p>
-                <h3
-                  className="secTitle"
-                  data-aos="fade-right"
-                  data-aos-delay="200"
-                >
-                  Why Texas Web Studios Is The Standard!
-                </h3>
-              </div>
             </div>
-            <div className="col-lg-6 mb-lg-0 mb-4">
-              <div
-                className="beVisible-numberBox"
-                data-aos="fade-right"
-                data-aos-delay="400"
-              >
-                <div className="beVisible-numberBoxBg">
-                  <h3>10+</h3>
+          </div>
+        </section>
+
+        <section className="beVisibleSec sec-padding">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-md-12">
+                <div className="secHead">
+                  <p className="sec-tag">BE VISIBLE</p>
+                  <h3
+                    className="secTitle"
+                    data-aos="fade-right"
+                    data-aos-delay="200"
+                  >
+                    Why Texas Web Studios Is The Standard!
+                  </h3>
+                </div>
+              </div>
+              <div className="col-lg-6 mb-lg-0 mb-4">
+                <div
+                  className="beVisible-numberBox"
+                  data-aos="fade-right"
+                  data-aos-delay="400"
+                >
+                  <div className="beVisible-numberBoxBg">
+                    <h3>10+</h3>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div className="beVisibleCOntent">
+                  <h3
+                    className="secSubTitle"
+                    data-aos="fade-left"
+                    data-aos-delay="600"
+                  >
+                    Experience That Delivers Results.
+                  </h3>
+                  <p data-aos="fade-left" data-aos-delay="800">
+                    Backed By Years Of Industry Experience, We’ve Earned The
+                    Trust Of Large And Small Businesses Across Texas. We Create
+                    Simple And Practical Online Marketing Solutions That Help
+                    Our Clients Grow And Succeed Online.
+                  </p>
+                </div>
+              </div>
+              <div className="col-md-12">
+                <div className="beVisibleIconsData">
+                  {beVisibleData.map((item, index) => (
+                    <div
+                      className="beVisibleIconData"
+                      key={index}
+                      data-aos="fade-up"
+                      data-aos-delay={index * 200}
+                    >
+                      <img src={item.icon} alt={item.title} />
+                      <h4 className="beVisibleIconData-title">{item.title}</h4>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
-            <div className="col-lg-6">
-              <div className="beVisibleCOntent">
-                <h3
-                  className="secSubTitle"
-                  data-aos="fade-left"
-                  data-aos-delay="600"
-                >
-                  Experience That Delivers Results.
-                </h3>
-                <p data-aos="fade-left" data-aos-delay="800">
-                  Backed By Years Of Industry Experience, We’ve Earned The Trust
-                  Of Large And Small Businesses Across Texas. We Create Simple
-                  And Practical Online Marketing Solutions That Help Our Clients
-                  Grow And Succeed Online.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-12">
-              <div className="beVisibleIconsData">
-                {beVisibleData.map((item, index) => (
-                  <div
-                    className="beVisibleIconData"
-                    key={index}
-                    data-aos="fade-up"
-                    data-aos-delay={index * 200}
-                  >
-                    <img src={item.icon} alt={item.title} />
-                    <h4 className="beVisibleIconData-title">{item.title}</h4>
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <PackagesSec
-        className="bgPink"
-        secTag="PRICING"
-        title="Flexible Pricing Packages"
-        description="Every Business Has Different Needs, So We Offer Custom Pricing
+        <PackagesSec
+          className="bgPink"
+          secTag="PRICING"
+          title="Flexible Pricing Packages"
+          description="Every Business Has Different Needs, So We Offer Custom Pricing
                     For Each Of Our Services. Our Packages Include Basic, Pro, And
                     Premium, Designed To Match Where You Are And Where You’re
                     Headed. Whether You Are Starting Fresh Or Looking To Scale,
                     You Will Get The Right Solution At The Right Price. So Find
                     The Package That Fits You Best, Or Consult Us For A Custom
                     Package!"
-      />
+        />
 
-      <TestimonialSec
-        className="bgBlack"
-        secTag="OUR TESTIMONIALS"
-        secTitle="Hear From Our Happy Clients"
-        testimonialData={[
-          {
-            id: 1,
-            name: "Sarah Mitchell",
-            designation: "Marketing Manager, Brightpath Solutions",
-            descrition:
-              "Texas Web Studio Built Us A Fast Website. We Are Now Able To Update Our Content Without The Need For Any Developer.",
-          },
-          {
-            id: 2,
-            name: "Jason Lee",
-            designation: "Founder, Urbannest Interiors",
-            descrition:
-              "Their CMS Solution Helped Our Team Save Time And Stay In Control. Everything Works Smoothly Across Devices. Highly Recommend!",
-          },
-          {
-            id: 3,
-            name: "Jason Lee",
-            designation: "Founder, Urbannest Interiors",
-            descrition:
-              "Their CMS Solution Helped Our Team Save Time And Stay In Control. Everything Works Smoothly Across Devices. Highly Recommend!",
-          },
-        ]}
-      />
+        <TestimonialSec
+          className="bgBlack"
+          secTag="OUR TESTIMONIALS"
+          secTitle="Hear From Our Happy Clients"
+          testimonialData={[
+            {
+              id: 1,
+              name: "Sarah Mitchell",
+              designation: "Marketing Manager, Brightpath Solutions",
+              descrition:
+                "Texas Web Studio Built Us A Fast Website. We Are Now Able To Update Our Content Without The Need For Any Developer.",
+            },
+            {
+              id: 2,
+              name: "Jason Lee",
+              designation: "Founder, Urbannest Interiors",
+              descrition:
+                "Their CMS Solution Helped Our Team Save Time And Stay in Control. Everything Works Smoothly Across Devices. Highly Recommend!",
+            },
+            {
+              id: 3,
+              name: "Jason Lee",
+              designation: "Founder, Urbannest Interiors",
+              descrition:
+                "Their CMS Solution Helped Our Team Save Time And Stay in Control. Everything Works Smoothly Across Devices. Highly Recommend!",
+            },
+          ]}
+        />
 
-      <OurTeamSec />
-      <FAQSec
-        secTag="GET ANSWERS"
-        secTitle="Frequently Asked Questions"
-        testimonials={testimonialData}
-        image={faqImg}
-      />
-      <BookCallSec
-        title="Let’s Discuss Your Business Goals."
-        btnText="Book A Call"
-      />
-      <ContactUsSec />
+        <OurTeamSec />
+        <FAQSec
+          secTag="GET ANSWERS"
+          secTitle="Frequently Asked Questions"
+          testimonials={testimonialData}
+          image={faqImg}
+        />
+        <BookCallSec
+          title="Let’s Discuss Your Business Goals."
+          btnText="Book A Call"
+        />
+        <ContactUsSec />
 
-      <BlogSec />
-    </DefaultLayout>
+        <BlogSec />
+      </DefaultLayout>
+    </>
   );
 };
 

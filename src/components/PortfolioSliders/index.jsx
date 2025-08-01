@@ -32,7 +32,11 @@ const PortfolioSliders = (props) => {
           {props.portfolio1.map((item, idx) => (
             <SwiperSlide key={idx}>
               <div className="ourPortfolioItem">
-                <img src={item.image} alt="" className="img-fluid" />
+                <img
+                  src={item.image}
+                  alt="Our Portfolio Image"
+                  className="img-fluid"
+                />
               </div>
             </SwiperSlide>
           ))}
@@ -65,7 +69,11 @@ const PortfolioSliders = (props) => {
           {props.portfolio2.map((item, idx) => (
             <SwiperSlide key={idx}>
               <div className="ourPortfolioItem">
-                <img src={item.image} alt="" className="img-fluid" />
+                <img
+                  src={item.image}
+                  alt="Our Portfolio Image"
+                  className="img-fluid"
+                />
               </div>
             </SwiperSlide>
           ))}

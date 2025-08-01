@@ -78,8 +78,8 @@ const ContactUsSec = () => {
                   Drop Us A Line.
                 </h3>
                 <p data-aos="fade-right" data-aos-delay="400">
-                  Lorem Ipsum Is Simply Dummy Text Of The Printing And
-                  Typesetting Industry. Lorem Ipsum Has Been The Industry.
+                  Get in touch with an expert from our team at Texas Web Studios
+                  to plan your next step now.
                 </p>
               </div>
               <div className="contactForm">

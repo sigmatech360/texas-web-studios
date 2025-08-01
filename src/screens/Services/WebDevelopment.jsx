@@ -58,6 +58,8 @@ import expPostLaunchIcon5 from "../../assets/images/expIcons/expPostLaunchIcon5.
 import expPostLaunchIcon6 from "../../assets/images/expIcons/expPostLaunchIcon6.webp";
 
 import LatestTechSec from "../../components/LatestTechSec";
+import ReactHelmet from "../../components/ReactHelmet";
+const webUrl = import.meta.env.VITE_WEB_URL;
 
 const experienceSecData = [
   {
@@ -146,117 +148,126 @@ const experienceSecData = [
 const WebDevelopment = () => {
   const [key, setKey] = useState("web-design");
   return (
-    <DefaultLayout>
-      <InnerBanner
-        bgImage={webDevBanner}
-        title="Web Development"
-        description="Get A Website That Looks Amazing And Works Even Better Through Client-Focused, Customer-Centric Solutions Designed To Deliver Real, Measurable Business Results."
-        pageName="Services"
+    <>
+      <ReactHelmet
+        // title=""
+        // description=""
+        // keywords=""
+        url={`${webUrl}/web-development`}
+        // url="https://texaswebstudios.com/web-development"
       />
+      <DefaultLayout>
+        <InnerBanner
+          bgImage={webDevBanner}
+          title="Web Development"
+          description="Get a website that looks amazing and works even better through client-focused, customer-centric solutions designed to deliver real, measurable business results."
+          pageName="Services"
+        />
 
-      <LatestTechSec
-        secTitle="Website Development With The Latest Tech"
-        description="Your Website Is Your Brand's Digital Footprint; It Should Be As Impressive As Your Business Itself. We Design And Develop SEO-Friendly Websites That Are Fast, Easy To Navigate, And Fully Optimized For Performance. Over 85% Of Consumers Visit A Company’s Website Before Making A Decision, So Your Site’s Design, Usability, And Accessibility Play A Crucial Role In Driving Engagement And Staying Competitive Online."
-        solutionList={[
-          { name: "Responsive Web Design" },
-          { name: "SEO-Friendly Structure" },
-          { name: "Custom UI/UX Design" },
-          { name: "Fast Load Times" },
-          { name: "Secure Frameworks" },
-          { name: "CMS Integration" },
-          { name: "E-Commerce Functionality" },
-          { name: "Analytics & Tracking Integration" },
-        ]}
-        rightP="We Build Scalable Website Design And Development Services In Texas Using The Latest Technologies To Keep Your Business Ahead Of The Competition. Backed By A Powerful Tech Stack, Get Custom-Crafted Websites That Work Better, Load Faster, And Grow With Your Business."
-      />
+        <LatestTechSec
+          secTitle="Website Development With The Latest Tech"
+          description="Your website is your brand's digital footprint; it should be as impressive as your business itself. We design and develop SEO-friendly websites that are fast, easy to navigate, and fully optimized for performance. Over 85% of consumers visit a company’s website before making a decision, so your site’s design, usability, and accessibility play a crucial role in driving engagement and staying competitive online."
+          solutionList={[
+            { name: "Responsive Web Design" },
+            { name: "SEO-Friendly Structure" },
+            { name: "Custom UI/UX Design" },
+            { name: "Fast Load Times" },
+            { name: "Secure Frameworks" },
+            { name: "CMS Integration" },
+            { name: "E-Commerce Functionality" },
+            { name: "Analytics & Tracking Integration" },
+          ]}
+          rightP="We Build Scalable Website Design And Development Services in Texas Using The Latest Technologies To Keep Your Business Ahead Of The Competition. Backed By A Powerful Tech Stack, Get Custom-Crafted Websites That Work Better, Load Faster, And Grow With Your Business."
+        />
 
-      <section className="experienceSec sec-padding bgPink">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <div className="secHead">
-                <p className="sec-tag">EXPERIENCE LIKE NO OTHER</p>
-                <h3
-                  className="secTitle"
-                  data-aos="fade-up"
-                  data-aos-delay="200"
+        <section className="experienceSec sec-padding bgPink">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <div className="secHead">
+                  <p className="sec-tag">EXPERIENCE LIKE NO OTHER</p>
+                  <h3
+                    className="secTitle"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    We Build Websites That Help You Grow Your Business
+                  </h3>
+                </div>
+              </div>
+              <div
+                className="col-md-12"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <Tabs
+                  id="controlled-tab-example"
+                  activeKey={key}
+                  onSelect={(k) => setKey(k)}
+                  className="mb-3 packagesTabs"
                 >
-                  We Build Websites That Help You Grow Your Business
-                </h3>
+                  {experienceSecData.map((item, index) => (
+                    <Tab eventKey={item.key} title={item.name} key={index}>
+                      <div className="experienceSecCards">
+                        {item.data.map((dataItem, data_i) => (
+                          <div
+                            className="experienceSecCardItem"
+                            key={data_i}
+                            data-aos="fade-up"
+                            data-aos-delay={data_i * 200}
+                          >
+                            <img src={dataItem.icon} alt={dataItem.name} />
+                            <h4 className="experienceCardItemTitle">
+                              {dataItem.name}
+                            </h4>
+                          </div>
+                        ))}
+                      </div>
+                    </Tab>
+                  ))}
+                </Tabs>
               </div>
             </div>
-            <div
-              className="col-md-12"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <Tabs
-                id="controlled-tab-example"
-                activeKey={key}
-                onSelect={(k) => setKey(k)}
-                className="mb-3 packagesTabs"
-              >
-                {experienceSecData.map((item, index) => (
-                  <Tab eventKey={item.key} title={item.name} key={index}>
-                    <div className="experienceSecCards">
-                      {item.data.map((dataItem, data_i) => (
-                        <div
-                          className="experienceSecCardItem"
-                          key={data_i}
-                          data-aos="fade-up"
-                          data-aos-delay={data_i * 200}
-                        >
-                          <img src={dataItem.icon} alt={dataItem.name} />
-                          <h4 className="experienceCardItemTitle">
-                            {dataItem.name}
-                          </h4>
-                        </div>
-                      ))}
-                    </div>
-                  </Tab>
-                ))}
-              </Tabs>
-            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <PackagesSec
-        className="bgBlack"
-        secTag="PRICING"
-        title="Flexible Pricing Packages"
-        description="Every Business Has Different Needs, So We Offer Custom Pricing For Each Of Our Services. Our Packages Include Basic, Pro, And Premium, Designed To Match Where You Are And Where You’re Headed. Whether You Are Starting Fresh Or Looking To Scale, You Will Get The Right Solution At The Right Price. So Find The Package That Fits You Best, Or Consult Us For A Custom Package!"
-      />
+        <PackagesSec
+          className="bgBlack"
+          secTag="PRICING"
+          title="Flexible Pricing Packages"
+          description="Every business has different needs, so we offer custom pricing for each of our services. Our packages include Basic, Pro, and Premium, designed to match where you are and where you’re headed. Whether you are starting fresh or looking to scale, you will get the right solution at the right price. So find the package that fits you best, or consult us for a custom package!"
+        />
 
-      <WhyCooseUsSec
-        secTag="WHY CHOOSE US"
-        secTitle="Build Long-Term Digital Success With Us"
-        secDescription="Our Design And Development Services In Texas Provide Solutions That Not Only Look Great But Also Work Hard For You."
-        image={webDevWhyChooseImage}
-        leftP="If You're A Business Looking For Real Growth, Our Team Of Certified Experts Delivers Cutting-Edge Solutions Using The Latest Technology, Tailored For Real Business Growth. With Affordable Pricing, 24/7 Support, And A Results-First Mindset, We’re The Digital Partner Your Brand Can Count On."
-        leftSubTitle="Cultivating Strategic Partnership For Business Growth"
-        btnText="Book A Services"
-        list={[
-          {
-            image: webDevWhyChooseIcon1,
-            title: "Award Winning Agency",
-            description: "Our Work Has Helped Us Gain Recognition In The USA",
-          },
-          {
-            image: webDevWhyChooseIcon2,
-            title: "500+ Projects Completed",
-            description:
-              "We’ve Partnered With Businesses Across Industries, Helping Them With Continuous Growth.",
-          },
-          {
-            image: webDevWhyChooseIcon3,
-            title: "98% Success Rate",
-            description:
-              "We Make Sure Our Clients Thrive, Thanks To Our Consistent Results And Proven Strategies.",
-          },
-        ]}
-      />
-    </DefaultLayout>
+        <WhyCooseUsSec
+          secTag="WHY CHOOSE US"
+          secTitle="Build Long-Term Digital Success With Us"
+          secDescription="Our design and development services in Texas provide solutions that not only look great but also work hard for you."
+          image={webDevWhyChooseImage}
+          leftP="If you're a business looking for real growth, our team of certified experts delivers cutting-edge solutions using the latest technology, tailored for real business growth. With affordable pricing, 24/7 support, and a results-first mindset, we’re the digital partner your brand can count on."
+          leftSubTitle="Cultivating Strategic Partnership for Business Growth"
+          btnText="Book A Services"
+          list={[
+            {
+              image: webDevWhyChooseIcon1,
+              title: "Award Winning Agency",
+              description: "Our work has helped us gain recognition in the USA",
+            },
+            {
+              image: webDevWhyChooseIcon2,
+              title: "500+ Projects Completed",
+              description:
+                "We’ve partnered with businesses across industries, helping them with continuous growth.",
+            },
+            {
+              image: webDevWhyChooseIcon3,
+              title: "98% Success Rate",
+              description:
+                "We make sure our clients thrive, thanks to our consistent results and proven strategies.",
+            },
+          ]}
+        />
+      </DefaultLayout>
+    </>
   );
 };
 

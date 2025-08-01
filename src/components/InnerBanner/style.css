@@ -25,6 +25,14 @@
   background-repeat: no-repeat;
 }
 
+.innerBannerBgOpacityZeroImg {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
 .innerBanner .container {
   z-index: 4;
 }

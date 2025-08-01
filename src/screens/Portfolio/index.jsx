@@ -44,6 +44,7 @@ import {
 } from "../Services/CustomWebDev";
 import { mobilePortfolio1, mobilePortfolio2 } from "../Services/MobileAppDev";
 import { Link } from "react-router-dom";
+import ReactHelmet from "../../components/ReactHelmet";
 
 const allPortfolio1 = [
   {
@@ -128,213 +129,193 @@ const logoPortfolio2 = [
   { image: logoPortfolioImg2_2 },
 ];
 
+const webUrl = import.meta.env.VITE_WEB_URL;
+
 const Portfolio = () => {
   const [key, setKey] = useState("all-portfolio");
   return (
-    <DefaultLayout>
-      <InnerBanner
-        bgImage={portfolioBanner}
-        title="Portfolio"
-        description="Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Mi Eget Mauris Pharetra Et Ultrices."
-        pageName="Portfolio"
+    <>
+      <ReactHelmet
+        // title=""
+        // description=""
+        // keywords=""
+        url={`${webUrl}/portfolio`}
+        // url="https://texaswebstudios.com/portfolio"
       />
+      <DefaultLayout>
+        <InnerBanner
+          bgImage={portfolioBanner}
+          title="Portfolio"
+          description="We don’t claim to be brilliant. Instead, we prove our brilliance with our expertise! Take a look at our portfolio with different projects on web development and digital growth for our dearest clients."
+          pageName="Portfolio"
+        />
 
-      <section className="ourPortfolio sec-padding">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <div className="secHead">
-                <p className="sec-tag">PROJECTS</p>
-                <h2
-                  className="secTitle"
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                >
-                  Your Partner For Software Innovation
-                </h2>
-                <p data-aos="fade-up" data-aos-delay="400">
-                  Lorem Ipsum Is Simply Dummy Text Of The Printing And
-                  Typesetting Industry. Lorem Ipsum Has Been The Industry's
-                  Standard Dummy Text Ever Since The 1500S, When An Unknown
-                  Printer Took A Galley Of Type And Scrambled It To Make A Type
-                  Specimen Book.
-                </p>
+        <section className="ourPortfolio sec-padding">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <div className="secHead">
+                  <p className="sec-tag">PROJECTS</p>
+                  <h2
+                    className="secTitle"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    A Glimpse into Our Work
+                  </h2>
+                  <p data-aos="fade-up" data-aos-delay="400">
+                    With years of experience in the industry, we have served in
+                    various sectors for multiple businesses. Take a look at our
+                    excellence in the projects we proudly completed for our
+                    clients.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <Tabs
-          id="controlled-tab-example"
-          activeKey={key}
-          onSelect={(k) => setKey(k)}
-          className="mb-3 packagesTabs"
-        >
-          <Tab eventKey="all-portfolio" title="ALL">
-            {key === "all-portfolio" && (
-              <PortfolioSliders
-                portfolio1={allPortfolio1}
-                portfolio2={allPortfolio2}
-              />
-            )}
-          </Tab>
-          <Tab eventKey="cmsDev-portfolio" title="CMS Development">
-            {key === "cmsDev-portfolio" && (
-              <PortfolioSliders
-                portfolio1={cmsDevPortfolio1}
-                portfolio2={cmsDevPortfolio2}
-              />
-            )}
-          </Tab>
-          <Tab eventKey="customDev-portfolio" title="Custom Development">
-            {key === "customDev-portfolio" && (
-              <PortfolioSliders
-                portfolio1={customDevPortfolio1}
-                portfolio2={customDevPortfolio2}
-              />
-            )}
-          </Tab>
-          <Tab eventKey="logoDesign-portfolio" title="Logo">
-            {key === "logoDesign-portfolio" && (
-              <PortfolioSliders
-                portfolio1={logoPortfolio1}
-                portfolio2={logoPortfolio2}
-              />
-            )}
-          </Tab>
-          <Tab eventKey="mobileAppDev-portfolio" title="Mobile App Development">
-            {key === "mobileAppDev-portfolio" && (
-              <PortfolioSliders
-                portfolio1={mobilePortfolio1}
-                portfolio2={mobilePortfolio2}
-              />
-            )}
-          </Tab>
-          {/* <Tab eventKey="webDesign-portfolio" title="Web Design">
-            {key === "webDesign-portfolio" && (
-              <PortfolioSliders
-                portfolio1={allPortfolio1}
-                portfolio2={allPortfolio2}
-              />
-            )}
-          </Tab>
-          <Tab eventKey="uiux-portfolio" title="Ui / Ux Design">
-            {key === "uiux-portfolio" && (
-              <PortfolioSliders
-                portfolio1={allPortfolio1}
-                portfolio2={allPortfolio2}
-              />
-            )}
-          </Tab>
-          <Tab eventKey="logo-portfolio" title="Logo Design">
-            {key === "logo-portfolio" && (
-              <PortfolioSliders
-                portfolio1={allPortfolio1}
-                portfolio2={allPortfolio2}
-              />
-            )}
-          </Tab>
-          <Tab eventKey="videoAnimation-portfolio" title="Video Animation">
-            {key === "videoAnimation-portfolio" && (
-              <PortfolioSliders
-                portfolio1={allPortfolio1}
-                portfolio2={allPortfolio2}
-              />
-            )}
-          </Tab>
-          <Tab eventKey="eCommerce-portfolio" title="E Commerce Web Design">
-            {key === "eCommerce-portfolio" && (
-              <PortfolioSliders
-                portfolio1={allPortfolio1}
-                portfolio2={allPortfolio2}
-              />
-            )}
-          </Tab> */}
-        </Tabs>
+          <Tabs
+            id="controlled-tab-example"
+            activeKey={key}
+            onSelect={(k) => setKey(k)}
+            className="mb-3 packagesTabs"
+          >
+            <Tab eventKey="all-portfolio" title="ALL">
+              {key === "all-portfolio" && (
+                <PortfolioSliders
+                  portfolio1={allPortfolio1}
+                  portfolio2={allPortfolio2}
+                />
+              )}
+            </Tab>
+            <Tab eventKey="cmsDev-portfolio" title="CMS Development">
+              {key === "cmsDev-portfolio" && (
+                <PortfolioSliders
+                  portfolio1={cmsDevPortfolio1}
+                  portfolio2={cmsDevPortfolio2}
+                />
+              )}
+            </Tab>
+            <Tab eventKey="customDev-portfolio" title="Custom Development">
+              {key === "customDev-portfolio" && (
+                <PortfolioSliders
+                  portfolio1={customDevPortfolio1}
+                  portfolio2={customDevPortfolio2}
+                />
+              )}
+            </Tab>
+            <Tab eventKey="logoDesign-portfolio" title="Logo">
+              {key === "logoDesign-portfolio" && (
+                <PortfolioSliders
+                  portfolio1={logoPortfolio1}
+                  portfolio2={logoPortfolio2}
+                />
+              )}
+            </Tab>
+            <Tab
+              eventKey="mobileAppDev-portfolio"
+              title="Mobile App Development"
+            >
+              {key === "mobileAppDev-portfolio" && (
+                <PortfolioSliders
+                  portfolio1={mobilePortfolio1}
+                  portfolio2={mobilePortfolio2}
+                />
+              )}
+            </Tab>
+          </Tabs>
 
-        {/* <div className="text-center mt-5">
+          {/* <div className="text-center mt-5">
           <button className="theme-btn icon-btn">
             View All Projects <IoIosArrowRoundForward />
           </button>
         </div> */}
-      </section>
+        </section>
 
-      <TestimonialSec
-        className="bgPink"
-        secTag="OUR TESTIMONIALS"
-        secTitle="What They're Talking About Us."
-        testimonialData={[
-          {
-            id: 1,
-            name: "David Coper",
-            designation: "Happy Customer",
-            descrition:
-              "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since.",
-          },
-          {
-            id: 2,
-            name: "David Coper",
-            designation: "Happy Customer",
-            descrition:
-              "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since.",
-          },
-          {
-            id: 3,
-            name: "David Coper",
-            designation: "Happy Customer",
-            descrition:
-              "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since.",
-          },
-        ]}
-      />
+        <TestimonialSec
+          className="bgPink"
+          secTag="OUR TESTIMONIALS"
+          secTitle="What They're Talking About Us."
+          testimonialData={[
+            {
+              id: 1,
+              name: "David Coper",
+              designation: "Happy Customer",
+              descrition:
+                "I contacted Texas Web Studios to get a custom website made for my e-commerce store I can smoothly run my business online now!",
+            },
+            {
+              id: 2,
+              name: "Mark Brown",
+              designation: "Happy Customer",
+              descrition:
+                "Got my project completed within two weeks. I must say their team is quite attentive and extremely prompt. Totally satisfied.",
+            },
+            {
+              id: 3,
+              name: "Katy Dellecqua",
+              designation: "Happy Customer",
+              descrition:
+                "Trusted them for the SEO of my website, and my visibility has been brilliant since then. Never thought this would be possible!",
+            },
+            {
+              id: 4,
+              name: "Mathew Singh",
+              designation: "Happy Customer",
+              descrition:
+                "I wanted a funky website for my product, and they made sure each of my requirements was checked! Amazed by the quality of their services.",
+            },
+          ]}
+        />
 
-      <PackagesSec
-        className="bgBlack"
-        secTag="PRICING"
-        title="Flexible Pricing Packages"
-        description="Every Business Has Different Needs, So We Offer Custom Pricing
+        <PackagesSec
+          className="bgBlack"
+          secTag="PRICING"
+          title="Flexible Pricing Packages"
+          description="Every Business Has Different Needs, So We Offer Custom Pricing
                     For Each Of Our Services. Our Packages Include Basic, Pro, And
                     Premium, Designed To Match Where You Are And Where You’re
                     Headed. Whether You Are Starting Fresh Or Looking To Scale,
                     You Will Get The Right Solution At The Right Price. So Find
                     The Package That Fits You Best, Or Consult Us For A Custom
                     Package!"
-      />
+        />
 
-      <section className="designForImpack sec-padding">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <div className="secHead">
-                <p className="sec-tag">DESIGN FOR IMPACT:</p>
-                <h3
-                  className="secTitle"
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                >
-                  Elevate Your Brand Identity With Us!
-                </h3>
-                <p data-aos="fade-up" data-aos-delay="400">
-                  Don't Hesitate To Reach Out! Logo Design Valley Encourages
-                  Discussions About New Projects, Specific Questions You May
-                  Have, Or Even Feedback On How We Can Improve Our Services. We
-                  Believe In Open Communication That Fosters A Successful And
-                  Rewarding Design Experience.
-                </p>
-                <Link
-                  to={"/contact"}
-                  className="theme-btn"
-                  data-aos="fade-up"
-                  data-aos-delay="600"
-                >
-                  Let's Discuss
-                </Link>
+        <section className="designForImpack sec-padding">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <div className="secHead">
+                  <p className="sec-tag">DESIGN FOR IMPACT:</p>
+                  <h3
+                    className="secTitle"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    Elevate Your Brand Identity With Us!
+                  </h3>
+                  <p data-aos="fade-up" data-aos-delay="400">
+                    Don't Hesitate To Reach Out! Logo Design Valley Encourages
+                    Discussions About New Projects, Specific Questions You May
+                    Have, Or Even Feedback On How We Can Improve Our Services.
+                    We Believe in Open Communication That Fosters A Successful
+                    And Rewarding Design Experience.
+                  </p>
+                  <Link
+                    to={"/contact"}
+                    className="theme-btn"
+                    data-aos="fade-up"
+                    data-aos-delay="600"
+                  >
+                    Let's Discuss
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </DefaultLayout>
+        </section>
+      </DefaultLayout>
+    </>
   );
 };
 

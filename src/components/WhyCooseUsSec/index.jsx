@@ -18,14 +18,19 @@ const WhyCooseUsSec = (props) => {
               >
                 {props.secTitle}
               </h3>
-              <p data-aos="fade-right" data-aos-delay="400">
+              <p className="mb-2" data-aos="fade-right" data-aos-delay="400">
                 {props.secDescription}
               </p>
+              {props.secDescription2 && (
+                <p data-aos="fade-right" data-aos-delay="600">
+                  {props.secDescription2}
+                </p>
+              )}
 
               <div
                 className="whyChooseImg"
                 data-aos="fade-right"
-                data-aos-delay="600"
+                data-aos-delay="800"
               >
                 <img
                   src={props.image}

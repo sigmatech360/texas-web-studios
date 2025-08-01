@@ -137,7 +137,7 @@ const beVisibleData = [
   {
     id: 5,
     icon: awardWinningWebDesignersIcon,
-    title: "Award Winning Team",
+    title: "Award-Winning Team",
   },
 ];
 
@@ -199,23 +199,24 @@ const ourPortfolio2 = [
     image: portfolioImg1_5,
   },
 ];
+const webUrl = import.meta.env.VITE_WEB_URL;
 
 const About = () => {
   const { setShowModal } = useModal();
   return (
     <>
-      {/* <ReactHelmet
+      <ReactHelmet
         // title=""
         // description=""
-        keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
-        // url=""
-        bgImage={aboutBanner}
-      /> */}
+        // keywords=""
+        url={`${webUrl}/about`}
+        // url="https://texaswebstudios.com/about"
+      />
       <DefaultLayout>
         <InnerBanner
           bgImage={aboutBanner}
           title="About Us"
-          description="Texas Web Studio Is A Full-Stack Digital Agency, Having All The Elements To Build Dynamic And Progressive Web Products. From Responsive Website Designs And Digital Marketing Services To Mobile App Development In Texas, We Ensure Excellence In Every Project With High-End Execultion."
+          description="Texas Web Studio is a full-stack digital agency, having all the elements to build dynamic and progressive web products. From responsive website designs and digital marketing services to mobile app development in Texas, we ensure excellence in every project with high-end execution."
           pageName="About"
         />
 
@@ -281,7 +282,7 @@ const About = () => {
               <div className="col-lg-6">
                 <div className="getToKnowContent">
                   <div className="secHead">
-                    <p className="sec-tag">GET TO KNOW US</p>
+                    <p className="sec-tag">Get To Know Us</p>
                     <h2
                       className="secTitle"
                       data-aos="fade-left"
@@ -290,26 +291,26 @@ const About = () => {
                       We Provide Innovative Design & Development Solutions
                     </h2>
                     <p data-aos="fade-left" data-aos-delay="400">
-                      We Build Scalable Digital Products And Intelligent
-                      Marketing Solutions Using The Latest Technologies To Keep
-                      Your Business Ahead Of The Competition. Backed By A
-                      Powerful Tech Stack, Our Custom-Crafted Services Align
-                      With Your Goals, Reflect Your Brand’s Style, And Move At
-                      The Speed Of Your Growth.
+                      We build scalable digital products and intelligent
+                      marketing solutions using the latest technologies to keep
+                      your business ahead of the competition. Backed by a
+                      powerful tech stack, our custom-crafted services align
+                      with your goals, reflect your brand’s style, and move at
+                      the speed of your growth.
                     </p>
                     <h3
                       className="secSubTitle"
                       data-aos="fade-left"
                       data-aos-delay="600"
                     >
-                      Your Partner In Digital Excellence
+                      Your Partner in Digital Excellence
                     </h3>
                     <ListItem
                       list={[
-                        "Trusted Frontend Execution",
-                        "Strategic Backend Builds",
-                        "Designs That Convert",
-                        "Brands That Speak For Themselves",
+                        "Trusted frontend execution",
+                        "Strategic backend builds",
+                        "Designs that convert",
+                        "Brands that speak for themselves",
                       ]}
                     />
                     <button
@@ -354,28 +355,28 @@ const About = () => {
                     Everything Your Brand Needs To Grow
                   </h2>
                   <p data-aos="fade-right" data-aos-delay="300">
-                    Our Unwavering Commitment To Innovation And Customer
-                    Satisfaction Drives Us To Deliver Transformative Services
-                    That Effectively Address The Ever-Evolving Demands Of
-                    Businesses In The Digital World, Ensuring Exceptional
-                    Results And Driving Impactful Transformations.
+                    Our unwavering commitment to innovation and customer
+                    satisfaction drives us to deliver transformative services
+                    that effectively address the ever-evolving demands of
+                    businesses in the digital world, ensuring exceptional
+                    results and driving impactful transformations.
                   </p>
                   <p data-aos="fade-right" data-aos-delay="400">
-                    We Begin With A Thorough Client Consultation, Crafting A
-                    Strategic Roadmap That Defines Clear Goals, Timelines, And
-                    Expectations, Laying The Foundation For A Smooth, Focused,
-                    And Results-Driven Execution Process.
+                    We begin with a thorough client consultation, crafting a
+                    strategic roadmap that defines clear goals, timelines, and
+                    expectations, laying the foundation for a smooth, focused,
+                    and results-driven execution process.
                   </p>
                   <p data-aos="fade-right" data-aos-delay="500">
-                    With Insights In Hand, We Move Into The Implementation
-                    Process, Through Targeted Strategies, Coordination, And A
-                    Commitment To Ensuring Every Objective Is Met With Precision
-                    And Quality.
+                    With insights in hand, we move into the implementation
+                    process, through targeted strategies, coordination, and a
+                    commitment to ensuring every objective is met with precision
+                    and quality.
                   </p>
                   <p data-aos="fade-right" data-aos-delay="600">
-                    From Start To Finish, We Rely On Data-Driven Strategies To
-                    Monitor Performance, Adapt Quickly, And Refine Our Approach
-                    So Your Brand Gets The Best Results.
+                    From start to finish, we rely on data-driven strategies to
+                    monitor performance, adapt quickly, and refine our approach
+                    so your brand gets the best results.
                   </p>
                   <h3
                     className="secSubTitle"

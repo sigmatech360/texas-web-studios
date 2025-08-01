@@ -5,9 +5,20 @@ import InnerBanner from "../../components/InnerBanner";
 import contactBanner from "../../assets/images/contactBanner.webp";
 
 import ContactPageContactSec from "../../components/ContactPageContactSec";
+import ReactHelmet from "../../components/ReactHelmet";
+
+const webUrl = import.meta.env.VITE_WEB_URL;
 
 const Contact = () => {
   return (
+    <>
+    <ReactHelmet
+        // title=""
+        // description=""
+        // keywords=""
+        url={`${webUrl}/contact`}
+        // url="https://texaswebstudios.com/contact"
+      />
     <DefaultLayout>
       <InnerBanner
         bgImage={contactBanner}
@@ -18,7 +29,7 @@ const Contact = () => {
 
       <ContactPageContactSec
         secTag="CONTACT US"
-        secTitle="Get In Touch"
+        secTitle="Get in Touch"
         description="Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry."
       />
 
@@ -33,6 +44,7 @@ const Contact = () => {
         />
       </section>
     </DefaultLayout>
+    </>
   );
 };
 

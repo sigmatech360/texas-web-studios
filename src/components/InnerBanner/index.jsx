@@ -18,6 +18,7 @@ const InnerBanner = (props) => {
         height="600"
         decoding="async"
       /> */}
+
       {/* Background Image with aspect ratio */}
       <div
         className="inner-banner-sec-bgImg"
@@ -59,8 +60,9 @@ const InnerBanner = (props) => {
               </nav>
             </div>
           </div>
-          <div className={`${props.rightCol || "col-lg-6"}`}>
-            {props.bannerImg && (
+
+          {props.bannerImg && (
+            <div className={`${props.rightCol || "col-lg-6"}`}>
               <div
                 className="innerBannerImg"
                 // data-aos="fade-left"
@@ -76,8 +78,8 @@ const InnerBanner = (props) => {
                   decoding="async"
                 />
               </div>
-            )}
-          </div>
+            </div>
+          )}
         </div>
       </div>
     </section>

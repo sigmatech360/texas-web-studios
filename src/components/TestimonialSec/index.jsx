@@ -88,7 +88,9 @@ const TestimonialSec = (props) => {
                     <p className="testimonialDesc">{item.descrition}</p>
                     <div className="testimonialFooter">
                       <div className="testimonialMeta">
-                        <div className="testimonialProfile">S</div>
+                        <div className="testimonialProfile">
+                          {item.name.charAt(0)}
+                        </div>
                         <div className="testimonialUserDetail">
                           <h4 className="testimonialName">{item.name}</h4>
                           <p className="testimonialDesignation">

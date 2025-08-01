@@ -23,10 +23,12 @@ import MobileAppDev from "../screens/Services/MobileAppDev";
 import BlogDetail from "../screens/Blog/BlogDetail";
 
 import ScrollToTop from "../components/ScrollToTop";
+import NotFound from "../screens/NotFound/NotFound";
 
 const AppRouter = () => {
   return (
     <Router basename="/texas-web-studios">
+      {/* <Router> */}
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -34,8 +36,13 @@ const AppRouter = () => {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
+
+        {/* Privacy Policy And Terms and Condition */}
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-and-condition" element={<TermsAndCondition />} />
+
+        {/* Not Found */}
+        <Route path="*" element={<NotFound />} />
 
         {/* Blogs */}
         <Route path="/blog" element={<Blog />} />

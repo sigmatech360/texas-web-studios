@@ -28,6 +28,9 @@ import portfolioImg2_1 from "../../assets/images/cmsPortfolio/cmsPortfolioImg2-1
 import portfolioImg2_2 from "../../assets/images/cmsPortfolio/cmsPortfolioImg2-2.webp";
 import portfolioImg2_3 from "../../assets/images/cmsPortfolio/cmsPortfolioImg2-3.webp";
 import portfolioImg2_4 from "../../assets/images/cmsPortfolio/cmsPortfolioImg2-4.webp";
+import ReactHelmet from "../../components/ReactHelmet";
+
+const webUrl = import.meta.env.VITE_WEB_URL;
 
 export const cmsDevPortfolio1 = [
   {
@@ -90,141 +93,157 @@ export const cmsDevPortfolio2 = [
 
 const CMSDevelopment = () => {
   return (
-    <DefaultLayout>
-      <InnerBanner
-        bgImage={cmsDevBanner}
-        title="CMS Development"
-        description="Powerful And Intuitive CMS Website Development For Businesses That Demand Growth, Performance, And Complete Control."
-        pageName="Services"
+    <>
+      <ReactHelmet
+        // title=""
+        // description=""
+        // keywords=""
+        url={`${webUrl}/cms-development`}
+        // url="https://texaswebstudios.com/cms-development"
       />
-      <LatestTechSec
-        // className="latestTechLogoSec"
-        leftCol="col-lg-5"
-        centerCol="col-lg-4"
-        rightCol="col-lg-3"
-        secTitle="Expert Services For CMS-Based Development"
-        description="Managing Your Website Shouldn’t Be Complicated; That’s Why We Build CMS Powered, Custom Web Development Services In Texas That Are Fast, Responsive, And Optimized For Higher Ranking And Conversions."
-        leftBtnText="Book A Call"
-        categoryTitle="SOLUTIONS"
-        solutionList={[
-          { name: "Wordpress Development" },
-          { name: "Wix Development" },
-          { name: "WooCommerce" },
-          { name: "BigCommerce" },
-          { name: "Shopify Development" },
-          { name: "Magento Development" },
-          { name: "Weebly Development" },
-          { name: "Webflow Development" },
-        ]}
-        btnText="See All Integrations"
-        targetSecId="portfolioSecId"
-        rightP="We Offer No-Code CMS Website Development Services In Texas That Are Easy To Manage And Built For Performance. With Expertise Across Multiple Platforms, We Deliver Fast, Responsive Websites Using Pre-Built Templates Optimized For All Screen Sizes. Our Solutions Come Equipped With Built-In SEO Tools For Better Rankings And Access To Thousands Of Plugins For Smooth Integrations, Giving You Complete Control Without The Technical Hassle."
-        // rightP2=""
-      />
+      <DefaultLayout>
+        <InnerBanner
+          bgImage={cmsDevBanner}
+          title="CMS Development"
+          description="Powerful and intuitive CMS website development for businesses that demand growth, performance, and complete control."
+          pageName="Services"
+        />
+        <LatestTechSec
+          // className="latestTechLogoSec"
+          leftCol="col-lg-5"
+          centerCol="col-lg-4"
+          rightCol="col-lg-3"
+          secTitle="Expert Services For CMS-Based Development"
+          description="Managing Your Website Shouldn’t Be Complicated; That’s Why We Build CMS Powered, Custom Web Development Services in Texas That Are Fast, Responsive, And Optimized For Higher Ranking And Conversions."
+          leftBtnText="Book A Call"
+          categoryTitle="SOLUTIONS"
+          solutionList={[
+            { name: "Wordpress Development" },
+            { name: "Wix Development" },
+            { name: "WooCommerce" },
+            { name: "BigCommerce" },
+            { name: "Shopify Development" },
+            { name: "Magento Development" },
+            { name: "Weebly Development" },
+            { name: "Webflow Development" },
+          ]}
+          btnText="See All Integrations"
+          targetSecId="portfolioSecId"
+          rightP="We offer no-code CMS website development services in Texas that are easy to manage and built for performance. With expertise across multiple platforms, we deliver fast, responsive websites using pre-built templates optimized for all screen sizes. Our solutions come equipped with built-in SEO tools for better rankings and access to thousands of plugins for smooth integrations, giving you complete control without the technical hassle."
+          // rightP2=""
+        />
 
-      <ServiceAboutSec
-        className="bgPink"
-        // rowClass="flex-row-reverse"
-        leftCol="col-xl-7 col-lg-8 order-2"
-        rightCol="col-xl-5 col-lg-4 order-1"
-        // secTagClass="blackColor"
-        secTag="CMS DEVELOPMENT AGENCY"
-        secTitle={`CMS-Powered Solutions That Are Fast, Dependable, And Scalable.`}
-        description="Our CMS Website Development Services In Texas Empower Businesses To Easily Manage, Scale, And Optimize Their Websites. From No-Code Custom CMS Development And Responsive Design To Seamless Plugin Integration And Built-In SEO Tools, Our Solutions Offer The Flexibility And Control Modern Brands Need To Grow. Designed For Speed And Simplicity, We Offer Instant Upgrades With:"
-        description2="Our CMS Solutions Simplify Website Management, Save Time, Boost Performance, And Drive Growth Without The Need For Constant Technical Support. It's The Smart, Scalable Choice For Digital Success."
-        listClass="grid mt-3"
-        list={[
-          "Built-In Templates",
-          "Mobile-Optimized Themes",
-          "Easy Plugin Integration",
-          "Built-In SEO Tools",
-          "No-Code Or Low-Code Development",
-        ]}
-        image={cmsDevServiceAboutImg}
-      />
+        <ServiceAboutSec
+          className="bgPink"
+          // rowClass="flex-row-reverse"
+          leftCol="col-xl-7 col-lg-8 order-2"
+          rightCol="col-xl-5 col-lg-4 order-1"
+          // secTagClass="blackColor"
+          secTag="CMS DEVELOPMENT AGENCY"
+          secTitle={`CMS-powered solutions that are fast, dependable, and scalable.`}
+          description="Our CMS website development services in Texas empower businesses to easily manage, scale, and optimize their websites. From no-code custom CMS development and responsive design to seamless plugin integration and built-in SEO tools, our solutions offer the flexibility and control modern brands need to grow. Designed for speed and simplicity, we offer instant upgrades with:"
+          description2="Our CMS solutions simplify website management, save time, boost performance, and drive growth without the need for constant technical support. It's the smart, scalable choice for digital success."
+          listClass="grid mt-3"
+          list={[
+            "Built-In Templates",
+            "Mobile-Optimized Themes",
+            "Easy Plugin Integration",
+            "Built-In SEO Tools",
+            "No-Code Or Low-Code Development",
+          ]}
+          image={cmsDevServiceAboutImg}
+        />
 
+        <OurPortfolioSec
+          className="bgBlack"
+          secTag="PORTFOLIO"
+          secTitle="See Our Projects"
+          ourPortfolio1={cmsDevPortfolio1}
+          ourPortfolio2={cmsDevPortfolio2}
+          btnText="View All Projects"
+        />
 
-      <OurPortfolioSec
-        className="bgBlack"
-        secTag="PORTFOLIO"
-        secTitle="See Our Projects"
-        ourPortfolio1={cmsDevPortfolio1}
-        ourPortfolio2={cmsDevPortfolio2}
-        btnText="View All Projects"
-      />
+        <WhyCooseUsSec
+          secTag="WHY CHOOSE US"
+          secTitle="How CMS Web Development Can Help You"
+          secDescription="We deliver end-to-end custom CMS development services catering to your business needs."
+          secDescription2="At Texas Web Studio, experience top-tier custom ecommerce website development services where innovation meets simplicity for powerful results. Our team brings proven expertise to deliver secure, high-performance, and cost-effective web solutions, built for startups, growing brands, and enterprise businesses alike."
+          image={cmsDevWhyChooseImage}
+          // leftP=""
+          leftSubTitle="Dynamic CMS Solutions Built for Flexibility, Speed, and Control"
+          btnText="Get A Free CMS Strategy Call"
+          list={[
+            {
+              image: cmsDevWhyChooseIcon1,
+              title: "No-Code & Low-Code Solutions",
+              description:
+                "Easily Manage And Update Your Website Without Touching Code.",
+            },
+            {
+              image: cmsDevWhyChooseIcon2,
+              title: "Scalable Architecture",
+              description:
+                "Built To Grow With Your Business, From Single Sites To Complex Multisite Setups.",
+            },
+            {
+              image: cmsDevWhyChooseIcon3,
+              title: "SEO & Performance Optimized",
+              description:
+                "Designed For Speed, Visibility, And High Search Rankings From Day One With Built-In SEO.",
+            },
+            // {
+            //   image: cmsDevWhyChooseIcon4,
+            //   title: "Performance Optimization",
+            //   description:
+            //     "We Optimize Your Website’s Speed, Structure, And Code To Ensure Faster Loading Times, Better User Experience, And Improved Search Engine Performance.",
+            // },
+          ]}
+        />
 
-      <WhyCooseUsSec
-        secTag="WHY CHOOSE US"
-        secTitle="How CMS Web Development Can Help You"
-        secDescription="We Deliver End-To-End Custom CMS Development Services Catering To Your Business Needs. At Texas Web Studio, Experience Top-Tier Custom Ecommerce Website Development Services Where Innovation Meets Simplicity For Powerful Results. Our Team Brings Proven Expertise To Deliver Secure, High-Performance, And Cost-Effective Web Solutions, Built For Startups, Growing Brands, And Enterprise Businesses Alike."
-        image={cmsDevWhyChooseImage}
-        // leftP=""
-        leftSubTitle="Dynamic CMS Solutions Built For Flexibility, Speed, And Control"
-        btnText="Get A Free CMS Strategy Call"
-        list={[
-          {
-            image: cmsDevWhyChooseIcon1,
-            title: "No-Code & Low-Code Solutions",
-            description:
-              "Easily Manage And Update Your Website Without Touching Code.",
-          },
-          {
-            image: cmsDevWhyChooseIcon2,
-            title: "Scalable Architecture",
-            description:
-              "Built To Grow With Your Business, From Single Sites To Complex Multisite Setups.",
-          },
-          {
-            image: cmsDevWhyChooseIcon3,
-            title: "SEO & Performance Optimized",
-            description:
-              "Designed For Speed, Visibility, And High Search Rankings From Day One With Built-In SEO.",
-          },
-          // {
-          //   image: cmsDevWhyChooseIcon4,
-          //   title: "Performance Optimization",
-          //   description:
-          //     "We Optimize Your Website’s Speed, Structure, And Code To Ensure Faster Loading Times, Better User Experience, And Improved Search Engine Performance.",
-          // },
-        ]}
-      />
-
-      <PackagesSec
-        className="bgPink"
-        secTag="PRICING"
-        title="Flexible Pricing Packages"
-        description="Every Business Has Different Needs, So We Offer Custom Pricing For Each Of Our Services. Our Packages Include Basic, Pro, And Premium, Designed To Match Where You Are And Where You’re Headed. Whether You Are Starting Fresh Or Looking To Scale, You Will Get The Right Solution At The Right Price. So Find The Package That Fits You Best, Or Consult Us For A Custom Package!"
-      />
-      <TestimonialSec
-        className="bgBlack"
-        secTag="TESTIMONIALS"
-        secTitle="What Our Client Says, Says It All"
-        testimonialData={[
-          {
-            id: 1,
-            name: "Sarah Mitchell",
-            designation: "Marketing Manager, Brightpath Solutions",
-            descrition:
-              "Texas Web Studio Built Us A Fast Website. We Are Now Able To Update Our Content Without The Need For Any Developer.",
-          },
-          {
-            id: 2,
-            name: "Jason Lee",
-            designation: "Founder, Urbannest Interiors",
-            descrition:
-              "Their CMS Solution Helped Our Team Save Time And Stay In Control. Everything Works Smoothly Across Devices. Highly Recommend!",
-          },
-          {
-            id: 3,
-            name: "Jason Lee",
-            designation: "Founder, Urbannest Interiors",
-            descrition:
-              "Their CMS Solution Helped Our Team Save Time And Stay In Control. Everything Works Smoothly Across Devices. Highly Recommend!",
-          },
-        ]}
-      />
-      <BlogSec />
-    </DefaultLayout>
+        <PackagesSec
+          className="bgPink"
+          secTag="PRICING"
+          title="Flexible Pricing Packages"
+          description="Every business has different needs, so we offer custom pricing for each of our services. Our packages include Basic, Pro, and Premium, designed to match where you are and where you’re headed. Whether you are starting fresh or looking to scale, you will get the right solution at the right price. So find the package that fits you best, or consult us for a custom package!"
+        />
+        <TestimonialSec
+          className="bgBlack"
+          secTag="TESTIMONIALS"
+          secTitle="What Our Client Says, Says It All"
+          testimonialData={[
+            {
+              id: 1,
+              name: "Sarah Mitchell",
+              designation: "Marketing Manager, Brightpath Solutions",
+              descrition:
+                "Texas Web Studio built us a fast website. We are now able to update our content without the need for any developer.",
+            },
+            {
+              id: 2,
+              name: "Jason Lee",
+              designation: "Founder, Urbannest Interiors",
+              descrition:
+                "Their CMS solution helped our team save time and stay in control. Everything works smoothly across devices. Highly recommend!",
+            },
+            {
+              id: 3,
+              name: "Danielle Rhodes",
+              designation: "Marketing Director, PeakView Realty",
+              descrition:
+                "Texas Web Studios revamped our digital strategy and improved our SEO rankings fast. We're seeing more traffic and better-quality leads every week.",
+            },
+            {
+              id: 4,
+              name: "Emily Navarro",
+              designation: "Co-Founder, FreshBloom Organics",
+              descrition:
+                "Thanks to Texas Web Studios, our new website loads fast and looks professional. It’s exactly what we needed to grow our online presence.",
+            },
+          ]}
+        />
+        <BlogSec />
+      </DefaultLayout>
+    </>
   );
 };
 

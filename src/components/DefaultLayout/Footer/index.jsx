@@ -109,8 +109,8 @@ const Footer = () => {
                   <img src={logo} alt="Texas Logo" />
                 </Link>
                 <p>
-                  Lorem Ipsum Is Simply Dummy Text Of The Printing And
-                  Typesetting Industry. Lorem Ipsum Has Been.
+                  Trusted by Texas, we are here to make your brand witness
+                  digital success with smart strategies.
                 </p>
               </div>
             </div>
