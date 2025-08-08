@@ -27,17 +27,20 @@ import NotFound from "../screens/NotFound/NotFound";
 
 const AppRouter = () => {
   return (
-    <Router basename="/texas-web-studios">
-      {/* <Router> */}
+    // <Router basename="/texas-web-studios">
+    <Router>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/contact" element={<Contact />} />
 
-        {/* Privacy Policy And Terms and Condition */}
+        {/*Not Meta Title Description Provided*/}
+        <Route path="/contact" element={<Contact />} />{" "}
+
+        {/* Privacy Policy and Terms and Condition */}
+        {/*Not Meta Title Description Provided*/}
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-and-condition" element={<TermsAndCondition />} />
 
@@ -56,6 +59,7 @@ const AppRouter = () => {
           path="/digital-media-marketing"
           element={<DigitalMediaMarketing />}
         />
+        {/* LatestTechSec list Title Head */}
         <Route path="/social-media-marketing" element={<SMM />} />
         <Route path="/search-engine-optimization" element={<SEO />} />
         <Route path="/custom-web-development" element={<CustomWebDev />} />

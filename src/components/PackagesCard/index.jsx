@@ -12,13 +12,19 @@ const PackagesCard = (props) => {
       <div className="packageCardHeader">
         <p className="packageName">{props.name}</p>
         <div className="packagePriceDiv">
-          <h4 className="packagePrice">{props.price}</h4>
+          <h3 className="packagePrice">{props.price}</h3>
           {/* <p>Month</p> */}
         </div>
       </div>
       <div className="packageCardBody">
-        <h5 className="packageCardBody-title">What's Include</h5>
-        <ListItem list={props.list} />
+        {/* <p className="packageCardBody-title h5">What's Include</p>
+        <ListItem list={props.list} /> */}
+
+        <div className="packageCardBodyList">
+          <p className="packageCardBody-title h5">What's Include</p>
+          <ListItem list={props.list} />
+        </div>
+
         <button
           className="theme-btn icon-btn"
           onClick={() => setShowModal(true)}

@@ -21,7 +21,7 @@ const TermsAndCondition = () => {
         <InnerBanner
           bgImage={termsAndConditionBanner}
           title="Terms & Conditions"
-          description="Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Mi Eget Mauris Pharetra Et Ultrices."
+          description="These Terms and Conditions explain how you can use our website and services. By continuing to use Texas Web Studios, you agree to follow these guidelines and responsibilities."
           pageName="Terms & Conditions"
         />
 
@@ -147,7 +147,7 @@ const TermsAndCondition = () => {
                       <span className="fw-bold">Phone:</span>{" "}
                       <PhoneLink
                         phoneNumber="+13462505428"
-                        label={"+1 346-250-5428"}
+                        label={"+1 (346) 250-5428"}
                       />
                     </p>
                     <p>

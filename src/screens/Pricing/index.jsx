@@ -38,11 +38,18 @@ const webUrl = import.meta.env.VITE_WEB_URL;
 
 const Pricing = () => {
   const { setShowModal } = useModal();
+  const handleOpenChat = () => {
+    if (window.Tawk_API) {
+      window.Tawk_API.maximize(); // or toggle(), or popup()
+    } else {
+      console.warn("Tawk_API not available yet.");
+    }
+  };
   return (
     <>
       <ReactHelmet
-        // title=""
-        // description=""
+        title="Affordable Pricing Plans - Texas Web Studios"
+        description="Affordable pricing plans for web design, development, SEO, and digital marketing services. Find the right package for your business at Texas Web Studios."
         // keywords=""
         url={`${webUrl}/pricing`}
       />
@@ -67,16 +74,16 @@ const Pricing = () => {
               <div className="col-lg-6">
                 <div className="secureProcessContent">
                   <p className="sec-tag">SECURE PROCESS</p>
-                  <h3
+                  <h2
                     className="secTitle"
                     data-aos="fade-right"
                     data-aos-delay="200"
                   >
-                    Easy To Order, Easy To Pay
-                  </h3>
+                    Easy to Order, Easy to Pay
+                  </h2>
                   <p data-aos="fade-right" data-aos-delay="400">
                     One Website, One Fixed Price, No Hidden Fees. All Service
-                    Details Are Included in One Attractive Price, And Certain
+                    Details Are Included in One Attractive Price, and Certain
                     Bonuses
                   </p>
                 </div>
@@ -88,7 +95,7 @@ const Pricing = () => {
                       data-aos="fade-right"
                       data-aos-delay={index * 200}
                     >
-                      <h5>{item.title}</h5>
+                      <p className="secureProcessListItemTitle">{item.title}</p>
                       <p>{item.description}</p>
                     </div>
                   ))}
@@ -121,42 +128,41 @@ const Pricing = () => {
             <div className="row">
               <div className="col-md-12">
                 <div className="getStartProjecContent">
-                  <h3
+                  <h2
                     className="secTitle"
                     data-aos="fade-up"
                     data-aos-delay="200"
                   >
                     Get Your Project Started Today
-                  </h3>
+                  </h2>
                   <p data-aos="fade-up" data-aos-delay="400">
-                    At Our Company, We Value Clear Communication Throughout The
-                    Design Process. We Encourage You To Talk To Us – Whether You
-                    Have A New Project, Questions About Our Logo Pricing, Or
-                    Want To Provide Feedback On Our Services. We Know Navigating
-                    The World Of Logo Design Can Be Overwhelming. From Free Logo
-                    Generators Online To Expensive Design Agencies, There Are
-                    Countless Options. But What If You Want A High-Quality And
-                    Professional Logo Maker, Without Breaking The Bank?
+                    At Texas Web Studios, we value our clients more than
+                    anything else, and one way to keep you satisfied is through
+                    transparent communication with affordable prices. Our utmost
+                    priority is you and your business. To support our idea of
+                    perfection, we hire the best teams, be it web developers,
+                    logo designers, social media experts, or SEO pros; our team
+                    is unbeaten and only brings success to the table.’
                   </p>
-                  <p data-aos="fade-up" data-aos-delay="500">
-                    That's Where We Come In! We Offer A Range Of Transparent
-                    Logo Pricing Packages To Fit Any Startup Or Established
-                    Business. Unlike A Free Logo Maker, Business Logo Creator,
-                    Or A Website That Limits Your Creativity, We Focus On
-                    Personalized Attention And Creating A Unique Logo That
-                    Perfectly Represents Your Brand.
-                  </p>
+
                   <div
-                    className="d-flex justify-content-center flex-wrap gap-3 mt-5"
+                    className="d-flex justify-content-center flex-wrap gap-3 mt-2"
                     data-aos="fade-up"
-                    data-aos-delay="700"
+                    data-aos-delay="500"
                   >
                     <Link to="/contact" className="theme-btn">
-                      Get Started Now
+                      Get a Professional Today
                     </Link>
-                    <Link to={"/portfolio"} className="theme-btn">
+                    <Link
+                      to={""}
+                      onClick={handleOpenChat}
+                      className="theme-btn"
+                    >
+                      Let’s Talk
+                    </Link>
+                    {/* <Link to={"/portfolio"} className="theme-btn">
                       View Portfolio
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
               </div>
@@ -169,19 +175,18 @@ const Pricing = () => {
             <div className="row align-items-center">
               <div className="col-lg-6 order-lg-1 order-2">
                 <div className="secHead">
-                  <h3
+                  <h2
                     className="secTitle"
                     data-aos="fade-right"
                     data-aos-delay="200"
                   >
-                    Let’s Work Together.
-                  </h3>
+                    Let’s Run a Free Audit on Your Website!
+                  </h2>
                   <p data-aos="fade-right" data-aos-delay="400">
-                    At Our Company, We Value Communication And Understand The
-                    Importance Of Open Dialogue Between Our Team And Our
-                    Clients. That's Why We Encourage You To Talk To Us – Whether
-                    It's To Discuss A New Project, Ask A Question, Or Provide
-                    Feedback On Our Services.
+                    You are just one step away from making your business a known
+                    BRAND! Reach out to us today and let us run a complete audit
+                    to identify your pain points and design strategies for
+                    future growth!
                   </p>
                   <button
                     className="theme-btn"
@@ -189,7 +194,7 @@ const Pricing = () => {
                     data-aos-delay="600"
                     onClick={() => setShowModal(true)}
                   >
-                    Get Started Now
+                    Contact Us Now!
                   </button>
                 </div>
               </div>
@@ -202,7 +207,7 @@ const Pricing = () => {
                   <img
                     src={pricingLetsWorkTogether}
                     className="img-fluid"
-                    alt="Open Dialogue Between Our Team And Our Clients."
+                    alt="Open Dialogue between Our Team and Our Clients."
                   />
                 </div>
               </div>

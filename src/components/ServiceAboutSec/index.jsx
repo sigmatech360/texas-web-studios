@@ -11,7 +11,7 @@ const ServiceAboutSec = (props) => {
               {props.secTag && (
                 <p className={`sec-tag ${props.secTagClass}`}>{props.secTag}</p>
               )}
-              <h3
+              <h2
                 className="secTitle"
                 dangerouslySetInnerHTML={{ __html: props.secTitle }}
                 data-aos="fade-up"

@@ -206,8 +206,8 @@ const About = () => {
   return (
     <>
       <ReactHelmet
-        // title=""
-        // description=""
+        title="About Us - Texas Web Studios - Web Design & SEO Experts"
+        description="Learn about Texas Web Studios. A passionate team delivering high-performance web design, SEO, and branding solutions across Texas. See what sets us apart."
         // keywords=""
         url={`${webUrl}/about`}
         // url="https://texaswebstudios.com/about"
@@ -246,7 +246,7 @@ const About = () => {
                         data-aos="fade-up"
                         data-aos-delay="400"
                       >
-                        <h4 className="tenPlusExpTitle">10+</h4>
+                        <p className="tenPlusExpTitle h4">10+</p>
                       </div>
                       <div
                         className="getToKnowImg2"
@@ -261,18 +261,18 @@ const About = () => {
                       </div>
                     </div>
                     <div className="getKnowExptText">
-                      <h4
-                        className="expTagHead"
+                      <p
+                        className="expTagHead h4"
                         data-aos="fade-up"
                         data-aos-delay="700"
                       >
                         <span className="expTagHeadNum">10+</span> Years Of
                         Experience
-                      </h4>
+                      </p>
                       <p data-aos="fade-up" data-aos-delay="800">
-                        We Are Dedicated To Providing Outstanding Digital And
-                        Design Services That Deliver Both Functionality And
-                        Aesthetic Appeal, Ensuring Your Brand Stands Out And
+                        We Are Dedicated to Providing Outstanding Digital and
+                        Design Services that Deliver Both Functionality and
+                        Aesthetic Appeal, Ensuring Your Brand Stands Out and
                         Achieves Its Goals.
                       </p>
                     </div>
@@ -282,14 +282,14 @@ const About = () => {
               <div className="col-lg-6">
                 <div className="getToKnowContent">
                   <div className="secHead">
-                    <p className="sec-tag">Get To Know Us</p>
-                    <h2
-                      className="secTitle"
+                    <p className="sec-tag">Get to Know Us</p>
+                    <p
+                      className="secTitle h2"
                       data-aos="fade-left"
                       data-aos-delay="200"
                     >
                       We Provide Innovative Design & Development Solutions
-                    </h2>
+                    </p>
                     <p data-aos="fade-left" data-aos-delay="400">
                       We build scalable digital products and intelligent
                       marketing solutions using the latest technologies to keep
@@ -298,13 +298,13 @@ const About = () => {
                       with your goals, reflect your brand’s style, and move at
                       the speed of your growth.
                     </p>
-                    <h3
-                      className="secSubTitle"
+                    <p
+                      className="secSubTitle h3"
                       data-aos="fade-left"
                       data-aos-delay="600"
                     >
                       Your Partner in Digital Excellence
-                    </h3>
+                    </p>
                     <ListItem
                       list={[
                         "Trusted frontend execution",
@@ -317,7 +317,7 @@ const About = () => {
                       className="theme-btn mt-4"
                       onClick={() => setShowModal(true)}
                     >
-                      Book A Call
+                      Book a Call
                     </button>
                   </div>
                 </div>
@@ -332,7 +332,7 @@ const About = () => {
                       data-aos-delay={index * 200}
                     >
                       <img src={item.icon} alt={item.title} />
-                      <h4 className="beVisibleIconData-title">{item.title}</h4>
+                      <h3 className="beVisibleIconData-title">{item.title}</h3>
                     </div>
                   ))}
                 </div>
@@ -352,7 +352,7 @@ const About = () => {
                     data-aos="fade-right"
                     data-aos-delay="200"
                   >
-                    Everything Your Brand Needs To Grow
+                    Everything Your Brand Needs to Grow
                   </h2>
                   <p data-aos="fade-right" data-aos-delay="300">
                     Our unwavering commitment to innovation and customer
@@ -368,7 +368,7 @@ const About = () => {
                     and results-driven execution process.
                   </p>
                   <p data-aos="fade-right" data-aos-delay="500">
-                    With insights in hand, we move into the implementation
+                    with insights in hand, we move into the implementation
                     process, through targeted strategies, coordination, and a
                     commitment to ensuring every objective is met with precision
                     and quality.
@@ -383,7 +383,7 @@ const About = () => {
                     data-aos="fade-right"
                     data-aos-delay="700"
                   >
-                    We’re Committed To Providing You The Best Digital Service!
+                    We’re Committed to Providing You The Best Digital Service!
                   </h3>
                   <button
                     className="theme-btn icon-btn"
@@ -391,7 +391,7 @@ const About = () => {
                     data-aos-delay="800"
                     onClick={() => setShowModal(true)}
                   >
-                    Book A Call <IoIosArrowRoundForward />
+                    Book a Call <IoIosArrowRoundForward />
                   </button>
                 </div>
               </div>
@@ -405,7 +405,7 @@ const About = () => {
                       // data-aos-delay={index * 200}
                     >
                       <div>
-                        <h4 className="ourServicesListTitle">{item.title}</h4>
+                        <h3 className="ourServicesListTitle">{item.title}</h3>
                         <p>{item.description}</p>
                         <Link className="readMore-btn" to={`/${item.link}`}>
                           Read More <IoIosArrowRoundForward />

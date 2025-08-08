@@ -70,16 +70,17 @@ const ContactUsSec = () => {
             <div className="contactContent">
               <div className="secHead">
                 <p className="sec-tag">CONTACT US</p>
-                <h3
+                <h5
                   className="secTitle"
                   data-aos="fade-right"
                   data-aos-delay="200"
                 >
-                  Drop Us A Line.
-                </h3>
+                  Let’s Discuss Your Business Goals.
+                </h5>
                 <p data-aos="fade-right" data-aos-delay="400">
-                  Get in touch with an expert from our team at Texas Web Studios
-                  to plan your next step now.
+                  You are just one message away from collaborating with the best
+                  web developers in town! Fill the form and let our experts be
+                  the guidance you need.
                 </p>
               </div>
               <div className="contactForm">
@@ -148,7 +149,7 @@ const ContactUsSec = () => {
                           Services
                         </option>
                         <option value="web-design-development">
-                          Web Design And Development
+                          Web Design and Development
                         </option>
                         <option value="logo-design">Logo Design</option>
                         <option value="cms-development">CMS Development</option>
@@ -183,7 +184,7 @@ const ContactUsSec = () => {
                       ></textarea>
                     </div>
                     <div className="col-md-12 mt-4">
-                      {/* <button className="theme-btn">Send A Message</button> */}
+                      {/* <button className="theme-btn">Send a Message</button> */}
                       <button
                         type="submit"
                         className={`theme-btn ${
@@ -191,7 +192,7 @@ const ContactUsSec = () => {
                         }`}
                         disabled={loading}
                       >
-                        Send A Message
+                        Send a Message
                       </button>
                     </div>
                   </div>
@@ -204,7 +205,7 @@ const ContactUsSec = () => {
               <iframe
                 title="Los Angeles Map"
                 width="100%"
-                height={"495"}
+                height={"555"}
                 loading="lazy"
                 allowFullScreen
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13236.436185047787!2d-118.2437!3d34.0522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1716200000000!5m2!1sen!2sus"

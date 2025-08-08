@@ -6,24 +6,24 @@ import faqImg from "../../assets/images/faqImg.webp";
 
 const testimonialData = [
   {
-    title: "Can I Ask For Custom Pricing?",
+    title: "Can I Ask for Custom Pricing?",
     description:
-      "Yes. We Understand That Every Business Has Different Needs, So We’re Happy To Create A Custom Quote Based On Your Goals, Timeline, And Required Services.",
+      "Yes. We Understand that Every Business Has Different Needs, so We’re Happy to Create a Custom Quote Based on Your Goals, Timeline, and Required Services.",
   },
   {
-    title: "Do You Offer Ongoing Support After A Project Ends?",
+    title: "Do You Offer Ongoing Support After a Project Ends?",
     description:
-      "Yes. We Offer Monthly Support Plans, Maintenance, Updates, And Optimization To Make Sure Your Website Or Campaign Stays Sharp And Effective.",
+      "Yes. We Offer Monthly Support Plans, Maintenance, Updates, and Optimization to Make Sure Your Website or Campaign Stays Sharp and Effective.",
   },
   {
     title: "Do You Provide Site Audits Before We Start The Process?",
     description:
-      "Yes. We Begin With A Full Website Audit To Identify Gaps And Opportunities. You’ll Get The Report First, Then It’s Your Call To Move Forward Or Not.",
+      "Yes. We Begin with a Full Website Audit to Identify Gaps and Opportunities. You’ll Get The Report First, Then It’s Your Call to Move Forward or Not.",
   },
   {
     title: "How Involved Will I Be in The Design Process?",
     description:
-      "We Believe in Close Collaboration, So We Include You At Every Key Step, From Planning And Wireframes To Final Design Approval. We Work With You To Create The Ideal Results.",
+      "We Believe in Close Collaboration, so We Include You at Every Key Step, from Planning and Wireframes to Final Design Approval. We Work with You to Create The Ideal Results.",
   },
 ];
 
@@ -37,13 +37,13 @@ const FAQSec = (props) => {
             <div className="faqContent">
               <div className="secHead">
                 <p className="sec-tag">{props.secTag}</p>
-                <h3
+                <h2
                   className="secTitle"
                   data-aos="fade-right"
                   data-aos-delay="200"
                 >
                   {props.secTitle}
-                </h3>
+                </h2>
               </div>
               <div className="faqs-items">
                 <Accordion
@@ -58,7 +58,7 @@ const FAQSec = (props) => {
                       data-aos="fade-right"
                       data-aos-delay={index * 200}
                     >
-                      <Accordion.Header as="h4">{item.title}</Accordion.Header>
+                      <Accordion.Header as="h2">{item.title}</Accordion.Header>
                       <Accordion.Body>{item.description}</Accordion.Body>
                     </Accordion.Item>
                   ))}

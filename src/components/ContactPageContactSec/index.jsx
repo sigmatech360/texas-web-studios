@@ -5,6 +5,7 @@ import mapIcon from "../../assets/images/mapIcon.webp";
 import phoneIcon from "../../assets/images/phoneIcon.webp";
 import emailIcon from "../../assets/images/emailIcon.webp";
 import ObfuscatedEmail from "../ObfuscatedEmail";
+import PhoneLink from "../PhoneLink";
 
 const ContactPageContactSec = (props) => {
   const [loading, setLoading] = useState(false);
@@ -97,9 +98,11 @@ const ContactPageContactSec = (props) => {
                 </div>
                 <div className="officeDetailItem">
                   <img src={phoneIcon} alt="Map Icon" />
-                  <a href="tel:+18325484589" className="officeDetailItemText">
-                    +1 832 548 4589
-                  </a>
+                  <PhoneLink
+                    phoneNumber="+13462505428"
+                    label={"+1 (346) 250-5428"}
+                    className="officeDetailItemText"
+                  />
                 </div>
                 <div className="officeDetailItem">
                   <img src={emailIcon} alt="Map Icon" />
@@ -172,7 +175,7 @@ const ContactPageContactSec = (props) => {
                         Services
                       </option>
                       <option value="web-design-development">
-                        Web Design And Development
+                        Web Design and Development
                       </option>
                       <option value="logo-design">Logo Design</option>
                       <option value="cms-development">CMS Development</option>
@@ -214,7 +217,7 @@ const ContactPageContactSec = (props) => {
                       }`}
                       disabled={loading}
                     >
-                      Send A Message
+                      Send a Message
                     </button>
                   </div>
                 </div>

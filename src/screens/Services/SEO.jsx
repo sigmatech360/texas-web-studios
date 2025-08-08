@@ -25,6 +25,8 @@ import BlogSec from "../../components/BlogSec";
 import TestimonialSec from "../../components/TestimonialSec";
 import PackagesSec from "../../components/PackagesSec";
 import ReactHelmet from "../../components/ReactHelmet";
+import SinglePackageSec from "../../components/PackagesSec/SinglePackageSec";
+import { seoPackagesData } from "../../data";
 
 const webUrl = import.meta.env.VITE_WEB_URL;
 
@@ -60,8 +62,8 @@ const SEO = () => {
   return (
     <>
       <ReactHelmet
-        // title=""
-        // description=""
+        title="Professional SEO Services in Texas - Boost Your Rankings"
+        description="Boost your Google rankings with Texas Web Studios. Our SEO services include on-page, off-page, and technical optimization to drive traffic and leads."
         // keywords=""
         url={`${webUrl}/search-engine-optimization`}
         // url="https://texaswebstudios.com/search-engine-optimization"
@@ -71,7 +73,7 @@ const SEO = () => {
           leftCol="col-lg-8"
           bgImage={seoBanner}
           title="Top-Rated Search Engine Optimization Agency in Texas"
-          description="At Texas Web Studios, We Ensure That Every Web Page We Create Is Visible On The Search Engines. We Combine Different SEO Strategies To Curate The One That Makes Your Business Rank High!"
+          description="At Texas Web Studios, We Ensure that Every Web Page We Create Is Visible on The Search Engines. We Combine Different SEO Strategies to Curate The One that Makes Your Business Rank High!"
           pageName="Services"
         />
         <LatestTechSec
@@ -79,9 +81,17 @@ const SEO = () => {
           leftCol="col-xl-5 col-lg-6"
           centerCol="col-xl-4 col-lg-6 mb-lg-4 mb-0"
           rightCol="col-xl-3"
-          secTitle="The SEO Tools That Get You Seen."
-          description="For Accurate Search Engine Optimisation Marketing in Texas, We Integrate Effective SEO Tools With Our Strategy To Achieve Our Goals."
-          categoryTitle="SOLUTIONS"
+          secTitle="The SEO Tools that Get You Seen."
+          description="For Accurate Search Engine Optimisation Marketing in Texas, We Integrate Effective SEO Tools with Our Strategy to Achieve Our Goals."
+          categoryTitle={
+            <p
+              className="categoriesListTitle h3"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              SOLUTIONS
+            </p>
+          }
           solutionList={[
             { name: "Google Search Console" },
             { name: "Google Analytics 4" },
@@ -92,7 +102,7 @@ const SEO = () => {
             { name: "SEO Reporting" },
           ]}
           btnText="Discover More Services"
-          rightP="Our SEO Services Are Driven By Industry-Leading Tools That Help Us Audit Websites, Research Keywords, Analyse Competitors, And Track Performance. Every Decision We Make Is Backed By Insights, Not Assumptions. From Google Search Console To Semrush, Ahrefs, Yoast, And Moz, We Use A Full Suite Of Tools To Understand Where Your Site Stands And What It Needs To Rank Higher. These Tools Help Us Build A Custom SEO Strategy Tailored To Your Business, Audience, And Goals."
+          rightP="Our SEO Services Are Driven by Industry-Leading Tools that Help Us Audit Websites, Research Keywords, Analyse Competitors, and Track Performance. Every Decision We Make Is Backed by Insights, Not Assumptions. From Google Search Console to Semrush, Ahrefs, Yoast, and Moz, We Use a Full Suite of Tools to Understand Where Your Site Stands and What It Needs to Rank Higher. These Tools Help Us Build a Custom SEO Strategy Tailored to Your Business, Audience, and Goals."
         />
         <ServiceAboutSec
           className="bgPink"
@@ -101,8 +111,8 @@ const SEO = () => {
           rightCol="col-xl-5 col-lg-6 order-lg-2 order-1"
           // secTagClass="blackColor"
           secTag="SEARCH ENGINE OPTIMIZATION"
-          secTitle={`We Crack The Algorithm Demands For Lasting Results!`}
-          description="Search Engines Keep Changing, But Your Rankings Shouldn’t. At Texas Web Studios, We Stay Ahead Of Every Update, Big Or Small. We Study What The Algorithms Reward, Then Tailor Your Off-Page And On-Page SEO Strategy To Meet Those Exact Signals. The Result? Your Site Stays Visible, Relevant, And Trusted, Even Long After The Trends Fade Away."
+          secTitle={`We Crack The Algorithm Demands for Lasting Results!`}
+          description="Search Engines Keep Changing, but Your Rankings Shouldn’t. At Texas Web Studios, We Stay Ahead of Every Update, Big or Small. We Study What The Algorithms Reward, Then Tailor Your Off-Page and On-Page SEO Strategy to Meet Those Exact Signals. The Result? Your Site Stays Visible, Relevant, and Trusted, Even Long After The Trends Fade Away."
           image={seoServiceAboutImg}
         />
 
@@ -117,34 +127,35 @@ const SEO = () => {
                 >
                   <img
                     src={getFoundImg}
-                    alt="Get Found By The Right Audience Across Every Search Engine"
+                    alt="Get Found by The Right Audience Across Every Search Engine"
                     className="img-fluid"
                   />
                 </div>
               </div>
               <div className="col-lg-7">
                 <div className="getFoundSeoContent">
-                  <h3
+                  <h2
                     className="secTitle"
                     data-aos="fade-left"
                     data-aos-delay="200"
                   >
-                    Get Found By The Right Audience Across Every Search Engine
-                  </h3>
+                    Get Found by The Right Audience Across Every Search Engine
+                  </h2>
                   <p data-aos="fade-left" data-aos-delay="400">
-                    Getting Found Online Isn’t Luck; It’s A Strategy That
-                    Requires Critical Thinking And Consistent Efforts. At Texas
-                    Web Studios, We Optimize Every Part Of Your Website To Help
-                    You Climb The Search Ranks And Stay in Front Of The Right
-                    Audience, Right When They’re Searching.
+                    Getting Found Online Isn’t Luck; It’s a Strategy that
+                    Requires Critical Thinking and Consistent Efforts. At Texas
+                    Web Studios, We Optimize Every Part of Your Website to Help
+                    You Climb The Search Ranks and Stay in Front of The Right
+                    Audience, Right When They’re Searching.{" "}
+                    <span className="redColor">We offer</span>
                   </p>
                   <ul className="packageCardList">
                     {[
-                      "Keyword Strategies Based On User Intent.",
-                      "Optimized Meta Tags, Titles, And Descriptions.",
-                      "Mobile-Friendliness And Fast Web Performance.",
-                      "Technical Site Audits And On-Page Improvements.",
-                      "Ongoing Performance Tracking And Adjustments.",
+                      "Keyword Strategies Based on User Intent.",
+                      "Optimized Meta Tags, Titles, and Descriptions.",
+                      "Mobile-Friendliness and Fast Web Performance.",
+                      "Technical Site Audits and On-Page Improvements.",
+                      "Ongoing Performance Tracking and Adjustments.",
                     ].map((item, listIndex) => (
                       <li
                         key={listIndex}
@@ -173,7 +184,7 @@ const SEO = () => {
                     data-aos-delay={index * 200}
                   >
                     <img src={item.icon} alt={item.title} />
-                    <h4 className="beVisibleIconData-title">{item.title}</h4>
+                    <h3 className="beVisibleIconData-title">{item.title}</h3>
                   </div>
                 ))}
               </div>
@@ -182,72 +193,106 @@ const SEO = () => {
         </div>
 
         <WhyCooseUsSec
-          secTag="WHY CHOOSE US"
-          secTitle="Here’s Why Clients Stick With Us"
-          secDescription="Our Seo Agency, Texas, Focuses On What Actually Works. From Understanding Your Audience To Making The Right Technical Moves, Our SEO Process Is Built For Growth, Relevance, And Results That Last Beyond The Latest Trends."
+          secTag={<h2 className="sec-tag">WHY CHOOSE US</h2>}
+          // secTitle="Here’s Why Clients Stick with Us"
+          secTitle={
+            <h2 className="secTitle" data-aos="fade-right" data-aos-delay="200">
+              Here’s Why Clients Stick with Us
+            </h2>
+          }
+          secDescription="Our Seo Agency, Texas, Focuses on What Actually Works. From Understanding Your Audience to Making The Right Technical Moves, Our SEO Process Is Built for Growth, Relevance, and Results that Last Beyond The Latest Trends."
           image={seoDevWhyChooseImage}
           // leftP=""
-          leftSubTitle="Witness Higher Rankings With The Right Strategies."
-          btnText="Get A Quote"
+          leftSubTitle={
+            <h3
+              className="whyChooseRightTitle"
+              data-aos="fade-right"
+              data-aos-delay="400"
+            >
+              Witness Higher Rankings with The Right Strategies.
+            </h3>
+          }
+          btnText="Get a Quote"
           list={[
             {
               image: seoWhyChooseIcon1,
-              title: "Audience Targeting",
+              title: (
+                <h4 className="whyChooseListItemTitle">Audience Targeting</h4>
+              ),
               description:
-                "We Study Real Data To Understand Your Ideal Customer And Build SEO Strategies That Speak Directly To Them.",
+                "We Study Real Data to Understand Your Ideal Customer and Build SEO Strategies that Speak Directly to Them.",
             },
             {
               image: seoWhyChooseIcon2,
-              title: "Regular SEO Audits",
+              title: (
+                <h4 className="whyChooseListItemTitle">Regular SEO Audits</h4>
+              ),
               description:
-                "Our Audits Catch Issues Early, Track Progress, And Keep Your Website Aligned With Search Engine Standards.",
+                "Our Audits Catch Issues Early, Track Progress, and Keep Your Website Aligned with Search Engine Standards.",
             },
             {
               image: seoWhyChooseIcon3,
-              title: "Schema Markup Integration",
+              title: (
+                <h4 className="whyChooseListItemTitle">
+                  Schema Markup Integration
+                </h4>
+              ),
               description:
-                "We Add Structured Data To Boost Your Appearance in Rich Results And Improve Search Engine Understanding Of Your Content.",
+                "We Add Structured Data to Boost Your Appearance in Rich Results and Improve Search Engine Understanding of Your Content.",
             },
             {
               image: seoWhyChooseIcon4,
-              title: "Content Optimization",
+              title: (
+                <h4 className="whyChooseListItemTitle">Content Optimization</h4>
+              ),
               description:
-                "We Fine-Tune Every Piece Of Content To Rank Better, Engage More Visitors, And Increase Time On Site.",
+                "We Fine-Tune Every Piece of Content to Rank Better, Engage More Visitors, and Increase Time on Site.",
             },
           ]}
         />
 
-        <PackagesSec
+        {/* <PackagesSec
           className="bgPink"
           secTag="PRICING"
           title="Flexible Pricing Packages"
-          description="Every Business Has Different Needs, So We Offer Custom Pricing For Each Of Our Services. Our Packages Include Basic, Pro, And Premium, Designed To Match Where You Are And Where You’re Headed. Whether You Are Starting Fresh Or Looking To Scale, You Will Get The Right Solution At The Right Price. So Find The Package That Fits You Best, Or Consult Us For A Custom Package!"
+          description="Every Business Has Different Needs, so We Offer Custom Pricing for Each of Our Services. Our Packages Include Basic, Pro, and Premium, Designed to Match Where You Are and Where You’re Headed. Whether You Are Starting Fresh or Looking to Scale, You Will Get The Right Solution at The Right Price. So Find The Package that Fits You Best, or Consult Us for a Custom Package!"
+        /> */}
+        <SinglePackageSec
+          className="bgPink"
+          secTag="PRICING"
+          title="Flexible Pricing Packages"
+          description="Every Business Has Different Needs, so We Offer Custom Pricing for Each of Our Services. Our Packages Include Basic, Pro, and Premium, Designed to Match Where You Are and Where You’re Headed. Whether You Are Starting Fresh or Looking to Scale, You Will Get The Right Solution at The Right Price. So Find The Package that Fits You Best, or Consult Us for a Custom Package!"
+          packagesName={seoPackagesData}
         />
         <TestimonialSec
           className="bgBlack"
           secTag="TESTIMONIALS"
-          secTitle="Words From Our Clients Who Trust Us."
+          secTitle={
+            <h2 className="secTitle" data-aos="fade-right" data-aos-delay="200">
+              Words from Our Clients Who Trust Us.
+            </h2>
+          }
           testimonialData={[
             {
               id: 1,
               name: "Sarah Mitchell",
               designation: "Marketing Manager, Brightpath Solutions",
               descrition:
-                "Texas Web Studio Built Us A Fast Website. We Are Now Able To Update Our Content Without The Need For Any Developer.",
+                "Texas Web Studio Built Us a Fast Website. We Are Now Able to Update Our Content Without The Need for Any Developer.",
             },
             {
               id: 2,
               name: "Jason Lee",
               designation: "Founder, Urbannest Interiors",
               descrition:
-                "Their CMS Solution Helped Our Team Save Time And Stay in Control. Everything Works Smoothly Across Devices. Highly Recommend!",
+                "Their CMS Solution Helped Our Team Save Time and Stay in Control. Everything Works Smoothly Across Devices. Highly Recommend!",
             },
             {
               id: 3,
               name: "Jason Lee",
               designation: "Founder, Urbannest Interiors",
               descrition:
-                "Their CMS Solution Helped Our Team Save Time And Stay in Control. Everything Works Smoothly Across Devices. Highly Recommend!",
+                "Their CMS Solution Helped Our Team Save Time and Stay in Control. Everything Works Smoothly Across Devices. Highly Recommend!",
             },
           ]}
         />

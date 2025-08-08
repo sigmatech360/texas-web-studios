@@ -133,11 +133,19 @@ const webUrl = import.meta.env.VITE_WEB_URL;
 
 const Portfolio = () => {
   const [key, setKey] = useState("all-portfolio");
+
+  const handleOpenChat = () => {
+    if (window.Tawk_API) {
+      window.Tawk_API.maximize(); // or toggle(), or popup()
+    } else {
+      console.warn("Tawk_API not available yet.");
+    }
+  };
   return (
     <>
       <ReactHelmet
-        // title=""
-        // description=""
+        title="Our Portfolio - Texas Web Studios"
+        description="Browse our portfolio of custom websites, apps, and digital marketing projects. Texas Web Studios delivers real results for businesses across Texas and beyond."
         // keywords=""
         url={`${webUrl}/portfolio`}
         // url="https://texaswebstudios.com/portfolio"
@@ -164,7 +172,7 @@ const Portfolio = () => {
                     A Glimpse into Our Work
                   </h2>
                   <p data-aos="fade-up" data-aos-delay="400">
-                    With years of experience in the industry, we have served in
+                    with years of experience in the industry, we have served in
                     various sectors for multiple businesses. Take a look at our
                     excellence in the projects we proudly completed for our
                     clients.
@@ -235,7 +243,11 @@ const Portfolio = () => {
         <TestimonialSec
           className="bgPink"
           secTag="OUR TESTIMONIALS"
-          secTitle="What They're Talking About Us."
+          secTitle={
+            <h2 className="secTitle" data-aos="fade-right" data-aos-delay="200">
+              What They're Talking About Us.
+            </h2>
+          }
           testimonialData={[
             {
               id: 1,
@@ -272,12 +284,12 @@ const Portfolio = () => {
           className="bgBlack"
           secTag="PRICING"
           title="Flexible Pricing Packages"
-          description="Every Business Has Different Needs, So We Offer Custom Pricing
-                    For Each Of Our Services. Our Packages Include Basic, Pro, And
-                    Premium, Designed To Match Where You Are And Where You’re
-                    Headed. Whether You Are Starting Fresh Or Looking To Scale,
-                    You Will Get The Right Solution At The Right Price. So Find
-                    The Package That Fits You Best, Or Consult Us For A Custom
+          description="Every Business Has Different Needs, so We Offer Custom Pricing
+                    for Each of Our Services. Our Packages Include Basic, Pro, and
+                    Premium, Designed to Match Where You Are and Where You’re
+                    Headed. Whether You Are Starting Fresh or Looking to Scale,
+                    You Will Get The Right Solution at The Right Price. So Find
+                    The Package that Fits You Best, or Consult Us for a Custom
                     Package!"
         />
 
@@ -287,27 +299,29 @@ const Portfolio = () => {
               <div className="col-md-12">
                 <div className="secHead">
                   <p className="sec-tag">DESIGN FOR IMPACT:</p>
-                  <h3
+                  <h2
                     className="secTitle"
                     data-aos="fade-up"
                     data-aos-delay="200"
                   >
-                    Elevate Your Brand Identity With Us!
-                  </h3>
+                    Collaborate Today to Achieve Success Tomorrow!
+                  </h2>
                   <p data-aos="fade-up" data-aos-delay="400">
-                    Don't Hesitate To Reach Out! Logo Design Valley Encourages
-                    Discussions About New Projects, Specific Questions You May
-                    Have, Or Even Feedback On How We Can Improve Our Services.
-                    We Believe in Open Communication That Fosters A Successful
-                    And Rewarding Design Experience.
+                    We have completed hundreds of projects in multiple
+                    industries, and all we have received in return is happy
+                    clients running their successful businesses. If you want to
+                    be one of the success stories, then we are just one message
+                    away. Contact us and leave the rest to us. We promise you
+                    growth, success, and constant engagement.
                   </p>
                   <Link
-                    to={"/contact"}
+                    to={""}
                     className="theme-btn"
                     data-aos="fade-up"
                     data-aos-delay="600"
+                    onClick={handleOpenChat}
                   >
-                    Let's Discuss
+                    Click to Talk!
                   </Link>
                 </div>
               </div>

@@ -29,6 +29,8 @@ import portfolioImg2_2 from "../../assets/images/cmsPortfolio/cmsPortfolioImg2-2
 import portfolioImg2_3 from "../../assets/images/cmsPortfolio/cmsPortfolioImg2-3.webp";
 import portfolioImg2_4 from "../../assets/images/cmsPortfolio/cmsPortfolioImg2-4.webp";
 import ReactHelmet from "../../components/ReactHelmet";
+import SinglePackageSec from "../../components/PackagesSec/SinglePackageSec";
+import { eCommercePackagesData } from "../../data";
 
 const webUrl = import.meta.env.VITE_WEB_URL;
 
@@ -95,8 +97,8 @@ const CMSDevelopment = () => {
   return (
     <>
       <ReactHelmet
-        // title=""
-        // description=""
+        title="Custom CMS Solutions for Growth – Texas Web Studio"
+        description="Streamline content management with custom CMS solutions by Texas Web Studios. Scalable, secure, and SEO-ready websites built for growth."
         // keywords=""
         url={`${webUrl}/cms-development`}
         // url="https://texaswebstudios.com/cms-development"
@@ -113,10 +115,18 @@ const CMSDevelopment = () => {
           leftCol="col-lg-5"
           centerCol="col-lg-4"
           rightCol="col-lg-3"
-          secTitle="Expert Services For CMS-Based Development"
-          description="Managing Your Website Shouldn’t Be Complicated; That’s Why We Build CMS Powered, Custom Web Development Services in Texas That Are Fast, Responsive, And Optimized For Higher Ranking And Conversions."
-          leftBtnText="Book A Call"
-          categoryTitle="SOLUTIONS"
+          secTitle="Expert Services for CMS-Based Development"
+          description="Managing Your Website Shouldn’t Be Complicated; that’s Why We Build CMS Powered, Custom Web Development Services in Texas that Are Fast, Responsive, and Optimized for Higher Ranking and Conversions."
+          leftBtnText="Book a Call"
+          categoryTitle={
+            <p
+              className="categoriesListTitle h3"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              SOLUTIONS
+            </p>
+          }
           solutionList={[
             { name: "Wordpress Development" },
             { name: "Wix Development" },
@@ -149,7 +159,7 @@ const CMSDevelopment = () => {
             "Mobile-Optimized Themes",
             "Easy Plugin Integration",
             "Built-In SEO Tools",
-            "No-Code Or Low-Code Development",
+            "No-Code or Low-Code Development",
           ]}
           image={cmsDevServiceAboutImg}
         />
@@ -164,52 +174,87 @@ const CMSDevelopment = () => {
         />
 
         <WhyCooseUsSec
-          secTag="WHY CHOOSE US"
-          secTitle="How CMS Web Development Can Help You"
+          secTag={<h2 className="sec-tag">WHY CHOOSE US</h2>}
+          secTitle={
+            <h3 className="secTitle" data-aos="fade-right" data-aos-delay="200">
+              How CMS Web Development Can Help You
+            </h3>
+          }
           secDescription="We deliver end-to-end custom CMS development services catering to your business needs."
           secDescription2="At Texas Web Studio, experience top-tier custom ecommerce website development services where innovation meets simplicity for powerful results. Our team brings proven expertise to deliver secure, high-performance, and cost-effective web solutions, built for startups, growing brands, and enterprise businesses alike."
           image={cmsDevWhyChooseImage}
           // leftP=""
-          leftSubTitle="Dynamic CMS Solutions Built for Flexibility, Speed, and Control"
-          btnText="Get A Free CMS Strategy Call"
+          leftSubTitle={
+            <h4
+              className="whyChooseRightTitle"
+              data-aos="fade-right"
+              data-aos-delay="400"
+            >
+              Dynamic CMS Solutions Built for Flexibility, Speed, and Control
+            </h4>
+          }
+          btnText="Get a Free CMS Strategy Call"
           list={[
             {
               image: cmsDevWhyChooseIcon1,
-              title: "No-Code & Low-Code Solutions",
+              title: (
+                <h3 className="whyChooseListItemTitle">
+                  No-Code & Low-Code Solutions
+                </h3>
+              ),
               description:
-                "Easily Manage And Update Your Website Without Touching Code.",
+                "Easily Manage and Update Your Website Without Touching Code.",
             },
             {
               image: cmsDevWhyChooseIcon2,
-              title: "Scalable Architecture",
+              title: (
+                <h3 className="whyChooseListItemTitle">
+                  Scalable Architecture
+                </h3>
+              ),
               description:
-                "Built To Grow With Your Business, From Single Sites To Complex Multisite Setups.",
+                "Built to Grow with Your Business, from Single Sites to Complex Multisite Setups.",
             },
             {
               image: cmsDevWhyChooseIcon3,
-              title: "SEO & Performance Optimized",
+              title: (
+                <h3 className="whyChooseListItemTitle">
+                  SEO & Performance Optimized
+                </h3>
+              ),
               description:
-                "Designed For Speed, Visibility, And High Search Rankings From Day One With Built-In SEO.",
+                "Designed for Speed, Visibility, and High Search Rankings from Day One with Built-In SEO.",
             },
             // {
             //   image: cmsDevWhyChooseIcon4,
             //   title: "Performance Optimization",
             //   description:
-            //     "We Optimize Your Website’s Speed, Structure, And Code To Ensure Faster Loading Times, Better User Experience, And Improved Search Engine Performance.",
+            //     "We Optimize Your Website’s Speed, Structure, and Code to Ensure Faster Loading Times, Better User Experience, and Improved Search Engine Performance.",
             // },
           ]}
         />
 
-        <PackagesSec
+        {/* <PackagesSec
           className="bgPink"
           secTag="PRICING"
           title="Flexible Pricing Packages"
           description="Every business has different needs, so we offer custom pricing for each of our services. Our packages include Basic, Pro, and Premium, designed to match where you are and where you’re headed. Whether you are starting fresh or looking to scale, you will get the right solution at the right price. So find the package that fits you best, or consult us for a custom package!"
+        /> */}
+        <SinglePackageSec
+          className="bgPink"
+          secTag="PRICING"
+          title="Flexible Pricing Packages"
+          description="Every business has different needs, so we offer custom pricing for each of our services. Our packages include Basic, Pro, and Premium, designed to match where you are and where you’re headed. Whether you are starting fresh or looking to scale, you will get the right solution at the right price. So find the package that fits you best, or consult us for a custom package!"
+          packagesName={eCommercePackagesData}
         />
         <TestimonialSec
           className="bgBlack"
           secTag="TESTIMONIALS"
-          secTitle="What Our Client Says, Says It All"
+          secTitle={
+            <h3 className="secTitle" data-aos="fade-right" data-aos-delay="200">
+              What Our Client Says, Says It All
+            </h3>
+          }
           testimonialData={[
             {
               id: 1,

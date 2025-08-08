@@ -12,17 +12,17 @@ const blogsData = [
   {
     id: 1,
     image: blogImg1,
-    title: "Boost Your Skills Online, On Front-End & Design Basics",
+    title: "Boost Your Skills Online, on Front-End & Design Basics",
   },
   {
     id: 2,
     image: blogImg2,
-    title: "Boost Your Skills Online, On Front-End & Design Basics",
+    title: "Boost Your Skills Online, on Front-End & Design Basics",
   },
   {
     id: 3,
     image: blogImg3,
-    title: "Boost Your Skills Online, On Front-End & Design Basics",
+    title: "Boost Your Skills Online, on Front-End & Design Basics",
   },
 ];
 
@@ -104,9 +104,9 @@ const BlogSec = ({ secTitle, categorySlug }) => {
           <div className="col-md-12">
             <div className="secHead">
               <p className="sec-tag">NEWS FEED</p>
-              <h3 className="secTitle" data-aos="fade-up" data-aos-delay="200">
+              <h4 className="secTitle" data-aos="fade-up" data-aos-delay="200">
                 {secTitle || "News & Article"}
-              </h3>
+              </h4>
             </div>
           </div>
           {loading ? (

@@ -157,7 +157,7 @@ const FormModal = ({ show, handleClose }) => {
                     Services
                   </option>
                   <option value="web-design-development">
-                    Web Design And Development
+                    Web Design and Development
                   </option>
                   <option value="logo-design">Logo Design</option>
                   <option value="cms-development">CMS Development</option>

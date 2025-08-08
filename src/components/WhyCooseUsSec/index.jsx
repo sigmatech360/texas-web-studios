@@ -10,14 +10,16 @@ const WhyCooseUsSec = (props) => {
         <div className="row align-items-end">
           <div className="col-lg-6">
             <div className="whyChooseImgContent">
-              <p className="sec-tag">{props.secTag}</p>
-              <h3
+              {/* <p className="sec-tag">{props.secTag}</p> */}
+              {props.secTag}
+              {/* <h2
                 className="secTitle"
                 data-aos="fade-right"
                 data-aos-delay="200"
               >
                 {props.secTitle}
-              </h3>
+                </h2> */}
+              {props.secTitle}
               <p className="mb-2" data-aos="fade-right" data-aos-delay="400">
                 {props.secDescription}
               </p>
@@ -57,7 +59,8 @@ const WhyCooseUsSec = (props) => {
                     {props.leftP}
                   </p>
                 )}
-                {props.leftSubTitle && (
+                {props.leftSubTitle && props.leftSubTitle}
+                {/* {props.leftSubTitle && (
                   <h4
                     className="whyChooseRightTitle"
                     data-aos="fade-right"
@@ -65,7 +68,7 @@ const WhyCooseUsSec = (props) => {
                   >
                     {props.leftSubTitle}
                   </h4>
-                )}
+                )} */}
                 {props.btnText && (
                   <button
                     className="theme-btn"
@@ -88,8 +91,11 @@ const WhyCooseUsSec = (props) => {
                 >
                   <img src={item.image} alt={item.title} />
                   <div className="whyChooseListItemContent">
-                    <h5 className="whyChooseListItemTitle">{item.title}</h5>
-                    <p>{item.description}</p>
+                    {/* <p className="whyChooseListItemTitle">{item.title}</p> */}
+                    {item.title}
+                    <p className="whyChooseListItemDescription">
+                      {item.description}
+                    </p>
                   </div>
                 </div>
               ))}

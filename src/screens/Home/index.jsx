@@ -61,28 +61,28 @@ const homeAboutListData = [
     icon: designAndDevelopmentIcon,
     title: "Design & Development",
     description:
-      "Visually Stunning, Responsive Websites Engineered For Performance, Brand Consistency, And High Conversion Across All Devices.",
+      "Visually Stunning, Responsive Websites Engineered for Performance, Brand Consistency, and High Conversion Across All Devices.",
   },
   {
     id: 2,
     icon: userExperienceIcon,
     title: "User Experience (UX)",
     description:
-      "We Craft User-First Digital Experiences That Feel Effortless And Keep Your Visitors Engaged, Loyal, And Ready To Take Action.",
+      "We Craft User-First Digital Experiences that Feel Effortless and Keep Your Visitors Engaged, Loyal, and Ready to Take Action.",
   },
   {
     id: 3,
     icon: eCommerceIcon,
     title: "E-Commerce Solutions",
     description:
-      "From Storefront To Checkout, We Design And Develop E-Commerce Platforms That Convert, Scale, And Support Ongoing Sales Growth.",
+      "From Storefront to Checkout, We Design and Develop E-Commerce Platforms that Convert, Scale, and Support Ongoing Sales Growth.",
   },
   {
     id: 4,
     icon: growthStratergyIcon,
     title: "Growth Strategy & Analytics",
     description:
-      "Smarter Marketing Starts With Data. We Build And Execute Growth Strategies Backed By Clear Analytics And Measurable Business Goals.",
+      "Smarter Marketing Starts with Data. We Build and Execute Growth Strategies Backed by Clear Analytics and Measurable Business Goals.",
   },
 ];
 
@@ -93,7 +93,7 @@ const ourServicesData = [
     icon: webDesignIcon,
     title: "Website Design",
     description:
-      "We Craft Responsive, Functional, And Converting Websites That Look Stunning And Guide Visitors To Take Action, Built For Performance On Every Device.",
+      "We Craft Responsive, Functional, and Converting Websites that Look Stunning and Guide Visitors to Take Action, Built for Performance on Every Device.",
     link: "/web-development",
   },
   {
@@ -102,7 +102,7 @@ const ourServicesData = [
     icon: logoDesignIcon,
     title: "Logo Design",
     description:
-      "Your Brand Starts With A Logo Design. We Create Bold, Memorable Logos That Capture Your Identity And Work Across All Your Digital Touchpoints.",
+      "Your Brand Starts with a Logo Design. We Create Bold, Memorable Logos that Capture Your Identity and Work Across All Your Digital Touchpoints.",
     link: "/logo-design",
   },
   {
@@ -111,7 +111,7 @@ const ourServicesData = [
     icon: mobileAppDevIcon,
     title: "App Development",
     description:
-      "We Build User-Friendly And Functional Mobile Apps That Keep Your Customers Engaged. Our Apps Are Designed For Performance Across Ios And Android Platforms.",
+      "We Build User-Friendly and Functional Mobile Apps that Keep Your Customers Engaged. Our Apps Are Designed for Performance Across Ios and Android Platforms.",
     link: "/mobile-app-development",
   },
   {
@@ -120,7 +120,7 @@ const ourServicesData = [
     icon: ourServiceSEOIcon,
     title: "Search Engine Optimization",
     description:
-      "We Ensure Your Business Gets Found. Our SEO Services in Texas Improve Rankings, Increase Visibility, And Drive High-Quality Traffic That's Ready To Convert.",
+      "We Ensure Your Business Gets Found. Our SEO Services in Texas Improve Rankings, Increase Visibility, and Drive High-Quality Traffic that's Ready to Convert.",
     link: "/search-engine-optimization",
   },
   {
@@ -129,7 +129,7 @@ const ourServicesData = [
     icon: ourServiceCMSIcon,
     title: "CMS Development",
     description:
-      "Get A Custom Content Management System That Puts You in Control. Our Website Development Company Provides Easy-To-Manage, Secure, Custom-Built CMS Solutions For Your Workflow.",
+      "Get a Custom Content Management System that Puts You in Control. Our Website Development Company Provides Easy-To-Manage, Secure, Custom-Built CMS Solutions for Your Workflow.",
     link: "/cms-development",
   },
   {
@@ -138,8 +138,8 @@ const ourServicesData = [
     icon: ourServiceDigitalMarketingIcon,
     title: "Digital Marketing",
     description:
-      "We Design Full-Funnel Strategies That Drive Traffic, Capture Leads, And Turn Browsers Into Buyers. Our Digital Marketing Services Are Made To Boost Your Business in The Right Places, At The Right Time.",
-    link: "/mobile-app-development",
+      "We Design Full-Funnel Strategies that Drive Traffic, Capture Leads, and Turn Browsers Into Buyers. Our Digital Marketing Services Are Made to Boost Your Business in The Right Places, at The Right Time.",
+    link: "/digital-media-marketing",
   },
   {
     id: 7,
@@ -147,8 +147,8 @@ const ourServicesData = [
     icon: ourServiceSMMIcon,
     title: "Social Media Marketing",
     description:
-      "Grow Your Presence Across Every Major Platform With Content That Makes You Stop Scrolling. We Work On Smart Targeting And Strategic Campaigns To Drive Real Engagement.",
-    link: "/digital-media-marketing",
+      "Grow Your Presence Across Every Major Platform with Content that Makes You Stop Scrolling. We Work on Smart Targeting and Strategic Campaigns to Drive Real Engagement.",
+    link: "/social-media-marketing",
   },
   {
     id: 8,
@@ -156,7 +156,7 @@ const ourServicesData = [
     icon: ourServiceCustomIcon,
     title: "Custom Web Development",
     description:
-      "From Complex Systems To Custom Features, We Provide Custom Web Development Services That Do More, Load Faster, And Grow With Your Business.",
+      "From Complex Systems to Custom Features, We Provide Custom Web Development Services that Do More, Load Faster, and Grow with Your Business.",
     link: "/custom-web-development",
   },
 ];
@@ -191,24 +191,24 @@ const beVisibleData = [
 
 const testimonialData = [
   {
-    title: "Can I Ask For Custom Pricing?",
+    title: "Can I Ask for Custom Pricing?",
     description:
-      "Yes. We Understand That Every Business Has Different Needs, So We’re Happy To Create A Custom Quote Based On Your Goals, Timeline, And Required Services.",
+      "Yes. We Understand that Every Business Has Different Needs, so We’re Happy to Create a Custom Quote Based on Your Goals, Timeline, and Required Services.",
   },
   {
-    title: "Do You Offer Ongoing Support After A Project Ends?",
+    title: "Do You Offer Ongoing Support After a Project Ends?",
     description:
-      "Yes. We Offer Monthly Support Plans, Maintenance, Updates, And Optimization To Make Sure Your Website Or Campaign Stays Sharp And Effective.",
+      "Yes. We Offer Monthly Support Plans, Maintenance, Updates, and Optimization to Make Sure Your Website or Campaign Stays Sharp and Effective.",
   },
   {
     title: "Do You Provide Site Audits Before We Start The Process?",
     description:
-      "Yes. We Begin With A Full Website Audit To Identify Gaps And Opportunities. You’ll Get The Report First, Then It’s Your Call To Move Forward Or Not.",
+      "Yes. We Begin with a Full Website Audit to Identify Gaps and Opportunities. You’ll Get The Report First, Then It’s Your Call to Move Forward or Not.",
   },
   {
     title: "How Involved Will I Be in The Design Process?",
     description:
-      "We Believe in Close Collaboration, So We Include You At Every Key Step, From Planning And Wireframes To Final Design Approval. We Work With You To Create The Ideal Results.",
+      "We Believe in Close Collaboration, so We Include You at Every Key Step, from Planning and Wireframes to Final Design Approval. We Work with You to Create The Ideal Results.",
   },
 ];
 
@@ -219,8 +219,8 @@ const Home = () => {
   return (
     <>
       <ReactHelmet
-        // title=""
-        // description=""
+        title="Texas Web Studios - Custom Web Design & SEO in Texas"
+        description="Boost your business with Texas Web Studios, expert in custom web design, SEO, and digital marketing. Fast, responsive, and built to convert. Get started today!"
         // keywords=""
         url={`${webUrl}/`}
       />
@@ -232,27 +232,27 @@ const Home = () => {
             <div className="row">
               <div className="col-lg-6 mb-lg-0 mb-4">
                 <div className="homeAboutContent">
-                  <h3
+                  <h2
                     className="secTitle"
                     data-aos="fade-right"
                     data-aos-delay="200"
                   >
-                    Growth Strategies That Leave A Lasting Impact
-                  </h3>
+                    Growth Strategies that Leave a Lasting Impact
+                  </h2>
                   <p data-aos="fade-right" data-aos-delay="400">
-                    With Years Of Experience, We Have Learnt That Every Business
-                    Runs Differently, And That’s Precisely How We Strategize.
-                    From Full-Stack Development To Custom Digital Marketing
-                    Solutions, Our Branding And{" "}
+                    with Years of Experience, We Have Learnt that Every Business
+                    Runs Differently, and that’s Precisely How We Strategize.
+                    from Full-Stack Development to Custom Digital Marketing
+                    Solutions, Our Branding and{" "}
                     <span className="redColor">
                       Website Development Company in Texas
                     </span>{" "}
-                    Creates Solutions That Fit Your Goals, Your Market, And The
+                    Creates Solutions that Fit Your Goals, Your Market, and The
                     Way You Operate. Whatever Your Requirements, We Will Meet
-                    Them. Whether You Need A Custom Site, A Smarter Sales
-                    Funnel, Or IT Management That Just Works, We Bring
-                    Everything Together To Help Businesses Grow With Clarity,
-                    Speed, And Confidence.
+                    Them. Whether You Need a Custom Site, a Smarter Sales
+                    Funnel, or IT Management that Just Works, We Bring
+                    Everything Together to Help Businesses Grow with Clarity,
+                    Speed, and Confidence.
                   </p>
                 </div>
               </div>
@@ -280,14 +280,14 @@ const Home = () => {
                 <div className="homeMissionContent">
                   <div className="homeMissionContentLeft">
                     <p className="sec-tag">MISSION</p>
-                    <h3
+                    <h2
                       className="secTitle"
                       data-aos="fade-right"
                       data-aos-delay="200"
                     >
-                      Building Unique Brand Identities That Help Texas
-                      Businesses Grow, Compete, And Lead Online.
-                    </h3>
+                      Building Unique Brand Identities that Help Texas
+                      Businesses Grow, Compete, and Lead Online.
+                    </h2>
                   </div>
                   <Link
                     to={"/about"}
@@ -309,18 +309,18 @@ const Home = () => {
               <div className="col-lg-12">
                 <div className="homeOurServicesHead">
                   <p className="sec-tag">OUR SERVICES</p>
-                  <h3
+                  <h2
                     className="secTitle"
                     data-aos="fade-right"
                     data-aos-delay="200"
                   >
-                    Revamp Your Brand <br /> With Smart Digital Solutions
-                  </h3>
+                    Revamp Your Brand <br /> with Smart Digital Solutions
+                  </h2>
                   <p data-aos="fade-right" data-aos-delay="400">
-                    We Offer A Full Suite Of Digital Solutions, Tailored To Your
-                    Business Needs. From Custom Web Development To Digital
-                    Marketing in Texas, Our Services Are Built To Deliver
-                    Results, Drive Growth, And Help You Stand Out Online.
+                    We Offer a Full Suite of Digital Solutions, Tailored to Your
+                    Business Needs. From Custom Web Development to Digital
+                    Marketing in Texas, Our Services Are Built to Deliver
+                    Results, Drive Growth, and Help You Stand Out Online.
                   </p>
                 </div>
               </div>
@@ -384,13 +384,13 @@ const Home = () => {
               <div className="col-md-12">
                 <div className="secHead">
                   <p className="sec-tag">BE VISIBLE</p>
-                  <h3
+                  <h2
                     className="secTitle"
                     data-aos="fade-right"
                     data-aos-delay="200"
                   >
                     Why Texas Web Studios Is The Standard!
-                  </h3>
+                  </h2>
                 </div>
               </div>
               <div className="col-lg-6 mb-lg-0 mb-4">
@@ -400,24 +400,24 @@ const Home = () => {
                   data-aos-delay="400"
                 >
                   <div className="beVisible-numberBoxBg">
-                    <h3>10+</h3>
+                    <p className="h3">10+</p>
                   </div>
                 </div>
               </div>
               <div className="col-lg-6">
                 <div className="beVisibleCOntent">
-                  <h3
-                    className="secSubTitle"
+                  <p
+                    className="secSubTitle h3"
                     data-aos="fade-left"
                     data-aos-delay="600"
                   >
-                    Experience That Delivers Results.
-                  </h3>
+                    Experience that Delivers Results.
+                  </p>
                   <p data-aos="fade-left" data-aos-delay="800">
-                    Backed By Years Of Industry Experience, We’ve Earned The
-                    Trust Of Large And Small Businesses Across Texas. We Create
-                    Simple And Practical Online Marketing Solutions That Help
-                    Our Clients Grow And Succeed Online.
+                    Backed by Years of Industry Experience, We’ve Earned The
+                    Trust of Large and Small Businesses Across Texas. We Create
+                    Simple and Practical Online Marketing Solutions that Help
+                    Our Clients Grow and Succeed Online.
                   </p>
                 </div>
               </div>
@@ -431,7 +431,7 @@ const Home = () => {
                       data-aos-delay={index * 200}
                     >
                       <img src={item.icon} alt={item.title} />
-                      <h4 className="beVisibleIconData-title">{item.title}</h4>
+                      <h3 className="beVisibleIconData-title">{item.title}</h3>
                     </div>
                   ))}
                 </div>
@@ -444,40 +444,51 @@ const Home = () => {
           className="bgPink"
           secTag="PRICING"
           title="Flexible Pricing Packages"
-          description="Every Business Has Different Needs, So We Offer Custom Pricing
-                    For Each Of Our Services. Our Packages Include Basic, Pro, And
-                    Premium, Designed To Match Where You Are And Where You’re
-                    Headed. Whether You Are Starting Fresh Or Looking To Scale,
-                    You Will Get The Right Solution At The Right Price. So Find
-                    The Package That Fits You Best, Or Consult Us For A Custom
+          description="Every Business Has Different Needs, so We Offer Custom Pricing
+                    for Each of Our Services. Our Packages Include Basic, Pro, and
+                    Premium, Designed to Match Where You Are and Where You’re
+                    Headed. Whether You Are Starting Fresh or Looking to Scale,
+                    You Will Get The Right Solution at The Right Price. Find
+                    The Package that Fits You Best, or Consult Us for a Custom
                     Package!"
         />
 
         <TestimonialSec
           className="bgBlack"
           secTag="OUR TESTIMONIALS"
-          secTitle="Hear From Our Happy Clients"
+          secTitle={
+            <h3 className="secTitle" data-aos="fade-right" data-aos-delay="200">
+              Hear from Our Happy Clients
+            </h3>
+          }
           testimonialData={[
             {
               id: 1,
               name: "Sarah Mitchell",
               designation: "Marketing Manager, Brightpath Solutions",
               descrition:
-                "Texas Web Studio Built Us A Fast Website. We Are Now Able To Update Our Content Without The Need For Any Developer.",
+                "Texas Web Studio Built Us a Fast Website. We Are Now Able to Update Our Content Without The Need for Any Developer.",
             },
             {
               id: 2,
               name: "Jason Lee",
               designation: "Founder, Urbannest Interiors",
               descrition:
-                "Their CMS Solution Helped Our Team Save Time And Stay in Control. Everything Works Smoothly Across Devices. Highly Recommend!",
+                "Their CMS Solution Helped Our Team Save Time and Stay in Control. Everything Works Smoothly Across Devices. Highly Recommend!",
             },
             {
               id: 3,
-              name: "Jason Lee",
-              designation: "Founder, Urbannest Interiors",
+              name: "Katy Dellecqua",
+              designation: "Happy Customer",
               descrition:
-                "Their CMS Solution Helped Our Team Save Time And Stay in Control. Everything Works Smoothly Across Devices. Highly Recommend!",
+                "Trusted them for the SEO of my website, and my visibility has been brilliant since then. Never thought this would be possible!",
+            },
+            {
+              id: 4,
+              name: "Mathew Singh",
+              designation: "Happy Customer",
+              descrition:
+                "I wanted a funky website for my product, and they made sure each of my requirements was checked! Amazed by the quality of their services.",
             },
           ]}
         />
@@ -491,7 +502,7 @@ const Home = () => {
         />
         <BookCallSec
           title="Let’s Discuss Your Business Goals."
-          btnText="Book A Call"
+          btnText="Book a Call"
         />
         <ContactUsSec />
 

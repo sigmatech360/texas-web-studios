@@ -6,6 +6,7 @@
 .footerSocialIcon {
   text-align: center;
   padding: 25px 16px;
+  transition: all 0.5s ease;
 }
 .footerSocialIcon:not(:last-child) {
   border-right: 1px solid #707070; /* You can customize the color */
@@ -31,6 +32,9 @@
 
 .footerSocialBehance:hover {
   background-color: #1769ff; /* Behance blue */
+}
+.footerSocialinstagram:hover {
+  background-color: #c13584; /* Darker shade of Instagram pink */
 }
 
 .footerSocialdribble:hover {

@@ -11,13 +11,13 @@ const BookCallSec = (props) => {
         <div className="row">
           <div className="col-md-12">
             <div className="bookCallContent">
-              <h3
+              <h4
                 className="bookCallTitle"
                 data-aos="fade-right"
                 data-aos-delay="200"
               >
                 {props.title}
-              </h3>
+              </h4>
               <button
                 className="theme-btn theme-btn-white icon-btn"
                 data-aos="fade-left"

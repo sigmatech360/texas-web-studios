@@ -46,13 +46,14 @@ const LatestTechSec = (props) => {
           </div>
           <div className={`${props.centerCol || "col-lg-3"}`}>
             <div className="categoriesList">
-              <h3
-                className="categoriesListTitle"
+              {/* <p
+                className="categoriesListTitle h3"
                 data-aos="fade-up"
                 data-aos-delay="200"
               >
                 {props.categoryTitle || "SOLUTIONS"}
-              </h3>
+                </p> */}
+                {props.categoryTitle || "SOLUTIONS"}
               <ul className="packageCardList">
                 {props.solutionList.map((item, listIndex) => (
                   <li
@@ -65,9 +66,9 @@ const LatestTechSec = (props) => {
                 ))}
               </ul>
               {props.categoryTitle2 && (
-                <h4 data-aos="fade-right" data-aos-delay="600">
+                <h3 className="h3 categoriesListTitle" data-aos="fade-right" data-aos-delay="600">
                   {props.categoryTitle2 || "SOLUTIONS"}
-                </h4>
+                </h3>
               )}
               {props.solutionList2 && (
                 <ul className="packageCardList">

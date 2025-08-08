@@ -14,14 +14,14 @@ const MainBanner = () => {
               <h1 
               // data-aos="fade-right" data-aos-delay="200"
               >
-                Become A Digital Leader in Your Industry With Texas Web Studios
+                Become a Digital Leader in Your Industry with Texas Web Studios
               </h1>
               <p 
                 // data-aos="fade-right" data-aos-delay="400"
               >
-                With Decades Of Expertise in Building High-Impact Strategies. We
-                Help Brands Grow With Proven Digital Marketing And Web Design
-                Services That Deliver.
+                with Decades of Expertise in Building High-Impact Strategies. We
+                Help Brands Grow with Proven Digital Marketing and Web Design
+                Services that Deliver.
               </p>
               <button
                 className="theme-btn"

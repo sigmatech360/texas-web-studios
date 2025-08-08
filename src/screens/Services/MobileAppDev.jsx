@@ -99,8 +99,8 @@ const MobileAppDev = () => {
   return (
     <>
       <ReactHelmet
-        // title=""
-        // description=""
+        title="Mobile App Development in Texas - Apps That Drive Results"
+        description="Make the most of our mobile app development service. Launch powerful iOS and Android apps that drive real results with Texas Web Studios."
         // keywords=""
         url={`${webUrl}/mobile-app-development`}
         // url="https://texaswebstudios.com/mobile-app-development"
@@ -110,26 +110,35 @@ const MobileAppDev = () => {
           leftCol="col-lg-7 order-lg-1 order-2"
           rightCol="col-lg-5 order-lg-2 order-1"
           bgImage={mobileAppDevBanner}
-          title="Mobile Applications That Boost Your Success"
-          description="At Texas Web Studios, We Create Fast, User-Friendly Apps For You That Fit Your Goals, Platform, And Audience. Our Mobile App Development Services For Texas Are Designed For Real Results And Easy Use."
+          title="Mobile Applications that Boost Your Success"
+          description="At Texas Web Studios, We Create Fast, User-Friendly Apps for You that Fit Your Goals, Platform, and Audience. Our Mobile App Development Services for Texas Are Designed for Real Results and Easy Use."
           pageName="Services"
           bannerImg={mobileAppDevBannerImg}
         />
         <LatestTechSec
-          secTitle="Smart Mobile Solutions For Every Business"
-          description="We Believe in Smart Work More Than Hard Work; Our Mobile App Developers Integrate High-Tech Development Tools, Ensure Functionality And Provide You A User-Friendly Design That Instantly Connects With Your Audience."
+          secTitle="Smart Mobile Solutions for Every Business"
+          description="We Believe in Smart Work More Than Hard Work; Our Mobile App Developers Integrate High-Tech Development Tools, Ensure Functionality and Provide You a User-Friendly Design that Instantly Connects with Your Audience."
+          categoryTitle={
+            <p
+              className="categoriesListTitle h3"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              Solutions
+            </p>
+          }
           solutionList={[
             { name: "Swift (For Native Apps)" },
             { name: "Kotlin" },
             { name: "React Native" },
-            { name: "Flutter By Google" },
+            { name: "Flutter by Google" },
             { name: "Firebase" },
             { name: "App Store Optimization" },
             { name: "Cross-Platform Apps" },
           ]}
           btnText="See All Integrations"
           targetSecId="portfolioSecId"
-          rightP="From Native To Cross-Platform Apps, We Use Trusted Tools And Strategies To Deliver Smooth Experiences. Whether You’re Launching A New Idea Or Improving An Existing One, We’ve Got The Stack And The Skills To Get It Done."
+          rightP="From Native to Cross-Platform Apps, We Use Trusted Tools and Strategies to Deliver Smooth Experiences. Whether You’re Launching a New Idea or Improving An Existing One, We’ve Got The Stack and The Skills to Get It Done."
         />
         <ServiceAboutSec
           className="bgPink"
@@ -137,86 +146,109 @@ const MobileAppDev = () => {
           rightCol="col-lg-5 order-lg-2 order-1"
           secTagClass="blackColor"
           secTag="MOBILE APP DEVELOPMENT"
-          secTitle={`<span class="redColor">Custom Mobile App Development in Texas</span> To Keep You Connected.`}
-          description="Our Mobile App Development Services in Texas Begin With One Goal. A Better Connection With Your Audience. With Offline Functionalities, Enhanced UX, And Advanced Features, Each Of Our Apps Is Built For Perfection."
+          secTitle={`<span class="redColor">Custom Mobile App Development in Texas</span> to Keep You Connected.`}
+          description="Please change the content to ‘The only goal of our mobile app development service in Texas is to help you build a better connection with your audience. With improved functionalities, advanced features, and impressive UX, each app that we build is nothing less than perfect."
           image={mobServiceAboutImg}
         />
         <OurPortfolioSec
           className="bgBlack"
           secTag="PORTFOLIO"
-          secTitle="A Look At Our Expertise"
+          secTitle="A Look at Our Expertise"
           ourPortfolio1={mobilePortfolio1}
           ourPortfolio2={mobilePortfolio2}
           btnText="View All Projects"
         />
 
         <WhyCooseUsSec
-          secTag="WHY CHOOSE US"
-          secTitle="User-Friendly Mobile Apps, Made For All Platforms"
-          secDescription="Our Mobile Applications Are Made To Work Smoothly Across Different Platforms; We Add Technologically Enhanced Features That Ensure Cybersecurity And Ensure Your App Works Seamlessly Everywhere."
+          secTag={<h2 className="sec-tag">WHY CHOOSE US</h2>}
+          secTitle={
+            <h2 className="secTitle" data-aos="fade-right" data-aos-delay="200">
+              User-Friendly Mobile Apps, Made for All Platforms
+            </h2>
+          }
+          secDescription="Our Mobile Applications Are Made to Work Smoothly Across Different Platforms; We Add Technologically Enhanced Features that Ensure Cybersecurity and Ensure Your App Works Seamlessly Everywhere."
           image={mobDevWhyChooseImage}
           // leftP=""
-          // leftSubTitle=""
+          // leftSubTitle={
+          //   <h4
+          //     className="whyChooseRightTitle"
+          //     data-aos="fade-right"
+          //     data-aos-delay="400"
+          //   >
+          //   </h4>
+          // }
           // btnText=""
           list={[
             {
               image: mobDevWhyChooseIcon1,
-              title: "UI/UX Design",
+              title: <h4 className="whyChooseListItemTitle">UI/UX Design</h4>,
               description:
-                "Clean, User-Friendly Designs That Feel Natural To Navigate.",
+                "Clean and user-friendly designs that are easy to navigate and bring a great experience.",
             },
             {
               image: mobDevWhyChooseIcon2,
-              title: "App Store Deployment",
+              title: (
+                <h4 className="whyChooseListItemTitle">App Store Deployment</h4>
+              ),
               description:
-                "We Handle The Publishing Process From Start To Finish.",
+                "We Handle The Publishing Process from Start to Finish.",
             },
             {
               image: mobDevWhyChooseIcon3,
-              title: "iOS & Android Development",
+              title: (
+                <h4 className="whyChooseListItemTitle">
+                  iOS & Android Development
+                </h4>
+              ),
               description:
-                "We Build Apps That Run Seamlessly On Both Major Platforms.",
+                "We Build Apps that Run Seamlessly on Both Major Platforms.",
             },
             {
               image: mobDevWhyChooseIcon4,
-              title: "API Integrations",
+              title: (
+                <h4 className="whyChooseListItemTitle">API Integrations</h4>
+              ),
               description:
-                "Your App Can Connect With The Tools And Platforms You Already Use.",
+                "Your App Can Connect with The Tools and Platforms You Already Use.",
             },
           ]}
         />
 
-        <PackagesSec
+        {/* <PackagesSec
           className="bgPink"
           secTag="PRICING"
           title="Flexible Pricing Packages"
-          description="Every Business Has Different Needs, So We Offer Custom Pricing For Each Of Our Services. Our Packages Include Basic, Pro, And Premium, Designed To Match Where You Are And Where You’re Headed. Whether You Are Starting Fresh Or Looking To Scale, You Will Get The Right Solution At The Right Price. So Find The Package That Fits You Best, Or Consult Us For A Custom Package!"
-        />
+          description="Every Business Has Different Needs, so We Offer Custom Pricing for Each of Our Services. Our Packages Include Basic, Pro, and Premium, Designed to Match Where You Are and Where You’re Headed. Whether You Are Starting Fresh or Looking to Scale, You Will Get The Right Solution at The Right Price. So Find The Package that Fits You Best, or Consult Us for a Custom Package!"
+        /> */}
         <TestimonialSec
           className="bgBlack"
           secTag="TESTIMONIALS"
-          secTitle="Hear About Us From Our Happy Clients!"
+          secTitle={
+            <h3 className="secTitle" data-aos="fade-right" data-aos-delay="200">
+              Hear About Us from Our Happy Clients!
+            </h3>
+          }
           testimonialData={[
             {
               id: 1,
               name: "Sarah Mitchell",
               designation: "Marketing Manager, Brightpath Solutions",
               descrition:
-                "Texas Web Studio Built Us A Fast Website. We Are Now Able To Update Our Content Without The Need For Any Developer.",
+                "Texas Web Studio Built Us a Fast Website. We Are Now Able to Update Our Content Without The Need for Any Developer.",
             },
             {
               id: 2,
               name: "Jason Lee",
               designation: "Founder, Urbannest Interiors",
               descrition:
-                "Their CMS Solution Helped Our Team Save Time And Stay in Control. Everything Works Smoothly Across Devices. Highly Recommend!",
+                "Their CMS Solution Helped Our Team Save Time and Stay in Control. Everything Works Smoothly Across Devices. Highly Recommend!",
             },
             {
               id: 3,
               name: "Jason Lee",
               designation: "Founder, Urbannest Interiors",
               descrition:
-                "Their CMS Solution Helped Our Team Save Time And Stay in Control. Everything Works Smoothly Across Devices. Highly Recommend!",
+                "Their CMS Solution Helped Our Team Save Time and Stay in Control. Everything Works Smoothly Across Devices. Highly Recommend!",
             },
           ]}
         />

@@ -11,7 +11,7 @@ const OurPortfolioSec = (props) => {
           <div className="col-md-12">
             <div className="secHead">
               <p className="sec-tag">{props.secTag}</p>
-              <h3 className="secTitle" data-aos="fade-up" data-aos-delay="300">{props.secTitle}</h3>
+              <h2 className="secTitle" data-aos="fade-up" data-aos-delay="300">{props.secTitle}</h2>
             </div>
           </div>
         </div>

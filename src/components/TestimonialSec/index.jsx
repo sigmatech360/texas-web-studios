@@ -35,13 +35,14 @@ const TestimonialSec = (props) => {
           <div className="col-lg-5">
             <div className="secHead">
               <p className="sec-tag">{props.secTag}</p>
-              <h3
+              {/* <h3
                 className="secTitle"
                 data-aos="fade-right"
                 data-aos-delay="200"
               >
                 {props.secTitle}
-              </h3>
+                </h3> */}
+                {props.secTitle}
 
               {/* Navigation buttons inside secHead */}
               <div className="slider-nav-buttons d-lg-block d-none">
@@ -92,7 +93,7 @@ const TestimonialSec = (props) => {
                           {item.name.charAt(0)}
                         </div>
                         <div className="testimonialUserDetail">
-                          <h4 className="testimonialName">{item.name}</h4>
+                          <p className="testimonialName h4">{item.name}</p>
                           <p className="testimonialDesignation">
                             {item.designation}
                           </p>

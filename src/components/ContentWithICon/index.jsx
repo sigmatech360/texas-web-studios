@@ -11,7 +11,7 @@ const ContentWithICon = (props) => {
         className={`contentWithICon-icon`}
       />
       <div className={`contentWithICon-content`}>
-        <h4 className="contentWIthIcon-title">{props.title}</h4>
+        <h3 className="contentWIthIcon-title">{props.title}</h3>
         <p>{props.description}</p>
       </div>
     </div>

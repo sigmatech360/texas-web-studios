@@ -59,6 +59,9 @@ import expPostLaunchIcon6 from "../../assets/images/expIcons/expPostLaunchIcon6.
 
 import LatestTechSec from "../../components/LatestTechSec";
 import ReactHelmet from "../../components/ReactHelmet";
+import { Nav } from "react-bootstrap";
+import SinglePackageSec from "../../components/PackagesSec/SinglePackageSec";
+import { informativeWebPackagesData } from "../../data";
 const webUrl = import.meta.env.VITE_WEB_URL;
 
 const experienceSecData = [
@@ -127,7 +130,7 @@ const experienceSecData = [
       { name: "Improved Site Speed & Performace", icon: expWebRevampIcon3 },
       { name: "SEO Re-Optimization", icon: expWebRevampIcon4 },
       { name: "Content Restructuring & Updates", icon: expWebRevampIcon5 },
-      { name: "Integration Of Latest Technologies", icon: expWebRevampIcon6 },
+      { name: "Integration of Latest Technologies", icon: expWebRevampIcon6 },
     ],
   },
   {
@@ -150,8 +153,8 @@ const WebDevelopment = () => {
   return (
     <>
       <ReactHelmet
-        // title=""
-        // description=""
+        title="Top Web Development Company – Texas Web Studios"
+        description="Texas Web Studios builds fast, scalable, and SEO-ready websites that help your business grow, convert more visitors, and stand out from the competition."
         // keywords=""
         url={`${webUrl}/web-development`}
         // url="https://texaswebstudios.com/web-development"
@@ -165,8 +168,17 @@ const WebDevelopment = () => {
         />
 
         <LatestTechSec
-          secTitle="Website Development With The Latest Tech"
+          secTitle="Website Development with The Latest Tech"
           description="Your website is your brand's digital footprint; it should be as impressive as your business itself. We design and develop SEO-friendly websites that are fast, easy to navigate, and fully optimized for performance. Over 85% of consumers visit a company’s website before making a decision, so your site’s design, usability, and accessibility play a crucial role in driving engagement and staying competitive online."
+          categoryTitle={
+            <p
+              className="categoriesListTitle h3"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              Solutions
+            </p>
+          }
           solutionList={[
             { name: "Responsive Web Design" },
             { name: "SEO-Friendly Structure" },
@@ -177,7 +189,7 @@ const WebDevelopment = () => {
             { name: "E-Commerce Functionality" },
             { name: "Analytics & Tracking Integration" },
           ]}
-          rightP="We Build Scalable Website Design And Development Services in Texas Using The Latest Technologies To Keep Your Business Ahead Of The Competition. Backed By A Powerful Tech Stack, Get Custom-Crafted Websites That Work Better, Load Faster, And Grow With Your Business."
+          rightP="We Build Scalable Website Design and Development Services in Texas Using The Latest Technologies to Keep Your Business Ahead of The Competition. Backed by a Powerful Tech Stack, Get Custom-Crafted Websites that Work Better, Load Faster, and Grow with Your Business."
         />
 
         <section className="experienceSec sec-padding bgPink">
@@ -186,13 +198,13 @@ const WebDevelopment = () => {
               <div className="col-md-12">
                 <div className="secHead">
                   <p className="sec-tag">EXPERIENCE LIKE NO OTHER</p>
-                  <h3
+                  <h2
                     className="secTitle"
                     data-aos="fade-up"
                     data-aos-delay="200"
                   >
-                    We Build Websites That Help You Grow Your Business
-                  </h3>
+                    We Build Websites that Help You Grow Your Business
+                  </h2>
                 </div>
               </div>
               <div
@@ -200,14 +212,14 @@ const WebDevelopment = () => {
                 data-aos="fade-up"
                 data-aos-delay="400"
               >
-                <Tabs
+                {/* <Tabs
                   id="controlled-tab-example"
                   activeKey={key}
                   onSelect={(k) => setKey(k)}
                   className="mb-3 packagesTabs"
                 >
                   {experienceSecData.map((item, index) => (
-                    <Tab eventKey={item.key} title={item.name} key={index}>
+                    <Tab eventKey={item.key} title={item.name}  key={index}>
                       <div className="experienceSecCards">
                         {item.data.map((dataItem, data_i) => (
                           <div
@@ -217,50 +229,118 @@ const WebDevelopment = () => {
                             data-aos-delay={data_i * 200}
                           >
                             <img src={dataItem.icon} alt={dataItem.name} />
-                            <h4 className="experienceCardItemTitle">
+                            <p className="experienceCardItemTitle h4">
                               {dataItem.name}
-                            </h4>
+                            </p>
                           </div>
                         ))}
                       </div>
                     </Tab>
                   ))}
-                </Tabs>
+                </Tabs> */}
+                <Tab.Container
+                  activeKey={key}
+                  onSelect={(k) => setKey(k)}
+                  id="controlled-tab-example"
+                  className="mb-3 packagesTabs"
+                >
+                  <Nav variant="tabs packagesTabs ">
+                    {experienceSecData.map((item, index) => (
+                      <Nav.Item key={index}>
+                        <Nav.Link eventKey={item.key}>
+                          <div>
+                            <h4>{item.name}</h4> {/* Use h4 for tab titles */}
+                          </div>
+                        </Nav.Link>
+                      </Nav.Item>
+                    ))}
+                  </Nav>
+
+                  <Tab.Content>
+                    {experienceSecData.map((item, index) => (
+                      <Tab.Pane eventKey={item.key} key={index}>
+                        <div className="experienceSecCards">
+                          {item.data.map((dataItem, data_i) => (
+                            <div
+                              className="experienceSecCardItem"
+                              key={data_i}
+                              data-aos="fade-up"
+                              data-aos-delay={data_i * 200}
+                            >
+                              <img src={dataItem.icon} alt={dataItem.name} />
+                              <p className="experienceCardItemTitle h4">
+                                {dataItem.name}
+                              </p>
+                            </div>
+                          ))}
+                        </div>
+                      </Tab.Pane>
+                    ))}
+                  </Tab.Content>
+                </Tab.Container>
               </div>
             </div>
           </div>
         </section>
 
-        <PackagesSec
+        {/* <PackagesSec
           className="bgBlack"
           secTag="PRICING"
           title="Flexible Pricing Packages"
           description="Every business has different needs, so we offer custom pricing for each of our services. Our packages include Basic, Pro, and Premium, designed to match where you are and where you’re headed. Whether you are starting fresh or looking to scale, you will get the right solution at the right price. So find the package that fits you best, or consult us for a custom package!"
+        /> */}
+
+        <SinglePackageSec
+          className="bgBlack"
+          secTag="PRICING"
+          title="Flexible Pricing Packages"
+          description="Every business has different needs, so we offer custom pricing for each of our services. Our packages include Basic, Pro, and Premium, designed to match where you are and where you’re headed. Whether you are starting fresh or looking to scale, you will get the right solution at the right price. So find the package that fits you best, or consult us for a custom package!"
+          packagesName={informativeWebPackagesData}
         />
 
         <WhyCooseUsSec
-          secTag="WHY CHOOSE US"
-          secTitle="Build Long-Term Digital Success With Us"
+          // secTag="WHY CHOOSE US"
+          secTag={<h2 className="sec-tag">WHY CHOOSE US</h2>}
+          // secTitle="Build Long-Term Digital Success with Us"
+          secTitle={
+            <h3 className="secTitle" data-aos="fade-right" data-aos-delay="200">
+              Build Long-Term Digital Success with Us
+            </h3>
+          }
           secDescription="Our design and development services in Texas provide solutions that not only look great but also work hard for you."
           image={webDevWhyChooseImage}
           leftP="If you're a business looking for real growth, our team of certified experts delivers cutting-edge solutions using the latest technology, tailored for real business growth. With affordable pricing, 24/7 support, and a results-first mindset, we’re the digital partner your brand can count on."
-          leftSubTitle="Cultivating Strategic Partnership for Business Growth"
-          btnText="Book A Services"
+          leftSubTitle={
+            <h4
+              className="whyChooseRightTitle"
+              data-aos="fade-right"
+              data-aos-delay="400"
+            >
+              Cultivating Strategic Partnership for Business Growth
+            </h4>
+          }
+          btnText="Book a Services"
           list={[
             {
               image: webDevWhyChooseIcon1,
-              title: "Award Winning Agency",
+              title: (
+                <p className="whyChooseListItemTitle">Award Winning Agency</p>
+              ),
               description: "Our work has helped us gain recognition in the USA",
             },
             {
               image: webDevWhyChooseIcon2,
-              title: "500+ Projects Completed",
+              title: (
+                <p className="whyChooseListItemTitle">
+                  500+ Projects Completed
+                </p>
+              ),
               description:
                 "We’ve partnered with businesses across industries, helping them with continuous growth.",
             },
             {
               image: webDevWhyChooseIcon3,
-              title: "98% Success Rate",
+              title: <p className="whyChooseListItemTitle">98% Success Rate</p>,
               description:
                 "We make sure our clients thrive, thanks to our consistent results and proven strategies.",
             },

@@ -15,9 +15,9 @@ const PackagesSec = (props) => {
           <div className="col-md-12">
             <div className="secHead">
               <p className="sec-tag">{props.secTag}</p>
-              <h3 className="secTitle" data-aos="fade-up" data-aos-delay="200">
+              <h2 className="secTitle" data-aos="fade-up" data-aos-delay="200">
                 {props.title}
-              </h3>
+              </h2>
               <p data-aos="fade-up" data-aos-delay="400">
                 {props.description}
               </p>

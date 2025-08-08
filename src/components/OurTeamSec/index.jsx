@@ -50,8 +50,8 @@ const OurTeamSec = () => {
                 <div className="ourTeamCardImg">
                   <img src={item.image} alt={item.name} className="img-fluid" />
                 </div>
-                <div className="teamCardInfo">
-                  <h4 className="teamCardTitle">{item.name}</h4>
+                <div className="teamCardInfo text-center">
+                  <span className="teamCardTitle h4">{item.name}</span>
                   <p>{item.designation}</p>
                 </div>
               </div>

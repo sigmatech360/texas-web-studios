@@ -27,7 +27,7 @@ const NotFound = () => {
                 <h1>404 - Page Not Found</h1>
                 <p>Oops! The page you're looking for doesn't exist.</p>
                 <Link to={"/"} className="theme-btn d-inline-block mt-3">
-                  Go To Home
+                  Go to Home
                 </Link>
 
                 {/* <nav

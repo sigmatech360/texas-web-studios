@@ -22,6 +22,8 @@ import BookCallSec from "../../components/BookCallSec";
 import ContactPageContactSec from "../../components/ContactPageContactSec";
 import LatestTechSec from "../../components/LatestTechSec";
 import ReactHelmet from "../../components/ReactHelmet";
+import SinglePackageSec from "../../components/PackagesSec/SinglePackageSec";
+import { smmPackagesData } from "../../data";
 const webUrl = import.meta.env.VITE_WEB_URL;
 
 const testimonialData = [
@@ -56,8 +58,8 @@ const SMM = () => {
   return (
     <>
       <ReactHelmet
-        // title=""
-        // description=""
+        title="Boost Your Brand with SMM – Texas Web Studios"
+        description="Maximize your online reach with expert social media marketing. Texas Web Studios specializes in Facebook and Instagram advertising strategies."
         // keywords=""
         url={`${webUrl}/social-media-marketing`}
         // url="https://texaswebstudios.com/social-media-marketing"
@@ -68,7 +70,7 @@ const SMM = () => {
           // rightCol="col-lg-6"
           bgImage={smmBanner}
           title={`Social <br/> Media Marketing`}
-          description="Build Buzz, Grow Engagement, And Turn Followers Into Loyal Customers Through Strategic And Creative Social Media Marketing in Texas."
+          description="Build Buzz, Grow Engagement, and Turn Followers Into Loyal Customers Through Strategic and Creative Social Media Marketing in Texas."
           pageName="Services"
         />
 
@@ -77,28 +79,36 @@ const SMM = () => {
           leftCol="col-xxl-5 col-lg-6"
           centerCol="col-xxl-7 col-lg-6"
           rightCol="col-lg-3"
-          secTitle="Social Media Marketing That Sparks Conversations"
-          description="In Today’s Digital-First World, Having A Strong Presence On Social Platforms Is Not Optional; Rather Essential. The Approach Of Our Social Media Marketing Agency in Texas Is Rooted in Creativity, Data, And Strategy To Help Brands Like Yours Connect With The Right Audience, At The Right Time, On The Right Platform."
-          categoryTitle="PLATFORMS"
+          secTitle="Social Media Marketing that Sparks Conversations"
+          description="In Today’s Digital-First World, Having a Strong Presence on Social Platforms Is Not Optional; Rather Essential. The Approach of Our Social Media Marketing Agency in Texas Is Rooted in Creativity, Data, and Strategy to Help Brands Like Yours Connect with The Right Audience, at The Right Time, on The Right Platform."
+          categoryTitle={
+            <h3
+              className="categoriesListTitle h3"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              PLATFORMS
+            </h3>
+          }
           solutionList={[
             { name: "Meta Ads" },
             { name: "Google Ads" },
             { name: "Tiktok Ads" },
             { name: "Youtube Ads" },
           ]}
-          categoryTitle2="WHAT YOU GET WITH US"
+          categoryTitle2="What You Get by Collaborating with Us"
           solutionList2={[
             {
-              name: "Advanced Campaign Execution Built On Social Media Marketing Tools And Platforms.",
+              name: "Advanced Campaign Execution Built on Social Media Marketing Tools and Platforms.",
             },
             {
-              name: "Keyword-Optimized Content Creation To Support Social Media Advertising Campaigns.",
+              name: "Keyword-Optimized Content Creation to Support Social Media Advertising Campaigns.",
             },
             {
-              name: "Integration With Tools To Deliver Top-Tier Social Media Marketing Services.",
+              name: "Integration with Tools to Deliver Top-Tier Social Media Marketing Services.",
             },
             {
-              name: "ROI-Focused Automation That Sets Us Apart From Typical Social Media Management Companies.",
+              name: "ROI-Focused Automation that Sets Us Apart from Typical Social Media Management Companies.",
             },
           ]}
           btnText="Check Out Our Full Tech Stack"
@@ -113,7 +123,7 @@ const SMM = () => {
           rightCol="col-lg-5 order-1"
           // secTagClass="blackColor"
           // secTag="CUSTOM WEB DEVELOPMENT"
-          secTitle={`Get Visible On <br/> The Right Platform`}
+          secTitle={`Get Visible on <br/> The Right Platform`}
           description="Connect with the right audience at the right platform through strategic social media marketing in Texas. We use all major social platforms and advanced targeting to make sure your ads reach the right audience, right where they already are, boosting visibility, engagement, and real conversions. Our expert strategies focus on:"
           listClass="grid mt-3"
           list={[
@@ -130,50 +140,77 @@ const SMM = () => {
         />
 
         <WhyCooseUsSec
-          secTag="WHY CHOOSE US"
-          secTitle="Why Texas Web Studios Is Your Social Media Growth Partner"
-          secDescription="From Daily Content To High-Converting Campaigns, We Provide Strategy, Creativity, And Measurable Results."
+          secTag={<h2 className="sec-tag">WHY CHOOSE US</h2>}
+          secTitle={
+            <h3 className="secTitle" data-aos="fade-right" data-aos-delay="200">
+              Why Texas Web Studios Is Your Social Media Growth Partner
+            </h3>
+          }
+          secDescription="From Daily Content to High-Converting Campaigns, We Provide Strategy, Creativity, and Measurable Results."
           image={smmWhyChooseImage}
-          leftP="No Brand Can Survive Without A Strong Digital Presence. We Don’t Just Help Our Clients Survive; We Help Them Grow, Scale, And Succeed in Today’s Digital World."
-          leftSubTitle="With Us, Here, Create Your Future Brand"
-          btnText="Book A Call"
+          leftP="No Brand Can Survive Without a Strong Digital Presence. We Don’t Just Help Our Clients Survive; We Help Them Grow, Scale, and Succeed in Today’s Digital World."
+          leftSubTitle={
+            <h4
+              className="whyChooseRightTitle"
+              data-aos="fade-right"
+              data-aos-delay="400"
+            >
+              With Us, Here, Create Your Future Brand
+            </h4>
+          }
+          btnText="Book a Call"
           list={[
             {
               image: customDevWhyChooseIcon1,
-              title: "Platform Expertise Across All Channels",
+              title: (
+                <p className="whyChooseListItemTitle">
+                  Platform Expertise Across All Channels
+                </p>
+              ),
               description:
-                "We Manage Ads On Meta, Tiktok, Youtube, And Google Ads, Offering A One-Stop Solution For All.",
+                "We Manage Ads on Meta, Tiktok, Youtube, and Google Ads, Offering a One-Stop Solution for All.",
             },
             {
               image: customDevWhyChooseIcon2,
-              title: "Creative That Converts",
+              title: (
+                <p className="whyChooseListItemTitle">Creative that Converts</p>
+              ),
               description:
-                "Our Team Knows How To Turn Impressions Into Results Through Strategic Social Media Marketing Services.",
+                "Our Team Knows How to Turn Impressions Into Results Through Strategic Social Media Marketing Services.",
             },
             {
               image: customDevWhyChooseIcon3,
-              title: "Performance-Driven",
+              title: (
+                <p className="whyChooseListItemTitle">Performance-Driven</p>
+              ),
               description:
-                "We Use Data, Testing, And Optimization To Run High-Performing Social Media Advertising Campaigns.",
+                "We Use Data, Testing, and Optimization to Run High-Performing Social Media Advertising Campaigns.",
             },
             // {
             //   image: customDevWhyChooseIcon4,
             //   title: "Performance Optimization",
             //   description:
-            //     "We Optimize Your Website’s Speed, Structure, And Code To Ensure Faster Loading Times, Better User Experience, And Improved Search Engine Performance.",
+            //     "We Optimize Your Website’s Speed, Structure, and Code to Ensure Faster Loading Times, Better User Experience, and Improved Search Engine Performance.",
             // },
           ]}
         />
 
-        <PackagesSec
+        {/* <PackagesSec
           className="bgBlack"
           secTag="PRICING"
           title="Flexible Pricing Packages"
           description="Every business has different needs, so we offer custom pricing for each of our services. Our packages include Basic, Pro, and Premium, designed to match where you are and where you’re headed. Whether you are starting fresh or looking to scale, you will get the right solution at the right price. So find the package that fits you best, or consult us for a custom package!"
+        /> */}
+        <SinglePackageSec
+          className="bgBlack"
+          secTag="PRICING"
+          title="Flexible Pricing Packages"
+          description="Every business has different needs, so we offer custom pricing for each of our services. Our packages include Basic, Pro, and Premium, designed to match where you are and where you’re headed. Whether you are starting fresh or looking to scale, you will get the right solution at the right price. So find the package that fits you best, or consult us for a custom package!"
+          packagesName={smmPackagesData}
         />
         <ContactPageContactSec
           secTag="CONTACT US"
-          secTitle="Ready To Unlock Growth? Let’s Talk"
+          secTitle="Ready to Unlock Growth? Let’s Talk"
           description="Explore our top services or reach out for a custom strategy built just for your brand."
         />
         <FAQSec
@@ -183,8 +220,8 @@ const SMM = () => {
           image={smmFaqImg}
         />
         <BookCallSec
-          title="Start Your Journey To Better Business"
-          btnText="Get A Quote"
+          title="Start Your Journey to Better Business"
+          btnText="Get a Quote"
         />
         <BlogSec />
       </DefaultLayout>

@@ -23,7 +23,7 @@ const PrivacyPolicy = () => {
         <InnerBanner
           bgImage={privacyPolicyBanner}
           title="Privacy Policy"
-          description="Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Mi Eget Mauris Pharetra Et Ultrices."
+          description="We respect your privacy. Your information is collected responsibly and is only used to improve your experience. Your data stays safe with us and is handled thoughtfully."
           pageName="Privacy Policy"
         />
 
@@ -138,7 +138,7 @@ const PrivacyPolicy = () => {
                   </ul>
 
                   <p>
-                    To exercise any of these rights, contact us at{" "}
+                    to exercise any of these rights, contact us at{" "}
                     <ObfuscatedEmail className="terms-condition-email" />
                   </p>
 
@@ -176,7 +176,7 @@ const PrivacyPolicy = () => {
                       <span className="fw-bold">Phone:</span>{" "}
                       <PhoneLink
                         phoneNumber="+13462505428"
-                        label={"+1 346-250-5428"}
+                        label={"+1 (346) 250-5428"}
                       />
                     </p>
                     <p>
@@ -192,18 +192,6 @@ const PrivacyPolicy = () => {
                       </span>
                     </p>
                   </div>
-
-                  {/* <h4>Questions</h4>
-                  <p>
-                    For privacy policy inquiries, contact us at{" "}
-                    <a
-                      href="tel:+18325484589"
-                      className="redColor text-decoration-none"
-                    >
-                      +1 832 548 4589
-                    </a>{" "}
-                    or <ObfuscatedEmail className="terms-condition-email" />
-                  </p> */}
                 </div>
               </div>
             </div>

@@ -7,11 +7,25 @@ import youtubeAndIcon from "../../../assets/images/youtubeAndIcon.webp";
 import behanceAndIcon from "../../../assets/images/behanceAndIcon.webp";
 import dribbleAndIcon from "../../../assets/images/dribbleAndIcon.webp";
 import twitterAndIcon from "../../../assets/images/twitterAndIcon.webp";
+import instagramAndIcon from "../../../assets/images/instagramAndIcon.webp";
 import linkedinAndIcon from "../../../assets/images/linkedinAndIcon.webp";
 
+import mapIcon from "../../../assets/images/mapIcon.webp";
+import phoneIcon from "../../../assets/images/phoneIcon.webp";
+import emailIcon from "../../../assets/images/emailIcon.webp";
+
 import "./style.css";
+import ObfuscatedEmail from "../../ObfuscatedEmail";
+import PhoneLink from "../../PhoneLink";
 
 const Footer = () => {
+  const handleOpenChat = () => {
+    if (window.Tawk_API) {
+      window.Tawk_API.maximize(); // or toggle(), or popup()
+    } else {
+      console.warn("Tawk_API not available yet.");
+    }
+  };
   return (
     <>
       <section className="footerSocialIcons">
@@ -31,7 +45,7 @@ const Footer = () => {
           />
         </a>
         <a
-          href=""
+          href="https://www.youtube.com/@TexasWebStudios"
           className="footerSocialIcon footerSocialYoutube"
           target="_blank"
           aria-label="Youtube"
@@ -46,7 +60,7 @@ const Footer = () => {
           />
         </a>
         <a
-          href=""
+          href="https://www.behance.net/texaswebstudioss"
           className="footerSocialIcon footerSocialBehance"
           target="_blank"
           aria-label="Behance"
@@ -60,15 +74,30 @@ const Footer = () => {
             loading="lazy"
           />
         </a>
-        <a
-          href=""
+        {/* <a
+          href="https://www.instagram.com/texaswebstudios/"
           className="footerSocialIcon footerSocialdribble"
           target="_blank"
           aria-label="dribble"
           rel="noopener noreferrer"
         >
           <img
-            src={dribbleAndIcon}
+            src={instagramAndIcon}
+            alt="dribble"
+            width="160"
+            height="27"
+            loading="lazy"
+          />
+        </a> */}
+        <a
+          href="https://www.instagram.com/texaswebstudios/"
+          className="footerSocialIcon footerSocialinstagram"
+          target="_blank"
+          aria-label="dribble"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={instagramAndIcon}
             alt="dribble"
             width="160"
             height="27"
@@ -118,7 +147,7 @@ const Footer = () => {
               <div className="row">
                 <div className="col-lg-3 col-md-3 mb-md-0 mb-4">
                   <div className="footer-links">
-                    <h4 className="footer-title">Quick Links</h4>
+                    <h5 className="footer-title">Quick Links</h5>
                     <ul className="footer-links">
                       <li>
                         <Link to={"/about"}>Home</Link>
@@ -143,7 +172,7 @@ const Footer = () => {
                 </div>
                 <div className="col-lg-3 col-md-3 mb-md-0 mb-4">
                   <div className="footer-links">
-                    <h4 className="footer-title">Useful Links</h4>
+                    <h5 className="footer-title">Useful Links</h5>
                     <ul className="footer-links">
                       <li>
                         <Link to={"/privacy-policy"}>Privacy Policy</Link>
@@ -154,24 +183,47 @@ const Footer = () => {
                         </Link>
                       </li>
                       <li>
+                        <Link to={""} onClick={handleOpenChat}>
+                          Support
+                        </Link>
+                      </li>
+                      {/* <li>
                         <Link to={"/"}>Disclaimer</Link>
                       </li>
                       <li>
-                        <Link to={"/"}>Support</Link>
-                      </li>
-                      <li>
                         <Link to={"/"}>FAQ</Link>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </div>
                 <div className="col-lg-6 col-md-6 mb-md-0">
                   <div className="footer-links">
-                    <h4 className="footer-title">Work Hours</h4>
-                    <ul className="footer-links">
+                    <h5 className="footer-title">Contact</h5>
+
+                    <div className="officeDetails">
+                      <div className="officeDetailItem">
+                        <img src={mapIcon} alt="Map Icon" />
+                        <p className="officeDetailItemText text-white">
+                          1000 Main St, Houston, TX 77002, United States
+                        </p>
+                      </div>
+                      <div className="officeDetailItem">
+                        <img src={phoneIcon} alt="Map Icon" />
+                        <PhoneLink
+                          phoneNumber="+13462505428"
+                          label={"+1 (346) 250-5428"}
+                          className="officeDetailItemText text-white"
+                        />
+                      </div>
+                      <div className="officeDetailItem">
+                        <img src={emailIcon} alt="Map Icon" />
+                        <ObfuscatedEmail className="officeDetailItemText text-white" />
+                      </div>
+                    </div>
+                    {/* <ul className="footer-links">
                       <li>8 AM - 5 PM , Monday - Saturday</li>
                       <li>8 AM - 5 PM , Monday - Saturday</li>
-                    </ul>
+                    </ul> */}
                   </div>
                 </div>
               </div>

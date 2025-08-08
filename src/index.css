@@ -86,6 +86,7 @@ body {
   border-radius: 7px;
   text-decoration: none;
   white-space: noWrap;
+  display: inline-block;
 }
 .theme-btn-white {
   background-color: #fff;
@@ -112,11 +113,17 @@ h6 {
   font-family: "Syne", "Helvetica Neue", Arial, sans-serif;
 } */
 h1,
+.h1,
 h2,
+.h2,
 h3,
+.h3,
 h4,
+.h4,
 h5,
-h6 {
+.h5,
+h6,
+.h6 {
   margin: 0;
   font-family: "Syne";
 }
@@ -241,7 +248,7 @@ textarea.form-control {
   color: #fff;
 }
 
-.beVisible-numberBoxBg h3 {
+.beVisible-numberBoxBg .h3 {
   font-size: 200px;
   line-height: 1;
 }
@@ -254,7 +261,7 @@ textarea.form-control {
   font-size: 54px;
   font-weight: 700;
 }
-.beVisibleCOntent h3 {
+.beVisibleCOntent .h3 {
   font-size: 50px;
   margin-bottom: 10px;
   font-weight: bold;
@@ -320,7 +327,7 @@ textarea.form-control {
   font-weight: 700;
 }
 .letsWorkTogether .secHead p {
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
 }
 
 .secureProcess {
@@ -341,10 +348,12 @@ textarea.form-control {
   padding: 7px 20px;
 }
 
-.secureProcessListItem h5 {
+.secureProcessListItem .secureProcessListItemTitle {
   font-size: 23px;
   font-weight: 600;
   margin-bottom: 10px;
+  font-family: "Syne";
+  color: #212529;
 }
 
 .secureProcessListItem p {
@@ -395,7 +404,7 @@ textarea.form-control {
 }
 
 .expTagHead {
-  font-size: 45px;
+  font-size: 45px !important;
   font-weight: 700;
 }
 .expTagHeadNum {
@@ -637,6 +646,7 @@ textarea.form-control {
 }
 
 .categoriesList h4,
+.categoriesList h2,
 .categoriesList .categoriesListTitle {
   color: #d41f14;
   font-weight: 600;
@@ -740,7 +750,7 @@ textarea.form-control {
 .getFoundSeoContent p {
   color: #fff;
 }
-/* Privacy Policy And Terms And Condition */
+/* Privacy Policy and Terms and Condition */
 .privacy-policy-content {
   margin-bottom: 30px;
 }
@@ -799,7 +809,7 @@ textarea.form-control {
   font-size: 16px;
   font-family: Poppins, sans-serif;
 }
-/* Privacy Policy And Terms And Condition */
+/* Privacy Policy and Terms and Condition */
 .loader-div img {
   width: 100px;
   height: 100px;
@@ -819,7 +829,7 @@ textarea.form-control {
   .beVisibleSec .secHead .secTitle {
     font-size: 50px;
   }
-  .beVisibleCOntent h3 {
+  .beVisibleCOntent .h3 {
     font-size: 45px;
   }
   .getToKnowContent .secTitle {
@@ -856,6 +866,7 @@ textarea.form-control {
   .contactUsPageContent .secTitle {
     font-size: 33px;
   }
+  .categoriesList h2,
   .categoriesList h4,
   .categoriesList .categoriesListTitle {
     font-size: 20px;
@@ -891,7 +902,7 @@ textarea.form-control {
     font-size: 20px;
   }
   .expTagHead {
-    font-size: 35px;
+    font-size: 35px !important;
   }
   .getKnowExptText::after {
     height: 50%;
@@ -911,7 +922,7 @@ textarea.form-control {
   .secureProcessContent p {
     margin-bottom: 16px;
   }
-  .secureProcessListItem h5 {
+  .secureProcessListItem .secureProcessListItemTitle {
     font-size: 20px;
     margin-bottom: 3px;
   }
@@ -942,7 +953,7 @@ textarea.form-control {
   .beVisibleSec .secHead .secTitle {
     font-size: 45px;
   }
-  .beVisibleCOntent h3 {
+  .beVisibleCOntent .h3 {
     font-size: 40px;
   }
   .beVisibleIconsData {
@@ -993,10 +1004,10 @@ textarea.form-control {
   .beVisibleSec .secHead .secTitle {
     font-size: 35px;
   }
-  .beVisibleCOntent h3 {
+  .beVisibleCOntent .h3 {
     font-size: 30px;
   }
-  .beVisible-numberBoxBg h3 {
+  .beVisible-numberBoxBg .h3 {
     font-size: 150px;
   }
   .latestTech .secHead .secTitle {
@@ -1050,7 +1061,7 @@ textarea.form-control {
     gap: 10px;
   }
   .expTagHead {
-    font-size: 26px;
+    font-size: 26px !important;
   }
   .getToKnowContent .secTitle {
     font-size: 26px;

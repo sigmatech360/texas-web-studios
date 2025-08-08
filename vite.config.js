@@ -4,8 +4,8 @@ import react from "@vitejs/plugin-react";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/texas-web-studios",
-  // base: "/",
+  // base: "/texas-web-studios",
+  base: "/",
   // build: {
   //   sourcemap: true,
   // },

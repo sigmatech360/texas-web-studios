@@ -9,8 +9,21 @@ import { useEffect } from "react";
 import { useModal } from "./context/ModalContext";
 import FormModal from "./components/FormModal";
 
+function toSentenceCase(str) {
+  return str.toLowerCase().replace(/(^\s*\w|[\.\!\?]\s*\w)/g, function (c) {
+    return c.toUpperCase();
+  });
+}
+
 function App() {
   const { showModal, setShowModal } = useModal();
+
+  useEffect(() => {
+    const elements = document.querySelectorAll("p");
+    elements.forEach((el) => {
+      el.textContent = toSentenceCase(el.textContent);
+    });
+  }, []);
 
   useEffect(() => {
     AOS.init({

@@ -33,11 +33,11 @@ const BlogCard = (props) => {
         </div>
         <div className="blogCardContent">
           <Link to={`/blog/${props.slug}`}>
-            <h4 className="blogCardTitle">{props.title}</h4>
+            <p className="blogCardTitle h4">{props.title}</p>
           </Link>
-          <Link to={`/blog/${props.slug}`} className="blogCardBtn">
+          {/* <Link to={`/blog/${props.slug}`} className="blogCardBtn">
             Read More <IoIosArrowRoundForward />
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>

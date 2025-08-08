@@ -23,27 +23,27 @@ const blogsData = [
   {
     id: 1,
     image: blogPageImg1,
-    title: "Boost Your Skills Online, On Front-End & Design Basics",
+    title: "Boost Your Skills Online, on Front-End & Design Basics",
   },
   {
     id: 2,
     image: blogPageImg2,
-    title: "Boost Your Skills Online, On Front-End & Design Basics",
+    title: "Boost Your Skills Online, on Front-End & Design Basics",
   },
   {
     id: 3,
     image: blogPageImg3,
-    title: "Boost Your Skills Online, On Front-End & Design Basics",
+    title: "Boost Your Skills Online, on Front-End & Design Basics",
   },
   {
     id: 4,
     image: blogPageImg4,
-    title: "Boost Your Skills Online, On Front-End & Design Basics",
+    title: "Boost Your Skills Online, on Front-End & Design Basics",
   },
   {
     id: 5,
     image: blogPageImg5,
-    title: "Boost Your Skills Online, On Front-End & Design Basics",
+    title: "Boost Your Skills Online, on Front-End & Design Basics",
   },
 ];
 
@@ -146,8 +146,8 @@ const Blog = () => {
   return (
     <>
       <ReactHelmet
-        // title=""
-        // description=""
+        title="Blogs - Texas Web Studios"
+        description="Explore the latest blog posts from Texas Web Studios on web design, SEO, mobile apps, and digital marketing. Stay informed with expert insights and trends."
         // keywords=""
         url={`${webUrl}/blog`}
         // url="https://texaswebstudios.com/blog"
@@ -188,7 +188,7 @@ const Blog = () => {
               </div>
               <div className="col-lg-3 order-lg-2 order-1 mb-lg-0 mb-4">
                 <div className="categoriesList">
-                  <h4>SOLUTIONS</h4>
+                  <h2>CATEGORY</h2>
                   <ul className="packageCardList">
                     {blogCategorries.map((item, listIndex) => (
                       <li key={listIndex}>{item.name}</li>
@@ -224,7 +224,7 @@ const Blog = () => {
                     data-aos="fade-up"
                     data-aos-delay="400"
                   >
-                    Subscribe To Our Newsletter Free And Stay Updated On The
+                    Subscribe to Our Newsletter Free and Stay Updated on The
                     Latest Developments!
                   </h3>
                   <div className="news-latterForm">
