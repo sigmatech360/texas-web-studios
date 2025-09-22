@@ -24,6 +24,7 @@ const SinglePackageSec = (props) => {
                 name={item.name}
                 price={item.price}
                 list={item.list}
+                packagesData={item.packagesData}
               />
             </div>
           ))}
