@@ -17,6 +17,9 @@ import emailIcon from "../../../assets/images/emailIcon.webp";
 import "./style.css";
 import ObfuscatedEmail from "../../ObfuscatedEmail";
 import PhoneLink from "../../PhoneLink";
+import { BiLogoZoom } from "react-icons/bi";
+import { TbBrandZoom } from "react-icons/tb";
+import ZoomLink from "../../ZoomLink";
 
 const Footer = () => {
   const handleOpenChat = () => {
@@ -129,6 +132,7 @@ const Footer = () => {
           <img src={linkedinAndIcon} alt="Linkedin" />
         </a>
       </section>
+
       <section className="mainFooter bgBlack">
         <div className="container">
           <div className="row">
@@ -150,7 +154,7 @@ const Footer = () => {
                     <h5 className="footer-title">Quick Links</h5>
                     <ul className="footer-links">
                       <li>
-                        <Link to={"/about"}>Home</Link>
+                        <Link to={"/"}>Home</Link>
                       </li>
                       <li>
                         <Link to={"/about"}>About Us</Link>
@@ -182,11 +186,11 @@ const Footer = () => {
                           Terms & Conditions
                         </Link>
                       </li>
-                      <li>
+                      {/* <li>
                         <Link to={""} onClick={handleOpenChat}>
                           Support
                         </Link>
-                      </li>
+                      </li> */}
                       {/* <li>
                         <Link to={"/"}>Disclaimer</Link>
                       </li>
@@ -209,12 +213,32 @@ const Footer = () => {
                       </div>
                       <div className="officeDetailItem">
                         <img src={phoneIcon} alt="Map Icon" />
+                        {/* <TbBrandZoom size={24} color="#d41f14" /> */}
+                        {/* <PhoneLink
+                          phoneNumber="+17139364992"
+                          label={"+1 (713) 936-4992"}
+                          className="officeDetailItemText text-white"
+                        /> */}
+                        <ZoomLink
+                          zoomLink="https://zoom.us/j/17139364992" // Replace with your actual Zoom link
+                          className="officeDetailItemText text-white"
+                          label="+1 (713) 936-4992"
+                        />
+                      </div>
+                      <div className="officeDetailItem">
+                        <img src={phoneIcon} alt="Map Icon" />
+                        {/* <PhoneLink
+                          phoneNumber="+13462505428"
+                          label={"+1 (346) 250-5428"}
+                          className="officeDetailItemText text-white"
+                        /> */}
                         <PhoneLink
                           phoneNumber="+13462505428"
                           label={"+1 (346) 250-5428"}
                           className="officeDetailItemText text-white"
                         />
                       </div>
+
                       <div className="officeDetailItem">
                         <img src={emailIcon} alt="Map Icon" />
                         <ObfuscatedEmail className="officeDetailItemText text-white" />

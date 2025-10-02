@@ -88,6 +88,9 @@ const BlogSec = ({ secTitle, categorySlug }) => {
 
   const { blogs, loading, setCategorySlug } = useBlogs();
 
+  console.log("blogs", blogs);
+  
+
   // When categorySlug changes, we set it in context
   useEffect(() => {
     if (categorySlug) {
@@ -114,7 +117,7 @@ const BlogSec = ({ secTitle, categorySlug }) => {
               <Loader />
             </div>
           ) : (
-            blogs.slice(0, 3).map((item, index) => (
+            blogs?.slice(0, 3)?.map((item, index) => (
               <div
                 className="col-lg-4 col-md-6 mb-lg-0 mb-4"
                 key={index}

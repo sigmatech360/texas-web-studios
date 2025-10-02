@@ -188,7 +188,7 @@ const Portfolio = () => {
             onSelect={(k) => setKey(k)}
             className="mb-3 packagesTabs"
           >
-            <Tab eventKey="all-portfolio" title="ALL">
+            <Tab eventKey="all-portfolio" title="All">
               {key === "all-portfolio" && (
                 <PortfolioSliders
                   portfolio1={allPortfolio1}

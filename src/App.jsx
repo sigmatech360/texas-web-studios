@@ -32,6 +32,8 @@ function App() {
     });
     AOS.refresh();
   }, []);
+
+  
   return (
     <>
       <AppRouter />

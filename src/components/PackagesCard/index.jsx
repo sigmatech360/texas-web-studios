@@ -8,7 +8,7 @@ import { useModal } from "../../context/ModalContext";
 const PackagesCard = (props) => {
   const { setShowModal } = useModal();
 
-  console.log("props.packagesData", props.packagesData);
+  // console.log("props.packagesData", props.packagesData);
   // console.log("props.list", props.list);
   return (
     <div className="packageCard">
@@ -16,6 +16,8 @@ const PackagesCard = (props) => {
         <p className="packageName">{props?.name}</p>
         <div className="packagePriceDiv">
           <h3 className="packagePrice">{props?.price}</h3>
+          {props?.duration && <span>/</span>}
+          {props?.duration && <p>{props?.duration}</p>}
           {/* <p>Month</p> */}
         </div>
       </div>

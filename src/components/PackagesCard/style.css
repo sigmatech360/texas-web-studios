@@ -15,7 +15,8 @@
 .packagePriceDiv {
   display: flex;
   align-items: center;
-  gap: 16px;
+  /* gap: 16px; */
+  gap: 5px;
 }
 
 .packagePrice {
@@ -32,6 +33,7 @@
 .packagePriceDiv p {
   font-size: 16px;
   color: #707070;
+  text-transform: capitalize;
 }
 
 .packageCardBody {

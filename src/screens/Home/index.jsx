@@ -191,24 +191,24 @@ const beVisibleData = [
 
 const testimonialData = [
   {
-    title: "Can I Ask for Custom Pricing?",
+    title: "Am I eligible for a free website audit?",
     description:
-      "Yes. We Understand that Every Business Has Different Needs, so We’re Happy to Create a Custom Quote Based on Your Goals, Timeline, and Required Services.",
+      "Yes. If you are a business that wants to improve, you are eligible for a FREE website audit from us, regardless of the industry you are in. Our team reviews speed, design, SEO, and security, then shares practical recommendations for improvements.",
   },
   {
-    title: "Do You Offer Ongoing Support After a Project Ends?",
+    title: "What is your process and how long does development take?",
     description:
-      "Yes. We Offer Monthly Support Plans, Maintenance, Updates, and Optimization to Make Sure Your Website or Campaign Stays Sharp and Effective.",
+      "Our process includes discussion, design, development, testing, and launch. Simple websites usually take 3–6 weeks, while larger ecommerce or custom projects can require 8–12 weeks.",
   },
   {
-    title: "Do You Provide Site Audits Before We Start The Process?",
+    title: "Can I update the website myself once it’s launched?",
     description:
-      "Yes. We Begin with a Full Website Audit to Identify Gaps and Opportunities. You’ll Get The Report First, Then It’s Your Call to Move Forward or Not.",
+      "Yes. We build user-friendly sites with easy content management systems so that you can edit text, images, and pages anytime without technical skills or ongoing developer support.",
   },
   {
-    title: "How Involved Will I Be in The Design Process?",
+    title: "Can I ask for custom pricing?",
     description:
-      "We Believe in Close Collaboration, so We Include You at Every Key Step, from Planning and Wireframes to Final Design Approval. We Work with You to Create The Ideal Results.",
+      "Absolutely. Every project is unique. We provide tailored pricing based on your goals, features, and timeline, ensuring you only pay for what your business truly needs.",
   },
 ];
 
@@ -493,7 +493,7 @@ const Home = () => {
           ]}
         />
 
-        <OurTeamSec />
+        {/* <OurTeamSec /> */}
         <FAQSec
           secTag="GET ANSWERS"
           secTitle="Frequently Asked Questions"

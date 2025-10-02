@@ -437,7 +437,7 @@ const About = () => {
           btnText="View All Projects"
         />
 
-        <OurTeamSec />
+        {/* <OurTeamSec /> */}
       </DefaultLayout>
     </>
   );

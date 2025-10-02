@@ -6,6 +6,8 @@ import phoneIcon from "../../assets/images/phoneIcon.webp";
 import emailIcon from "../../assets/images/emailIcon.webp";
 import ObfuscatedEmail from "../ObfuscatedEmail";
 import PhoneLink from "../PhoneLink";
+import { TbBrandZoom } from "react-icons/tb";
+import ZoomLink from "../ZoomLink";
 
 const ContactPageContactSec = (props) => {
   const [loading, setLoading] = useState(false);
@@ -102,6 +104,19 @@ const ContactPageContactSec = (props) => {
                     phoneNumber="+13462505428"
                     label={"+1 (346) 250-5428"}
                     className="officeDetailItemText"
+                  />
+                </div>
+                <div className="officeDetailItem">
+                  <TbBrandZoom size={24} color="#d41f14" />
+                  {/* <PhoneLink
+                    phoneNumber="+17139364992"
+                    label={"+1 (713) 936-4992"}
+                    className="officeDetailItemText"
+                  /> */}
+                  <ZoomLink
+                    zoomLink="https://zoom.us/j/17139364992" // Replace with your actual Zoom link
+                    className="officeDetailItemText"
+                    label="+1 (713) 936-4992"
                   />
                 </div>
                 <div className="officeDetailItem">

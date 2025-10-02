@@ -25,6 +25,7 @@ import {
   typographyPackagesData,
   videoEditingPackagesData,
   videoMarketingPackagesData,
+  webApplicationPackagesData,
   webDesignPackagesData,
   webMaintenencePackagesData,
   webPortalPackagesData,
@@ -79,7 +80,7 @@ const PackagesSec = (props) => {
               ))}
             </div>
           </Tab> */}
-          <Tab eventKey="logo-packages" title="LOGO">
+          <Tab eventKey="logo-packages" title="Logo">
             <div className="row justify-content-center">
               {logoPackagesData.map((item, index) => (
                 <div className="col-lg-4" key={index}>
@@ -93,7 +94,7 @@ const PackagesSec = (props) => {
               ))}
             </div>
           </Tab>
-          <Tab eventKey="illustration-packages" title="ILLUSTRATION">
+          <Tab eventKey="illustration-packages" title="Illustration">
             <div className="row justify-content-center">
               {illustrationPackagesData.map((item, index) => (
                 <div className="col-lg-4" key={index}>
@@ -107,7 +108,7 @@ const PackagesSec = (props) => {
               ))}
             </div>
           </Tab>
-          <Tab eventKey="informative-websites" title="INFORMATIVE WEBSITES">
+          {/* <Tab eventKey="informative-websites" title="INFORMATIVE WEBSITES">
             <div className="row justify-content-center">
               {informativeWebPackagesData.map((item, index) => (
                 <div className="col-lg-4" key={index}>
@@ -120,7 +121,7 @@ const PackagesSec = (props) => {
                 </div>
               ))}
             </div>
-          </Tab>
+          </Tab> */}
           <Tab eventKey="websiteDesign" title="Website Design">
             <div className="row justify-content-center">
               {webDesignPackagesData.map((item, index) => (
@@ -142,6 +143,7 @@ const PackagesSec = (props) => {
                   <PackagesCard
                     name={item.name}
                     price={item.price}
+                    duration={item.duration}
                     list={item.list}
                     packagesData={item.packagesData}
                   />
@@ -149,7 +151,7 @@ const PackagesSec = (props) => {
               ))}
             </div>
           </Tab>
-          <Tab eventKey="eCommerce-website" title="E-COMMERCE WEBSITE">
+          <Tab eventKey="eCommerce-website" title="E-commerce Website">
             <div className="row justify-content-center">
               {eCommercePackagesData.map((item, index) => (
                 <div className="col-lg-4" key={index}>
@@ -163,7 +165,7 @@ const PackagesSec = (props) => {
               ))}
             </div>
           </Tab>
-          <Tab eventKey="custom-applications" title="CUSTOM APPLICATIONS">
+          {/* <Tab eventKey="custom-applications" title="Custom Applications">
             <div className="row justify-content-center">
               {customAppsPackagesData.map((item, index) => (
                 <div className="col-lg-4" key={index}>
@@ -176,8 +178,24 @@ const PackagesSec = (props) => {
                 </div>
               ))}
             </div>
+          </Tab> */}
+
+          <Tab eventKey="web-applications" title="Web Applications">
+            <div className="row justify-content-center">
+              {webApplicationPackagesData.map((item, index) => (
+                <div className="col-lg-4" key={index}>
+                  <PackagesCard
+                    name={item.name}
+                    price={item.price}
+                    duration={item.duration}
+                    list={item.list}
+                    packagesData={item.packagesData}
+                  />
+                </div>
+              ))}
+            </div>
           </Tab>
-          <Tab eventKey="web-portal" title="WEB PORTAL">
+          <Tab eventKey="web-portal" title="Web Portal">
             <div className="row justify-content-center">
               {webPortalPackagesData.map((item, index) => (
                 <div className="col-lg-4" key={index}>
@@ -417,7 +435,7 @@ const PackagesSec = (props) => {
               ))}
             </div>
           </Tab>
-          <Tab eventKey="social-media" title="SOCIAL MEDIA">
+          <Tab eventKey="social-media" title="Social Media">
             <div className="row justify-content-center">
               {smmPackagesData.map((item, index) => (
                 <div className="col-lg-4" key={index}>
