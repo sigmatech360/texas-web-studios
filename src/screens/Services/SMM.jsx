@@ -59,10 +59,8 @@ const SMM = () => {
     <>
       <ReactHelmet
         title="Boost Your Brand with SMM – Texas Web Studios"
-        description="Maximize your online reach with expert social media marketing. Texas Web Studios specializes in Facebook and Instagram advertising strategies."
-        // keywords=""
+        description="Maximize your online reach with expert social media marketing services. Texas Web Studios helps brands grow with targeted Facebook and Instagram advertising strategies that deliver real results."
         url={`${webUrl}/social-media-marketing`}
-        // url="https://texaswebstudios.com/social-media-marketing"
       />
       <DefaultLayout>
         <InnerBanner

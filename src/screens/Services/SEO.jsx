@@ -63,11 +63,10 @@ const SEO = () => {
     <>
       <ReactHelmet
         title="Professional SEO Services in Texas - Boost Your Rankings"
-        description="Boost your Google rankings with Texas Web Studios. Our SEO services include on-page, off-page, and technical optimization to drive traffic and leads."
-        // keywords=""
+        description="Boost your Google rankings with Texas Web Studios. Our professional SEO services include on-page, off-page, and technical optimization to drive targeted traffic, increase visibility, and generate leads."
         url={`${webUrl}/search-engine-optimization`}
-        // url="https://texaswebstudios.com/search-engine-optimization"
       />
+
       <DefaultLayout>
         <InnerBanner
           leftCol="col-lg-8"

@@ -208,9 +208,15 @@ const Footer = () => {
                       <div className="officeDetailItem">
                         <img src={mapIcon} alt="Map Icon" />
                         <p className="officeDetailItemText text-white">
-                          1000 Main St, Houston, TX 77002, United States
+                           1000 Main St, Houston, TX 77002, United States
                         </p>
                       </div>
+                      {/* <div className="officeDetailItem">
+                        <img src={mapIcon} alt="Map Icon" />
+                        <p className="officeDetailItemText text-white">
+                         Office 603, 6<sup>th</sup> floor, Business Avenue karachi, pakistan
+                        </p>
+                      </div> */}
                       <div className="officeDetailItem">
                         <img src={phoneIcon} alt="Map Icon" />
                         {/* <TbBrandZoom size={24} color="#d41f14" /> */}

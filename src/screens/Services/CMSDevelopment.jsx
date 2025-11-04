@@ -96,13 +96,12 @@ export const cmsDevPortfolio2 = [
 const CMSDevelopment = () => {
   return (
     <>
-      <ReactHelmet
+     <ReactHelmet
         title="Custom CMS Solutions for Growth – Texas Web Studio"
-        description="Streamline content management with custom CMS solutions by Texas Web Studios. Scalable, secure, and SEO-ready websites built for growth."
-        // keywords=""
+        description="Boost your online presence with custom CMS solutions from Texas Web Studios. Our scalable, secure, and SEO-optimized websites make content management simple and fuel your business growth."
         url={`${webUrl}/cms-development`}
-        // url="https://texaswebstudios.com/cms-development"
       />
+
       <DefaultLayout>
         <InnerBanner
           bgImage={cmsDevBanner}

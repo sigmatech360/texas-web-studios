@@ -100,11 +100,10 @@ const MobileAppDev = () => {
     <>
       <ReactHelmet
         title="Mobile App Development in Texas - Apps That Drive Results"
-        description="Make the most of our mobile app development service. Launch powerful iOS and Android apps that drive real results with Texas Web Studios."
-        // keywords=""
+        description="Make the most of our mobile app development services in Texas. Launch high-performing iOS and Android apps with Texas Web Studios to engage users, boost growth, and drive measurable business results."
         url={`${webUrl}/mobile-app-development`}
-        // url="https://texaswebstudios.com/mobile-app-development"
       />
+
       <DefaultLayout>
         <InnerBanner
           leftCol="col-lg-7 order-lg-1 order-2"
