@@ -16,7 +16,7 @@ import ReactHelmet from "../../components/ReactHelmet";
 const secureProcessData = [
   {
     id: 1,
-    title: "Multiple Payment Metodhs",
+    title: "Multiple Payment Methods",
     description:
       "Transactions shouldn’t be a hassle for you; we allow multiple payment options, so nothing becomes an obstacle to a smooth partnership.",
   },
