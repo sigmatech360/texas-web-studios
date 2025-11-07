@@ -114,8 +114,8 @@ const BlogDetail = () => {
       <DefaultLayout>
         <section className="blog-detail-content">
           <div className="container py-5 mt-4">
-            <div className="row">
-              <div className="col-xl-9 col-lg-8 mb-lg-0 mb-4">
+            <div className="row position-relative">
+              <div className="col-xl-9 col-lg-8 col-md-7 mb-lg-0 mb-4">
                 <section className="blog-detail-banner ">
                   <div className="blog-detail-banner-img">
                     <img
@@ -163,7 +163,7 @@ const BlogDetail = () => {
                   dangerouslySetInnerHTML={{ __html: post.content.rendered }}
                 />
               </div>
-              <div className="col-xl-3 col-lg-4">
+              <div className="col-xl-3 col-lg-4 col-md-5 blogDetail-sideBar">
                 <h4 className="mb-4">Related Posts</h4>
                 {relatedPostsLoading ? (
                   <div className="sideBar-loader">
@@ -187,7 +187,7 @@ const BlogDetail = () => {
                         });
 
                         return (
-                          <div className="col-lg-12 col-md-6" key={index}>
+                          <div className="col-md-12 col-sm-6" key={index}>
                             <div className="sideBarBlogCard mb-4">
                               <img
                                 src={image}
