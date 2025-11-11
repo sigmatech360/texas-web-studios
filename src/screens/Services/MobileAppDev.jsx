@@ -149,6 +149,7 @@ const MobileAppDev = () => {
           description="Please change the content to ‘The only goal of our mobile app development service in Texas is to help you build a better connection with your audience. With improved functionalities, advanced features, and impressive UX, each app that we build is nothing less than perfect."
           image={mobServiceAboutImg}
         />
+        
         <OurPortfolioSec
           className="bgBlack"
           secTag="PORTFOLIO"

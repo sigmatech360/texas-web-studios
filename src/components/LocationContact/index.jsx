@@ -1,15 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import { FaPhoneAlt } from "react-icons/fa";
+import { LuMapPin } from "react-icons/lu";
 import { toast } from "react-toastify";
 
-import mapIcon from "../../assets/images/mapIcon.webp";
-import phoneIcon from "../../assets/images/phoneIcon.webp";
-import emailIcon from "../../assets/images/emailIcon.webp";
-import ObfuscatedEmail from "../ObfuscatedEmail";
-import PhoneLink from "../PhoneLink";
-import { TbBrandZoom } from "react-icons/tb";
-import ZoomLink from "../ZoomLink";
-
-const  ContactPageContactSec = (props) => {
+const LocationContact = (props) => {
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     username: "",
@@ -70,60 +64,46 @@ const  ContactPageContactSec = (props) => {
       setLoading(false);
     }
   };
+
   return (
-    <section className="contactUsPage sec-padding">
+    <section className="location-contact-sec">
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
-            <div className="contactUsPageContent">
-              <p className="sec-tag">{props.secTag}</p>
-              <h3
-                className="secTitle"
-                data-aos="fade-right"
-                data-aos-delay="200"
-              >
-                {props.secTitle}
-              </h3>
-              <p data-aos="fade-right" data-aos-delay="400">
-                {props.description}
-              </p>
-              <div
-                className="officeDetails"
-                data-aos="fade-right"
-                data-aos-delay="600"
-              >
-                <div className="officeDetailItem">
-                  <img src={mapIcon} alt="Map Icon" />
-                  <p className="officeDetailItemText">
-                    1000 Main St, Houston, TX 77002, United States
-                  </p>
-                </div>
-                <div className="officeDetailItem">
-                  <img src={phoneIcon} alt="Map Icon" />
-                  <PhoneLink
-                    phoneNumber="+13462505428"
-                    label={"+1 (346) 250-5428"}
-                    className="officeDetailItemText"
-                  />
-                </div>
-                <div className="officeDetailItem">
-                  <TbBrandZoom size={24} color="#d41f14" />
-                  {/* <PhoneLink
-                    phoneNumber="+17139364992"
-                    label={"+1 (713) 936-4992"}
-                    className="officeDetailItemText"
-                  /> */}
-                  <ZoomLink
-                    zoomLink="https://zoom.us/j/17139364992" // Replace with your actual Zoom link
-                    className="officeDetailItemText"
-                    label="+1 (713) 936-4992"
-                  />
-                </div>
-                <div className="officeDetailItem">
-                  <img src={emailIcon} alt="Map Icon" />
-                  <ObfuscatedEmail className="officeDetailItemText" />
-                </div>
-              </div>
+            <div className="location-contact-txt">
+              <h6>{props.minihead}</h6>
+              <h2>{props.mainhead}</h2>
+              <p>{props.secPara}</p>
+              <ul>
+                <li>
+                  <span>
+                    <FaPhoneAlt />
+                  </span>{" "}
+                  +1 (713) 936-4992
+                </li>
+                <li>
+                  <span>
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      color="#D41F14"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M21 3C21.5523 3 22 3.44772 22 4V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V19H20V7.3L12 14.5L2 5.5V4C2 3.44772 2.44772 3 3 3H21ZM8 15V17H0V15H8ZM5 10V12H0V10H5ZM19.5659 5H4.43414L12 11.8093L19.5659 5Z"></path>
+                    </svg>
+                  </span>{" "}
+                  support@texaswebstudioscom
+                </li>
+                <li>
+                  <span>
+                    <LuMapPin />
+                  </span>{" "}
+                  1000 main st, houston, tx 77002, united states
+                </li>
+              </ul>
             </div>
           </div>
           <div className="col-lg-6">
@@ -133,11 +113,38 @@ const  ContactPageContactSec = (props) => {
                   <div className="col-lg-6 mb-3">
                     <input
                       type="text"
-                      placeholder="Full Name"
+                      placeholder="First Name"
                       className="form-control"
                       name="username"
                       value={formData.username}
                       onChange={handleChange}
+                      required
+                    />
+                  </div>
+                  <div className="col-lg-6 mb-3">
+                    <input
+                      type="text"
+                      placeholder="Last Name"
+                      className="form-control"
+                      name="username"
+                      required
+                    />
+                  </div>
+                   <div className="col-lg-6 mb-3">
+                    <input
+                      type="text"
+                      placeholder="Company Organization"
+                      className="form-control"
+                      name="username"
+                      required
+                    />
+                  </div>
+                   <div className="col-lg-6 mb-3">
+                    <input
+                      type="text"
+                      placeholder="Website"
+                      className="form-control"
+                      name="username"
                       required
                     />
                   </div>
@@ -159,17 +166,6 @@ const  ContactPageContactSec = (props) => {
                       className="form-control"
                       name="phone"
                       value={formData.phone}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                  <div className="col-lg-6 mb-3">
-                    <input
-                      type="text"
-                      placeholder="Subject"
-                      className="form-control"
-                      name="subject"
-                      value={formData.subject}
                       onChange={handleChange}
                       required
                     />
@@ -214,10 +210,19 @@ const  ContactPageContactSec = (props) => {
                       className="form-control"
                     /> */}
                   </div>
+                    <div className="col-lg-12 mb-3">
+                    <input
+                      type="text"
+                      placeholder="How Did You Hear About TWS?"
+                      className="form-control"
+                      name="subject"
+                      required
+                    />
+                  </div>
                   <div className="col-lg-12">
                     <textarea
                       className="form-control"
-                      placeholder="Write Message"
+                      placeholder="Tell Us About Your Buisness"
                       name="data_message"
                       value={formData.data_message}
                       onChange={handleChange}
@@ -245,4 +250,4 @@ const  ContactPageContactSec = (props) => {
   );
 };
 
-export default ContactPageContactSec;
+export default LocationContact;

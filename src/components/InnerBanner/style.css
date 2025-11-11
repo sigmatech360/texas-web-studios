@@ -22,7 +22,7 @@
   /* aspect ratio */
   aspect-ratio: 1920 / 600;
   background-size: cover;
-  background-position: center;
+  background-position: top center;
   background-repeat: no-repeat;
 }
 

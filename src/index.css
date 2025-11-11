@@ -818,6 +818,252 @@ textarea.form-control {
   max-width: 768px;
   margin: 0 auto;
 }
+
+
+/********* Location Page CSS Start *********/
+
+.locate-wordpress-herobanner nav ol.breadcrumb {
+  display: none;
+}
+
+
+.innerBannerContent .theme-btn {
+    margin: 25px 0px 0px 0px;
+}
+
+.location-support-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 20px 0 0;
+}
+
+.location-support-sec {
+    padding: 70px 0;
+}
+
+.location-support-head.text-center h6 {
+    color: #D41F14;
+    margin: 0px 0px 20px 0px;
+    font-weight: bold;
+}
+
+.location-support-head h3 {
+    color: #161515;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1.1;
+    margin: 0 0 20px;
+}
+
+.location-support-head h3 span {
+    color: #d41f14;
+}
+
+.location-support-head p {
+    color: #707070;
+}
+
+.location-support-card {
+    text-align: center;
+}
+
+.location-support-card img {
+    margin: 0 0 30px;
+}
+
+.location-support-card h6 {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+.location-contact-sec {
+  background: url(./assets/images/locationpages/wordpress-development-dallas/contact-bg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 70px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.location-contact-txt h6 {
+    color: #D41F14;
+    font-size: 18px;
+}
+
+.location-contact-txt h2 {
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.location-contact-txt p {
+    color: #fff;
+    margin: 10px 0px 15px 0px;
+}
+
+.location-contact-txt ul li {
+    list-style: none;
+    color: #fff;
+    padding: 15px 0px;
+}
+
+.location-contact-txt ul li span {
+    margin: 0px 10px 0px 0px;
+    background: #fff;
+    color: #d41f14;
+    padding: 7px 9px;
+    border-radius: 5px;
+}
+
+.location-contact-txt ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.location-contact-sec .contactForm {
+    background: #8080808c;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 0.30000001192092896px solid #ffffff36;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+section.location-contact-sec .contactForm {
+    background: #8080804d;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 0.30000001192092896px solid #ffffff36;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.location-contact-sec .contactForm .form-control {
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #FFFFFF;
+    background: transparent;
+}
+
+.location-contact-sec .contactForm select option {
+    color: #000;
+}
+
+
+.location-faqs .accordion .accordion-item {
+  margin: 0px 0px 20px 0px;
+  border-radius: 10px;
+  border: 0.4000000059604645px solid #ffffff59;
+  background: #EFEFEF;
+}
+
+.location-faqs .accordion {
+  background: transparent;
+  border: none;
+}
+
+.location-faqs .accordion .accordion-item .accordion-header {
+  background: transparent;
+  color: #fff;
+  border: none !important;
+}
+
+.location-faqs
+  .accordion
+  .accordion-item
+  .accordion-header
+  button.accordion-button.collapsed {
+  background: #fff;
+  color: #161515;
+  border: none !important;
+  font-weight: 600;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.location-faqs .accordion .accordion-item .accordion-header .accordion-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.location-faqs
+  .accordion
+  .accordion-item:first-of-type
+  > .accordion-header
+  .accordion-button {
+  background: transparent;
+  color: #161515;
+  border: none !important;
+}
+
+.location-faqs
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:not(.collapsed) {
+  color: #D41F14;
+  background-color: transparent;
+  font-weight: 600;
+}
+
+.location-faqs .accordion .accordion-item .accordion-collapse.collapse.show {
+  border: none !important;
+}
+
+.location-faqs .accordion .accordion-item .accordion-body {
+  border: none !important;
+  color: #161515;
+}
+
+.location-faqs
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button::after {
+  background-image: url(./assets/images/locationpages/wordpress-development-dallas/downarrow.svg);
+  transform: rotate(0deg);
+}
+
+.location-faqs
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:not(.collapsed)::after {
+  background-image: url(./assets/images/locationpages/wordpress-development-dallas/uparrow.svg);
+}
+
+
+section.location-faqs-sec {
+    padding: 70px 0px;
+}
+
+.location-faqs-txt h6 {
+    color: #D41F14;
+    font-weight: 600;
+    margin: 0px 0px 10px 0px;
+}
+
+.location-faqs-txt h2 {
+    color: #161515;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.location-faqs-txt p {
+    color: #161515;
+}
+
+
+
+.abouttxt-data  .title {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.theme-btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/********* Location Page CSS End *********/
+
+
 @media (max-width: 1399px) {
   .homeAboutContent .secTitle {
     font-size: 45px;

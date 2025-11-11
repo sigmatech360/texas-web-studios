@@ -6,7 +6,7 @@ import "./style.css";
 const InnerBanner = (props) => {
   return (
     <section
-      className={`innerBanner`}
+      className={`innerBanner ${props.secClass}`}
       // style={{ backgroundImage: `url(${props.bgImage})` }}
     >
       {/* <img
@@ -32,6 +32,7 @@ const InnerBanner = (props) => {
         <div className="row align-items-center">
           <div className={`${props.leftCol || "col-lg-6"}`}>
             <div className="innerBannerContent">
+              <h6>{props.minhead}</h6>
               <h1
                 dangerouslySetInnerHTML={{ __html: props.title }}
                 // data-aos="fade-right"
@@ -58,6 +59,7 @@ const InnerBanner = (props) => {
                   </li>
                 </ol>
               </nav>
+             {props.btntxt && <Link to={props.btnLink || "/contact"} className="theme-btn">{props.btntxt}</Link>}
             </div>
           </div>
 
