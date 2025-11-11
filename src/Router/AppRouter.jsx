@@ -68,8 +68,8 @@ const AppRouter = () => {
 
 
         {/* Location Pages */}
-        <Route path="/app-development-texas" element={<AppDevelopmentTD />} />
-        <Route path="/wordpress-development-texas" element={<WordpressDevelopmentTD />} />
+        <Route path="/app-development-dallas" element={<AppDevelopmentTD />} />
+        <Route path="/wordpress-development-dallas" element={<WordpressDevelopmentTD />} />
 
 
       </Routes>

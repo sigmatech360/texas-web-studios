@@ -3993,3 +3993,378 @@ export const isometricAnimationPackagesData = [
     ],
   },
 ];
+
+export const dynamictabsData = [
+  {
+    title: "ALL",
+    packages: [
+      {
+        name: "BASIC PACKAGE",
+        price: "$900",
+        duration: "month",
+        packagesData: [
+          {
+            heading: "What's Include",
+            items: [
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+              "Dedicated Brand Designers: 2",
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+            ],
+          },
+        ],
+      },
+      {
+        name: "PRO PACKAGE",
+        price: "$1350",
+        duration: "month",
+        packagesData: [
+          {
+            heading: "What's Include",
+            items: [
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+              "Dedicated Brand Designers: 2",
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+            ],
+          },
+        ],
+      },
+      {
+        name: "PREMIUM PACKAGE",
+        price: "$1650",
+        duration: "month",
+        packagesData: [
+          {
+            heading: "What's Include",
+            items: [
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+              "Dedicated Brand Designers: 2",
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Web Design",
+    packages: [
+      {
+        name: "BASIC PACKAGE",
+        price: "$900",
+        duration: "month",
+        packagesData: [
+          {
+            heading: "What's Include",
+            items: [
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+              "Dedicated Brand Designers: 2",
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+            ],
+          },
+        ],
+      },
+      {
+        name: "PRO PACKAGE",
+        price: "$1350",
+        duration: "month",
+        packagesData: [
+          {
+            heading: "What's Include",
+            items: [
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+              "Dedicated Brand Designers: 2",
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+            ],
+          },
+        ],
+      },
+      {
+        name: "PREMIUM PACKAGE",
+        price: "$1650",
+        duration: "month",
+        packagesData: [
+          {
+            heading: "What's Include",
+            items: [
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+              "Dedicated Brand Designers: 2",
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Ui / Ux Design",
+    packages: [
+      {
+        name: "BASIC PACKAGE",
+        price: "$900",
+        duration: "month",
+        packagesData: [
+          {
+            heading: "What's Include",
+            items: [
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+              "Dedicated Brand Designers: 2",
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+            ],
+          },
+        ],
+      },
+      {
+        name: "PRO PACKAGE",
+        price: "$1350",
+        duration: "month",
+        packagesData: [
+          {
+            heading: "What's Include",
+            items: [
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+              "Dedicated Brand Designers: 2",
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+            ],
+          },
+        ],
+      },
+      {
+        name: "PREMIUM PACKAGE",
+        price: "$1650",
+        duration: "month",
+        packagesData: [
+          {
+            heading: "What's Include",
+            items: [
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+              "Dedicated Brand Designers: 2",
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Logo Design",
+    packages: [
+      {
+        name: "BASIC PACKAGE",
+        price: "$900",
+        duration: "month",
+        packagesData: [
+          {
+            heading: "What's Include",
+            items: [
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+              "Dedicated Brand Designers: 2",
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+            ],
+          },
+        ],
+      },
+      {
+        name: "PRO PACKAGE",
+        price: "$1350",
+        duration: "month",
+        packagesData: [
+          {
+            heading: "What's Include",
+            items: [
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+              "Dedicated Brand Designers: 2",
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+            ],
+          },
+        ],
+      },
+      {
+        name: "PREMIUM PACKAGE",
+        price: "$1650",
+        duration: "month",
+        packagesData: [
+          {
+            heading: "What's Include",
+            items: [
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+              "Dedicated Brand Designers: 2",
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Video Animation",
+    packages: [
+      {
+        name: "BASIC PACKAGE",
+        price: "$900",
+        duration: "month",
+        packagesData: [
+          {
+            heading: "What's Include",
+            items: [
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+              "Dedicated Brand Designers: 2",
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+            ],
+          },
+        ],
+      },
+      {
+        name: "PRO PACKAGE",
+        price: "$1350",
+        duration: "month",
+        packagesData: [
+          {
+            heading: "What's Include",
+            items: [
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+              "Dedicated Brand Designers: 2",
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+            ],
+          },
+        ],
+      },
+      {
+        name: "PREMIUM PACKAGE",
+        price: "$1650",
+        duration: "month",
+        packagesData: [
+          {
+            heading: "What's Include",
+            items: [
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+              "Dedicated Brand Designers: 2",
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "E Commerce Web Design",
+    packages: [
+      {
+        name: "BASIC PACKAGE",
+        price: "$900",
+        duration: "month",
+        packagesData: [
+          {
+            heading: "What's Include",
+            items: [
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+              "Dedicated Brand Designers: 2",
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+            ],
+          },
+        ],
+      },
+      {
+        name: "PRO PACKAGE",
+        price: "$1350",
+        duration: "month",
+        packagesData: [
+          {
+            heading: "What's Include",
+            items: [
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+              "Dedicated Brand Designers: 2",
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+            ],
+          },
+        ],
+      },
+      {
+        name: "PREMIUM PACKAGE",
+        price: "$1650",
+        duration: "month",
+        packagesData: [
+          {
+            heading: "What's Include",
+            items: [
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+              "Dedicated Brand Designers: 2",
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+              "Custom Logo Design Concepts: 10",
+              "Dedicated Brand Designers: 2",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+];

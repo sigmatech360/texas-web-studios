@@ -5,6 +5,10 @@
   width: 100%;
 }
 
+.mainNavBar .navbar-brand img:focus {
+    outline: none;
+}
+
 .mainNavBar .navbar-nav .nav-link {
   /* font-family: "Syne", "Helvetica Neue", Arial, sans-serif; */
   font-family: "Syne", "Helvetica Neue", Arial, sans-serif;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import DefaultLayout from "../../components/DefaultLayout";
 import InnerBanner from "../../components/InnerBanner";
 import mobileAppDevBanner from "../../assets/images/locationpages/wordpress-development-dallas/herobanner.webp";
@@ -9,96 +9,153 @@ import support3 from "../../assets/images/locationpages/wordpress-development-da
 import support4 from "../../assets/images/locationpages/wordpress-development-dallas/money.svg";
 import support5 from "../../assets/images/locationpages/wordpress-development-dallas/Pentool.svg";
 import aboutimg from "../../assets/images/locationpages/wordpress-development-dallas/aboutimg.webp";
+import pixleperfectimg1 from "../../assets/images/locationpages/wordpress-development-dallas/portfolio-1.webp";
+import pixleperfectimg2 from "../../assets/images/locationpages/wordpress-development-dallas/portfolio-2.webp";
+import pixleperfectimg3 from "../../assets/images/locationpages/wordpress-development-dallas/portfolio-3.webp";
+import pixleperfectimg4 from "../../assets/images/locationpages/wordpress-development-dallas/portfolio-4.webp";
+import pixleperfectimg5 from "../../assets/images/locationpages/wordpress-development-dallas/portfolio-5.webp";
+import pixleperfectimg6 from "../../assets/images/locationpages/wordpress-development-dallas/portfolio-6.webp";
 import PackagesSec from "../../components/PackagesSec";
 import LocationSupport from "../../components/LocationSupport/Index";
 import LocationContact from "../../components/LocationContact";
 import LocationFaqs from "../../components/LocationFaqs";
 import WordPressPerformanceSection from "../../components/WordPressPerformanceSection";
+import PixelPerfectSec from "../../components/PixelPerfectSec";
+import Lightbox from "yet-another-react-lightbox";
+import TabsPricing from "../../components/TabsPricing";
+import { dynamictabsData } from "../../data";
+import ReactHelmet from "../../components/ReactHelmet";
+
+const webUrl = import.meta.env.VITE_WEB_URL;
 
 const WordpressDevelopmentTD = () => {
+  const webDesignPortfolioData = [
+    {
+      id: 1,
+      image: pixleperfectimg1,
+    },
+    {
+      id: 2,
+      image: pixleperfectimg2,
+    },
+    {
+      id: 3,
+      image: pixleperfectimg3,
+    },
+    {
+      id: 4,
+      image: pixleperfectimg4,
+    },
+    {
+      id: 5,
+      image: pixleperfectimg5,
+    },
+    {
+      id: 6,
+      image: pixleperfectimg6,
+    },
+  ];
 
   const faqsData = [
     {
       header:
-        "How long does it take to develop a mobile app in Los Angeles, CA?",
+        "How long will my WordPress site take?",
       content:
-        "The duration depends on the project's complexity, but ideally, a medium-sized app takes between 8 and 16 weeks from design to deployment. For larger apps or ERP solutions, we create a detailed roadmap by breaking the project into sprints. This way, development stays transparent, and you can see your app come to life with every implementation phase clearly demonstrated.",
+        "It actually depends upon the complexity of your project; however, most projects take 4-6 weeks. Once you get on board with us, we’ll provide you with a clear timeline before we start.",
     },
     {
-      header: "What platforms do you specialize in for app development?",
+      header: "Do you build custom websites or use themes?",
       content:
-        "We offer both Android and iOS app development in Los Angeles, CA, along with cross-platform solutions built for speed, scalability, and consistent user experience across devices.",
+        "Both. We build websites according to your needs and goals. If you need a drag-and-drop website, we do that, and if you need a custom platform, we build that for you ,too.",
     },
     {
-      header: "Do you offer post-launch app support and maintenance?",
+      header: "Will my site be optimized for SEO and speed?",
       content:
-        "Yes, we believe app maintenance is as vital as good app development, as it keeps the platform fast and reliable! We offer ongoing technical support, updates, and optimization services to ensure your app stays fast, secure, and compatible with the latest operating systems.",
-    },
-    {
-      header:
-        "Can you integrate my app with existing business systems or APIs?",
-      content:
-        "Absolutely, whether it’s CRM, ERP, or custom APIs, our custom mobile app development services in Los Angeles, CA, ensure smooth integration with your existing ecosystem, without any downtime.",
+        "Yes, we build for performance, visibility, and lightning-fast load times. Your WordPress website will be optimized so it loads and leads.",
     },
     {
       header:
-        "What makes California Web Coders different from other app development companies in Los Angeles?",
+        "Can you update or fix my existing website?",
       content:
-        "We don’t just build apps; we build growth engines. Every decision is made to maximize engagement, retention, and conversions. That’s what makes us more than developers; we’re your strategic tech partners.",
+        "Absolutely. We can upgrade, redesign, or maintain your current WordPress website setup in Dallas.",
     },
     {
-      header: "Do you help with app uploading and publishing on app stores?",
+      header: "Why choose Texas Web Studios?",
       content:
-        "Yes, publishing the app on the App Store and Google Play is part of our process. We handle the entire submission, optimization, and approval steps to ensure your app meets all platform guidelines and goes live smoothly without delays.",
+        "We are the top WordPress development company in Dallas, chosen by Americans for all their web development needs.",
     },
   ];
 
+  const [isOpen, setIsOpen] = useState(false);
+  const [images, setImages] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
+  const handleImageClick = (index, imageArray) => {
+    const imageList = imageArray.map((item) => ({
+      src: item.image,
+    }));
+    setImages(imageList);
+    setCurrentIndex(index);
+    setIsOpen(true);
+  };
 
   const supportCardsData = [
-    { image: support1, title: "Satisfaction Guaranteed, 100%" },
-    { image: support2, title: "Round-the-Clock Support" },
-    { image: support3, title: "Your App, You Own It!" },
-    { image: support4, title: "54% Increase in Sales" },
-    { image: support5, title: "Build for Growth" },
+    { image: support1, title: "100% Satisfaction" },
+    { image: support2, title: "Round-the-Clock Customer Support" },
+    { image: support3, title: "You Own it, 100%" },
+    { image: support4, title: "Stunning and affordable" },
+    { image: support5, title: "Build for Your Business" },
   ];
 
   return (
     <>
+      <ReactHelmet
+        title=" WordPress Development Dallas, TX"
+        description="Develop and deploy custom WordPress Development in Dallas, TX, that is fast, scalable, and always online, generating sales for your brand."
+        url={`${webUrl}/wordpress-development-dallas`}
+      />
+
       <DefaultLayout>
         <InnerBanner
           secClass="locate-wordpress-herobanner"
           leftCol="col-lg-6 order-lg-1 order-2"
           rightCol="col-lg-5 order-lg-2 order-1"
           bgImage={mobileAppDevBanner}
-          title="Mobile Applications that Boost Your Success"
-          description="At Texas Web Studios, We Create Fast, User-Friendly Apps for You that Fit Your Goals, Platform, and Audience. Our Mobile App Development Services for Texas Are Designed for Real Results and Easy Use."
-          btntxt="Get Your Free Wordpress Estimate"
+          title="Start Selling Smartly with WordPress Development in Dallas, TX"
+          description="Great websites aren’t built by chance; they’re built by experts who understand code, design, and the psychology of conversion. At Texas Web Studios, we balance design with development to creating WordPress websites that look minimalistic, load quickly, and convert effortlessly!"
+          serviceparatwo="Your business isn’t generic. Your website shouldn’t be either. Click now!"
+          btntxt="Get one Build for You"
         />
 
-         <WordPressPerformanceSection
+        <WordPressPerformanceSection
           reverse
           minihead="Why Choose Us"
           miniheadclass="shorttop-head"
-          secTitle1="Why Choose"
-          secTitle2="Texas Web Studios"
-          secTitle3="For WordPress Development?"
-          description="Our team combines 20+ years of digital experience with deep WordPress expertise. We deliver websites that not only look great but perform flawlessly — optimised for speed, SEO and conversions. Whether you’re a startup or enterprise, we tailor each site to meet your needs. And we support you beyond launch for ongoing growth."
+          secTitle1="Your Competitors Build Websites"
+          secTitle2="We Build Leverage"
+          description="Because great design is only half the story, performance is the rest.
+          With over two decades of combined experience, our team of WordPress development services in Dallas builds what your business needs. Every website is tailored for speed, SEO, and conversion; a digital foundation that doesn’t just represent your brand, but amplifies it."
           image={aboutimg}
           listClass="d-none"
           TouchBtn="d-none"
-          btntext="Get Your Free Wordpress Estimate"
-          aboutbtnlink="/contact"
+          btntext="Explore More"
+          aboutbtnlink="/about"
           learnmorebtn="theme-btn"
         />
 
+        <PixelPerfectSec
+          minihead="Portfolio"
+          secTitle="Swipe Through WordPress Websites We’ve Built"
+          secDescription="When a website is built right, it doesn’t just exist; it leads. From sleek eCommerce builds to complex corporate platforms, our WordPress website development in Dallas, TX  delivers work that looks exceptional and functions flawlessly."
+          projectsData={webDesignPortfolioData}
+          onImageClick={handleImageClick}
+        />
 
-
-        <PackagesSec
-          className="bgWhite"
-          secTag="PRICING PLAN"
-          title="Flexible Pricing Packages"
-          description="Our packages include Basic, Pro, and Premium, designed to match where you are and where you’re headed. Whether you are starting fresh or looking to scale, you will get the right solution at the right price. So find the package that fits you best, or consult us for a custom package!"
+        <TabsPricing
+          minihead="Pricing Plans"
+          mainhead="Invest Smart and Scale Fast with Flexible Pricing"
+          secPara="It’s your business; the more care you give, the more it will grow. Invest in the right plan today, and watch your brand flourish online."
+          tabsData={dynamictabsData}
         />
 
         <InnerBanner
@@ -106,34 +163,44 @@ const WordpressDevelopmentTD = () => {
           leftCol="col-lg-7 order-lg-1 order-2"
           rightCol="col-lg-5 order-lg-2 order-1"
           bgImage={gooddesign}
-          minhead="Pricing Plans"
-          title="WordPress Development Packages"
-          description="Our team combines 20+ years of digital experience with deep WordPress expertise. We deliver websites that not only look great but perform flawlessly — optimised for speed, SEO and conversions. Whether you’re a startup or enterprise, we tailor each site to meet your needs. And we support you beyond launch for ongoing growth."
-          btntxt="Get A Free Quote Now"
+          title="WordPress Developed to Dominate"
+          description="We can do templates. We can also build frameworks.
+          But whatever we do, our WordPress development in Dallas, TX, focuses on speed, usability, and technical depth, not just design trends. Every site is optimized for content, usability, and scalability, ensuring it scales effortlessly as your business grows."
+          serviceparatwo="Partner with Texas Web Studios, and gain more than just a website - get a strategic asset built to outperform competitors and future-proof your digital presence."
+          btntxt="Get Free Consultation"
         />
 
         <LocationSupport
-          minihead="No One Better"
-          mainheadSpan="Texas Web Studios:"
-          mainhead="There’s No One Better"
-          mainPara="No more budget issues, get your hands on the most Affordable Website Design Services online."
+          minihead="No One Does it Better"
+          mainheadSpan="Defined by Trust"
+          mainhead="Driven by Results"
+          mainPara="Rated among the top WordPress development agencies in Dallas, TX, our promise goes beyond building beautiful websites; we deliver measurable, long-term results backed by trust and transparency. "
           supportCards={supportCardsData}
         />
 
-      <LocationContact
-        minihead="Contact Us"
-        mainhead="Ready To Start Your WordPress Project?"
-        secPara="Let’s bring your vision to life. Fill out the form below and we’ll schedule a discovery call to discuss your WordPress site requirements."
-      />
+        <LocationContact
+          minihead="Let’s Connect"
+          mainhead="You’ve Got the Vision. We’ve Got the Code."
+          secPara="Big ideas deserve precision and flawless execution. You have the idea, we know the goal, together we can help you reach the heights you want to be. Whether you’re launching a bold new concept, rebuilding what’s not working, or scaling beyond that portfolio website, our WordPress development services team in Dallas knows how to turn potential into performance."
+          secParatwo="Either you need one with a template or with the tech, we do clarity, strategy, and clean, conversion-ready builds. "
+          btntxt="Talk to Us"
+        />
 
-      
-    
-      <LocationFaqs
-        minihead="FAQS"
-        mainhead="Got Questions? We’ve Got Answers!"
-        secPara="Boost your website’s visibility and organic search rankings with our SEO strategies. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type."
-        faqs={faqsData}
-      />
+        <LocationFaqs
+          minihead="Frequently Asked Questions"
+          mainhead="Before You Google, Ask Us."
+          secPara="Boost your website’s visibility and organic search rankings with our SEO strategies. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type."
+          faqs={faqsData}
+        />
+
+        {isOpen && images.length > 0 && (
+          <Lightbox
+            open={isOpen}
+            close={() => setIsOpen(false)}
+            slides={images}
+            index={currentIndex}
+          />
+        )}
       </DefaultLayout>
     </>
   );

@@ -45,6 +45,8 @@ const InnerBanner = (props) => {
                 {props.description}
               </p>
 
+              {props.serviceparatwo && <p>{props.serviceparatwo}</p>}
+
               <nav
                 aria-label="breadcrumb"
                 // data-aos="fade-right"
@@ -59,7 +61,7 @@ const InnerBanner = (props) => {
                   </li>
                 </ol>
               </nav>
-             {props.btntxt && <Link to={props.btnLink || "/contact"} className="theme-btn">{props.btntxt}</Link>}
+             {props.btntxt && <Link to={props.btnLink || "/contact"} className={props.btnClass || "theme-btn"}>{props.btntxt}</Link>}
             </div>
           </div>
 

@@ -1061,6 +1061,125 @@ section.location-faqs-sec {
     color: #fff;
 }
 
+.pixel-perfect-sec {
+  background: url(./assets/images/locationpages/wordpress-development-dallas/portfolio-bg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 70px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.pixel-perfect-sec .news-card-img img {
+    height: auto;
+}
+
+.pixel-perfect-head {
+    color: #fff;
+    display: block;
+    padding: 10px 0px 30px 0px;
+}
+
+.pixel-perfect-head h6 {
+    font-weight: bold;
+    margin: 0px 0px 10px 0px;
+}
+
+.pixel-perfect-head h2 {
+    font-size: 50px;
+    line-height: 1.1;
+    font-weight: 700;
+    margin: 0px 0px 10px 0px;
+}
+
+.pixel-perfect-head p {
+    color: #fff;
+}
+
+
+section.tabs-pricing-sec {
+    padding: 60px 0px;
+}
+
+.tabs-pricing-head h6 {
+    color: #D41F14;
+    font-weight: bold;
+    margin: 0px 0px 10px 0px;
+}
+
+.tabs-pricing-head h2 {
+    color: #161515;
+    font-size: 50px;
+    line-height: 1.1;
+    font-weight: 700;
+    margin: 0px 0px 10px 0px;
+}
+
+.tabs-pricing-head p {
+    color: #161515;
+}
+
+.tabs-pricing-head {
+    margin: 0px 0px 40px 0px;
+}
+
+
+section.tabs-pricing-sec {
+    padding: 60px 0px;
+}
+
+.tabs-pricing-head h6 {
+    color: #D41F14;
+    font-weight: bold;
+    margin: 0px 0px 10px 0px;
+}
+
+.tabs-pricing-head h2 {
+    color: #161515;
+    font-size: 50px;
+    line-height: 1.1;
+    font-weight: 700;
+    margin: 0px 0px 10px 0px;
+}
+
+.tabs-pricing-head p {
+    color: #161515;
+}
+
+.tabs-pricing-head {
+    margin: 0px 0px 40px 0px;
+}
+
+.dynamic-pricing-tabs .react-tabs .react-tabs__tab-list {
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin: 0px 0px 50px 0px;
+}
+
+
+.dynamic-pricing-tabs .react-tabs .react-tabs__tab-list .react-tabs__tab {
+    border: 1px solid #161515;
+    border-radius: 7px;
+}
+
+.dynamic-pricing-tabs .react-tabs .react-tabs__tab-list .react-tabs__tab--selected {
+    background: #D41F14;
+    color: #fff;
+    border-color: #D41F14;
+}
+
+
+.dynamic-pricing-tabs .packageCard .packageCardBodyList {
+    height: 100%;
+    overflow: auto;
+}
+
+.locate-wordpress-herobanner .innerBannerContent p {
+    margin: 20px 0px 0px 0px;
+}
+
 /********* Location Page CSS End *********/
 
 
