@@ -125,6 +125,42 @@
   color: #fff;
 }
 
+.footerIcon {
+  max-width: 100px;
+}
+
+.footerIcon img {
+  width: 100%;
+}
+
+.footerIcon.dmca-icon {
+  background: white;
+  border-radius: 6px;
+  width: 37px;
+  overflow: hidden;
+}
+.footerIcon.trustPilot-icon {
+  mix-blend-mode: lighten;
+}
+
+.footerIcon.crunchBase-icon {
+  background: #156AFB;
+  border-radius: 6px;
+  padding: 2px 6px;
+  font-size: 23px;
+  text-decoration: none;
+}
+.footerIcon.crunchBase-icon a{
+  color: white;
+  text-decoration: none;
+}
+
+.footerIcons.mt-4 {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
 @media (max-width: 1199px) {
   .footerSocialIcon img {
     max-width: 120px;

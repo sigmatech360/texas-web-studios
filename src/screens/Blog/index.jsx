@@ -18,6 +18,7 @@ import Loader from "../../components/Loader";
 import { useModal } from "../../context/ModalContext";
 import { useBlogs } from "../../context/BlogContext";
 import ReactHelmet from "../../components/ReactHelmet";
+import axios from "axios";
 
 const blogsData = [
   {
@@ -87,8 +88,25 @@ const Blog = () => {
   const [email, setEmail] = useState("");
 
   const [formLoading, setFormLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
+  const [activeCategory, setActiveCategory] = useState(null);
 
-  const { blogs, loading } = useBlogs();
+  const [categories, setCategories] = useState([]);
+
+  const { blogs, loading, setLoading, categorySlug, setCategorySlug } = useBlogs();
+
+  const baseURL = import.meta.env.VITE_WP_BASE_URL;
+
+  // const baseURL = process.env.REACT_APP_BASE_URL;
+
+  useEffect(() => {
+    axios
+      .get(`${baseURL}/categories`)
+      .then((res) => {
+        setCategories(res.data);
+      })
+      .catch((err) => console.error("Category Error:", err));
+  }, []);
 
   // const [blogs, setBlogs] = useState([]);
   // useEffect(() => {
@@ -106,6 +124,25 @@ const Blog = () => {
 
   //   fetchLatestBlogs();
   // }, []);
+
+  // useEffect(() => {
+  //   const baseURL = process.env.REACT_APP_BA
+  //   setLoading(true);
+  //   const url = activeCategory
+  //     ? `${baseURL}/posts?categories=${activeCategory}&_embed`
+  //     : `${baseURL}/posts?_embed`;
+
+  //   axios
+  //     .get(url)
+  //     .then((res) => {
+  //       setPosts(res.data);
+  //       setLoading(false);
+  //     })
+  //     .catch((err) => {
+  //       console.error("Error fetching posts:", err);
+  //       setLoading(false);
+  //     });
+  // }, [activeCategory]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -160,16 +197,17 @@ const Blog = () => {
           pageName="Blogs"
         />
 
-        <section className="blogPageSec sec-padding">
+        <section className="blogPageSec py-5">
           <div className="container">
-            <div className="row">
+            <div className="row ">
               <div className="col-lg-9 order-lg-1 order-2">
                 {loading ? (
                   <>
                     <Loader />
                   </>
                 ) : (
-                  <div className="row">
+                  <div className="row ">
+                    <h3 className="text-danger fw-bold mb-3 text-uppercase">{categorySlug ? categorySlug.split('-').join(" "):'All Categories'}</h3>
                     {blogs.map((item, index) => (
                       <div className="col-md-6 mb-4" key={index}>
                         <BlogCard
@@ -186,13 +224,25 @@ const Blog = () => {
                   </div>
                 )}
               </div>
-              <div className="col-lg-3 order-lg-2 order-1 mb-lg-0 mb-4">
-                <div className="categoriesList">
+              <div className="col-lg-3 order-lg-2  order-1 mb-lg-0 mb-4">
+                <div className="categoriesList blogDetail-sideBar">
                   <h2>CATEGORY</h2>
-                  <ul className="packageCardList">
-                    {blogCategorries.map((item, listIndex) => (
-                      <li key={listIndex}>{item.name}</li>
-                    ))}
+                  <ul className="blogCardList">
+                    <li className={`list-group-item ${categorySlug == null ? 'active':''}`} onClick={() => setCategorySlug(null)}>
+                        {/* <Link to={`/blog/category/${cat.slug}`}> */}
+                          All
+                        {/* </Link> */}
+                      </li>
+                    {categories.filter(item=> item.slug !== 'uncategorized').map((cat) => {
+                      console.log('categorySlug', categorySlug, 'cat.slug', cat.slug, 'same?', categorySlug == cat.slug);
+                      
+                      return(
+                      <li key={cat.id} className={`list-group-item ${categorySlug == cat.slug ? 'active':''}`} onClick={() => setCategorySlug(cat.slug)}>
+                        {/* <Link to={`/blog/category/${cat.slug}`}> */}
+                          {cat.name}
+                        {/* </Link> */}
+                      </li>
+                    )})}
                   </ul>
                   <button
                     className="theme-btn icon-btn"

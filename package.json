@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "postbuild": "npx critical dist/index.html --inline --width 480 --height 680 --target dist/index.html",
+    "postbuild": "npx critical dist/index.html --inline --width 480 --height 680 --target dist/index.html && node generate-sitemap.cjs",
     "lint": "eslint .",
     "preview": "vite preview"
   },

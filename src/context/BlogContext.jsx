@@ -54,7 +54,7 @@ export const BlogProvider = ({ children }) => {
 
   return (
     <BlogContext.Provider
-      value={{ blogs, loading, setBlogs, setLoading, setCategorySlug }}
+      value={{ blogs, loading, setBlogs, setLoading, categorySlug, setCategorySlug }}
     >
       {children}
     </BlogContext.Provider>

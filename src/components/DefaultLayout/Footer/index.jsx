@@ -9,6 +9,9 @@ import dribbleAndIcon from "../../../assets/images/dribbleAndIcon.webp";
 import twitterAndIcon from "../../../assets/images/twitterAndIcon.webp";
 import instagramAndIcon from "../../../assets/images/instagramAndIcon.webp";
 import linkedinAndIcon from "../../../assets/images/linkedinAndIcon.webp";
+import dmca from "../../../assets/images/footer/DMCA.webp";
+import clutch from "../../../assets/images/footer/clutch-icon.png";
+import trustPilot from "../../../assets/images/footer/trust-pilot.webp";
 
 import mapIcon from "../../../assets/images/mapIcon.webp";
 import phoneIcon from "../../../assets/images/phoneIcon.webp";
@@ -145,6 +148,28 @@ const Footer = () => {
                   Trusted by Texas, we are here to make your brand witness
                   digital success with smart strategies.
                 </p>
+                <div className="footerIcons mt-4">
+                  {/* <div className="footerIcon">
+                    <a href="">
+                      <img src={dmca} alt="DMCA" />
+                    </a>
+                  </div> */}
+                  <div className="footerIcon dmca-icon">
+                    <a href="https://clutch.co/profile/texas-web-studios">
+                      <img src={clutch} alt="DMCA" />
+                    </a>
+                  </div>
+                  <div className="footerIcon crunchBase-icon">
+                    <a href="https://www.crunchbase.com/organization/texas-web-studios">
+                      cb
+                    </a>
+                  </div>
+                  <div className="footerIcon trustPilot-icon">
+                    <a href="https://www.trustpilot.com/review/texaswebstudios.com">
+                      <img src={trustPilot} alt="DMCA" />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="col-lg-8">
@@ -211,12 +236,12 @@ const Footer = () => {
                            1000 Main St, Houston, TX 77002, United States
                         </p>
                       </div>
-                      {/* <div className="officeDetailItem">
+                      <div className="officeDetailItem">
                         <img src={mapIcon} alt="Map Icon" />
                         <p className="officeDetailItemText text-white">
                          Office 603, 6<sup>th</sup> floor, Business Avenue karachi, pakistan
                         </p>
-                      </div> */}
+                      </div>
                       <div className="officeDetailItem">
                         <img src={phoneIcon} alt="Map Icon" />
                         {/* <TbBrandZoom size={24} color="#d41f14" /> */}
