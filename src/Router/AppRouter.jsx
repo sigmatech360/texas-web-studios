@@ -24,6 +24,8 @@ import BlogDetail from "../screens/Blog/BlogDetail";
 
 import ScrollToTop from "../components/ScrollToTop";
 import NotFound from "../screens/NotFound/NotFound";
+import AppDevelopmentTD from "../screens/locationpages/AppDevelopmentTD";
+import WordpressDevelopmentTD from "../screens/locationpages/WordpressDevelopmentTD";
 
 const AppRouter = () => {
   return (
@@ -55,15 +57,21 @@ const AppRouter = () => {
         <Route path="/logo-design" element={<LogoDesign />} />
         <Route path="/web-development" element={<WebDevelopment />} />
         <Route path="/cms-development" element={<CMSDevelopment />} />
-        <Route
-          path="/digital-media-marketing"
-          element={<DigitalMediaMarketing />}
-        />
+        <Route path="/digital-media-marketing" element={<DigitalMediaMarketing />}/>
         {/* LatestTechSec list Title Head */}
         <Route path="/social-media-marketing" element={<SMM />} />
         <Route path="/search-engine-optimization" element={<SEO />} />
         <Route path="/custom-web-development" element={<CustomWebDev />} />
         <Route path="/mobile-app-development" element={<MobileAppDev />} />
+        
+
+
+
+        {/* Location Pages */}
+        <Route path="/app-development-texas" element={<AppDevelopmentTD />} />
+        <Route path="/wordpress-development-texas" element={<WordpressDevelopmentTD />} />
+
+
       </Routes>
     </Router>
   );
