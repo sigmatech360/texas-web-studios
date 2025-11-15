@@ -2,6 +2,7 @@ import AppRouter from "./Router/AppRouter";
 import { ToastContainer } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
+import "yet-another-react-lightbox/styles.css";
 
 import AOS from "aos";
 import "aos/dist/aos.css";

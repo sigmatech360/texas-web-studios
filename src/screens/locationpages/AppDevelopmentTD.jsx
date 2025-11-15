@@ -8,7 +8,7 @@ import support2 from "../../assets/images/locationpages/wordpress-development-da
 import support3 from "../../assets/images/locationpages/wordpress-development-dallas/ownership.svg";
 import support4 from "../../assets/images/locationpages/wordpress-development-dallas/money.svg";
 import support5 from "../../assets/images/locationpages/wordpress-development-dallas/Pentool.svg";
-import aboutimg from "../../assets/images/locationpages/wordpress-development-dallas/aboutimg.webp";
+import aboutimg from "../../assets/images/locationpages/app-development-dallas/aboutimg.webp";
 import pixleperfectimg1 from "../../assets/images/locationpages/app-development-dallas/portfolio-1.webp";
 import pixleperfectimg2 from "../../assets/images/locationpages/app-development-dallas/portfolio-2.webp";
 import pixleperfectimg3 from "../../assets/images/locationpages/app-development-dallas/portfolio-3.webp";
@@ -110,7 +110,7 @@ const AppDevelopmentTD = () => {
     <>
       <ReactHelmet
         title="App Development in Dallas, TX"
-        description="Texas Web Studios delivers App Development solutions in Dallas, TX, built to perform, engage users, and drive measurable results"
+        description="Texas Web Studios, a leading design and development company in USA, delivers App Development solutions in Dallas, TX, built to perform, engage users, and drive measurable results."
         url={`${webUrl}/app-development-dallas`}
       />
 
@@ -150,12 +150,12 @@ const AppDevelopmentTD = () => {
           onImageClick={handleImageClick}
         />
 
-        <TabsPricing
+        {/* <TabsPricing
           minihead="Pricing Plans"
           mainhead="Smart Pricing to Power Serious Growth"
           secPara="Discover your mobile app development cost in Dallas, TX, with plans that strike a balance between innovation, scalability, and ROI."
           tabsData={dynamictabsData}
-        />
+        /> */}
 
         <InnerBanner
           secClass="locate-wordpress-herobanner"

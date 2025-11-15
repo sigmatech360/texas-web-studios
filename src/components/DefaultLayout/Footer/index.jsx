@@ -10,7 +10,7 @@ import twitterAndIcon from "../../../assets/images/twitterAndIcon.webp";
 import instagramAndIcon from "../../../assets/images/instagramAndIcon.webp";
 import linkedinAndIcon from "../../../assets/images/linkedinAndIcon.webp";
 import dmca from "../../../assets/images/footer/DMCA.webp";
-import clutch from "../../../assets/images/footer/clutch-icon.png";
+import clutch from "../../../assets/images/footer/clutch-icon.webp";
 import trustPilot from "../../../assets/images/footer/trust-pilot.webp";
 
 import mapIcon from "../../../assets/images/mapIcon.webp";

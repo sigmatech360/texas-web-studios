@@ -111,7 +111,7 @@ const WordpressDevelopmentTD = () => {
     <>
       <ReactHelmet
         title=" WordPress Development Dallas, TX"
-        description="Develop and deploy custom WordPress Development in Dallas, TX, that is fast, scalable, and always online, generating sales for your brand."
+        description="Deploy custom WordPress Development in Dallas, TX, that is fast, secure, scalable, and always online, generating sales for your brand by utilizing new tech-stack including SEO, GEO, and AEO, for extreme performance"
         url={`${webUrl}/wordpress-development-dallas`}
       />
 
@@ -150,13 +150,13 @@ const WordpressDevelopmentTD = () => {
           projectsData={webDesignPortfolioData}
           onImageClick={handleImageClick}
         />
-
+{/* 
         <TabsPricing
           minihead="Pricing Plans"
           mainhead="Invest Smart and Scale Fast with Flexible Pricing"
           secPara="It’s your business; the more care you give, the more it will grow. Invest in the right plan today, and watch your brand flourish online."
           tabsData={dynamictabsData}
-        />
+        /> */}
 
         <InnerBanner
           secClass="locate-wordpress-herobanner"
@@ -180,7 +180,7 @@ const WordpressDevelopmentTD = () => {
 
         <LocationContact
           minihead="Let’s Connect"
-          mainhead="You’ve Got the Vision. We’ve Got the Code."
+          mainhead="You’ve Got the Vision We’ve Got the Code"
           secPara="Big ideas deserve precision and flawless execution. You have the idea, we know the goal, together we can help you reach the heights you want to be. Whether you’re launching a bold new concept, rebuilding what’s not working, or scaling beyond that portfolio website, our WordPress development services team in Dallas knows how to turn potential into performance."
           secParatwo="Either you need one with a template or with the tech, we do clarity, strategy, and clean, conversion-ready builds. "
           btntxt="Talk to Us"

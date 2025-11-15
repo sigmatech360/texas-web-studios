@@ -1357,6 +1357,38 @@ section.tabs-pricing-sec {
   .getToKnowContent {
     margin-top: 20px;
   }
+
+ 
+}
+
+@media (max-width: 786px) {
+ .locate-wordpress-herobanner .inner-banner-sec-bgImg {object-position: left;}
+ .abouttxt-data {
+    margin: 30px 0px 0px 0px;
+}
+
+.location-support-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.location-support-card {
+    margin: 0px 0px 40px 0px;
+}
+
+
+.location-contact-txt {
+    margin: 0px 0px 20px 0px;
+}
+
+
+.locate-wordpress-herobanner .innerBannerContent {
+    padding: 20px;
+    background: #00000099;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+
 }
 
 @media (max-width: 767px) {
@@ -1431,9 +1463,47 @@ section.tabs-pricing-sec {
   .getToKnowContent .secTitle {
     font-size: 26px;
   }
+
+  .abouttxt-data {
+    margin: 30px 0px 0px 0px;
+}
+
+.pixel-perfect-head h2 {
+    font-size: 40px;
+}
+
+.tabs-pricing-head h2 {
+    font-size: 40px;
+}
+
+.location-support-head h3 {
+    font-size: 40px;
+}
+
+.location-contact-txt h2 {
+    font-size: 40px;
+}
+
+.location-faqs-txt h2 {
+    font-size: 40px;
+}
+
+.location-contact-txt {
+    margin: 0px 0px 20px 0px;
+}
+
+    .location-support-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
 }
 @media (max-width: 390px) {
   .homeAboutContent .secTitle {
     font-size: 30px;
   }
+
+      .location-support-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

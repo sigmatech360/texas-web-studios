@@ -22,7 +22,7 @@ const TabsPricing = ({ minihead, mainhead, secPara, tabsData = [] }) => {
           <div className="col-lg-12">
             <div className="dynamic-pricing-tabs">
             <Tabs>
-              <TabList>
+              <TabList className="react-tabs__tab-list nav nav-tabs">
                 {tabsData.map((tab, index) => (
                   <Tab key={index}>{tab.title}</Tab>
                 ))}

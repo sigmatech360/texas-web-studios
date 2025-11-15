@@ -26,6 +26,7 @@ import ScrollToTop from "../components/ScrollToTop";
 import NotFound from "../screens/NotFound/NotFound";
 import AppDevelopmentTD from "../screens/locationpages/AppDevelopmentTD";
 import WordpressDevelopmentTD from "../screens/locationpages/WordpressDevelopmentTD";
+import EcommerceDevelopment from "../screens/Services/EcommerceDevelopment";
 
 const AppRouter = () => {
   return (
@@ -56,7 +57,13 @@ const AppRouter = () => {
         {/* Services Pages */}
         <Route path="/logo-design" element={<LogoDesign />} />
         <Route path="/web-development" element={<WebDevelopment />} />
+
+          {/* CMS Development & Inner Pages */}
         <Route path="/cms-development" element={<CMSDevelopment />} />
+        <Route path="/ecommerce-development" element={<EcommerceDevelopment />} />
+
+
+
         <Route path="/digital-media-marketing" element={<DigitalMediaMarketing />}/>
         {/* LatestTechSec list Title Head */}
         <Route path="/social-media-marketing" element={<SMM />} />

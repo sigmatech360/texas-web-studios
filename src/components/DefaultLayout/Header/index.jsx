@@ -67,14 +67,32 @@ const Header = () => {
                 >
                   Web Development
                 </NavDropdown.Item>
-                <NavDropdown.Item
-                  as={Link}
-                  to="/cms-development"
-                  onClick={(e) => e.stopPropagation()}
-                  target="_blank"
-                >
-                  CMS Development
-                </NavDropdown.Item>
+                <div className="nav-subdropdown-wrapper">
+                  <NavDropdown.Item
+                    as={Link}
+                    to="/cms-development"
+                    onClick={(e) => e.stopPropagation()}
+                    target="_blank"
+                  >
+                    CMS Development
+                    {/* <span className="submenu-icon d-none d-lg-inline">
+                      <FaCaretRight />
+                    </span>
+                    <span className="submenu-icon d-inline d-lg-none">
+                      <FaCaretDown />
+                    </span> */}
+                  </NavDropdown.Item>
+                  {/* <div className="nav-subdropdown">
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/ecommerce-development"
+                      onClick={(e) => e.stopPropagation()}
+                      target="_blank"
+                    >
+                      Ecommerce Development
+                    </NavDropdown.Item>
+                  </div> */}
+                </div>
                 <div className="nav-subdropdown-wrapper">
                   <NavDropdown.Item
                     as={Link}
@@ -110,7 +128,7 @@ const Header = () => {
                   </div>
                 </div>
 
-                <NavDropdown.Item 
+                <NavDropdown.Item
                   as={Link}
                   to="/custom-web-development"
                   onClick={(e) => e.stopPropagation()}
@@ -128,7 +146,6 @@ const Header = () => {
                 </NavDropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
-
 
             <Dropdown id="services-dropdown">
               <Dropdown.Toggle
@@ -151,11 +168,8 @@ const Header = () => {
               </Dropdown.Toggle>
               <Dropdown.Menu>
                 <div className="nav-subdropdown-wrapper">
-                  <NavDropdown.Item
-                    onClick={(e) => e.stopPropagation()}
-                    target="_blank"
-                  >
-                    Dallas, Texas{" "}
+                  <NavDropdown.Item onClick={(e) => e.stopPropagation()}>
+                    Dallas{" "}
                     <span className="submenu-icon d-none d-lg-inline">
                       <FaCaretRight />
                     </span>
@@ -166,7 +180,7 @@ const Header = () => {
                   <div className="nav-subdropdown">
                     <NavDropdown.Item
                       as={Link}
-                      to="/app-development-texas"
+                      to="/app-development-dallas"
                       onClick={(e) => e.stopPropagation()}
                       target="_blank"
                     >
@@ -174,7 +188,7 @@ const Header = () => {
                     </NavDropdown.Item>
                     <NavDropdown.Item
                       as={Link}
-                      to="/wordpress-development-texas"
+                      to="/wordpress-development-dallas"
                       onClick={(e) => e.stopPropagation()}
                       target="_blank"
                     >
