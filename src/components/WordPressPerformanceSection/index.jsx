@@ -53,7 +53,7 @@ const WordPressPerformanceSection = (props) => {
                   data-aos-duration="1000"
                   data-aos-offset="50"
                 >
-                  {props.descriptiontwo}
+                 <span>{props.descriptionspantwo}</span> {props.descriptiontwo}
                 </p>
                 <h6
                   data-aos={textAos}

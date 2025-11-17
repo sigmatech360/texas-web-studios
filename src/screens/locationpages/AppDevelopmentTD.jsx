@@ -133,7 +133,8 @@ const AppDevelopmentTD = () => {
           secTitle1="Because Our Apps"
           secTitle2="Build Businesses"
           description="Mobile apps are shown to increase sales by 54%, and we make sure to target that percentage, building apps so powerful that people don’t just download them, they keep coming back. At Texas Web Studios, our custom mobile app development in Dallas, TX, focuses on performance, conversion, and experience. Every tap, swipe, and interaction is engineered to turn users into loyal customers and your app into a profit machine."
-          descriptiontwo="“Just another app” isn’t our vibe; we build growth engines!"
+          descriptionspantwo="“Just another app” "
+          descriptiontwo="isn’t our vibe; we build growth engines!"
           image={aboutimg}
           listClass="d-none"  
           TouchBtn="d-none"

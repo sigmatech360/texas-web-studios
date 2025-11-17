@@ -1180,6 +1180,11 @@ section.tabs-pricing-sec {
     margin: 20px 0px 0px 0px;
 }
 
+.WordPressPerformanceSection p span {
+    font-style: italic;
+    padding: 0px 5px 0px 0px;
+}
+
 /********* Location Page CSS End *********/
 
 

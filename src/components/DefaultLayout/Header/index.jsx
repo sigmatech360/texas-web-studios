@@ -168,7 +168,7 @@ const Header = () => {
               </Dropdown.Toggle>
               <Dropdown.Menu>
                 <div className="nav-subdropdown-wrapper">
-                  <NavDropdown.Item onClick={(e) => e.stopPropagation()}>
+                  <NavDropdown.Item as="button" onClick={(e) => e.stopPropagation()}>
                     Dallas{" "}
                     <span className="submenu-icon d-none d-lg-inline">
                       <FaCaretRight />
