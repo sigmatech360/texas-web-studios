@@ -67,6 +67,8 @@ const Header = () => {
                 >
                   Web Development
                 </NavDropdown.Item>
+
+                {/* CMS Development & Inner Pages */}
                 <div className="nav-subdropdown-wrapper">
                   <NavDropdown.Item
                     as={Link}
@@ -75,14 +77,14 @@ const Header = () => {
                     target="_blank"
                   >
                     CMS Development
-                    {/* <span className="submenu-icon d-none d-lg-inline">
+                    <span className="submenu-icon d-none d-lg-inline">
                       <FaCaretRight />
                     </span>
                     <span className="submenu-icon d-inline d-lg-none">
                       <FaCaretDown />
-                    </span> */}
+                    </span>
                   </NavDropdown.Item>
-                  {/* <div className="nav-subdropdown">
+                  <div className="nav-subdropdown">
                     <NavDropdown.Item
                       as={Link}
                       to="/ecommerce-development"
@@ -91,8 +93,10 @@ const Header = () => {
                     >
                       Ecommerce Development
                     </NavDropdown.Item>
-                  </div> */}
+                  </div>
                 </div>
+
+                {/* Digital Marketing & Inner Pages */}
                 <div className="nav-subdropdown-wrapper">
                   <NavDropdown.Item
                     as={Link}
@@ -128,6 +132,7 @@ const Header = () => {
                   </div>
                 </div>
 
+              <div className="nav-subdropdown-wrapper">
                 <NavDropdown.Item
                   as={Link}
                   to="/custom-web-development"
@@ -135,7 +140,33 @@ const Header = () => {
                   target="_blank"
                 >
                   Custom Development
+                   <span className="submenu-icon d-none d-lg-inline">
+                      <FaCaretRight />
+                    </span>
+                    <span className="submenu-icon d-inline d-lg-none">
+                      <FaCaretDown />
+                    </span>
                 </NavDropdown.Item>
+                 <div className="nav-subdropdown">
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/frontend-development"
+                      onClick={(e) => e.stopPropagation()}
+                      target="_blank"
+                    >
+                      Frontend Development
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/backend-development"
+                      onClick={(e) => e.stopPropagation()}
+                      target="_blank"
+                    >
+                      Backend Development
+                    </NavDropdown.Item>
+                  </div>
+                </div>
+                
                 <NavDropdown.Item
                   as={Link}
                   to="/mobile-app-development"
@@ -147,6 +178,7 @@ const Header = () => {
               </Dropdown.Menu>
             </Dropdown>
 
+            {/* Location Pages */}
             <Dropdown id="services-dropdown">
               <Dropdown.Toggle
                 as="button"

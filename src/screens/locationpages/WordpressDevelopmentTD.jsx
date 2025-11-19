@@ -190,7 +190,7 @@ const WordpressDevelopmentTD = () => {
           minihead="Frequently Asked Questions"
           mainhead="Before You Google, Ask Us."
           secPara="Boost your website’s visibility and organic search rankings with our SEO strategies. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type."
-          faqs={faqsData}
+          faqsData={faqsData}
         />
 
         {isOpen && images.length > 0 && (

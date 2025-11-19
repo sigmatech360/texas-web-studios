@@ -10,6 +10,7 @@ const NewsCard = (props) => {
       {/* <img src={props.image} className="img-fluid rounded" /> */}
       {props.description && (
         <div className="news-card-content">
+          <h5>{props.titleprod}</h5>
           <p className="projectpara mb-0">{props.description}</p>
         </div>
       )}

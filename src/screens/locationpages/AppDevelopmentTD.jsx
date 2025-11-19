@@ -151,12 +151,12 @@ const AppDevelopmentTD = () => {
           onImageClick={handleImageClick}
         />
 
-        {/* <TabsPricing
+        <TabsPricing
           minihead="Pricing Plans"
           mainhead="Smart Pricing to Power Serious Growth"
           secPara="Discover your mobile app development cost in Dallas, TX, with plans that strike a balance between innovation, scalability, and ROI."
           tabsData={dynamictabsData}
-        /> */}
+        />
 
         <InnerBanner
           secClass="locate-wordpress-herobanner"
@@ -188,7 +188,7 @@ const AppDevelopmentTD = () => {
           minihead="FAQS"
           mainhead="Get All Your App-Related Queries Answered Here!"
           secPara="If you don’t find what you’re looking for here, fill out the contact form, and we’re sure you’ll get everything related to custom mobile app development services in Dallas, TX, over there!"
-          faqs={faqsData}
+          faqsData={faqsData}
         />
 
         {isOpen && images.length > 0 && (

@@ -27,6 +27,8 @@ import NotFound from "../screens/NotFound/NotFound";
 import AppDevelopmentTD from "../screens/locationpages/AppDevelopmentTD";
 import WordpressDevelopmentTD from "../screens/locationpages/WordpressDevelopmentTD";
 import EcommerceDevelopment from "../screens/Services/EcommerceDevelopment";
+import FrontendDevelopment from "../screens/Services/FrontendDevelopment";
+import BackendDevelopment from "../screens/Services/BackendDevelopment";
 
 const AppRouter = () => {
   return (
@@ -63,12 +65,19 @@ const AppRouter = () => {
         <Route path="/ecommerce-development" element={<EcommerceDevelopment />} />
 
 
-
+            {/* Digital Marketing & Inner Pages */}
         <Route path="/digital-media-marketing" element={<DigitalMediaMarketing />}/>
-        {/* LatestTechSec list Title Head */}
         <Route path="/social-media-marketing" element={<SMM />} />
         <Route path="/search-engine-optimization" element={<SEO />} />
+
+
+            {/* Custom Web Develpment & Inner Pages */}
         <Route path="/custom-web-development" element={<CustomWebDev />} />
+        <Route path="/frontend-development" element={<FrontendDevelopment />} />
+        <Route path="/backend-development" element={<BackendDevelopment />} />
+
+
+
         <Route path="/mobile-app-development" element={<MobileAppDev />} />
         
 

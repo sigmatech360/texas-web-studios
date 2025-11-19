@@ -44,13 +44,14 @@ const PixelPerfectSec = (props) => {
                 <NewsCard
                   image={item.image}
                   imgClass={props.imgClass}
+                  titleprod={item.title}  
                   description={item.description}
                 />
               </div>
             ))}
             <div className="col-md-12">
               <div className="justify-content-center d-flex flex-wrap gap-4 pixel-button-div d-none">
-                <Link to={"/get-intouch"} className="viewbtn">
+                <Link to={props.btnlink|| "/portfolio"}  className="viewbtn theme-btn">
                   {props.btnText || "Request A Quote"}
                 </Link>
                 <div className="d-flex align-items-center gap-2 packages-number">

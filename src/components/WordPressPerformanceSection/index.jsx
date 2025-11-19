@@ -3,10 +3,12 @@ import performence from "../../assets/images/performence.webp";
 import "./index.css";
 import { Link } from "react-router-dom";
 import { SiTicktick } from "react-icons/si";
-import { FaCheckCircle, FaPhoneAlt, FaRegCheckCircle } from "react-icons/fa";
-import whychoose1 from "../../assets/images/web-whychoose-1.svg";
-import whychoose2 from "../../assets/images/web-whychoose-2.svg";
-import whychoose3 from "../../assets/images/web-whychoose-3.svg";
+import {
+  FaCheckCircle,
+  FaCheckSquare,
+  FaPhoneAlt,
+  FaRegCheckCircle,
+} from "react-icons/fa";
 
 const WordPressPerformanceSection = (props) => {
   const isReversed = props.reverse;
@@ -20,7 +22,8 @@ const WordPressPerformanceSection = (props) => {
 
   return (
     <section
-      className={props.wordpresssecclass || "WordPressPerformanceSection"}>
+      className={props.wordpresssecclass || "WordPressPerformanceSection"}
+    >
       <div className="container">
         <div className={props.afterConainerClass}>
           {/* <div className={props.domainRow || "d-none"}>
@@ -53,7 +56,7 @@ const WordPressPerformanceSection = (props) => {
                   data-aos-duration="1000"
                   data-aos-offset="50"
                 >
-                 <span>{props.descriptionspantwo}</span> {props.descriptiontwo}
+                  <span>{props.descriptionspantwo}</span> {props.descriptiontwo}
                 </p>
                 <h6
                   data-aos={textAos}
@@ -63,15 +66,12 @@ const WordPressPerformanceSection = (props) => {
                   {props.designpointheadline}
                 </h6>
                 <ul className="web-whychoose-list d-none">
-                  <li>
-                    <img src={whychoose1} alt="img" /> Decentralized Systems
-                  </li>
-                  <li>
-                    <img src={whychoose2} alt="img" /> Smart Automation
-                  </li>
-                  <li>
-                    <img src={whychoose3} alt="img" /> Secure Transactions
-                  </li>
+                  {props.whyChooseList &&
+                    props.whyChooseList.map((item, index) => (
+                      <li key={index}>
+                        <FaCheckSquare /> {item}
+                      </li>
+                    ))}
                 </ul>
                 <div className={props.anotherFlexClass}>
                   <div className={props.alllistdata}>
@@ -98,7 +98,9 @@ const WordPressPerformanceSection = (props) => {
                         {props.landingListItems &&
                           props.landingListItems.map((item, index) => (
                             <li key={index}>
-                              <FaCheckCircle className="landing-circle" /><FaRegCheckCircle className="landing-check-none" /> {item}
+                              <FaCheckCircle className="landing-circle" />
+                              <FaRegCheckCircle className="landing-check-none" />{" "}
+                              {item}
                             </li>
                           ))}
                       </ul>
@@ -135,20 +137,28 @@ const WordPressPerformanceSection = (props) => {
                       {props.btnText || `Get In Touch`}
                     </Link>
                     <div className={props.learnmorebtn}>
-                      <Link to={props.aboutbtnlink || "/about"}>{props.btntext}</Link>
+                      <Link to={props.aboutbtnlink || "/about"}>
+                        {props.btntext}
+                      </Link>
                       {(props.phoneNumber || props.phoneLink) && (
                         <div className="about-number about-number-anchor">
-                          <a href={`tel:${props.phoneNumberLink || "+16193352364"}`}>
-                          <span>
-                            <FaPhoneAlt />
-                          </span>
-                          <p>{props.phoneNumber || "+1 (619) 335-2364"}</p>
+                          <a
+                            href={`tel:${
+                              props.phoneNumberLink || "+16193352364"
+                            }`}
+                          >
+                            <span>
+                              <FaPhoneAlt />
+                            </span>
+                            <p>{props.phoneNumber || "+1 (619) 335-2364"}</p>
                           </a>
                         </div>
                       )}
                     </div>
                   </div>
-                  <div className={props.aboutSmall || "overall-small-about d-none"}>
+                  <div
+                    className={props.aboutSmall || "overall-small-about d-none"}
+                  >
                     <img
                       src={props.aboutSmallImg}
                       alt="Service About"
@@ -186,25 +196,33 @@ const WordPressPerformanceSection = (props) => {
                   <div className="service-point-txt">
                     <h5>Designing</h5>
                     <p>
-                      A digital product succeeds when users don’t have to think twice while finding their way navigating the web app. We build intuitive, user-first experiences that make every interaction simple and satisfying.
+                      A digital product succeeds when users don’t have to think
+                      twice while finding their way navigating the web app. We
+                      build intuitive, user-first experiences that make every
+                      interaction simple and satisfying.
                     </p>
                   </div>
                 </div>
-                 <div className="mern-service-point">
+                <div className="mern-service-point">
                   <h6>02</h6>
                   <div className="service-point-txt">
                     <h5>Developing</h5>
                     <p>
-                      Code is our way to innovate, turning complex logic into high-performing systems that think fast, respond instantly, and evolve with technology.  
+                      Code is our way to innovate, turning complex logic into
+                      high-performing systems that think fast, respond
+                      instantly, and evolve with technology.
                     </p>
                   </div>
                 </div>
-                 <div className="mern-service-point">
+                <div className="mern-service-point">
                   <h6>03</h6>
                   <div className="service-point-txt">
                     <h5>Deploying</h5>
                     <p>
-                      It’s not about going live, but also about being live. Once your web or app is live, we make sure it stays high-performing by constant monitoring, proactive website maintenance, and weekly backups.
+                      It’s not about going live, but also about being live. Once
+                      your web or app is live, we make sure it stays
+                      high-performing by constant monitoring, proactive website
+                      maintenance, and weekly backups.
                     </p>
                   </div>
                 </div>

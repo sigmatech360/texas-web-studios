@@ -82,7 +82,7 @@ const LocationContact = (props) => {
   };
 
   return (
-    <section className="location-contact-sec">
+    <section className={`location-contact-sec ${props.secClass}`}>
       <div className="container">
         <div className="row">
           {/* Left Side */}

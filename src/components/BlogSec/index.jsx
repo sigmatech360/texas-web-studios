@@ -28,7 +28,7 @@ const blogsData = [
 
 const wpBaseUrl = import.meta.env.VITE_WP_BASE_URL;
 
-const BlogSec = ({ secTitle, categorySlug }) => {
+const BlogSec = ({ secTitle, minihead, categorySlug }) => {
   // const [loading, setLoading] = useState(true);
   // const [blogs, setBlogs] = useState([]);
 
@@ -106,7 +106,7 @@ const BlogSec = ({ secTitle, categorySlug }) => {
         <div className="row">
           <div className="col-md-12">
             <div className="secHead">
-              <p className="sec-tag">NEWS FEED</p>
+              <p className="sec-tag">{minihead || "NEWS FEED"}</p>
               <h4 className="secTitle" data-aos="fade-up" data-aos-delay="200">
                 {secTitle || "News & Article"}
               </h4>
