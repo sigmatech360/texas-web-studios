@@ -114,7 +114,7 @@ const EcommerceDevelopment = () => {
 
     <ReactHelmet
         title="E-Commerce Website Development Texas | Texas Web Studios"
-        description="We build e-commerce websites that help Texas businesses grow online. Get a fast, secure, and easy-to-manage online store built for success."
+        description="We build e-commerce websites that help Texas businesses grow online. Get a fast, secure, and easy-to-manage e-commerce website in Texas built for success."
         url={`${webUrl}/ecommerce-development`}
       />
       <DefaultLayout>

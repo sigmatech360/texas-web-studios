@@ -61,6 +61,13 @@ const InnerBanner = (props) => {
                   </li>
                 </ol>
               </nav>
+              <ul className="herobanner-list d-none">
+                  <li>E-commerce Development</li>
+                  <li>Custom WordPress Development</li>
+                  <li>Plug-ins Integration</li>
+                  <li>Website Revamp</li>
+                </ul>
+                 {props.listdownpara && <p>{props.listdownpara}</p>}
              {props.btntxt && <Link to={props.btnLink || "/contact"} className={props.btnClass || "theme-btn"}>{props.btntxt}</Link>}
             </div>
           </div>

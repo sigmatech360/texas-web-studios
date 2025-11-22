@@ -29,6 +29,10 @@ import WordpressDevelopmentTD from "../screens/locationpages/WordpressDevelopmen
 import EcommerceDevelopment from "../screens/Services/EcommerceDevelopment";
 import FrontendDevelopment from "../screens/Services/FrontendDevelopment";
 import BackendDevelopment from "../screens/Services/BackendDevelopment";
+import DomainRegisteration from "../screens/Services/DomainRegisteration";
+import DomainTransfer from "../screens/Services/DomainTransfer";
+import WordpressDevelopment from "../screens/Services/WordpressDevelopment";
+import ReactDevelopmentTD from "../screens/locationpages/ReactDevelopmentTD";
 
 const AppRouter = () => {
   return (
@@ -60,9 +64,11 @@ const AppRouter = () => {
         <Route path="/logo-design" element={<LogoDesign />} />
         <Route path="/web-development" element={<WebDevelopment />} />
 
+
           {/* CMS Development & Inner Pages */}
         <Route path="/cms-development" element={<CMSDevelopment />} />
         <Route path="/ecommerce-development" element={<EcommerceDevelopment />} />
+        <Route path="/wordpress-development" element={<WordpressDevelopment />} />
 
 
             {/* Digital Marketing & Inner Pages */}
@@ -79,6 +85,11 @@ const AppRouter = () => {
 
 
         <Route path="/mobile-app-development" element={<MobileAppDev />} />
+
+
+          {/* Hosting & Domain Inner Pages */}
+        <Route path="/domain-registeration" element={<DomainRegisteration />} />
+        <Route path="/domain-transfer" element={<DomainTransfer />} />
         
 
 
@@ -86,6 +97,7 @@ const AppRouter = () => {
         {/* Location Pages */}
         <Route path="/app-development-dallas" element={<AppDevelopmentTD />} />
         <Route path="/wordpress-development-dallas" element={<WordpressDevelopmentTD />} />
+        <Route path="/react-development-dallas" element={<ReactDevelopmentTD />} />
 
 
       </Routes>

@@ -51,13 +51,15 @@ const WordPressPerformanceSection = (props) => {
                   {props.description}
                 </p>
                 <h4 className="d-none">{props.bestvideohead}</h4>
+                {props.descriptiontwo &&
                 <p
                   data-aos={textAos}
                   data-aos-duration="1000"
                   data-aos-offset="50"
+                  className="wordpress-choose-para"
                 >
                   <span>{props.descriptionspantwo}</span> {props.descriptiontwo}
-                </p>
+                </p>}
                 <h6
                   data-aos={textAos}
                   data-aos-duration="1000"

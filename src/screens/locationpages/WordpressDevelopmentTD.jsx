@@ -150,7 +150,7 @@ const WordpressDevelopmentTD = () => {
           projectsData={webDesignPortfolioData}
           onImageClick={handleImageClick}
         />
-{/* 
+{/*      
         <TabsPricing
           minihead="Pricing Plans"
           mainhead="Invest Smart and Scale Fast with Flexible Pricing"

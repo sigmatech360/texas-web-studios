@@ -27,7 +27,7 @@ const Backendservices = () => {
                     <div className="backend-service-txt">
                         <h5>Content Management Systems (CMS)</h5>
                         <p>Our CMS solutions allow effortless control over your website content. For every business we take responsibility for, we create custom CMS platforms that simplify updates, ensure security, and provide flexibility without compromising design and aesthetics.</p>
-                        <Link to="/contact" className="theme-btn" >Explore Services</Link>
+                        {/* <Link to="/contact" className="theme-btn" >Explore Services</Link> */}
                     </div>
                 </div>
                 <div className="col-lg-6">
@@ -44,14 +44,14 @@ const Backendservices = () => {
                     <div className="backend-service-txt">
                         <h5>DevOps Services</h5>
                         <p>Our DevOps experts bridge the gap between development and operations, ensuring faster deployments, continuous integration, and zero downtime. We automate workflows, bring easier updates, and optimize delivery pipelines to improve the reliability and performance of your project.</p>
-                        <Link to="/contact" className="theme-btn">Explore Services</Link>
+                        {/* <Link to="/contact" className="theme-btn">Explore Services</Link> */}
                     </div>
                 </div>
                 <div className="col-lg-6">
                     <div className="backend-service-txt">
                         <h5>Server Management</h5>
                         <p>Our backend development agency in Texas provides full server management to maintain a robust web infrastructure, ensuring it remains strong and resilient. We monitor server performance, apply proactive maintenance, and ensure optimal uptime, giving your digital assets a solid foundation to operate on.</p>
-                        <Link to="/contact" className="theme-btn">Explore Services</Link>
+                        {/* <Link to="/contact" className="theme-btn">Explore Services</Link> */}
                     </div>
                 </div>
                 <div className="col-lg-6">
@@ -68,7 +68,7 @@ const Backendservices = () => {
                     <div className="backend-service-txt">
                         <h5>SSL Hosting</h5>
                         <p>Security is the backbone of every successful website. Our SSL hosting solutions guarantee encrypted connections, safeguarding sensitive data and boosting your SEO credibility while ensuring your customers always browse with confidence.</p>
-                        <Link to="/contact" className="theme-btn">Explore Services</Link>
+                        {/* <Link to="/contact" className="theme-btn">Explore Services</Link> */}
                     </div>
                 </div>
             </div>

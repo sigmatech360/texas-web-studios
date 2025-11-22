@@ -501,7 +501,7 @@ const Home = () => {
           image={faqImg}
         />
         <BookCallSec
-          title="Let’s Discuss Your Business Goals."
+          title="Let’s Discuss Your Business Goals"
           btnText="Book a Call"
         />
         <ContactUsSec />

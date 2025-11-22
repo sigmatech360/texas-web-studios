@@ -1403,8 +1403,8 @@ section.our-process-sec {
   height: 75%;
   width: 2px;
   background: #707070;
-right: 2px;
-    bottom: -20px;
+  right: 2px;
+  bottom: -20px;
 }
 
 .phasefive::after {
@@ -1452,9 +1452,9 @@ right: 2px;
 }
 
 section.ecommerce-choose-sec .abouttxt-data {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 /********* Ecommerce Development Page CSS End *********/
@@ -1586,62 +1586,77 @@ section.ecommerce-choose-sec .abouttxt-data {
   height: 94%;
 }
 
-
 .frontend-services-btn {
-    margin: 20px 0px 0px 0px;
+  margin: 20px 0px 0px 0px;
 }
 
 .frontend-choose-sec {
-    padding: 70px 0px;
+  padding: 70px 0px;
 }
 
 section.frontend-choose-sec .web-whychoose-list {
-    display: block !important;
-    padding: 0px;
-    margin: 10px 0px 0px 0px;
+  display: block !important;
+  padding: 0px;
+  margin: 10px 0px 0px 0px;
 }
 
 section.frontend-choose-sec .web-whychoose-list li {
-    list-style: none;
-    padding: 7px 0px;
+  list-style: none;
+  padding: 7px 0px;
 }
 
 section.frontend-choose-sec .web-whychoose-list li svg {
-    color: #D41F14;
-    margin: 0px 8px 0px 0px;
+  color: #d41f14;
+  margin: 0px 8px 0px 0px;
 }
 
 .frontend-benefit-sec .location-faqs .accordion .accordion-item {
-    margin: 0px 0px 20px 0px;
-    border-radius: 10px;
-    border: 0.4000000059604645px solid #fff;
-    background: #161515;
+  margin: 0px 0px 20px 0px;
+  border-radius: 10px;
+  border: 0.4000000059604645px solid #fff;
+  background: #161515;
 }
 
-.frontend-benefit-sec .location-faqs .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
-    color: #fff;
-    background-color: transparent;
-    font-weight: 600;
+.frontend-benefit-sec
+  .location-faqs
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:not(.collapsed) {
+  color: #fff;
+  background-color: transparent;
+  font-weight: 600;
 }
 
-.frontend-benefit-sec .location-faqs .accordion .accordion-item .accordion-body {
-    color: #fff;
+.frontend-benefit-sec
+  .location-faqs
+  .accordion
+  .accordion-item
+  .accordion-body {
+  color: #fff;
 }
 
-.frontend-benefit-sec .location-faqs .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after{
+.frontend-benefit-sec
+  .location-faqs
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:not(.collapsed)::after {
   background-repeat: no-repeat;
   background-size: 18px;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 640 640%22><path fill=%22%23fff%22 d=%22M297.4 169.4C309.9 156.9 330.2 156.9 342.7 169.4L534.7 361.4C547.2 373.9 547.2 394.2 534.7 406.7C522.2 419.2 501.9 419.2 489.4 406.7L320 237.3L150.6 406.6C138.1 419.1 117.8 419.1 105.3 406.6C92.8 394.1 92.8 373.8 105.3 361.3L297.3 169.3z%22/></svg>");
 }
 
-
-.location-faqs .accordion .accordion-item .accordion-header .accordion-button::after {
-    background-image: url("data:image/svg+xml,%3csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20640%20640%22%3e%3cpath%20d=%22M297.4%20470.6C309.9%20483.1%20330.2%20483.1%20342.7%20470.6L534.7%20278.6C547.2%20266.1%20547.2%20245.8%20534.7%20233.3C522.2%20220.8%20501.9%20220.8%20489.4%20233.3L320%20402.7L150.6%20233.4C138.1%20220.9%20117.8%20220.9%20105.3%20233.4C92.8%20245.9%2092.8%20266.2%20105.3%20278.7L297.3%20470.7z%22/%3e%3c/svg%3e");
-    background-repeat: no-repeat;
-    background-size: 18px;
-    transform: rotate(0deg);
+.location-faqs
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20640%20640%22%3e%3cpath%20d=%22M297.4%20470.6C309.9%20483.1%20330.2%20483.1%20342.7%20470.6L534.7%20278.6C547.2%20266.1%20547.2%20245.8%20534.7%20233.3C522.2%20220.8%20501.9%20220.8%20489.4%20233.3L320%20402.7L150.6%20233.4C138.1%20220.9%20117.8%20220.9%20105.3%20233.4C92.8%20245.9%2092.8%20266.2%20105.3%20278.7L297.3%20470.7z%22/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-size: 18px;
+  transform: rotate(0deg);
 }
-
 
 /********* Frontend Development Page CSS End *********/
 
@@ -1689,7 +1704,10 @@ section.backend-services-sec {
 }
 
 .backend-service-txt {
-  margin: 20px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 
 .backend-work-img img {
@@ -1874,6 +1892,550 @@ section.ecommerce-service-sec .pixel-button-div .packages-number {
 
 /********* Backend Development Page CSS End *********/
 
+/********* Domain Registeration Page CSS Start *********/
+
+.domain-registeration-herobanner {
+  background: #161515;
+}
+
+section.domain-search-buy {
+  padding: 50px 0px;
+}
+
+.domain-prices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #707070;
+  border-radius: 42px;
+  padding: 10px 0px;
+}
+
+.different-domain-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0px 15px;
+  border-right: 1px solid #707070;
+}
+
+.different-domain-price h6 {
+  margin: 0px;
+  color: #000000;
+  font-size: 16px;
+  line-height: normal;
+}
+
+.different-domain-price:nth-child(6) {
+  border: none;
+}
+
+.domain-search-bar input {
+  border-radius: 8px;
+  width: 100%;
+  padding: 15px 20px;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #707070;
+}
+
+.domain-search-bar span {
+  color: #fff;
+  background: #d41f14;
+  position: absolute;
+  padding: 9px 15px 14px 15px;
+  font-size: 24px;
+  border-radius: 10px;
+  line-height: normal;
+  right: 0px;
+  top: 0px;
+  cursor: pointer;
+}
+
+.different-domain-price img {
+  width: 50px;
+  height: 33px;
+  object-fit: contain;
+}
+
+.domain-search-bar {
+  position: relative;
+}
+
+.domain-search-bar input::placeholder {
+  color: #000000;
+  font-size: 16px;
+}
+
+.domain-search-bar input:focus {
+  outline: none;
+}
+
+.trustpilot-txt {
+  margin: 40px 0px 0px 0px;
+  text-align: center;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #707070;
+  border-radius: 42px;
+  padding: 14px 0px;
+}
+
+.trustpilot-txt p {
+  margin: 0px;
+  color: #000000;
+}
+
+.trustpilot-txt span {
+  font-weight: 600;
+  padding: 0px 0px 0px 10px;
+}
+
+.trustpilot-txt img {
+  margin: 0px 15px;
+}
+
+.trustpilot-stars {
+  width: 90px;
+}
+
+.trustpilotstar {
+  width: 20px;
+  margin: 0px 0px 0px 10px !important;
+}
+
+.domainregister-service-card {
+  padding: 50px 30px 40px 30px;
+  background: #161515;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  margin: 0px 0px 30px 0px;
+}
+
+.domainregister-service-card h4 {
+  color: #fff;
+  font-size: 20px;
+  margin: 20px 0px 20px 0px;
+}
+
+.domainregister-service-card p {
+  color: #fff;
+  margin: 0px;
+}
+
+.domainregister-service-btn {
+  text-align: center;
+  margin: 40px 0px 0px 0px;
+}
+
+.domainregister-services-sec {
+  padding: 70px 0px;
+  background: #161515;
+}
+
+.hosting-boxes-sec {
+  padding: 50px 0px;
+}
+
+.hosting-box {
+  height: 250px;
+  background: #f4f6f9;
+  padding: 30px;
+  border-radius: 30px;
+  transition: all 0.6s ease;
+  transform: translate(0px, 0px);
+}
+
+.hosting-box:hover {
+  background: #d41f14;
+  transform: translate(0px, -10px);
+  cursor: pointer;
+}
+
+.hosting-box h3 {
+  font-weight: 700;
+  padding: 0px 0px 10px 0px;
+}
+
+.hosting-box:hover h3 {
+  color: #fff;
+  font-size: 40px;
+}
+
+.hosting-box:hover p {
+  color: #fff;
+}
+
+.hosting-box p {
+  transition: all 0.6s ease;
+}
+
+.hosting-box:hover p span {
+  display: block;
+  padding: 50px 0px 0px 0px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.hosting-box span {
+  transition: all 0.6s ease;
+}
+
+.transfer-support-sec {
+  background: url(./assets/images/services/domainresgisteration/support-bg.webp)
+    no-repeat top center;
+  background-size: cover;
+  padding: 100px 0px 100px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.transfer-support-txt {
+  background: #d41f14c9;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.transfer-support-txt p {
+  color: #fff;
+}
+
+.transfer-support-txt p {
+  color: #fff;
+}
+
+.transfer-support-txt button {
+  background: #fff;
+  color: #d41f14;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 20px 0px 0px 0px;
+  transition: all 0.6s ease;
+  border: 1px solid #fff;
+  font-weight: 500;
+}
+
+.transfer-support-txt button:hover {
+  background: transparent;
+  color: #fff;
+}
+
+
+.domain-register-choose .web-whychoose-list {
+  display: block !important;
+  padding: 0px;
+}
+
+.domain-register-choose .web-whychoose-list li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    padding: 6px 0px;
+}
+
+
+.domain-register-choose .web-whychoose-list li svg {
+    color: #D41F14;
+}
+
+
+
+section.domain-register-process {
+  padding: 70px 0px;
+  background-color: #161515;
+}
+
+.register-process-head {
+  text-align: center;
+  margin: 0px 0px 40px 0px;
+}
+
+.register-process-box {
+  border-radius: 20px;
+  padding: 30px;
+  background: #D41F14;
+}
+
+.register-process-box h3 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 0px 0px 10px 0px;
+}
+
+.register-process-box h5 {
+  color: #fff;
+  padding: 0px 0px 20px 0px;
+  font-weight: bold;
+}
+
+.register-process-box p {
+  color: #fff;
+  font-size: 14px;
+}
+
+.register-process-head h6 {
+    margin: 0px 0px 10px 0px;
+}
+
+.register-process-head h6,
+.register-process-head h2,
+.register-process-head p {
+  color: #fff;
+}
+
+
+
+/********* Domain Registeration Page CSS End *********/
+
+
+
+/********* Wordpress Development Page CSS Start *********/
+
+
+.wordpress-services-sec {
+  background-color: #161515;
+  padding: 70px 0px;
+}
+
+
+.wordpress-service-img img {
+    width: 100%;
+}
+
+.wordpress-service-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.wordpress-service-txt h4 {
+    color: #fff;
+    margin: 0px 0px 20px 0px;
+    font-weight: bold;
+}
+
+.wordpress-service-txt .theme-btn {
+    width: fit-content;
+    margin: 20px 0px 0px 0px;
+}
+
+.wordpress-service-txt p {
+    color: #fff;
+}
+
+.wordpress-service-img {
+    margin: 50px 0px;
+}
+
+.wordpress-services-head p {
+    color: #fff;
+    margin: 0px 0px 30px 0px;
+}
+
+.wordpress-services-head {
+    margin: 0px 0px 50px 0px;
+}
+
+section.wordpress-process-sec {
+    padding: 70px 0px;
+}
+
+.wordpress-process-head {
+    margin: 0px 0px 40px 0px;
+    text-align: center;
+}
+
+.wordpress-process-box {
+    padding: 20px;
+}
+
+.wordpress-process-box h4 {
+    font-size: 18px;
+    margin: 0px 0px 15px 0px;
+    color: #D41F14;
+    font-weight: bold;
+}
+
+.wordpress-process-box p {
+    color: #161515;
+}
+
+.borderright-gray-707070 {
+  border-right: 2px solid #707070 !important;
+}
+
+.borderbottom-gray-707070 {
+  border-bottom: 2px solid #707070 !important;
+}
+
+.wordpress-choose-sec {
+  background: url(./assets/images/services/wordpressdevelopment/choosebg.webp)
+    no-repeat top center;
+  background-size: cover;
+  padding: 100px 0px 100px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.wordpress-choose-sec .wordpress-choose-para {
+   display: none;
+}
+
+.wordpress-choose-sec .services__about-img img {
+    display: none;
+}
+ 
+.wordpress-choose-sec .abouttxt-data h6,
+.wordpress-choose-sec .abouttxt-data h2,
+.wordpress-choose-sec .abouttxt-data h2 span,
+.wordpress-choose-sec .abouttxt-data p {
+    color:  #fff;
+}
+
+.wordpress-choose-sec  .web-whychoose-list li {
+  color: #fff;
+}
+
+
+.ecommerce-portflio-sec {
+  padding: 00px 0px 70px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.ecommerce-portfolio-head {
+  text-align: center;
+  margin: 30px 0px 30px 0px;
+}
+
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "" !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 50px !important;
+  height: 50px !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-button-prev {
+  background-image: url("./assets/images/services/wordpressdevelopment/left-arrow.svg");
+}
+
+/* RIGHT ARROW SVG */ 
+.swiper-button-next {
+  background-image: url("./assets/images/services/wordpressdevelopment/right-arrow.svg");
+}
+
+.ecommerce-portfolio-img {
+    padding: 0px 90px;
+}
+
+.ecommerce-portfolio-img img {
+    width: 100%;
+}
+
+
+.wordpress-another-sec {
+  background-color: #161515;
+  padding: 100px 0px 100px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.wordpress-another-sec .abouttxt-data h6,
+.wordpress-another-sec .abouttxt-data h2,
+.wordpress-another-sec .abouttxt-data h2 span,
+.wordpress-another-sec .abouttxt-data p {
+    color:  #fff;
+}
+
+.wordpress-another-sec .wordpress-choose-para {
+   display: none;
+}
+
+
+.wordpress-another-sec  .web-whychoose-list li {
+  color: #fff;
+}
+
+.wordpress-contact-sec {
+  padding: 0px 0px 50px 0px;
+  background: #fff;
+}
+
+.ecommerce-portfolio-img img {
+    width: 100%;
+}
+
+.ecommerce-portfolio-img {
+    padding: 0px 90px;
+}
+
+.wordpress-contact-sec .location-contact-txt h2 {
+    color: #161515;
+}
+
+.wordpress-contact-sec .location-contact-txt p {
+    color: #707070;
+}
+
+.wordpress-contact-sec .location-contact-txt ul li {
+    color: #707070;
+}
+
+.wordpress-contact-sec .contactForm {
+  background: transparent !important;
+  box-shadow: none !important;
+ }
+
+.wordpress-contact-sec .contactForm .form-control{
+  background: #F6F6F6;
+  color: #707070;
+  box-shadow: none;
+}
+
+.wordpress-contact-sec .contactForm .form-control::placeholder {
+    color: #707070;
+}
+
+
+.wordpress-herobanner-sec .herobanner-list{
+    display: block !important;
+    margin: 20px 0px 0px 0px;
+    padding: 0px 0px 0px 25px;
+}
+
+.wordpress-herobanner-sec .herobanner-list li {
+    padding: 4px 0px;
+}
+
+
+.wordpress-about-sec .services__about-img img {
+  display: none !important;
+}
+
+
+.wordpress-about-sec .services__about-img video {
+  display: block !important;
+}
+
+
+/********* Wordpress Development Page CSS End *********/
+
+
+
+
 @media screen and (max-width: 1399px) {
   .homeAboutContent .secTitle {
     font-size: 45px;
@@ -1986,6 +2548,7 @@ section.ecommerce-service-sec .pixel-button-div .packages-number {
     gap: 16px;
   }
 }
+
 @media screen and (max-width: 991px) {
   .getFoundSeoImg {
     max-width: 480px;
@@ -2078,58 +2641,112 @@ section.ecommerce-service-sec .pixel-button-div .packages-number {
   }
 
   .phaseone::before,
-.phaseone::after,
-.phasetwo::before,
-.phasetwo::after,
-.phasethree::before,
-.phasethree::after,
-.phasefour::before,
-.phasefour::after,
-.phasefive::before,
-.phasefive::after,
-.phasesix::before,
-.phasesix::after {
-  display: none;
-}
+  .phaseone::after,
+  .phasetwo::before,
+  .phasetwo::after,
+  .phasethree::before,
+  .phasethree::after,
+  .phasefour::before,
+  .phasefour::after,
+  .phasefive::before,
+  .phasefive::after,
+  .phasesix::before,
+  .phasesix::after {
+    display: none;
+  }
 
-.our-process-text {
+  .our-process-text {
     text-align: center;
     margin: 0px 0px 40px 0px;
     padding: 0px !important;
-}
+  }
 
-.our-process-img {
+  .our-process-img {
     margin: 0px 0px 50px 0px;
     padding: 0px !important;
-}
+  }
 
-.locate-wordpress-herobanner .innerBannerImg img{
+  .locate-wordpress-herobanner .innerBannerImg img {
     display: none;
-}
+  }
 
-
-section.backend-about-sec .abouttxt-data {
+  section.backend-about-sec .abouttxt-data {
     margin: 50px 0px 0px 0px;
-}
+  }
 
-.backend-service-txt {
+  .backend-service-txt {
     margin: 20px 0px 40px 0px;
-}
+  }
 
-.backend-work-txt {
+  .backend-work-txt {
     margin: 40px 0px 0px 0px;
-}
+  }
 
-.frontend-tab-content .react-tabs__tab-panel--selected p {
+  .frontend-tab-content .react-tabs__tab-panel--selected p {
     margin: 30px 0px 30px 0px;
-}
+  }
 
-.projec-img-1 {
+  .projec-img-1 {
     height: auto;
+  }
+
+  .our-project-btnimg {
+    display: none;
+  }
+
+  .domain-offer-sec .abouttxt-data {
+            margin: 60px 0px 0px 0px;
 }
 
-.our-project-btnimg {
-    display: none;
+.register-process-box {
+    margin: 0px 0px 30px 0px;
+}
+
+.domain-unique-sec .abouttxt-data{
+  text-align: left;
+}
+
+.hosting-box {
+    margin: 0px 0px 30px 0px;
+}
+
+.wordpress-about-sec .abouttxt-data {
+    text-align: left;
+}
+
+.wordpress-service-txt {
+    padding: 0px 0px 40px 0px;
+}
+
+.wordpress-process-box {
+    text-align: center;
+}
+
+.borderright-gray-707070 {
+  border: none !important;
+}
+
+.borderbottom-gray-707070 {
+    border: none !important;  
+}
+
+.wordpress-process-sec {
+    padding: 70px 0px 30px 0px;
+}
+
+.wordpress-choose-sec .abouttxt-data {
+    text-align: left;
+    padding: 20px;
+    background: #00000052;
+    border-radius: 10px;
+}
+
+.wordpress-choose-sec {
+    background-position: left;
+}
+
+.wordpress-another-sec .abouttxt-data {
+    text-align: left;
 }
 
 }
@@ -2169,6 +2786,7 @@ section.backend-about-sec .abouttxt-data {
     font-size: 33px;
   }
 }
+
 @media screen and (max-width: 480px) {
   .beVisibleSec .secHead .secTitle {
     font-size: 30px;
@@ -2185,81 +2803,110 @@ section.backend-about-sec .abouttxt-data {
 
   .ecommerce-service-sec .news-card-content {
     text-align: center;
-}
+  }
 
-.our-process-text {
+  .our-process-text {
     text-align: center;
     margin: 0px 0px 40px 0px;
     padding: 0px !important;
-}
+  }
 
+  .phaseone::before,
+  .phaseone::after,
+  .phasetwo::before,
+  .phasetwo::after,
+  .phasethree::before,
+  .phasethree::after,
+  .phasefour::before,
+  .phasefour::after,
+  .phasefive::before,
+  .phasefive::after,
+  .phasesix::before,
+  .phasesix::after {
+    display: none;
+  }
 
-.phaseone::before,
-.phaseone::after,
-.phasetwo::before,
-.phasetwo::after,
-.phasethree::before,
-.phasethree::after,
-.phasefour::before,
-.phasefour::after,
-.phasefive::before,
-.phasefive::after,
-.phasesix::before,
-.phasesix::after {
-  display: none;
-}
-
-.phaseoneimg {
+  .phaseoneimg {
     margin: 0px 0px 50px 0px;
-}
+  }
 
-.our-process-img {    
+  .our-process-img {
     padding: 0px !important;
     margin: 0px 0px 50px 0px;
-}
+  }
 
-.abouttxt-data .title {
+  .abouttxt-data .title {
     font-size: 35px;
     font-weight: bold;
-}
+  }
 
-.ecommerce-choose-sec .web-whychoose-list {
+  .ecommerce-choose-sec .web-whychoose-list {
     grid-template-columns: repeat(1, 1fr);
-}
+  }
 
-section.location-contact-sec .contactForm {
+  section.location-contact-sec .contactForm {
     text-align: center;
-}
+  }
 
-section.backend-process-sec {
+  section.backend-process-sec {
     padding: 50px 0px;
     text-align: center;
-}
+  }
 
-.backend-work-tabs .react-tabs__tab-list {
+  .backend-work-tabs .react-tabs__tab-list {
     grid-template-columns: repeat(1, 1fr);
-}
+  }
 
-    .backend-service-txt {
-        margin: 20px 0px 40px 0px;
-        text-align: center;
-    }
-
-    .backend-service-head {
+  .backend-service-txt {
+    margin: 20px 0px 40px 0px;
     text-align: center;
-}
+  }
 
-    .mainhead {
+  .backend-service-head {
+    text-align: center;
+  }
+
+  .mainhead {
     font-size: 35px;
-}
+  }
 
-section.backend-choose-sec .web-whychoose-list {
+  section.backend-choose-sec .web-whychoose-list {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .our-project-head {
+    text-align: center;
+  }
+
+  .domain-offer-sec {
+    padding: 50px 0px;
 }
 
-.our-project-head {
+.register-process-box {
+    margin: 0px 0px 30px 0px;
+}
+
+.transfer-support-txt {
+    padding: 30px;
     text-align: center;
 }
+
+.transfer-support-sec {
+    padding: 70px 0px 70px 0px; 
+}
+
+.wordpress-service-txt .theme-btn {
+    margin: 20px auto;
+}
+
+.wordpress-service-txt {
+    text-align: center;
+}
+
+.wordpress-choose-sec {
+    padding: 50px 0px;
+}
+
 
 }
 
@@ -2320,8 +2967,9 @@ section.backend-choose-sec .web-whychoose-list {
 
   .ecommerce-service-sec .news-card-content {
     text-align: center;
+  }
 }
-}
+
 @media screen and (max-width: 390px) {
   .homeAboutContent .secTitle {
     font-size: 30px;
@@ -2331,7 +2979,7 @@ section.backend-choose-sec .web-whychoose-list {
     grid-template-columns: repeat(1, 1fr);
   }
 
-   .ecommerce-service-sec.news-card-content {
+  .ecommerce-service-sec.news-card-content {
     text-align: center;
-}
+  }
 }

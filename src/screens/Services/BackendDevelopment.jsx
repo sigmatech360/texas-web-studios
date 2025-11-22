@@ -40,7 +40,7 @@ const BackendDevelopment = () => {
 
      <ReactHelmet
         title="Backend Development Services Texas | Texas Web Studios"
-        description=" Building strong, secure, and reliable backend systems for Texas businesses. Keep your website running fast and working smoothly every day."
+        description="Building strong, secure, and reliable backend systems for businesses built in Texas. Get in touch to keep your website running fast and working smoothly every day."
         url={`${webUrl}/backend-development`}
       />
       <DefaultLayout>
@@ -81,7 +81,6 @@ const BackendDevelopment = () => {
         <BackendPortfolio />
 
         <WordPressPerformanceSection
-          reverse
           wordpresssecclass="backend-choose-sec"
           minihead="Why Choose Us?"
           miniheadclass="shorttop-head"
