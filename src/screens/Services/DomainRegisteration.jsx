@@ -100,7 +100,7 @@ const DomainRegisteration = () => {
     <>
 
       <ReactHelmet
-        title="Domain Registration Services in Texas | Buy & Register Domain Name"
+        title="Domain Registration Services in Texas"
         description="Get reliable domain registration services at Texas Web Studios. Buy your domain name, register it instantly, and even transfer your existing site with ease."
         url={`${webUrl}/domain-registeration`}
       />
