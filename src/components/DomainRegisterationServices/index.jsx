@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 
-const DomainRegisterationServices = ({ shortHead, mainHead, description, services, btnText, btnLink, CardCol , ServiceSecClass }) => {
+const DomainRegisterationServices = ({ shortHead, mainHead, description, services, btnText, btnLink, CardCol , CardClass, ServiceSecClass }) => {
   return (
     <section className={ServiceSecClass || "domainregister-services-sec"}>
       <div className="container">
@@ -19,7 +19,7 @@ const DomainRegisterationServices = ({ shortHead, mainHead, description, service
         <div className="row justify-content-center">
           {services?.map((item, index) => (
             <div key={index} className={CardCol || "col-lg-6 col-md-6"}>
-              <div className="domainregister-service-card">
+              <div className={`domainregister-service-card ${CardClass}`}>
                 <img src={item.img} alt={item.title} />
                 <h4>{item.title}</h4>
                 <p>{item.para}</p>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 84 84">
+  <g id="Group_37692" data-name="Group 37692" transform="translate(-262 -2495)">
+    <rect id="Rectangle_16472" data-name="Rectangle 16472" width="84" height="84" rx="6" transform="translate(262 2495)" fill="#d41f14"/>
+    <g id="Layer_2" transform="translate(275 2508)">
+      <g id="Group_37681" data-name="Group 37681" transform="translate(35.475 35.565)">
+        <path id="Path_51245" data-name="Path 51245" d="M53.266,59.862a2.6,2.6,0,0,1-1.895-.812L39.912,47.591A2.6,2.6,0,0,1,39.1,45.7a2.457,2.457,0,0,1,.812-1.895l3.79-3.79a2.616,2.616,0,0,1,3.79,0L58.95,51.471a2.6,2.6,0,0,1,.812,1.895,2.457,2.457,0,0,1-.812,1.895l-3.79,3.79a2.457,2.457,0,0,1-1.895.812ZM45.6,40.914a.819.819,0,0,0-.632.271l-3.79,3.79a.872.872,0,0,0,0,1.263L52.634,57.7a.872.872,0,0,0,1.263,0l3.79-3.79a.872.872,0,0,0,0-1.263L46.228,41.185A.819.819,0,0,0,45.6,40.914Z" transform="translate(-39.1 -39.2)" fill="#fff"/>
+      </g>
+      <g id="Group_37682" data-name="Group 37682" transform="translate(12.827 17.339)">
+        <path id="Path_51246" data-name="Path 51246" d="M19.414,26.218H16.707A2.659,2.659,0,0,1,14,23.511v-1.8A2.659,2.659,0,0,1,16.707,19h2.707v1.8H16.707a.852.852,0,0,0-.9.9v1.8a.852.852,0,0,0,.9.9h2.707Z" transform="translate(-14 -19)" fill="#fff"/>
+      </g>
+      <g id="Group_37683" data-name="Group 37683" transform="translate(17.339 13.73)">
+        <path id="Path_51247" data-name="Path 51247" d="M19,15h1.8V25.827H19Z" transform="translate(-19 -15)" fill="#fff"/>
+      </g>
+      <g id="Group_37684" data-name="Group 37684" transform="translate(29.971 17.339)">
+        <path id="Path_51248" data-name="Path 51248" d="M33,19h1.8v7.218H33Z" transform="translate(-33 -19)" fill="#fff"/>
+      </g>
+      <g id="Group_37685" data-name="Group 37685" transform="translate(50.724 17.339)">
+        <path id="Path_51249" data-name="Path 51249" d="M56,19h1.8v7.218H56Z" transform="translate(-56 -19)" fill="#fff"/>
+      </g>
+      <g id="Group_37686" data-name="Group 37686" transform="translate(51.626 18.241)">
+        <path id="Path_51250" data-name="Path 51250" d="M61.511,26.316h-1.8V21.8H57V20h2.707a1.81,1.81,0,0,1,1.8,1.8Z" transform="translate(-57 -20)" fill="#fff"/>
+      </g>
+      <g id="Group_37687" data-name="Group 37687" transform="translate(30.873 18.241)">
+        <path id="Path_51251" data-name="Path 51251" d="M42.121,26.316h-1.8V21.8h-1.8v4.511h-1.8V21.8H34V20h2.707a1.524,1.524,0,0,1,.9.271,1.524,1.524,0,0,1,.9-.271h1.8a1.81,1.81,0,0,1,1.8,1.8Z" transform="translate(-34 -20)" fill="#fff"/>
+      </g>
+      <g id="Group_37688" data-name="Group 37688" transform="translate(39.896 19.144)">
+        <path id="Path_51252" data-name="Path 51252" d="M47.609,26.414H45.8a1.81,1.81,0,0,1-1.8-1.8V22.8A1.81,1.81,0,0,1,45.8,21h1.8v1.8H45.8v1.8h1.8Z" transform="translate(-44 -21)" fill="#fff"/>
+      </g>
+      <g id="Group_37689" data-name="Group 37689" transform="translate(39.896 16.437)">
+        <path id="Path_51253" data-name="Path 51253" d="M49.414,26.121h-1.8V20.707a.852.852,0,0,0-.9-.9H44V18h2.707a2.659,2.659,0,0,1,2.707,2.707Z" transform="translate(-44 -18)" fill="#fff"/>
+      </g>
+      <g id="Group_37690" data-name="Group 37690" transform="translate(47.115 18.241)">
+        <path id="Path_51254" data-name="Path 51254" d="M52,20h1.8v6.316H52Z" transform="translate(-52 -20)" fill="#fff"/>
+      </g>
+      <path id="Path_51255" data-name="Path 51255" d="M52,16h1.8v1.8H52Z" transform="translate(-4.885 -1.368)" fill="#fff"/>
+      <path id="Path_51256" data-name="Path 51256" d="M39.084,26.362H37.189a15.931,15.931,0,0,1-2.978,5.414l-.541.632,5.143,5.143L37.55,38.813,32.407,33.67l-.632.541A17.14,17.14,0,1,1,37.46,16.437h1.895a18.952,18.952,0,1,0-7.038,19.67L37.55,41.34l3.79-3.79-5.233-5.233A18.461,18.461,0,0,0,39.084,26.362Z" transform="translate(0)" fill="#fff"/>
+      <path id="Path_51257" data-name="Path 51257" d="M33.7,26.753a13.528,13.528,0,1,1,.361-9.925h1.895a15.282,15.282,0,1,0-.271,9.925Z" transform="translate(-0.391 -0.391)" fill="#fff"/>
+      <g id="Group_37691" data-name="Group 37691" transform="translate(20.948 17.339)">
+        <path id="Path_51258" data-name="Path 51258" d="M26.609,26.218a3.609,3.609,0,1,1,3.609-3.609A3.62,3.62,0,0,1,26.609,26.218Zm0-5.414a1.8,1.8,0,1,0,1.8,1.8A1.81,1.81,0,0,0,26.609,20.8Z" transform="translate(-23 -19)" fill="#fff"/>
+      </g>
+      <path id="Path_51259" data-name="Path 51259" d="M10,25h1.8v1.8H10Z" transform="translate(-0.782 -2.247)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

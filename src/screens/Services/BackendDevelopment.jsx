@@ -18,27 +18,48 @@ import BackendProcess from "../../components/BackendProcess";
 import Lightbox from "yet-another-react-lightbox";
 import ReactHelmet from "../../components/ReactHelmet";
 
-
 const webUrl = import.meta.env.VITE_WEB_URL;
 
 const BackendDevelopment = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [images, setImages] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-   const [isOpen, setIsOpen] = useState(false);
-    const [images, setImages] = useState([]);
-    const [currentIndex, setCurrentIndex] = useState(0);
-  
-    const handleImageClick = (index, imageArray) => {
-      const imageList = imageArray.map((item) => ({
-        src: item.image,
-      }));
-      setImages(imageList);
-      setCurrentIndex(index);
-      setIsOpen(true);
-    };
+  const handleImageClick = (index, imageArray) => {
+    const imageList = imageArray.map((item) => ({
+      src: item.image,
+    }));
+    setImages(imageList);
+    setCurrentIndex(index);
+    setIsOpen(true);
+  };
+
+  const backendprocessdata = [
+    {
+      number: "01",
+      title: "Discovery & Strategy",
+      text: "We begin by understanding your business model, technical goals, and digital ecosystem. Our strategists and architects design a custom backend blueprint tailored to your needs, setting the foundation for efficient, scalable, and secure development.",
+    },
+    {
+      number: "02",
+      title: "Development & Integration",
+      text: "Our skilled developers bring your backend to life with precision coding in Node.js, PHP, or the most suitable technology stack. We integrate APIs, build data models, and ensure every layer communicates seamlessly for optimal performance.",
+    },
+    {
+      number: "03",
+      title: "Testing & Optimization",
+      text: "Every system undergoes rigorous Quality Assurance. We analyze speed, functionality, and security to ensure your backend exceeds modern standards. Our optimization process guarantees smooth scalability under real-world conditions.",
+    },
+    {
+      number: "04",
+      title: "Deployment & Ongoing Support",
+      text: "Once your backend is launched, our work continues. We offer ongoing support, server monitoring, and regular maintenance to ensure your backend development services in Texas evolve with your business while maintaining peak efficiency.",
+    },
+  ];
+
   return (
     <>
-
-     <ReactHelmet
+      <ReactHelmet
         title="Backend Development Services Texas | Texas Web Studios"
         description="Building strong, secure, and reliable backend systems for businesses built in Texas. Get in touch to keep your website running fast and working smoothly every day."
         url={`${webUrl}/backend-development`}
@@ -101,7 +122,11 @@ const BackendDevelopment = () => {
           learnmorebtn="d-none"
         />
 
-        <BackendProcess/>
+        <BackendProcess
+          shortTopHead="Our Process"
+          mainHead="Our Strategic Path to Building Better Backends"
+          cards={backendprocessdata}
+        />
 
         <LocationContact
           secClass="ecommerce-contact-sec"
@@ -113,7 +138,7 @@ const BackendDevelopment = () => {
 
         <BlogSec />
 
-          {isOpen && images.length > 0 && (
+        {isOpen && images.length > 0 && (
           <Lightbox
             open={isOpen}
             close={() => setIsOpen(false)}

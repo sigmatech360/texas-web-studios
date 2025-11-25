@@ -96,6 +96,8 @@ const EcommerceDevelopment = () => {
     },
   ];
 
+
+
   const [isOpen, setIsOpen] = useState(false);
   const [images, setImages] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -111,8 +113,7 @@ const EcommerceDevelopment = () => {
 
   return (
     <>
-
-    <ReactHelmet
+      <ReactHelmet
         title="E-Commerce Website Development Texas | Texas Web Studios"
         description="We build e-commerce websites that help Texas businesses grow online. Get a fast, secure, and easy-to-manage e-commerce website in Texas built for success."
         url={`${webUrl}/ecommerce-development`}
@@ -197,7 +198,7 @@ const EcommerceDevelopment = () => {
 
         <BlogSec />
 
-         {isOpen && images.length > 0 && (
+        {isOpen && images.length > 0 && (
           <Lightbox
             open={isOpen}
             close={() => setIsOpen(false)}

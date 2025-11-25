@@ -178,16 +178,40 @@ const Header = () => {
                 </div>
                 
 
-                {/* Domain Hosting & Inner Pages */}
+                {/* App Development & Inner Pages */}
+                <div className="nav-subdropdown-wrapper">
                 <NavDropdown.Item
-                  as={Link}
-                  to="/mobile-app-development"
+                  as="button"
                   onClick={(e) => e.stopPropagation()}
                   target="_blank"
                 >
-                  Mobile App Development
+                  App Development
+                   <span className="submenu-icon d-none d-lg-inline">
+                      <FaCaretRight />
+                    </span>
+                    <span className="submenu-icon d-inline d-lg-none">
+                      <FaCaretDown />
+                    </span>
                 </NavDropdown.Item>
-
+                 <div className="nav-subdropdown">
+                   <NavDropdown.Item
+                      as={Link}
+                      to="/mobile-app-development"
+                      onClick={(e) => e.stopPropagation()}
+                      target="_blank"
+                    >
+                      Mobile App Development
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/web-app-development"
+                      onClick={(e) => e.stopPropagation()}
+                      target="_blank"
+                    >
+                      Web App Development
+                    </NavDropdown.Item>
+                 </div>
+              </div>
 
                 {/* Hosting & Domain  Inner Pages */}
                 <div className="nav-subdropdown-wrapper">
@@ -212,14 +236,41 @@ const Header = () => {
                     >
                       Domain Registeration
                     </NavDropdown.Item>
-                    {/* <NavDropdown.Item
+                    <NavDropdown.Item
                       as={Link}
                       to="/domain-transfer"
                       onClick={(e) => e.stopPropagation()}
                       target="_blank"
                     >
                       Domain Transfer
-                    </NavDropdown.Item> */}
+                    </NavDropdown.Item>
+                  </div>
+                </div>
+
+                
+                {/* Brand Identity  Inner Pages */}
+                <div className="nav-subdropdown-wrapper">
+                  <NavDropdown.Item
+                    as="button"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    Brand Identity{" "}
+                    <span className="submenu-icon d-none d-lg-inline">
+                      <FaCaretRight />
+                    </span>
+                    <span className="submenu-icon d-inline d-lg-none">
+                      <FaCaretDown />
+                    </span>
+                  </NavDropdown.Item>
+                  <div className="nav-subdropdown">
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/brand-strategy"
+                      onClick={(e) => e.stopPropagation()}
+                      target="_blank"
+                    >
+                      Brand Strategy
+                    </NavDropdown.Item>
                   </div>
                 </div>
               </Dropdown.Menu>

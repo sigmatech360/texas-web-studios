@@ -33,6 +33,8 @@ import DomainRegisteration from "../screens/Services/DomainRegisteration";
 import DomainTransfer from "../screens/Services/DomainTransfer";
 import WordpressDevelopment from "../screens/Services/WordpressDevelopment";
 import ReactDevelopmentTD from "../screens/locationpages/ReactDevelopmentTD";
+import WebAppDevelopment from "../screens/Services/WebAppDevelopment";
+import BrandStrategy from "../screens/Services/BrandStrategy";
 
 const AppRouter = () => {
   return (
@@ -83,16 +85,17 @@ const AppRouter = () => {
         <Route path="/backend-development" element={<BackendDevelopment />} />
 
 
-
+            {/* Custom Web Develpment & Inner Pages */}
         <Route path="/mobile-app-development" element={<MobileAppDev />} />
+        <Route path="/web-app-development" element={<WebAppDevelopment />} />
 
 
           {/* Hosting & Domain Inner Pages */}
         <Route path="/domain-registeration" element={<DomainRegisteration />} />
         <Route path="/domain-transfer" element={<DomainTransfer />} />
         
-
-
+          {/* Brand Identity Inner Pages */}
+        <Route path="/brand-strategy" element={<BrandStrategy />} />
 
         {/* Location Pages */}
         <Route path="/app-development-dallas" element={<AppDevelopmentTD />} />

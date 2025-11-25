@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import "./style.css";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const InnerBanner = (props) => {
   return (
@@ -69,6 +70,14 @@ const InnerBanner = (props) => {
                 </ul>
                  {props.listdownpara && <p>{props.listdownpara}</p>}
              {props.btntxt && <Link to={props.btnLink || "/contact"} className={props.btnClass || "theme-btn"}>{props.btntxt}</Link>}
+
+             <div className="domaintransfer-banner-search d-none">
+                <div className="domain-idea-search">
+                  <input type="text" placeholder="Enter a domain or describe your idea well handle both"/>
+                  <button className="theme-btn">Search</button>
+                </div>
+                <Link to="/contact">Transfer a domain you already own <FaArrowRightLong /></Link>
+             </div>
             </div>
           </div>
 

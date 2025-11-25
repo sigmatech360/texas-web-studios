@@ -2093,6 +2093,7 @@ section.domain-search-buy {
   background: #d41f14c9;
   padding: 50px;
   border-radius: 20px;
+  position: relative;
 }
 
 .transfer-support-txt p {
@@ -2433,6 +2434,391 @@ section.wordpress-process-sec {
 
 /********* Wordpress Development Page CSS End *********/
 
+
+/********* Domain Transfer Page CSS Start *********/
+
+.domain-transfer-herobanner {
+  background: #161515;
+}
+
+
+.domain-transfer-herobanner .domaintransfer-banner-search {
+    display: block !important;
+    position: relative;
+}
+
+
+.domain-idea-search input {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.domain-idea-search {
+    margin: 30px 40px 0px 0px;
+}
+
+.domain-idea-search input:focus {
+    outline: none;
+}
+
+
+.domaintransfer-banner-search .theme-btn {
+    position: absolute;
+    bottom: 71px;
+    right: 50px;
+    padding: 12px 40px;
+}
+
+.domain-transfer-herobanner .domaintransfer-banner-search a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 40px 0px 10px 0px;
+    text-decoration: none;
+}
+
+.domaintransfer-support-sec {
+  background: url(./assets/images/services/domaintransfer/transaction-bg.webp)
+    no-repeat top center;
+    background-size: cover;
+    padding: 90px 0px 90px 0px;
+    width: 100%;
+    height: 100%;
+    margin: 50px 0px;
+    position: relative;
+}
+
+.domaintransfer-support-sec::before {
+    position: absolute;
+    content: "";
+    background: #000000bd;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    border-radius: 20px;
+    z-index: 0;
+}
+
+
+/********* Domain Transfer Page CSS End *********/
+
+
+/********* Web App Development Page CSS Start *********/
+
+.webapp-development-sec .innerBannerContent,
+.webapp-development-sec .innerBannerContent p {
+  color: #161515;
+}
+
+section.webappdevelopment-services-sec {
+    padding: 70px 0px 50px 0px;
+}
+
+.webdevelopment-service-box {
+    margin: 0px 0px 30px 0px;
+}
+
+.webdevelopment-service-box h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #161515;
+    margin: 0px 0px 20px 0px;
+}
+
+.webdevelopment-service-box p {
+    color: #161515;
+    margin: 0px 0px 10px 0px;
+}
+
+.webdevelopment-service-box a {
+    color: #D41F14;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.webappdevelopment-services-head {
+    margin: 0px 0px 50px 0px;
+}
+
+.webapp-related-services {
+    padding: 50px 0px;
+}
+
+
+.webapp-related-service-txt h4 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    color: #161515;
+}
+
+.webapp-related-service-txt {
+    margin: 0px 0px 30px 0px;
+}
+
+.webapp-related-service-txt h4 svg {
+    color: #D41F14;
+}
+
+.webapp-process-card {
+  background-color: #F1F1F1;
+  border: none;
+}
+
+.webapp-portfolio-box img {
+    width: 100%;
+}
+
+section.webapp-portfolio-sec {
+    background: #161515;
+    padding: 70px 0px;
+}
+
+.webapp-portfolio-head {
+    margin: 0px 0px 40px 0px;
+    text-align: center;
+}
+
+.webapp-portfolio-head p {
+    color: #fff;
+}
+
+.webapp-portfolio-head h6 {
+    margin: 0px 0px 10px 0px;
+}
+
+.webapp-portfolio-txtbox {
+    margin: 20px 0px;
+}
+
+.webapp-portfolio-txtbox h5 {
+    color: #fff;
+    font-weight: bold;
+    margin: 0px 0px 10px 0px;
+}
+
+.webapp-portfolio-txtbox p {
+    color: #fff;
+}
+
+.webappdevelopment-services-head p {
+    color: #161515;
+    margin: 0px 0px 20px 0px;
+}
+
+.webapp-padding-portfolio {
+    margin: 120px 0px 0px;
+}
+
+.webapp-margin-portfolio {
+    margin: -120px 0px 0px;
+}
+
+.webapp-book-call {
+  background-color: transparent !important;
+}
+
+.webapp-book-call .container {
+    background-color: #D41F14;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.webappdevelopment-services-head p {
+    color: #161515;
+    margin: 0px 0px 20px 0px;
+}
+
+
+section.webapppdevelopment-choose-sec {
+    padding: 70px 0px;
+    background: #161515;
+}
+
+.webappdevelopment-choose-txt p {
+    color: #fff;
+    margin: 0px 0px 20px 0px;
+}
+
+.webapp-afterabout img {
+  width: 100%;
+}
+
+.webapp-choose-box img {
+    width: 400px;
+    height: 400px;
+}
+
+.webapp-choose-box {
+    width: 400px;
+    position: relative;
+    cursor: pointer;
+}
+
+.webapp-choose-boxtxt {
+    position: absolute;
+    bottom: 10px;
+    padding: 20px;
+    width: 100%;
+    left: 10px;
+}
+
+.webapp-choose-boxtxt h5 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0px 0px 10px 0px;
+}
+
+.webapp-choose-boxtxt p {
+    color: #fff;
+    font-size: 14px;
+}
+
+.marquee-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  animation: horizontal-marquee 18s linear infinite; 
+  white-space: normal;
+}
+
+.marquee-wrapper:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+@keyframes horizontal-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); 
+  }
+}
+
+
+.brand-strategy-sec {
+  padding: 70px 0px;
+  background-color: #161515;
+}
+
+.brand-strategy-head p {
+    color: #fff;
+    margin: 0px 0px 20px 0px;
+}
+
+.brand-strategy-head h6 {
+    margin: 0px 0px 10px 0px;
+}
+
+/********* Web App Development Page CSS End *********/
+
+
+
+/********* Brand Strategy Page CSS Start *********/
+
+
+.brand-service-list .accordion .accordion-item {
+  margin: 0px 0px 20px 0px;
+  border: none;
+  border-bottom: 0.4000000059604645px solid #FFFFFf;
+  background: transparent;
+}
+
+.brand-service-list .accordion {
+  background: transparent;
+  border: none;
+}
+
+.brand-service-list .accordion .accordion-item .accordion-header {
+  background: transparent;
+  color: #fff;
+  border: none !important;
+}
+
+.brand-service-list
+  .accordion
+  .accordion-item
+  .accordion-header
+  button.accordion-button.collapsed {
+  background: transparent;
+  color: #fff;
+  border: none !important;
+  font-weight: 600;
+  box-shadow: none;
+}
+
+.brand-service-list
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.brand-service-list
+  .accordion
+  .accordion-item:first-of-type
+  > .accordion-header
+  .accordion-button {
+  background: transparent;
+  color: #161515;
+  border: none !important;
+}
+
+.brand-service-list
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:not(.collapsed) {
+  color: #fff;
+  background-color: transparent;
+  font-weight: 600;
+}
+
+.brand-service-list .accordion .accordion-item .accordion-collapse.collapse.show {
+  border: none !important;
+}
+
+.brand-service-list .accordion .accordion-item .accordion-body {
+  border: none !important;
+  color: #fff;
+}
+
+.brand-service-list
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button::after {
+  background-image: url(./assets/images/services/brandstrategy/leftarrow.svg);
+  transform: rotate(0deg);
+}
+
+.brand-service-list
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:not(.collapsed)::after {
+  background-image: url(./assets/images/services/brandstrategy/leftarrow.svg);
+  transform: rotate(90deg);
+}
+
+
+/********* Brand Strategy Page CSS End *********/
 
 
 

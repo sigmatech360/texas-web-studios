@@ -21,12 +21,9 @@ import BlogSec from "../../components/BlogSec";
 import Lightbox from "yet-another-react-lightbox";
 import ReactHelmet from "../../components/ReactHelmet";
 
-
 const webUrl = import.meta.env.VITE_WEB_URL;
 
-
 const DomainRegisteration = () => {
-
   const frontendservices = [
     {
       img: webhostingicon,
@@ -98,13 +95,11 @@ const DomainRegisteration = () => {
 
   return (
     <>
-
       <ReactHelmet
         title="Domain Registration Services in Texas"
         description="Get reliable domain registration services at Texas Web Studios. Buy your domain name, register it instantly, and even transfer your existing site with ease."
         url={`${webUrl}/domain-registeration`}
       />
-
 
       <DefaultLayout>
         <InnerBanner
@@ -158,7 +153,14 @@ const DomainRegisteration = () => {
 
         <HostingBoxes />
 
-        <TransferSupport />
+
+        <TransferSupport
+          shortTopHead="Support & Maintenance"
+          mainHead="Backing Up Your Digital Experience"
+          paraOne="We offer support and maintenance till the end of your web development project. Starting from getting a domain name of your choice and never ending with web and server maintenance, we love to support our web partners within and beyond our limits."
+          paraTwo="Call us anytime and get the backup you deserve at Texas Web Studios."
+          buttonText="Get Support Now"
+        />
 
         <WordPressPerformanceSection
           wordpresssecclass="WordPressPerformanceSection domain-register-choose domain-unique-sec"
@@ -185,7 +187,7 @@ const DomainRegisteration = () => {
         <DomainRegisterProcess {...processData} />
 
         <WordPressPerformanceSection
-        wordpresssecclass="WordPressPerformanceSection domain-offer-sec"
+          wordpresssecclass="WordPressPerformanceSection domain-offer-sec"
           reverse
           leftCol="col-lg-7"
           rightCol="col-lg-5"
