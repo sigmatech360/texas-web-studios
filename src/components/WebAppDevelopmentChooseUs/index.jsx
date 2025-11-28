@@ -5,6 +5,7 @@ import chooseimg1 from "../../assets/images/services/webappdevelopment/chooseimg
 import chooseimg2 from "../../assets/images/services/webappdevelopment/chooseimg2.webp"
 import chooseimg3 from "../../assets/images/services/webappdevelopment/chooseimg3.webp"
 import chooseimg4 from "../../assets/images/services/webappdevelopment/chooseimg4.webp"
+import { useModal } from '../../context/ModalContext'
 
 const items = [
   {
@@ -30,6 +31,7 @@ const items = [
 ];
 
 const WebAppDevelopmentChooseUs = () => {
+  const { setShowModal } = useModal();
   return (
     <section className='webapppdevelopment-choose-sec'>
       <div className="container">
@@ -42,7 +44,7 @@ const WebAppDevelopmentChooseUs = () => {
                 Smartest Choice for Web App Development in Texas
               </h2>
               <p>Choosing the right team, the one with real experience, the right tech stack, and proven results, means getting a web app that works exactly the way your business needs it, and the way you want it. </p>
-              <Link to="/contact" className='theme-btn'>
+              <Link onClick={() => setShowModal(true)} className='theme-btn'>
                 Talk to Us <FaArrowRightLong />
               </Link>
             </div>

@@ -13,67 +13,67 @@ const WebAppRelatedServices = () => {
                 </div>
             </div>
             <div className="row">
-                <div className="col-lg-4">
+                <div className="col-lg-4 col-md-6">
                     <div className="webapp-related-service-txt">
                         <h4><FaCheckSquare /> WordPress Development</h4>
                     </div>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-lg-4 col-md-6">
                     <div className="webapp-related-service-txt">
                         <h4><FaCheckSquare /> E-Commerce Website Development</h4>
                     </div>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-lg-4 col-md-6">
                     <div className="webapp-related-service-txt">
                         <h4><FaCheckSquare /> Shopify Development</h4>
                     </div>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-lg-4 col-md-6">
                     <div className="webapp-related-service-txt">
                         <h4><FaCheckSquare /> Wix Development</h4>
                     </div>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-lg-4 col-md-6">
                     <div className="webapp-related-service-txt">
                         <h4><FaCheckSquare /> Squarespace Development</h4>
                     </div>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-lg-4 col-md-6">
                     <div className="webapp-related-service-txt">
                         <h4><FaCheckSquare /> Website Maintenance</h4>
                     </div>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-lg-4 col-md-6">
                     <div className="webapp-related-service-txt">
                         <h4><FaCheckSquare /> Webflow Development</h4>
                     </div>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-lg-4 col-md-6">
                     <div className="webapp-related-service-txt">
                         <h4><FaCheckSquare /> Website Redesign</h4>
                     </div>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-lg-4 col-md-6">
                     <div className="webapp-related-service-txt">
                         <h4><FaCheckSquare /> Custom Website Development</h4>
                     </div>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-lg-4 col-md-6">
                     <div className="webapp-related-service-txt">
                         <h4><FaCheckSquare /> Front-End Development</h4>
                     </div>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-lg-4 col-md-6">
                     <div className="webapp-related-service-txt">
                         <h4><FaCheckSquare /> React Development</h4>
                     </div>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-lg-4 col-md-6">
                     <div className="webapp-related-service-txt">
                         <h4><FaCheckSquare /> Angular Development</h4>
                     </div>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-lg-4 col-md-6">
                     <div className="webapp-related-service-txt">
                         <h4><FaCheckSquare /> Backend Development</h4>
                     </div>

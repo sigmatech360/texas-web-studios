@@ -1,4 +1,5 @@
 import React from "react";
+import { FaArrowRightLong } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 
@@ -23,6 +24,7 @@ const DomainRegisterationServices = ({ shortHead, mainHead, description, service
                 <img src={item.img} alt={item.title} />
                 <h4>{item.title}</h4>
                 <p>{item.para}</p>
+                {/* <Link to={item.btnLink}>{item.btnText} <FaArrowRightLong /></Link> */}
               </div>
             </div>
           ))}
@@ -31,9 +33,9 @@ const DomainRegisterationServices = ({ shortHead, mainHead, description, service
         <div className="row">
           <div className="col-lg-12">
             <div className="domainregister-service-btn">
-              <Link to={btnLink} className="theme-btn">
+              {btnLink && btnText &&  <Link to={btnLink} className="theme-btn">
                 {btnText}
-              </Link>
+              </Link>}
             </div>
           </div>
         </div>

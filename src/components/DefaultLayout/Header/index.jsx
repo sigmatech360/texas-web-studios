@@ -271,6 +271,14 @@ const Header = () => {
                     >
                       Brand Strategy
                     </NavDropdown.Item>
+                     <NavDropdown.Item
+                      as={Link}
+                      to="/brand-voice"
+                      onClick={(e) => e.stopPropagation()}
+                      target="_blank"
+                    >
+                      Brand Voice
+                    </NavDropdown.Item>
                   </div>
                 </div>
               </Dropdown.Menu>

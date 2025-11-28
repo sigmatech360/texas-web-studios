@@ -70,7 +70,7 @@ const DomainTransfer = () => {
           leftCol="col-lg-8 order-lg-1 order-2"
           rightCol="col-lg-4 order-lg-2 order-1"
           bannerImg={innerimg}
-          title="Move Your Domain. Safely, Quickly, and Without Downtime!"
+          title="Move Your Domain Safely, Quickly, and Without Downtime!"
           description="At Texas Web Studio, we make the domain transfer in Texas a smooth ride, not a technical tug-of-war. Switching registrars, merging brands, or expanding online, our experts ensure your domain transition happens fast, safely, and with zero downtime, so your business never misses a sale."
           btntxt="Transfer Your Domain"
         />
@@ -86,7 +86,7 @@ const DomainTransfer = () => {
           listClass="d-none"
           TouchBtn="d-none"
           btntext="Transfer Your Domain"
-          aboutbtnlink="/about"
+          aboutbtnlink="/contact"
           learnmorebtn="theme-btn"
         />
 
@@ -127,7 +127,7 @@ const DomainTransfer = () => {
 
 
         <TransferSupport
-          TransportSecClass="domaintransfer-support-sec"
+          TransportSecClass="domaintransfer-support-sec transfer-support-sec"
           mainHead="Want to Know How We Can Help You?"
           paraOne="There’s a thing about data that we can all agree on: no amount of money can replace the loss that comes with security breaches and data loss. That’s precisely why we manage your transfer website domain in Texas. We treat your information and data as a mission-critical asset because we understand the importance of your data; thus, we protect it with the best tech stack in the market."
            listItems={[

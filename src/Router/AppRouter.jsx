@@ -35,6 +35,7 @@ import WordpressDevelopment from "../screens/Services/WordpressDevelopment";
 import ReactDevelopmentTD from "../screens/locationpages/ReactDevelopmentTD";
 import WebAppDevelopment from "../screens/Services/WebAppDevelopment";
 import BrandStrategy from "../screens/Services/BrandStrategy";
+import BrandVoice from "../screens/Services/BrandVoice";
 
 const AppRouter = () => {
   return (
@@ -96,6 +97,7 @@ const AppRouter = () => {
         
           {/* Brand Identity Inner Pages */}
         <Route path="/brand-strategy" element={<BrandStrategy />} />
+        <Route path="/brand-voice" element={<BrandVoice />} />
 
         {/* Location Pages */}
         <Route path="/app-development-dallas" element={<AppDevelopmentTD />} />

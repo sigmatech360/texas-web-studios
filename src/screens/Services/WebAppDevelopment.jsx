@@ -1,65 +1,73 @@
-import React from 'react'
-import DefaultLayout from '../../components/DefaultLayout'
-import InnerBanner from '../../components/InnerBanner'
-import herobanner from "../../assets/images/services/webappdevelopment/herobanner.webp"
-import aboutimg from "../../assets/images/services/webappdevelopment/aboutimg.webp"
-import afteraboutimg from "../../assets/images/services/webappdevelopment/afteraboutimg.webp"
-import chooseimg1 from "../../assets/images/services/webappdevelopment/chooseimg1.webp"
-import chooseimg2 from "../../assets/images/services/webappdevelopment/chooseimg2.webp"
-import chooseimg3 from "../../assets/images/services/webappdevelopment/chooseimg3.webp"
-import chooseimg4 from "../../assets/images/services/webappdevelopment/chooseimg4.webp"
-import WordPressPerformanceSection from '../../components/WordPressPerformanceSection'
-import WebAppDevelopmentServices from '../../components/WebAppDevelopmentServices'
-import WebAppRelatedServices from '../../components/WebAppRelatedServices'
-import BackendProcess from '../../components/BackendProcess'
-import WebAppPortfolio from '../../components/WebAppPortfolio'
-import BookCallSec from '../../components/BookCallSec'
-import LocationContact from '../../components/LocationContact'
-import BlogSec from '../../components/BlogSec'
-import WebAppDevelopmentChooseUs from '../../components/WebAppDevelopmentChooseUs'
-import ReactHelmet from '../../components/ReactHelmet'
-
+import React from "react";
+import DefaultLayout from "../../components/DefaultLayout";
+import InnerBanner from "../../components/InnerBanner";
+import herobanner from "../../assets/images/services/webappdevelopment/herobanner.webp";
+import aboutimg from "../../assets/images/services/webappdevelopment/aboutimg.webp";
+import afteraboutimg from "../../assets/images/services/webappdevelopment/afteraboutimg.webp";
+import chooseimg1 from "../../assets/images/services/webappdevelopment/chooseimg1.webp";
+import chooseimg2 from "../../assets/images/services/webappdevelopment/chooseimg2.webp";
+import chooseimg3 from "../../assets/images/services/webappdevelopment/chooseimg3.webp";
+import chooseimg4 from "../../assets/images/services/webappdevelopment/chooseimg4.webp";
+import WordPressPerformanceSection from "../../components/WordPressPerformanceSection";
+import WebAppDevelopmentServices from "../../components/WebAppDevelopmentServices";
+import WebAppRelatedServices from "../../components/WebAppRelatedServices";
+import BackendProcess from "../../components/BackendProcess";
+import WebAppPortfolio from "../../components/WebAppPortfolio";
+import BookCallSec from "../../components/BookCallSec";
+import LocationContact from "../../components/LocationContact";
+import BlogSec from "../../components/BlogSec";
+import WebAppDevelopmentChooseUs from "../../components/WebAppDevelopmentChooseUs";
+import ReactHelmet from "../../components/ReactHelmet";
 
 const webUrl = import.meta.env.VITE_WEB_URL;
-
 
 const WebAppDevelopment = () => {
 
 
-      const backendprocessdata = [
+  const backendprocessdata = [
     {
       number: "01",
-      title: "Discovery & Strategy",
-      text: "We begin by understanding your business model, technical goals, and digital ecosystem. Our strategists and architects design a custom backend blueprint tailored to your needs, setting the foundation for efficient, scalable, and secure development.",
+      title: "Design That Engages",
+      text: "Great design isn’t pretty; it’s profitable. With intuitive UI, smooth navigation, and mobile-friendly layouts, your web app keeps users engaged from the first click to the final conversion.",
     },
     {
       number: "02",
-      title: "Development & Integration",
-      text: "Our skilled developers bring your backend to life with precision coding in Node.js, PHP, or the most suitable technology stack. We integrate APIs, build data models, and ensure every layer communicates seamlessly for optimal performance.",
+      title: "Development Built for Speed and Scalability",
+      text: "Your app is engineered with clean code, modern frameworks, and scalable architecture, so it performs fast today and grows effortlessly with your business tomorrow.",
     },
     {
       number: "03",
-      title: "Testing & Optimization",
-      text: "Every system undergoes rigorous Quality Assurance. We analyze speed, functionality, and security to ensure your backend exceeds modern standards. Our optimization process guarantees smooth scalability under real-world conditions.",
+      title: "Testing That Eliminates Every Glitch",
+      text: "We are here to ensure your web app runs smoothly everywhere. No bugs, not even glitches, just flawless user experiences every time.",
     },
     {
       number: "04",
-      title: "Deployment & Ongoing Support",
-      text: "Once your backend is launched, our work continues. We offer ongoing support, server monitoring, and regular maintenance to ensure your backend development services in Texas evolve with your business while maintaining peak efficiency.",
+      title: "Deployment That Feels Like Magic",
+      text: "We handle staging, server setups, version control, and live rollout with precision. Your app goes live flawlessly, without downtime or disruption.",
+    },
+    {
+      number: "05",
+      title: "Security That Never Sleeps",
+      text: "Your web app is protected with encrypted data flows, secure authentication, firewall rules, and continuous monitoring, built to block threats before they get close.",
+    },
+    {
+      number: "06",
+      title: "Maintenance That Keeps You Winning",
+      text: "With ongoing updates, feature enhancements, performance monitoring, and real-time support, your web app stays fast, healthy, and future-ready long after launch.",
     },
   ];
 
+
+
   return (
     <>
-
-       <ReactHelmet
+      <ReactHelmet
         title="Web App Development in Texas"
         description="Build fast, high-performing web apps with Texas Web Studios. We develop modern, mobile-like web apps that load instantly, scale easily, and deliver flawless user experiences."
         url={`${webUrl}/web-app-development`}
       />
 
-    
-    <DefaultLayout>
+      <DefaultLayout>
         <InnerBanner
           secClass="locate-wordpress-herobanner webapp-development-sec"
           leftCol="col-lg-6 order-lg-1 order-2"
@@ -71,7 +79,7 @@ const WebAppDevelopment = () => {
           btntxt="Develop Web Apps"
         />
 
-         <WordPressPerformanceSection
+        <WordPressPerformanceSection
           reverse
           minihead="Faster, Smoother, Better"
           miniheadclass="shorttop-head"
@@ -81,58 +89,49 @@ const WebAppDevelopment = () => {
           listClass="d-none"
           TouchBtn="d-none"
           btntext="Revamp Your Website to a Web App"
-          aboutbtnlink="/about"
+          aboutbtnlink="/contact"
           learnmorebtn="theme-btn"
         />
 
         <section className="webapp-afterabout">
-            <img src={afteraboutimg} alt="image" />
+          <img src={afteraboutimg} alt="image" />
         </section>
 
+        <WebAppDevelopmentServices />
 
-        <WebAppDevelopmentServices/>
+        <WebAppDevelopmentChooseUs />
 
+        <WebAppRelatedServices />
 
-        <WebAppDevelopmentChooseUs/>
-
-        <WebAppRelatedServices/>
-
-
-         <BackendProcess
+        <BackendProcess
           processCardclass="webapp-process-card"
-          shortTopHead="Our Process"
-          mainHead="Our Strategic Path to Building Better Backends"
+          shortTopHead="Advantages"
+          mainHead="The Best Kind of Sites"
           cards={backendprocessdata}
         />
 
-
-        <WebAppPortfolio/>
+        <WebAppPortfolio />
 
         <BookCallSec
-          title="Let’s Discuss Your Business Goals"
+          title="Got an Idea? We’ve Got the Right Developers"
           btnText="Book a Call"
         />
 
-
         <LocationContact
           secClass="ecommerce-contact-sec"
-          minihead="Contact Us"
-          mainhead="Let’s Get Your Domain Registered Today"
-          secPara="Got questions or need expert help choosing your domain? Reach out now, and our team will happily guide you every step."
+          minihead="Connect With Us"
+          mainhead="Start Your Web App Development Project Today"
+          secPara="Have an idea? A half-built project? A wild concept scribbled on a napkin? Send it our way. We’ll turn it into a web app that works, and works brilliantly."
           btntxt="Send Message"
         />
 
-        <BlogSec />
-
-
-
-
-
-
-
-    </DefaultLayout>
+        <BlogSec 
+          minihead="Blogs & Articles"
+          secTitle="Insights Related to Websites, Web Apps, and More"
+        />
+      </DefaultLayout>
     </>
-  )
-}
+  );
+};
 
-export default WebAppDevelopment
+export default WebAppDevelopment;

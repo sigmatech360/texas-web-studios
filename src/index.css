@@ -2622,6 +2622,12 @@ section.webapp-portfolio-sec {
     margin: 0px 0px 20px 0px;
 }
 
+.webapp-portfolio-box {
+  padding: 0px 0px 30px 0px;
+}
+
+
+
 .webapp-padding-portfolio {
     margin: 120px 0px 0px;
 }
@@ -2831,6 +2837,132 @@ section.webapppdevelopment-choose-sec {
 /********* Brand Strategy Page CSS End *********/
 
 
+/********* Brand Voice Page CSS Start *********/
+
+.brandvoice-service-card {
+    background: #1D1D1D;
+    border-color: transparent;
+}
+
+.brandvoice-service-card a {
+    color: #fff;
+    text-decoration: none;
+    margin: 25px 0px 0px 0px;
+    display: flex !important;
+    align-items: center;
+    gap: 10px;
+}
+
+.brandvoice-service-card a svg {
+    line-height: normal;
+}
+
+
+.domainregister-service-card a {
+    display: none;
+}
+
+.brandvoice-process-sec {
+    padding: 70px 0px;
+}
+
+.brandvoice-process-sec {
+    padding: 70px 0px;
+}
+
+.brandvoice-proces-head {
+    text-align: center;
+    margin: 0px 0px 40px 0px;
+}
+
+.brandvoice-process-card {
+    text-align: center;
+}
+
+.brandvoice-process-card h5 {
+    background: #D41F14;
+    color: #fff;
+    padding: 9px 10px;
+    display: inline-block;
+    border-radius: 60px;
+    margin: 0px 0px 15px 0px;
+}
+
+.brandvoice-process-card h4 {
+    color: #161515;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0px 0px 10px 0px;
+}
+
+.brandvoice-process-card p {
+    color: #161515;
+    font-size: 14px;
+}
+
+.brandvoice-process-card {
+    margin: 0px 0px 50px 0px;
+}
+
+section.brandvoice-impact-sec {
+    background: #161515;
+    padding: 60px 0px;
+}
+
+.bandvoice-impact-head {
+    text-align: center;
+    margin: 0px 0px 40px 0px;
+}
+
+.bandvoice-impact-head p {
+    color: #fff;
+}
+
+.brandvoice-impact-card {
+    margin: 0px 0px 30px 0px;
+    color: #fff;
+    background: #242424;
+    padding: 40px 30px 40px 30px;
+    border-radius: 16px;
+}
+
+.brandvoice-impact-card p {
+    color: #fff;
+}
+
+.brandvoice-impact-card h4 {
+    margin: 0px 0px 10px 0px;
+}
+
+.impact-red {
+    background: #D41F14;
+}
+
+section.brand-voice-quote {
+    padding: 70px 0px;
+}
+
+.brandvoice-quote-txt {
+    text-align: center;
+    background: #191919;
+    padding: 60px 0px;
+    border-radius: 30px;
+}
+
+.brandvoice-quote-txt p {
+    color: #fff;
+    font-size: 20px;
+    margin: 0px 0px 30px 0px;
+    font-style: italic;
+}
+
+.brandvoice-quote-txt h5 {
+    color: #fff;
+}
+
+
+
+/********* Brand Voice Page CSS End *********/
 
 
 
@@ -3148,6 +3280,43 @@ section.webapppdevelopment-choose-sec {
     text-align: left;
 }
 
+.brand-strategy-head {
+    margin: 0px 0px 20px 0px;
+}
+
+.webapp-development-sec  .innerBannerContent {
+    background: transparent;
+}
+
+.webappdevelopment-choose-txt {
+    margin: 0px 0px 50px 0px;
+}
+
+.webapp-padding-portfolio {
+    margin: 0px 0px 0px;
+}
+
+.webapp-margin-portfolio {
+    margin: 0px 0px 0px;
+}
+
+
+.domain-register-choose .web-whychoose-list {
+    margin: 10px 0px 0px 0px;
+}
+
+.domainregister-service-card {
+    padding: 30px 20px 30px 20px;
+    margin: 0px 0px 30px 0px;
+}
+
+
+.transfer-support-sec .transfer-support-txt{
+  text-align: left;
+}
+
+
+
 }
 
 @media screen and (max-width: 767px) {
@@ -3306,8 +3475,35 @@ section.webapppdevelopment-choose-sec {
     padding: 50px 0px;
 }
 
+.webappdevelopment-services-head {
+    text-align: center;
+}
+
+.webdevelopment-service-box {
+    text-align: center;
+}
+
+.webapp-related-service-txt h4 {
+    font-size: 18px;
+}
+
+.brandvoice-quote-txt p {
+    font-size: 16px;
+    margin: 0px 0px 20px 0px;
+    padding: 0px 20px;
+}
+
+.brandvoice-impact-card {
+    text-align: center;
+}
+
+.domainregister-service-card {
+    text-align: center;
+}
+
 
 }
+
 
 @media screen and (max-width: 430px) {
   .logoSinglePortfolio .secHead .secTitle {

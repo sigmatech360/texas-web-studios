@@ -10,6 +10,7 @@ import BookCallSec from "../../components/BookCallSec";
 import LocationContact from "../../components/LocationContact";
 import BlogSec from "../../components/BlogSec";
 import BrandStrategyService from "../../components/BrandStrategyService";
+import ReactHelmet from "../../components/ReactHelmet";
 
 
 const webUrl = import.meta.env.VITE_WEB_URL;
@@ -22,6 +23,11 @@ const BrandStrategy = () => {
   return (
     <>
 
+        <ReactHelmet
+        title="Brand Strategy Services in Texas | Texas Web Studios"
+        description="Build a brand that connects. Texas Web Studios offers strategic positioning, messaging, storytelling, and identity services for long-term growth"
+        url={`${webUrl}/brand-strategy`}
+      />
 
 
       <DefaultLayout>
@@ -48,8 +54,8 @@ const BrandStrategy = () => {
           listClass="d-none"
           TouchBtn="d-none"
           btntext="Discover How We Do It"
-          aboutbtnlink="/about"
-          learnmorebtn="theme-btn"
+          aboutbtnlink="/contact"
+          learnmorebtn="theme-btn"    
         />
 
         <BrandStrategyService />
