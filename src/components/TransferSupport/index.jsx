@@ -8,7 +8,9 @@ const TransferSupport = ({
   paraOne, 
   paraTwo, 
   buttonText,
-  TransportSecClass
+  TransportSecClass,
+  description,
+  listItems = [] 
 }) => {
 
   const { setShowModal } = useModal();
@@ -23,6 +25,12 @@ const TransferSupport = ({
               <h2 className='mainhead text-white'>{mainHead}</h2>
               <p>{paraOne}</p>
               <p>{paraTwo}</p>
+               <ul className="domain-transfer-support-list d-none">
+                {listItems.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+               {description && <p>{description}</p>}
               <button onClick={() => setShowModal(true)}>{buttonText}</button>
             </div>
           </div>

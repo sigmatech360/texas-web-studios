@@ -9,23 +9,23 @@ import chooseimg4 from "../../assets/images/services/webappdevelopment/chooseimg
 const items = [
   {
     img: chooseimg1,
-    title: "Web App Development Expertise",
-    desc: "With Over 13 Years Of Experience In Developing Web Apps, Our Teams Bring Proven Methods And Knowledge To The Table."
+    title: "Full-Stack Expertise You Can Count On",
+    desc: "Our developers understand both front-end finesse and backend engineering, giving you a complete, top-tier solution from database to UI."
   },
   {
     img: chooseimg2,
-    title: "Custom Solutions",
-    desc: "We Create Tailor-Made Web Applications That Match Your Business Needs And Deliver Lasting Value."
+    title: "Built for Performance, Speed, and Scale",
+    desc: "We architect web apps that load fast, handle high traffic, and stay stable even during peak usage, because slow apps lose customers."
   },
   {
     img: chooseimg3,
-    title: "Latest Technologies",
-    desc: "Our Developers Use Modern Tools And Frameworks To Build Secure, High-Performance Web Applications."
+    title: "We architect web apps that load fast, handle high traffic, and stay stable even during peak usage, because slow apps lose customers.",
+    desc: "Every business is unique, so your app should be too. We design tailored systems that match your workflows, goals, and long-term vision."
   },
   {
     img: chooseimg4,
-    title: "End-to-End Support",
-    desc: "From Planning To Deployment, We Provide Complete Support To Ensure Smooth Project Execution."
+    title: "Agile Development That Keeps You in ",
+    desc: "You get faster releases, smoother updates, and complete flexibility. We adapt, iterate, and improve, so the only ones that are left behind are your competitors."
   }
 ];
 
@@ -37,17 +37,13 @@ const WebAppDevelopmentChooseUs = () => {
           
           <div className="col-lg-6">
             <div className="webappdevelopment-choose-txt">
-              <h6 className='shorttop-head text-white'>WHY CHOOSE US</h6>
+              <h6 className='shorttop-head text-white'>Best in Business</h6>
               <h2 className='mainhead text-white'>
-                Why Choose Texas Web Studios For Web App Development?
+                Smartest Choice for Web App Development in Texas
               </h2>
-              <p>
-                We Don’t Just Build Applications — We Build Long-Term Solutions.
-                Our Skilled Team Uses The Latest Technologies To Deliver Web Apps
-                That Are Powerful, Secure, And Future-Ready.
-              </p>
+              <p>Choosing the right team, the one with real experience, the right tech stack, and proven results, means getting a web app that works exactly the way your business needs it, and the way you want it. </p>
               <Link to="/contact" className='theme-btn'>
-                Explore All Wordpress Solutions <FaArrowRightLong />
+                Talk to Us <FaArrowRightLong />
               </Link>
             </div>
           </div>

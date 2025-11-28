@@ -27,7 +27,12 @@ const BrandStrategyService = () => {
     {
       header: "Brand Storytelling",
       content:
-        "Every strategy we build is 100% tailored to your business goals, audience, industry, and long-term vision. No templates, no generic solutions.",
+        "Turn your values and vision into a narrative that inspires action.",
+    },
+    {
+      header: "Guidelines & Playbooks:",
+      content:
+        "Keep your brand consistent and confident across every touchpoint.",
     },
   ];
 

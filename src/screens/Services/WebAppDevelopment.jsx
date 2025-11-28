@@ -17,7 +17,10 @@ import BookCallSec from '../../components/BookCallSec'
 import LocationContact from '../../components/LocationContact'
 import BlogSec from '../../components/BlogSec'
 import WebAppDevelopmentChooseUs from '../../components/WebAppDevelopmentChooseUs'
+import ReactHelmet from '../../components/ReactHelmet'
 
+
+const webUrl = import.meta.env.VITE_WEB_URL;
 
 
 const WebAppDevelopment = () => {
@@ -48,28 +51,36 @@ const WebAppDevelopment = () => {
 
   return (
     <>
+
+       <ReactHelmet
+        title="Web App Development in Texas"
+        description="Build fast, high-performing web apps with Texas Web Studios. We develop modern, mobile-like web apps that load instantly, scale easily, and deliver flawless user experiences."
+        url={`${webUrl}/web-app-development`}
+      />
+
+    
     <DefaultLayout>
         <InnerBanner
           secClass="locate-wordpress-herobanner webapp-development-sec"
           leftCol="col-lg-6 order-lg-1 order-2"
           rightCol="col-lg-5 order-lg-2 order-1"
           bgImage={herobanner}
-          title="Creating E-Commerce Websites with Digital Sales That Never Slow Down"
-          description="Build an online store that drives sales and customer loyalty. Our E-Commerce Website Development expertise in Texas helps brands create visually stunning, high-performing stores that convert. Experience complete control, fast performance, and secure transactions with Texas Web Studios."
-          btntxt="Get Your E-Commerce Website"
+          title="Build Web Apps That Feel Just Like Mobile Apps"
+          description="If your website feels chunky, slow, or outdated, it’s time for an upgrade! With Texas Web Studios’ web app development services in Texas, let’s deploy websites that load faster than you blink, that respond instantly to every click, and that keep users hooked to the screen from login to checkout."
+          serviceparatwo="When websites grow up, they become web apps! "
+          btntxt="Develop Web Apps"
         />
 
          <WordPressPerformanceSection
           reverse
-          minihead="About Us"
+          minihead="Faster, Smoother, Better"
           miniheadclass="shorttop-head"
-          secTitle1="Innovators in"
-          secTitle2="Custom Online Store Development"
-          description="Texas Web Studios is an e-commerce website development company that Texas trusts to grow its brands. We design responsive, fast, and sales-driven stores that combine technology with user-focused creativity to help businesses grow."
+          secTitle1="Meet the Website of the Future"
+          description="The internet is growing faster than ever, and with it, websites aren’t just websites anymore. They’re expected to feel like mobile apps, respond instantly, animate smoothly, and keep users engaged without a single hiccup. That’s why at Texas Web Studios, we build modern web applications that are faster, better, more agile, and more vibrant than anything traditional development can offer. With our web app development agency in Texas, you get dynamic, scalable, and high-performing web apps tailored to support your growth, your customer experience, and your future digital needs."
           image={aboutimg}
           listClass="d-none"
           TouchBtn="d-none"
-          btntext="More About Texas Web Studios"
+          btntext="Revamp Your Website to a Web App"
           aboutbtnlink="/about"
           learnmorebtn="theme-btn"
         />

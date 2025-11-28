@@ -11,12 +11,19 @@ import LocationContact from "../../components/LocationContact";
 import BlogSec from "../../components/BlogSec";
 import BrandStrategyService from "../../components/BrandStrategyService";
 
+
+const webUrl = import.meta.env.VITE_WEB_URL;
+
+
 const BrandStrategy = () => {
 
 
 
   return (
     <>
+
+
+
       <DefaultLayout>
         <InnerBanner
           secClass="locate-wordpress-herobanner domain-registeration-herobanner"
@@ -50,34 +57,35 @@ const BrandStrategy = () => {
         <WordPressPerformanceSection
           wordpresssecclass="WordPressPerformanceSection domain-register-choose domain-unique-sec"
           miniheadclass="shorttop-head"
-          minihead="At Texas Web Studios"
-          secTitle1="Because Your Brand Deserves"
-          secTitle2="A Unique Domain"
-          description="Our goal is to make domain registration in Texas simple and accessible for every growing business. For your convenience, we have hired professionals who provide fast set-up, use proficient tools to give you a smooth experience, and offer affordability so that no hustling business hesitates before reaching out to us. "
+          minihead="Why Choose Us"
+          secTitle1="Why Choose Texas Web Studios"
+          secTitle2="The Brand Strategy Agency Texas Trusts"
+          description="We don’t do cookie‑cutter strategies. We build custom blueprints that match your goals, audience, and growth stage. When you partner with us, you get a team that listens, collaborates, and executes."
           whyChooseList={[
-            "Instant Domain Activation",
-            "24/7 Expert Support",
-            "Transparent Pricing",
-            "Easy Renewals & Transfers",
+            "We Think Deeply:  every idea is backed by research, insights, and experience.",
+            "We Work Collaboratively: your team stays involved every step of the way.",
+            "We Build for Scale: your brand grows stronger, not just bigger.",
+            "We Care Long‑Term: we’re your creative partners, not just another agency.",
           ]}
+          description2="Because at Texas Web Studios, your success is our best story."
           image={chooseimg}
           listClass="d-none"
           TouchBtn="d-none"
-          btntext="Talk to Professionals"
+          btntext="Talk to Our Brand Experts"
           aboutbtnlink="/contact"
           learnmorebtn="theme-btn"
         />
 
         <BookCallSec
-          title="Let’s Discuss Your Business Goals"
-          btnText="Book a Call"
+          title="Talk to Us and Make Your Brand Stand Out from the Crowd!"
+          btnText="Start Now!"
         />
 
         <LocationContact
           secClass="ecommerce-contact-sec"
           minihead="Contact Us"
-          mainhead="Let’s Get Your Domain Registered Today"
-          secPara="Got questions or need expert help choosing your domain? Reach out now, and our team will happily guide you every step."
+          mainhead="Ready to Build a Brand that Stands Out?"
+          secPara="Let’s create something people talk about, and of cours,e for all the right reasons."
           btntxt="Send Message"
         />
 

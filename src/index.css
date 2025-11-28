@@ -2502,6 +2502,16 @@ section.wordpress-process-sec {
     z-index: 0;
 }
 
+.domaintransfer-support-sec .domain-transfer-support-list {
+    display: block !important;
+    margin: 10px 0px 10px 0px;
+    padding: 0px 0px 0px 20px;
+}
+
+.domaintransfer-support-sec .domain-transfer-support-list li {
+    color: #fff;
+}
+
 
 /********* Domain Transfer Page CSS End *********/
 
@@ -2819,6 +2829,9 @@ section.webapppdevelopment-choose-sec {
 
 
 /********* Brand Strategy Page CSS End *********/
+
+
+
 
 
 
