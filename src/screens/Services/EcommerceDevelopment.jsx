@@ -26,7 +26,8 @@ import Lightbox from "yet-another-react-lightbox";
 
 const webUrl = import.meta.env.VITE_WEB_URL;
 
-const EcommerceDevelopment = () => {
+const 
+EcommerceDevelopment = () => {
   const webDesignPortfolioData = [
     {
       id: 1,

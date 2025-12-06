@@ -2965,6 +2965,798 @@ section.brand-voice-quote {
 /********* Brand Voice Page CSS End *********/
 
 
+/********* Domain Registeration Location Page CSS Start *********/
+
+
+.location-expertise-sec {
+  background: url(./assets/images/locationpages/domain-registeration-dallas/gooddesignbg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 60px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.location-expertise-head {
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+}
+
+.location-expertise-head p {
+    color: #fff;
+}
+
+.location-expertise-box {
+    background: #b3b3b329;
+    border: 1px solid #FFFFFF;
+    border-radius: 16px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    padding: 20px;
+}
+
+.location-expertise-box img {
+    width: 50px;
+    margin: 0px 0px 20px 0px;
+}
+
+.location-expertise-box h4 {
+    color: #fff;
+    font-weight: normal;
+    font-size: 20px;
+    margin: 0px 0px 15px 0px;
+}
+
+.location-expertise-box p {
+    color: #fff;
+    font-size: 15px;
+}
+
+
+.local-specialist-sec {
+  background: url(./assets/images/locationpages/domain-registeration-dallas/gooddesignbg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 60px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+
+.location-expertises .accordion .accordion-item {
+  margin: 0px 0px 20px 0px;
+  border-radius: 10px;
+  border: none !important;
+  background: transparent;
+}
+
+.location-expertises .accordion {
+  background: transparent;
+  border: none;
+}
+
+.location-expertises .accordion .accordion-item .accordion-header {
+  background: transparent;
+  color: #fff;
+  border: none !important;
+}
+
+.location-expertises
+  .accordion
+  .accordion-item
+  .accordion-header
+  button.accordion-button.collapsed {
+  background: #d41f1459;
+  color: #fff;
+  font-weight: 500;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 12px;
+}
+
+.location-expertises
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.location-expertises
+  .accordion
+  .accordion-item:first-of-type
+  > .accordion-header
+  .accordion-button {
+  background: transparent;
+  color: #161515;
+  border: none !important;
+}
+
+.location-expertises
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:not(.collapsed) {
+  color: #fff;
+  background-color: #D41F14;
+  font-weight: 500;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.location-expertises .accordion .accordion-item .accordion-collapse.collapse.show {
+  border: none !important;
+}
+
+.location-expertises .accordion .accordion-item .accordion-body {
+  border: none !important;
+  color: #fff;
+  background: #D41F14;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.location-expertises
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button::after {
+  background-image: url(./assets/images/locationpages/domain-registeration-dallas/downarrow.webp);
+  transform: rotate(0deg);
+}
+
+.location-expertises
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:not(.collapsed)::after {
+  background-image: url(./assets/images/locationpages/domain-registeration-dallas/uparrow.webp);
+}
+
+.location-expertises
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:focus {
+  outline: none;
+  border: none !important;
+}
+
+
+.local-specialist-txt {
+    margin: 30px 0px 50px 0px;
+}
+
+.local-specialist-txt p {
+    color: #fff;
+}
+
+
+
+/********* Domain Registeration Location Page CSS End *********/
+
+
+
+
+/********* New Logo Design Page CSS Start *********/
+
+
+
+.logodesign-herobanner-sec .innerBannerContent {
+    color: #161515;
+}
+
+.logodesign-herobanner-sec .innerBannerContent p {
+    color: #161515;
+}
+
+
+.logodesign-services-sec {
+    background: #161515;
+    padding: 70px 0px;
+    position: relative;
+}
+
+.logodesign-service-head p {
+    color: #fff;
+}
+
+.logodesign-service-head {
+    margin: 0px 0px 50px 0px;
+}
+
+
+.logodesign-service-cardhead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0px 20px 0px;
+  border-bottom: 1px solid #FFFFFF;
+  margin: 0px 30px;
+}
+
+.logodesign-service-card {
+    background: #242424;
+    border-radius: 20px;
+    margin: 0px 0px 50px 20px;
+}
+
+.logodesign-service-cardhead img {
+    width: 50px;
+}
+
+.logodesign-service-cardhead h4 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.logodesign-service-cardtxt p {
+    color: #fff;
+    padding: 30px;
+}
+
+.logodesign-service-cardimg img {
+    width: 100%;
+    border: 10px solid #fff;
+    border-bottom: 0px;
+    border-radius: 27px 27px 0px 0px;
+}
+
+.logodesign-service-cardimg {
+    margin: 0px 30px;
+}
+
+.logodesign-service-slider .slick-prev,
+.logodesign-service-slider .slick-next {
+  width: 50px;
+}
+
+.logodesign-service-slider .slick-prev {
+    top: -80px;
+    left: 86%;
+}
+
+.logodesign-service-slider .slick-next {
+    top: -80px;
+    right: 5%;
+}
+
+.logodesign-service-slider .slick-prev:before {
+  background-image: url(./assets/images/services/logodesign/leftarrow.svg);
+  font-size: 56px;
+    color: transparent;
+    position: absolute;
+}
+
+.logodesign-service-slider .slick-next:before {
+  background-image: url(./assets/images/services/logodesign/rightarrow.svg);
+  font-size: 56px;
+    color: transparent;
+    position: absolute;
+}
+
+.logodesign-service-slider {
+  position: relative;
+}
+
+section.logodesign-process-sec {
+    background: #161515;
+    padding: 80px 0px;
+}
+
+.logodesign-process-sec .backend-process-head h6,
+.logodesign-process-sec .backend-process-head h2 {
+    color: #fff;
+}
+
+
+.logodesign-process-sec .backend-process-card {
+    background: #242424;
+    border-color: transparent;
+}
+
+.logodesign-process-sec .backend-process-card h4, 
+.logodesign-process-sec .backend-process-card p {
+    color: #fff;
+}
+
+.logodesign-process-sec .backend-process-card h6 {
+    color: #D41F14;
+    background: transparent;
+    padding: 0px;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0px 0px 20px 0px;
+}
+
+.logodesign-portfolio-img img {
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+}
+
+.logodesign-portfolio-img {
+    margin: 0px 0px 30px 0px;
+}
+
+.logodesign-portfolio-img h5 {
+    color: #161515;
+    font-weight: bold;
+}
+
+.logodesign-portfolio-btn a {
+    background: #D41F14;
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 30px 30px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Syne';
+    transition: all .6s ease;
+    border: 1px solid #D41F14;
+}
+
+.logodesign-portfolio-btn a:hover {
+    background: transparent;
+    color: #D41F14;
+}
+
+.logodesign-portfolio-btn {
+    width: 100%;
+    display: block;
+    padding: 0px 10px;
+    margin: 0px 0px 20px 0px;
+}
+
+.logodesign-portfolio-head {
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+}
+
+.logodesign-portfolio-sec {
+    padding: 70px 0px;
+}
+
+
+
+.industry-slider-sec {
+  padding: 70px 0px;
+}
+
+.industry-slider-headbtn {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  height: 100%;
+  padding: 0px 0px 40px 0px;
+}
+
+.industry-slider-head {
+  margin: 0px 0px 40px 0px;
+}
+
+.industry-slider-head {
+  margin: 0px 0px 40px 0px;
+}
+
+.industry-slider-card {
+  background: #242424;
+  border-radius: 10px;
+}
+
+section.industry-slider-sec {
+  padding: 80px 0px 90px 0px;
+  background-color: #161515;
+}
+
+.industry-slider-cardheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 20px;
+  border-bottom: 1px solid #fff;
+  padding: 25px 0px 15px 0px;
+}
+
+.industry-slider-cardheader h4 {
+  color: #fff;
+  font-size: 20px;
+}
+
+.industry-slider-cardheader a {
+  background: #D41F14;
+  color: #fff;
+  padding: 0px 8px 7px 8px;
+  border-radius: 100%;
+  font-size: 26px;
+  border: 1px solid #D41F14;
+  line-height: normal;
+  transition: all 0.6s ease;
+}
+
+.industry-slider-cardheader a:hover {
+  background: transparent;
+  color: #D41F14;
+}
+
+.industry-slider-card-bottom {
+  padding: 20px 20px 0px 20px;
+}
+
+.industry-slider-card-bottom img {
+  width: 100%;
+}
+
+.industry-slider-card-bottom p {
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 0px 25px 0px;
+}
+
+.industry-marquee-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 40px;
+}
+
+.industry-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marqueeScroll 30s linear infinite;
+}
+
+.industry-marquee-card {
+  flex: 0 0 400px;
+  margin-right: 25px;
+}
+
+
+@keyframes marqueeScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.webdesign-industry-slider .industry-slider-head {
+    margin: 0px;
+    text-align: center;
+}
+
+.webdesign-industry-slider .industry-slider-head h6{
+    color: #fff;
+}
+
+.webdesign-industry-slider .industry-slider-head h2,
+.webdesign-industry-slider .industry-slider-head p {
+  color: #fff;
+}
+
+
+.webdesign-industry-slider .frontendindustryhead {
+    justify-content: center;
+}
+
+/********* New Logo Design Page CSS End *********/
+
+
+
+/********* Wew Web Design Page CSS Start *********/
+
+
+.webdesign-about-sec .services__about-img img {
+    display: none;
+}
+
+.webdesign-about-sec .services__about-img video {
+    display: block !important;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.webdesign-service-card img {
+    width: 100%;
+}
+
+.webdesign-services-sec {
+    padding: 70px 0px;
+    background: #161515;
+}
+
+.webdesign-service-head p {
+    color: #fff;
+}
+
+.webdesign-service-cardtxt h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0px 0px 10px 0px;
+}
+
+.webdesign-service-cardtxt {
+    margin: 20px 0px;
+}
+
+.webdesign-service-cardtxt p {
+    color: #fff;
+    font-size: 14px;
+}
+
+.webdesign-service-card {
+    border-bottom: 1px solid #fff;
+    margin: 0px 0px 30px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.webdesign-service-cards {
+    max-height: 550px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-right: 20px;
+    scroll-behavior: smooth;
+}
+
+
+.webdesign-service-cards::-webkit-scrollbar {
+  width: 6px;
+}
+
+.webdesign-service-cards::-webkit-scrollbar-thumb {
+  background: #d41f14;
+  border-radius: 10px;
+}
+
+
+.webdesign-service-cards {
+    max-height: 550px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-right: 20px;
+    scroll-behavior: smooth;
+}
+
+section.webdesign-work-sec {
+    padding: 60px 0px;
+}
+
+.webdesign-work-head {
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+}
+
+.webdesign-work-card {
+    text-align: center;
+    padding: 20px;
+    border: 5px solid #D41F14;
+    border-radius: 20px;
+}
+
+.webdesign-work-card h4 {
+    font-weight: bold;
+    color: #D41F14;
+    font-size: 35px;
+    margin: 0px 0px 20px 0px;
+}
+
+.webdesign-work-card h4 span {
+    display: block;
+}
+
+.webdesign-work-card p {
+    color: #161515;
+}
+
+
+section.webdesign-portfolio-sec .news-card-img img {
+    height: auto;
+}
+
+.webdesign-portfolio-sec .pixel-perfect-head h6 {
+    color: #D41F14;
+}
+
+.webdesign-portfolio-sec .pixel-perfect-head h2 {
+    color: #161515;
+}
+
+.webdesign-portfolio-sec .pixel-perfect-head p {
+    color: #161515;
+}
+
+section.webdesign-portfolio-sec {
+    padding: 70px 0px;
+}
+
+.webdesign-choose-sec {
+    background: #161515;
+}
+
+.webdesign-choose-sec .abouttxt-data h6,
+.webdesign-choose-sec .abouttxt-data h2 {
+    color: #fff;
+}
+
+.webdesign-choose-sec .web-whychoose-list li {
+  color: #fff;
+}
+.ecommerce-choose-sec .web-whychoose-list li svg {
+    color: #fff;
+}
+
+.hidden-body {
+    overflow-x: hidden;
+}
+
+/********* Wew Web Design Page CSS End *********/
+
+
+/********* New Mobile App Development Page CSS Start *********/
+
+
+.mobileappdev-about-txt {
+    text-align: center;
+}
+
+section.mobileappdev-about-sec {
+    padding: 70px 0px;
+}
+
+.mobileappdev-about-txt p {
+    color: #707070;
+    margin: 0px 0px 30px 0px;
+}
+
+.mobileapp-bookcall {
+    background: #161515 !important;
+    padding: 40px 0px;
+}
+
+.mobileapp-bookcall .container {
+    background: transparent;
+    padding: 0px;
+}
+
+.mobileapp-bookcall .theme-btn-white {
+    background: #D41F14;
+    color: #fff;
+}
+
+.mobileapp-bookcall .theme-btn-white:hover {
+    background: white;
+    color: #D41F14;
+}
+
+
+.language-box {
+    background: #F7F7F7;
+    padding: 60px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 20px 0px;
+    border-radius: 10px;
+}
+
+.language-box img {
+    width: 50px;
+    margin: 0px 0px 15px 0px;
+}
+
+.language-box p {
+    color: #161515;
+}
+
+.mobileappdev-team-sec {
+    padding: 60px 0px;
+}
+
+.mobileappdev-team-head {
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+}
+
+.mobileappdev-team-head h2 span {
+    color: #D41F14;
+}
+
+.mobileapp-services-sec {
+    background: #161515;
+    padding: 60px 0px;
+}
+
+.mobileapp-service-head {
+    text-align: center;
+    margin: 0px 0px 40px 0px;
+}
+
+
+.mobileapp-services-sec {
+    background: #161515;
+    padding: 60px 0px;
+}
+
+.mobileapp-service-head {
+    text-align: center;
+    margin: 0px 0px 40px 0px;
+}
+
+.mobileapp-service-card img {
+    width: 100%;
+}
+
+.mobileapp-service-cardtxt {
+    padding: 30px 0px;
+    margin: 0px 0px 10px 0px;
+}
+
+.mobileapp-service-cardtxt h4 {
+    color: #fff;
+    font-weight: bold;
+    margin: 0px 0px 10px 0px;
+}
+
+.mobileapp-service-cardtxt p {
+    color: #EFEFEF;
+    margin: 0px 0px 30px 0px;
+}
+
+.downcard-mobileservie {
+    margin: 140px 0px 0px 0px;
+}
+
+.upcard-mobiledev {
+    margin: -130px 0px 0px 0px;
+}
+
+.mobileapp-process-sec {
+    padding: 60px 0px;
+    background: #161515;
+}
+
+.mobileapp-process-sec .backend-process-head h6,
+.mobileapp-process-sec .backend-process-head h2 { 
+  color: #fff;
+}
+
+.mobileapp-process-sec .backend-process-card {
+    background: #fff;
+}
+
+.mobileapp-process-sec .backend-process-card h6 {
+    background: transparent;
+    padding: 0px;
+    color: #D41F14;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.mobileappdev-portfolio-sec {
+    padding: 70px 0px;
+}
+
+.mobileappdev-portfolio-head {
+    text-align: center;
+    margin: 0px 0px 40px 0px;
+}
+
+.mobileappdev-portfolio-img img {
+    width: 100%;
+}
+
+.mobileapp-service-head p {
+    color: #fff;
+}
+
+/********* New Mobile App Development Page CSS End *********/
+
 
 
 @media screen and (max-width: 1399px) {
@@ -3316,6 +4108,72 @@ section.brand-voice-quote {
 }
 
 
+.location-expertise-box {
+    margin: 0px 0px 30px 0px;
+}
+
+.registeraiton-location-choose .abouttxt-data {
+    text-align: left;
+}
+
+
+.logodesign-herobanner-sec .innerBannerContent {
+    background: transparent;
+}
+
+.logodesign-service-slider .slick-prev:before,
+.logodesign-service-slider .slick-next:before{
+    font-size: 56px;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+
+}
+
+.logodesign-service-slider .slick-prev {
+    top: -70px;
+    left: 76%;
+}
+
+.logodesign-service-slider .slick-next {
+    top: -70px;
+    right: 10%;
+}
+
+.logodesign-service-slider .slick-prev,
+.logodesign-service-slider .slick-next {
+  width: 30px;
+  height: 30px;
+}
+
+.domain-register-choose .abouttxt-data {
+    text-align: left;
+}
+
+.logodesign-portfolio-btn a {
+    display: none;
+}
+
+.webdesign-service-head {
+    margin: 0px 0px 40px 0px;
+}
+
+.webdesign-work-card {
+    margin: 0px 0px 30px 0px;
+}
+
+.downcard-mobileservie {
+    margin: 0px 0px 0px 0px;
+}
+
+
+.upcard-mobiledev {
+    margin: 0px 0px 0px 0px;
+}
+
+.mobileappdev-portfolio-img {
+    margin: 0px 0px 30px 0px;
+}
 
 }
 
@@ -3501,6 +4359,39 @@ section.brand-voice-quote {
     text-align: center;
 }
 
+.logodesign-portfolio-img {
+    text-align: center;
+}
+
+.logodesign-service-head {
+    margin: 0px 0px 80px 0px;
+}
+
+    .logodesign-service-slider .slick-prev {
+        top: -70px;
+        left: 60%;
+    }
+
+    .logodesign-service-slider .slick-next {
+        top: -70px;
+        right: 15%;
+    }
+
+    .webdesign-work-card h4 {
+    font-size: 30px;
+}
+
+.webdesign-service-head {
+    text-align: center;
+}
+
+.webdesign-service-card {
+    text-align: center;
+}
+
+.mobileapp-service-cardtxt {
+    text-align: center;
+}
 
 }
 

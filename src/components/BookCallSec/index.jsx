@@ -6,7 +6,7 @@ import { useModal } from "../../context/ModalContext";
 const BookCallSec = (props) => {
   const { setShowModal } = useModal();
   return (
-    <section className="bookCallSec sec-padding webapp-book-call">
+    <section className={`bookCallSec sec-padding webapp-book-call ${props.bookSec}`}>
       <div className="container">
         <div className="row">
           <div className="col-md-12">

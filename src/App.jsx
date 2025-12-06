@@ -1,6 +1,5 @@
 import AppRouter from "./Router/AppRouter";
 import { ToastContainer } from "react-toastify";
-
 import "react-toastify/dist/ReactToastify.css";
 import "yet-another-react-lightbox/styles.css";
 

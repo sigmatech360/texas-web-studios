@@ -1,8 +1,8 @@
 import React from 'react'
 
-const BackendProcess = ({ shortTopHead, mainHead, cards, processCardclass }) => {
+const BackendProcess = ({ shortTopHead, mainHead, cards, processCardclass, secClass }) => {
   return (
-    <section className='backend-process-sec'>
+    <section className={secClass || "backend-process-sec"}>
         <div className="container">
             <div className="row">
                 <div className="col-lg-6">

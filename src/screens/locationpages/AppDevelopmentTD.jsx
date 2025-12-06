@@ -151,12 +151,12 @@ const AppDevelopmentTD = () => {
           onImageClick={handleImageClick}
         />
 
-        <TabsPricing
+        {/* <TabsPricing
           minihead="Pricing Plans"
           mainhead="Smart Pricing to Power Serious Growth"
           secPara="Discover your mobile app development cost in Dallas, TX, with plans that strike a balance between innovation, scalability, and ROI."
           tabsData={dynamictabsData}
-        />
+        /> */}
 
         <InnerBanner
           secClass="locate-wordpress-herobanner"
