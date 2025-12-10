@@ -9,7 +9,7 @@ const LocalSpecialist = ({ shortHeading , mainHeading , description, expertise =
                 <div className="col-lg-6">
                     <div className="local-specialist-txt">
                         <h6 className='shorttop-head text-white'>{shortHeading}</h6>
-                        <h2 className='mainihead text-white'>{mainHeading}</h2>
+                        <h2 className='mainhead text-white'>{mainHeading}</h2>
                         <p>{description}</p>
                     </div>
                 </div>

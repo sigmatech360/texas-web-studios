@@ -6,7 +6,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 80px;
 }
+
+
+
 .bookCallTitle {
   color: #fff;
   font-weight: 700;

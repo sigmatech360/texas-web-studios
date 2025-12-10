@@ -3541,7 +3541,7 @@ section.webdesign-work-sec {
 .webdesign-work-card h4 {
     font-weight: bold;
     color: #D41F14;
-    font-size: 35px;
+    font-size: 26px;
     margin: 0px 0px 20px 0px;
 }
 
@@ -3755,7 +3755,242 @@ section.mobileappdev-about-sec {
     color: #fff;
 }
 
+.webdesign-portfolio-head {
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+}
+
+.webdesign-portfolio-img {
+    margin: 0px 0px 30px 0px;
+    height: 600px;
+    overflow: hidden;
+    transition: all 4s ease;
+}
+
+.webdesign-portfolio-img img {
+  width: 100%;
+  transition: transform 4s ease;
+}
+
+
 /********* New Mobile App Development Page CSS End *********/
+
+
+/********* Website Content Page CSS Start *********/
+
+
+
+.websitecontent-herobanner-sec {
+    background: #FFF5F5;
+}
+
+.websitecontent-herobanner-sec .innerBannerContent h1,
+.websitecontent-herobanner-sec .innerBannerContent p {
+    color: #161515;
+}
+
+
+.websitecontent-process-card {
+    background: #212121;
+    padding: 20px;
+    border-radius: 16px;
+    margin: 0px 0px 25px 0px;
+}
+
+.websitecontent-process-card h3 {
+    color: #D41F14;
+    font-size: 40px;
+}
+
+.websitecontent-process-card h5 {
+    color: #fff;
+    padding: 15px 0px;
+    font-size: 20px;
+}
+
+.websitecontent-process-card p {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.ecommerce-list-choose .web-whychoose-list li svg {
+    color: #D41F14;
+}
+
+.websitecontent-perfomance-sec .performance-box img {
+    display: none;
+}
+
+.performance-box {
+    background: #242424;
+}
+
+.performance-box h3 {
+    color: #D41F14;
+    font-size: 20px;
+    margin: 0px 0px 10px 0px;
+}
+
+.performance-box {
+    padding: 20px;
+    border-radius: 20px;
+}
+
+
+.performance-box p {
+    color: #fff;
+}
+
+
+/********* Website Content Page CSS End *********/
+
+
+/********* Blog Writing Page CSS Start *********/
+
+
+.blogwrite-aboutimg img {
+    width: 100%;
+}
+
+.blogwrite-aboutimg {
+    margin: 0px 0px 40px 0px;
+}
+
+.blogwrite-about-points ul li {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 0px 0px 10px 0px;
+    color: #161515;
+}
+
+.blogwrite-about-points ul li svg {
+    color: #D41F14;
+    font-size: 22px;
+    margin: 3px 0px 0px 0px;
+} 
+
+.blogwrite-about-sec {
+    padding: 70px 0px;
+}
+
+.blogwrite-abouttxt p {
+    color: #161515;
+    margin: 0px 0px 20px 0px;
+}
+
+
+.blogwriting-work-sec {
+    padding: 70px 0px;
+}
+
+.blogwriting-work-head {
+    text-align: center;
+    margin: 0px 0px 60px 0px;
+}
+
+.blogwriting-work-card h5 {
+    background: #D41F14;
+    color: #fff;
+    display: inline-block;
+    padding: 15px 18px 15px 12px;
+    border-radius: 100%;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+
+.blogwriting-work-card h4 {
+    padding: 20px 0px 10px 0px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.blogwriting-work-card p {
+    font-size: 16px;
+}
+
+
+.blogwriting-power-txt {
+    background: #D41F14;
+    border-radius: 30px;
+    padding: 50px 30px;
+    margin: 0px 0px 50px 0px;
+}
+
+.blogwriting-power-txt p {
+    color: #fff;
+    margin: 0px 0px 20px 0px;
+}
+
+.blogwriting-power-txt button {
+    background: #fff;
+    color: #D41F14;
+}
+
+.blogwriting-power-txt {
+    background: #D41F14;
+    border-radius: 30px;
+    padding: 30px;
+    margin: 0px 0px 50px 0px;
+}
+
+.blogwriting-power-txt p {
+    color: #fff;
+    margin: 0px 0px 20px 0px;
+}
+
+.blogwriting-power-txt a {
+    background: #fff;
+    color: #D41F14;
+}
+
+.blogwriting-power-box {
+    background: #F1F1F1;
+    padding: 30px 20px 30px 20px;
+    border-radius: 30px;
+    margin: 0px 0px 30px 0px;
+}
+
+.blogwriting-power-box img {
+    width: 60px;
+    margin: 0px 0px 10px 0px;
+}
+
+.blogwriting-power-box h4 {
+    color: #161515;
+    font-weight: bold;
+    margin: 5px 0px 10px 0px;
+}
+
+.blogwriting-power-box p {
+    color: #161515;
+}
+
+.blogwriting-growth-sec {
+    background: #161515;
+    padding: 50px 0px;
+}
+
+.blogwriting-growth-sec .abouttxt-data h2 {
+    color: #fff;
+}
+
+.blogwriting-growth-sec .abouttxt-data p {
+    color: #fff;
+}
+
+.brandvoice-service-card img {
+    width: 60px;
+}
+
+.websitecontent-choose-list {
+    padding: 70px 0px 0px 0px;
+}
+
+
+/********* Blog Writing Page CSS End *********/
 
 
 
@@ -3870,6 +4105,8 @@ section.mobileappdev-about-sec {
   .secureProcessList {
     gap: 16px;
   }
+
+
 }
 
 @media screen and (max-width: 991px) {
@@ -3934,6 +4171,8 @@ section.mobileappdev-about-sec {
   .getToKnowContent {
     margin-top: 20px;
   }
+
+
 }
 
 @media screen and (max-width: 786px) {
@@ -4175,6 +4414,32 @@ section.mobileappdev-about-sec {
     margin: 0px 0px 30px 0px;
 }
 
+.websitecontent-herobanner-sec  .innerBannerContent {
+    background: transparent;
+}
+
+
+.blogwrite-about-points {
+    margin: 20px 0px 0px 0px;
+}
+
+.blogwrite-about-points ul {
+    padding: 0px;
+}
+
+.blogwrite-about-points ul li {
+    padding: 5px 0px;
+}
+
+.blogwriting-work-card {
+    margin: 0px 0px 30px 0px;
+}
+
+.performance-box {
+    margin: 0px 0px 30px 0px;
+}
+
+
 }
 
 @media screen and (max-width: 767px) {
@@ -4392,6 +4657,25 @@ section.mobileappdev-about-sec {
 .mobileapp-service-cardtxt {
     text-align: center;
 }
+
+
+.blogwriting-power-txt {
+    text-align: center;
+}
+
+.blogwriting-power-box {
+    text-align: center;
+}
+
+.blogwriting-work-card {
+    text-align: center;
+}
+
+.websitecontent-process-card {
+    text-align: center;
+}
+
+
 
 }
 

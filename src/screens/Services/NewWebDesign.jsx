@@ -14,13 +14,8 @@ import { dynamictabsData } from '../../data';
 import LocationContact from '../../components/LocationContact';
 import BlogSec from '../../components/BlogSec';
 import PixelPerfectSec from '../../components/PixelPerfectSec';
-import portfolio1 from "../../assets/images/services/webdesign/portfolio1.webp";
-import portfolio2 from "../../assets/images/services/webdesign/portfolio2.webp";
-import portfolio3 from "../../assets/images/services/webdesign/portfolio3.webp";
-import portfolio4 from "../../assets/images/services/webdesign/portfolio4.webp";
-import portfolio5 from "../../assets/images/services/webdesign/portfolio5.webp";
-import portfolio6 from "../../assets/images/services/webdesign/portfolio6.webp";
 import Lightbox from 'yet-another-react-lightbox';
+import WebDesignPortfolio from '../../components/WebDesignPortfolio';
 
 
 
@@ -29,32 +24,6 @@ const webUrl = import.meta.env.VITE_WEB_URL;
 const NewWebDesign = () => {
 
 
-      const webDesignPortfolioData = [
-        {
-          id: 1,
-          image: portfolio1,
-        },
-        {
-          id: 2,
-          image: portfolio2,
-        },
-        {
-          id: 3,
-          image: portfolio3,
-        },
-        {
-          id: 4,
-          image: portfolio4,
-        },
-        {
-          id: 5,
-          image: portfolio5,
-        },
-        {
-          id: 6,
-          image: portfolio6,
-        },
-      ];
 
 
      const [isOpen, setIsOpen] = useState(false);
@@ -126,13 +95,7 @@ const NewWebDesign = () => {
           btntxt="Boost My Conversions"
         />
 
-         <PixelPerfectSec
-           pixelSec="webdesign-portfolio-sec"
-          minihead="Our portfolio"
-          secTitle="Recent Creative Project Highlights"
-          projectsData={webDesignPortfolioData}
-          onImageClick={handleImageClick}
-        />
+        <WebDesignPortfolio/>
 
 
          <WordPressPerformanceSection

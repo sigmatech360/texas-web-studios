@@ -41,6 +41,10 @@ import DomainRegisterationTD from "../screens/locationpages/DomainRegisterationT
 import LogoDesignNew from "../screens/Services/LogoDesignNew";
 import NewWebDesign from "../screens/Services/NewWebDesign";
 import NewMobileAppDev from "../screens/Services/NewMobileAppDev";
+import DomainTransferTD from "../screens/locationpages/DomainTransferTD";
+import AngularDevelopmentTD from "../screens/locationpages/AngularDevelopmentTD";
+import BlogWriting from "../screens/Services/BlogWriting";
+import WebsiteContent from "../screens/Services/WebsiteContent";
 
 const AppRouter = () => {
   return (
@@ -68,6 +72,7 @@ const AppRouter = () => {
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<BlogDetail />} />
 
+
         {/* Services Pages */}
         {/* <Route path="/logo-design" element={<LogoDesign />} /> */}
         <Route path="/web-development" element={<WebDevelopment />} />
@@ -93,7 +98,7 @@ const AppRouter = () => {
         <Route path="/backend-development" element={<BackendDevelopment />} />
 
 
-            {/* Custom Web Develpment & Inner Pages */}
+        {/* Custom Web Develpment & Inner Pages */}
         {/* <Route path="/mobile-app-development" element={<MobileAppDev />} /> */}
         <Route path="/web-app-development" element={<WebAppDevelopment />} />
         <Route path="/mobile-app-development" element={<NewMobileAppDev />} />
@@ -103,9 +108,15 @@ const AppRouter = () => {
         <Route path="/domain-registeration" element={<DomainRegisteration />} />
         <Route path="/domain-transfer" element={<DomainTransfer />} />
         
+
           {/* Brand Identity Inner Pages */}
         <Route path="/brand-strategy" element={<BrandStrategy />} />
         <Route path="/brand-voice" element={<BrandVoice />} />
+
+          {/* Content Writing Services Inner Pages */}
+        <Route path="/website-content" element={<WebsiteContent />} />
+        <Route path="/blog-writing" element={<BlogWriting />} />
+
 
         {/* Location Pages */}
         <Route path="/app-development-dallas" element={<AppDevelopmentTD />} />
@@ -113,6 +124,8 @@ const AppRouter = () => {
         <Route path="/react-development-dallas" element={<ReactDevelopmentTD />} />
         <Route path="/ecommerce-development-dallas" element={<EcommerceDevelopmentTD   />} />
         <Route path="/domain-registeration-dallas" element={<DomainRegisterationTD   />} />
+        <Route path="/domain-transfer-dallas" element={<DomainTransferTD />} />
+        <Route path="/angular-development-dallas" element={<AngularDevelopmentTD />} />
 
 
       </Routes>

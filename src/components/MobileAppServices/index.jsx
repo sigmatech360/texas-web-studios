@@ -26,7 +26,7 @@ const MobileAppServices = () => {
                         <div className="mobileapp-service-cardtxt">
                             <h4>Web App Development</h4>
                             <p>We develop fast, secure, and dynamic web apps that help your business perform better. Each platform is designed to be functional, user-friendly, and easy to maintain.</p>
-                            <Link to="/web-app-development" className='theme-btn'>Learn More</Link>
+                            {/* <Link to="/web-app-development" className='theme-btn'>Learn More</Link> */}
                         </div>
                     </div>
                 </div>
@@ -36,7 +36,7 @@ const MobileAppServices = () => {
                         <div className="mobileapp-service-cardtxt">
                             <h4>iOS App Development</h4>
                             <p>Our iOS app development in Texas focuses on creating simple, elegant apps that deliver reliable performance and intuitive experiences for Apple users across iPhones and iPads.</p>
-                            <Link to="/contact" className='theme-btn'>Learn More</Link>
+                            {/* <Link to="/contact" className='theme-btn'>Learn More</Link> */}
                         </div>
                     </div>
                 </div>
@@ -46,7 +46,7 @@ const MobileAppServices = () => {
                         <div className="mobileapp-service-cardtxt">
                             <h4>Android App Development</h4>
                             <p>We specialize in Android app development in Texas, building responsive, adaptable apps that meet modern demands and bring your ideas to millions of active Android users.</p>
-                            <Link to="/contact" className='theme-btn'>Learn More</Link>
+                            {/* <Link to="/contact" className='theme-btn'>Learn More</Link> */}
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@ const MobileAppServices = () => {
                         <div className="mobileapp-service-cardtxt">
                             <h4>React Native Development</h4>
                             <p>Our team specializes in React Native to develop cross-platform apps efficiently. This approach ensures smooth performance, consistent design, and faster delivery for both iOS and Android platforms.</p>
-                            <Link to="/contact" className='theme-btn'>Learn More</Link>
+                            {/* <Link to="/contact" className='theme-btn'>Learn More</Link> */}
                         </div>
                     </div>
                 </div>

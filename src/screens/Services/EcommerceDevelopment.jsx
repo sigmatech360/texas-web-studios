@@ -169,7 +169,7 @@ EcommerceDevelopment = () => {
         />
 
         <WordPressPerformanceSection
-          wordpresssecclass="ecommerce-choose-sec"
+          wordpresssecclass="ecommerce-choose-sec ecommerce-list-choose"
           minihead="Why Choose Us?"
           miniheadclass="shorttop-head"
           secTitle1="Texas Web Studios:"
