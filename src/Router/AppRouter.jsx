@@ -45,6 +45,8 @@ import DomainTransferTD from "../screens/locationpages/DomainTransferTD";
 import AngularDevelopmentTD from "../screens/locationpages/AngularDevelopmentTD";
 import BlogWriting from "../screens/Services/BlogWriting";
 import WebsiteContent from "../screens/Services/WebsiteContent";
+import NewSMM from "../screens/Services/NewSMM";
+import NewSEO from "../screens/Services/NewSEO";
 
 const AppRouter = () => {
   return (
@@ -88,8 +90,10 @@ const AppRouter = () => {
 
             {/* Digital Marketing & Inner Pages */}
         <Route path="/digital-media-marketing" element={<DigitalMediaMarketing />}/>
-        <Route path="/social-media-marketing" element={<SMM />} />
-        <Route path="/search-engine-optimization" element={<SEO />} />
+        {/* <Route path="/social-media-marketing" element={<SMM />} /> */}
+        {/* <Route path="/search-engine-optimization" element={<SEO />} /> */}
+        <Route path="/search-engine-optimization" element={<NewSEO />} />
+        <Route path="/social-media-marketing" element={<NewSMM />} />
 
 
             {/* Custom Web Develpment & Inner Pages */}
