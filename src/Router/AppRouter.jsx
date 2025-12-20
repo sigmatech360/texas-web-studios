@@ -47,6 +47,9 @@ import BlogWriting from "../screens/Services/BlogWriting";
 import WebsiteContent from "../screens/Services/WebsiteContent";
 import NewSMM from "../screens/Services/NewSMM";
 import NewSEO from "../screens/Services/NewSEO";
+import WebAppDevelopmentTD from "../screens/locationpages/WebAppDevelopmentTD";
+import ShopifyDevelopmentTD from "../screens/locationpages/ShopifyDevelopmentTD";
+import LaravelDevelopmentTD from "../screens/locationpages/LaravelDevelopmentTD";
 
 const AppRouter = () => {
   return (
@@ -130,6 +133,9 @@ const AppRouter = () => {
         <Route path="/domain-registeration-dallas" element={<DomainRegisterationTD   />} />
         <Route path="/domain-transfer-dallas" element={<DomainTransferTD />} />
         <Route path="/angular-development-dallas" element={<AngularDevelopmentTD />} />
+        <Route path="/webapp-development-dallas" element={<WebAppDevelopmentTD />} />
+        <Route path="/shopify-development-dallas" element={<ShopifyDevelopmentTD />} />
+        <Route path="/laravel-development-dallas" element={<LaravelDevelopmentTD />} />
 
 
       </Routes>

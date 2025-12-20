@@ -62,6 +62,12 @@ const InnerBanner = (props) => {
                   </li>
                 </ol>
               </nav>
+              <ul className="d-none benefit-list">
+                <li>Faster loading</li>
+                <li>Real-time updates</li>
+                <li>Smooth performance</li>
+                <li>Built to scale</li>
+              </ul>
               <ul className="herobanner-list d-none">
                   <li>E-commerce Development</li>
                   <li>Custom WordPress Development</li>
