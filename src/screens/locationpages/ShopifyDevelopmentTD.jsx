@@ -62,30 +62,35 @@ const ShopifyDevelopmentTD = () => {
       const faqsData = [
         {
           header:
-            "Why is Angular ideal for complex builds?",
+            " What does Shopify website development in Dallas, Texas include?",
           content:
-            "Angular offers consistency, structure, and the ability to handle large feature sets without slowing down.",
+            "Shopify website development includes store setup, theme customization, product configuration, payment integration, performance optimization, and launch support. Our Shopify development services in Dallas, Texas, focus on usability, speed, and long-term store management.",
         },
         {
-          header: " Is Angular good for fast loading apps?",
+          header: "Why choose a Shopify website development company in Dallas, TX?",
           content:
-            "Yes, Angular keeps interfaces responsive even under heavy functionality.",
+            "A local Shopify website development company in Dallas, TX understands regional markets and business needs. Working with Texas Web Studios ensures clear communication, reliable support, and solutions tailored for businesses operating in Texas and beyond.",
         },
         {
-          header: "Can Angular support both small and large businesses?",
+          header: "How long does it take to build a Shopify ecommerce website?",
           content:
-            "Absolutely, startups love its scalability, and enterprises rely on its stability.",
+            "Most Shopify ecommerce website development projects take between two to six weeks. Timelines depend on design complexity, number of products, custom features, and content readiness.",
         },
         {
           header:
-            "How does Angular compare to other frameworks?",
+            "Do you offer custom Shopify website development services in Dallas, TX?",
           content:
-            "Angular stays reliable across large modules, performing well where others struggle.",
+            "Yes, we provide fully custom Shopify website development services in Dallas, TX. This includes custom layouts, tailored functionality, and design adjustments aligned with your brand and business goals.",
         },
         {
-          header: "Do Angular projects need ongoing support?",
+          header: "Is Shopify suitable for small and growing businesses?",
           content:
-            "Ongoing support ensures updates, security, and long term performance as your platform evolves.",
+            "Shopify is ideal for small, medium, and growing businesses. It offers secure hosting, easy management, scalability, and built-in ecommerce tools that support long-term online growth.",
+        },
+        {
+          header: "Will I be able to manage my Shopify store after launch?",
+          content:
+            "Yes, Shopify is designed for easy management. After launch, you can update products, manage orders, track sales, and make content changes without technical experience. We also provide guidance if needed.",
         },
       ];
     
@@ -187,12 +192,12 @@ const ShopifyDevelopmentTD = () => {
           btntxt="Send Message"
         />
 
-        {/* <LocationFaqs
+        <LocationFaqs
           minihead="FAQs"
-          mainhead="Your Angular Questions, Answered Simply"
-          secPara="We’ve gathered the most frequently asked questions to help you understand everything about our Angular development services in Dallas, TX."
+          mainhead="Frequently Asked Questions About Shopify Development in Dallas, Texas"
+          secPara="Below are answers to common questions businesses ask when considering Shopify website development services in Dallas, TX."
           faqsData={faqsData}
-        /> */}
+        /> 
 
         {isOpen && images.length > 0 && (
           <Lightbox
