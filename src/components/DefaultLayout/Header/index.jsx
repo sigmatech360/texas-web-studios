@@ -526,6 +526,14 @@ const Header = () => {
                     >
                       Laravel Development
                     </NavDropdown.Item>
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/case-study-one"
+                      onClick={(e) => e.stopPropagation()}
+                      target="_blank"
+                    >
+                      Laravel Development
+                    </NavDropdown.Item>
                   </div>
                 </div>
               </Dropdown.Menu>

@@ -50,6 +50,7 @@ import NewSEO from "../screens/Services/NewSEO";
 import WebAppDevelopmentTD from "../screens/locationpages/WebAppDevelopmentTD";
 import ShopifyDevelopmentTD from "../screens/locationpages/ShopifyDevelopmentTD";
 import LaravelDevelopmentTD from "../screens/locationpages/LaravelDevelopmentTD";
+import CaseStudy1 from "../screens/casestudiespages/CaseStudy1";
 
 const AppRouter = () => {
   return (
@@ -140,7 +141,7 @@ const AppRouter = () => {
 
 
         {/* Case Studies Pages */}
-        <Route path="/case-study-one" element={<LaravelDevelopmentTD />} />
+        <Route path="/case-study-one" element={<CaseStudy1 />} />
 
       </Routes>
     </Router>
