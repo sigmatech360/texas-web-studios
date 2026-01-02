@@ -425,6 +425,112 @@ const Header = () => {
               </Dropdown.Menu>
             </Dropdown>
 
+             {/* Case Studies Pages */}
+            <Dropdown id="services-dropdown">
+              <Dropdown.Toggle
+                as="button"
+                className={`custom-toggle nav-link`}
+                aria-expanded="false"
+              >
+                Case Studies
+              </Dropdown.Toggle>
+              <Dropdown.Menu>
+                <div className="nav-subdropdown-wrapper">
+                  <NavDropdown.Item as="button" onClick={(e) => e.stopPropagation()}>
+                    Dallas{" "}
+                    <span className="submenu-icon d-none d-lg-inline">
+                      <FaCaretRight />
+                    </span>
+                    <span className="submenu-icon d-inline d-lg-none">
+                      <FaCaretDown />
+                    </span>
+                  </NavDropdown.Item>
+                  <div className="nav-subdropdown">
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/app-development-dallas"
+                      onClick={(e) => e.stopPropagation()}
+                      target="_blank"
+                    >
+                      Mobile App Development
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/wordpress-development-dallas"
+                      onClick={(e) => e.stopPropagation()}
+                      target="_blank"
+                    >
+                      Wordpress Development
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/react-development-dallas"
+                      onClick={(e) => e.stopPropagation()}
+                      target="_blank"
+                    >
+                      Reactjs Development
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/ecommerce-development-dallas"
+                      onClick={(e) => e.stopPropagation()}
+                      target="_blank"
+                    >
+                      Ecommerce Development
+                    </NavDropdown.Item>
+                     <NavDropdown.Item
+                      as={Link}
+                      to="/domain-registeration-dallas"
+                      onClick={(e) => e.stopPropagation()}
+                      target="_blank"
+                    >
+                      Domain Registeration
+                    </NavDropdown.Item>
+                     <NavDropdown.Item
+                      as={Link}
+                      to="/domain-transfer-dallas"
+                      onClick={(e) => e.stopPropagation()}
+                      target="_blank"
+                    >
+                      Domain Transfer
+                    </NavDropdown.Item>
+                     <NavDropdown.Item
+                      as={Link}
+                      to="/angular-development-dallas"
+                      onClick={(e) => e.stopPropagation()}
+                      target="_blank"
+                    >
+                      Angular Development
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/webapp-development-dallas"
+                      onClick={(e) => e.stopPropagation()}
+                      target="_blank"
+                    >
+                      Web App Development
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/shopify-development-dallas"
+                      onClick={(e) => e.stopPropagation()}
+                      target="_blank"
+                    >
+                      Shopify Development
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/laravel-development-dallas"
+                      onClick={(e) => e.stopPropagation()}
+                      target="_blank"
+                    >
+                      Laravel Development
+                    </NavDropdown.Item>
+                  </div>
+                </div>
+              </Dropdown.Menu>
+            </Dropdown>
+
             <NavLink to={"/pricing"} className={`nav-link`}>
               Packages
             </NavLink>

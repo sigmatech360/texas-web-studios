@@ -138,6 +138,10 @@ const AppRouter = () => {
         <Route path="/laravel-development-dallas" element={<LaravelDevelopmentTD />} />
 
 
+
+        {/* Case Studies Pages */}
+        <Route path="/case-study-one" element={<LaravelDevelopmentTD />} />
+
       </Routes>
     </Router>
   );
